@@ -52,6 +52,7 @@ API call logs published with the audit package to make the no-contact claims ver
 - Each pinned snapshot's **published retirement date** verified to cover the full P4-plus-reproduction window and recorded in the manifest; full request/response logs archived so retired-endpoint results remain auditable.
 - Mid-run model-deprecation policy preregistered (halt → substitute snapshot → full recode of the affected coder's assignments; never mixed within one coder column).
 - **Determinism audit:** re-code an n=20 (P1) / n=50 (P4) subsample twice per family; report exact-match rate. PROVISIONAL floor: ≥ 95% exact match per dimension.
+- **Sampling-parameter honesty (smoke-tested 2026-07-14):** the pinned A (claude-sonnet-5) and C (gpt-5.5) endpoints reject explicit temperature settings; only B accepts temperature 0. Effective parameters are machine-logged per call (`_meta`), and run-level determinism therefore rests on the determinism audit above, not on a temperature claim — stated as such in the prereg.
 - Prompt = build artifact with SHA256 manifest (existing rule); coder-runner verifies hash before every run.
 
 ## B2. Cue-ablation folklore baseline (primary anti-folklore instrument)

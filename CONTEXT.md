@@ -102,7 +102,8 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
   roles — its disable_search proves non-surfacing, not non-grounding, and its base lineage
   is undocumented/mutable (web-verified 2026-07-14); Sonar serves only as P2 harvest aid.
   Conformity checker = Kimi-class (Moonshot), same route. No-new-keys constraint (dk).
-  Role-exclusivity matrix in validation-battery §B0.
+  Role-exclusivity matrix in validation-battery §B0. Pins (dk, 2026-07-14, session 2):
+  A = claude-sonnet-5 · B = gemini-3.5-flash · C = gpt-5.5-2026-04-23.
 - Venue tiers: T1 general (Mind, Noûs, PQ, APQ, Analysis, Phil Studies, topic-
   filtered) · T2 mainstream specialist (F&P, RS, IJPR, Sophia, 2004–2024) ·
   T3 confessional (Philosophia Christi). F&P's T2 assignment is a preregistered
