@@ -1,0 +1,1719 @@
+{
+ "meta": {
+  "project": "ditch-audit",
+  "file": "synthetic-criterion-specs",
+  "version": "1.0-draft",
+  "date": "2026-07-14",
+  "status": "AWAITING dk PER-ITEM SIGN-OFF (battery §B3; signing = instrument-design labor under the zero-human rule)",
+  "firewall": "NEVER expose to coder-facing contexts (cell design is hypothesis-adjacent; on coder-runner ban list)",
+  "cell_design": {
+   "i-proalpha": "pro/CS4+/alpha ×10 (CS5 ×2)",
+   "ii-contrabeta": "contra/CS4+/beta·gamma ×10 (7β/3γ, CS5 ×2)",
+   "iii-probeta": "ANTI-FOLKLORE pro/CS4+/beta ×10 (CS5 ×2)",
+   "iv-contraalpha": "ANTI-FOLKLORE contra/CS4+/alpha ×10 (CS5 ×2)",
+   "v-hedgedneutral": "hedged/underdetermined → neutral ×10 (folklore-bait topics)",
+   "vi-hedgedcs4": "understated-register CS4 ×10 (5 pro/5 contra)"
+  },
+  "provenance": "drafted by 6-cell workflow; repaired against 2 adversarial audits (validity + coverage/collision); blockers 0; codebook v1.2a D3/D4 clarifications co-derived from audit",
+  "post_signature_protocol": "dev/vault split 30/30 by seeded shuffle; vault half generated (family E) and SHA256-hashed BEFORE any P1 coder run; dev half usable in G1 revision loops"
+ },
+ "specs": [
+  {
+   "spec_id": "SYN-i-proalpha-01",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that the hypothesis of a cause external to physical reality receives positive qualitative confirmation from a purely a priori principle: positing a single external ground leaves fewer unexplained contingent facts than brute existence, and hypotheses that minimize unexplained contingency are intrinsically more credible. The load-bearing premise is this conceptual probability principle about unexplained contingency. The abstract includes one passing mention of modern cosmology framed explicitly as illustration; the deletion test must come out clean — strike the cosmological aside and the argument runs unchanged, so the type is alpha. The conclusion is stated as qualitative evidential support ('better supported', 'more credible'), not mere coherence and not a numeric claim.",
+   "topic_domain": "cosmological contingency (S1)",
+   "hedging_quota": 2,
+   "length_band": [
+    120,
+    160
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who default to beta whenever cosmological vocabulary appears, even though the empirical aside is deletable and the argument is purely conceptual.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "cosmological reference allowed only as an explicitly illustrative aside",
+    "no numeric probabilities or odds (qualitative evidential language only)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-i-proalpha-02",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "pro",
+    "d3_strength": "CS5",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract develops a purely a priori Bayesian case for an external cause of the physical universe: an invented structural-simplicity measure over hypotheses yields prior odds of at least 20 to 1 favoring an externally caused universe over brute contingency before any observation is consulted. Because no evidence is ever consulted, the posterior just is this prior, so the abstract's explicit primary thesis is a first-order on-balance verdict: an externally caused universe is more credible than brute contingency. The simplicity measure is subordinate/instrumental, not the paper's contribution, so the item is S1 (not M). No empirical datum may carry evidential weight; deleting every empirical reference leaves the derivation intact, so the type is alpha. The explicit odds figure must appear verbatim (CS5).",
+   "topic_domain": "a priori Bayesian cosmology (S1)",
+   "hedging_quota": 1,
+   "length_band": [
+    140,
+    180
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches the assumption that explicit Bayesian numbers signal empirical (beta) support — here the odds are derived from an a priori simplicity measure, so the correct type is alpha with strength CS5.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "an explicit prior-odds figure (at least 20:1 or equivalent) must appear in the abstract",
+    "no empirical premise may carry any evidential weight",
+    "the on-balance credence claim (posterior equals prior, since no evidence is consulted: an external cause is more credible than brute contingency) must be the explicit primary thesis, with the simplicity measure subordinate/instrumental so the item codes S1, not M"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-i-proalpha-03",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues on conceptual grounds alone that if physical reality has an external cause, that cause is more credibly a personal agent: a non-agential necessary cause would necessitate its effect, making the universe itself necessary, whereas only intention-based causation can yield a contingent effect from a necessary source. The load-bearing premise is the conceptual analysis of necessitation versus agency; the S1 claim (that there is an external cause) is presupposed, not defended, so the coded step is S2. Any mention of human decision-making is a decorative analogy whose deletion leaves the argument untouched (alpha). The conclusion claims positive qualitative support for the personal-agent hypothesis over impersonal alternatives.",
+   "topic_domain": "agent causation and the first cause (S2)",
+   "hedging_quota": 3,
+   "length_band": [
+    110,
+    150
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches conflation of S2 with S1 when first-cause vocabulary is prominent — the thesis actually defended is the personhood of the cause, with the external cause presupposed.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "the existence of an external cause (S1) is presupposed, never argued for",
+    "no numeric probabilities or odds"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-i-proalpha-04",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [
+    "CHAIN"
+   ],
+   "content_brief": "Framed as a reply to unnamed recent critics who charge that agential explanations of the cosmos are explanatorily empty, the abstract's primary contribution is constructive: it argues a priori that intentional explanation uniquely combines contingency-preservation with selectivity among possible outcomes, so the personal-cause hypothesis gains positive qualitative evidential support beyond merely surviving the objection. The net effect through the reply chain is pro-S2, and the abstract must make clear that the constructive evidential claim, not the rebuttal, is the paper's main thesis (hence CS4, not CS2). All premises are conceptual; no empirical or historical premise appears, so the deletion test is vacuous and the type is alpha.",
+   "topic_domain": "intentional explanation of the cosmos (S2, reply chain)",
+   "hedging_quota": 2,
+   "length_band": [
+    150,
+    200
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches miscoding of reply-chain items as CS2 defeater-rebuttal when the paper's primary contribution is a positive evidential claim that goes beyond rebutting the objection.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "the critics replied to must remain generic and unnamed",
+    "the rebuttal must be explicitly subordinate to the constructive evidential thesis",
+    "no numeric probabilities or odds"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-i-proalpha-05",
+   "target": {
+    "d1_step": "S3",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that an invented grounding-discernibility principle positively confirms the uniqueness and underived status of any ultimate ground: if there were two ultimates, their distinctness would itself be a further fact demanding a ground, contradicting their ultimacy, so hypotheses positing exactly one a se ground are qualitatively better confirmed than multi-ultimate rivals. The load-bearing premise is the discernibility-grounding principle, a piece of pure metaphysics. No empirical premise occurs anywhere, so the deletion test is vacuous and the type is alpha. The conclusion must be stated in evidential terms ('strongly favors') rather than as a bare possibility or coherence claim.",
+   "topic_domain": "aseity and uniqueness of the ultimate (S3)",
+   "hedging_quota": 0,
+   "length_band": [
+    100,
+    140
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who default S3 aseity items to CS1 coherence — the abstract's claim is positive evidential confirmation of uniqueness, not mere consistency of the concept.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no empirical content of any kind",
+    "no numeric probabilities or odds"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-i-proalpha-06",
+   "target": {
+    "d1_step": "S3",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract offers a grounding-theoretic argument that dependence orderings are more credibly well-founded than infinitely descending: it defends an invented transmission principle on which an unbounded descent of dependents transmits being to no member, and concludes that any dependence ordering, whatever it contains, is more credibly terminated in an uncreated terminus than not. The existence of dependent things is stipulated as common ground shared by every compared hypothesis, so it is non-evidential background and does not count under the deletion test (codebook §4-D4, v1.2a); the conclusion is structural, not an inference from the datum that dependents exist. The load-bearing premise is the a priori transmission principle within the formal theory of grounding, and the thesis is first-order metaphysics (S3), not a proposal about method (M). No empirical premise carries weight, so the type is alpha.",
+   "topic_domain": "grounding and well-foundedness (S3)",
+   "hedging_quota": 3,
+   "length_band": [
+    130,
+    170
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches miscoding as M (methodology of case-making) triggered by heavy explanatory-structure vocabulary, when the thesis is first-order metaphysics about an uncreated ground.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "thesis must be first-order metaphysics, not a methods or meta-level proposal",
+    "no numeric probabilities or odds",
+    "the existence of dependent things is stipulated as common ground shared by all compared hypotheses (non-evidential background; not load-bearing under the deletion test per §4-D4 v1.2a)",
+    "the conclusion must be structural (any dependence ordering is more credibly well-founded than not), not an inference drawn from the observed datum that dependent things exist"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-i-proalpha-07",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues a priori that among hypotheses about an ultimate ground's character, perfect goodness is the only non-arbitrary attribute assignment: any bounded degree of goodness would introduce an unexplained parameter, whereas maximal goodness is a natural zero-parameter limit, so the hypothesis that the ultimate is perfectly good receives positive qualitative confirmation. The load-bearing premise is the conceptual claim that arbitrary parameters lower intrinsic credibility. The thesis defended must be specifically the goodness step, with the existence of an ultimate ground presupposed rather than argued, so the coded step is S4 and not B. No empirical premise may appear; the deletion test is vacuous and the type is alpha.",
+   "topic_domain": "perfect goodness of the ultimate (S4)",
+   "hedging_quota": 4,
+   "length_band": [
+    160,
+    210
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches drift from S4 to B when divine attributes are discussed — only the goodness thesis is defended, with the rest of the ultimate's profile presupposed.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "existence of an ultimate ground is presupposed, never argued for",
+    "no numeric probabilities or odds"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-i-proalpha-08",
+   "target": {
+    "d1_step": "S8",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract defends the conditional step itself: supposing, without argument, that God raised Jesus, an invented a priori principle of unique-event identity individuation implies that a singular act of restoring one to indestructible life can be performed by no agent other than the ultimate ground itself, so the raised one is individuated as identical with that ground, and the communicative structure of such an act conceptually commits to internal differentiation within the divine life. The load-bearing premises are conceptual theses about event-individuation, identity, and communicative action; divine action is NOT framed as ratification or endorsement of Jesus's self-presentation. The resurrection functions only as a suppositional antecedent and must never be supported by testimony, documents, or historiography. Deletion test: remove all historical material and the conditional argument still runs, so the type is alpha. The conclusion claims positive qualitative support for the inference from resurrection to incarnation and Trinity.",
+   "topic_domain": "resurrection-to-incarnation-and-Trinity inference (S8)",
+   "hedging_quota": 2,
+   "length_band": [
+    140,
+    190
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches the reflex gamma coding of resurrection-themed items when the historical premise is merely suppositional and the load-bearing premises are wholly conceptual.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "the resurrection appears only as an undefended supposition — no appeal to testimony, documents, or historical evidence",
+    "no numeric probabilities or odds",
+    "the conceptual bridge must be an invented principle (e.g. unique-event individuation of divine identity); do not frame divine action as ratification or endorsement of Jesus's self-presentation (avoids the divine-signature/ratification argument)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-i-proalpha-09",
+   "target": {
+    "d1_step": "B",
+    "d2_direction": "pro",
+    "d3_strength": "CS5",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract mounts a purely a priori cumulative case for full theism as a bundled hypothesis (one personal, uncreated, perfectly good, providentially active being): an invented parameter-counting calculus assigns full theism a prior probability of approximately 0.6 against its nearest structured rivals, and this explicit figure must appear. Because no evidence is consulted, the posterior just is this prior, so the explicit primary thesis is a first-order on-balance credence claim: full theism is more credible than its nearest rivals. The parameter-counting calculus is instrumental and subordinate to that first-order claim, so the item codes B (not M). No empirical or historical datum may contribute; any mention of the world's existence is schematic and deletable, so the type is alpha. The item targets the whole bundle at once, so the step is B.",
+   "topic_domain": "cumulative a priori natural theology (B)",
+   "hedging_quota": 1,
+   "length_band": [
+    120,
+    170
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who decompose a bundled full-God cumulative case into a single step code (e.g. S1 or S3), and coders who route the invented calculus to M — the first-order credence claim about full theism is the explicit primary thesis, so the code is B.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "an explicit prior-probability value must appear in the abstract",
+    "no empirical or historical datum may carry evidential weight",
+    "the first-order on-balance credence claim about full theism (posterior equals prior, since no evidence is consulted) must be the explicit primary thesis; the parameter-counting calculus is instrumental and subordinate, so the item codes B, not M"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-i-proalpha-10",
+   "target": {
+    "d1_step": "B",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that careful conceivability of a maximal being provides defeasible positive evidence of its possibility, and that for maximal beings, evidence of possibility raises the credibility of actuality via an invented modal ascent principle — so full theism ends up more credible than not on wholly a priori grounds. The abstract must explicitly claim positive evidential support, going beyond a coherence or mere-possibility verdict, while stopping short of demonstrative proof and using no numbers. The load-bearing premises are the conceivability-to-evidence link and the modal ascent principle, both conceptual; no empirical premise appears, so the deletion test is vacuous and the type is alpha. The target is the bundled maximal-being hypothesis, so the step is B.",
+   "topic_domain": "modal-epistemic maximal-being argument (B)",
+   "hedging_quota": 2,
+   "length_band": [
+    90,
+    130
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches CS1 miscoding driven by possibility-talk — the abstract's explicit claim is positive evidential support for theism, not mere coherence or possibility.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must explicitly claim positive evidential support, not mere coherence or possibility",
+    "no numeric probabilities or odds"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-01",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that the observed architecture of biological suffering — predation, parasitism, and high juvenile mortality built into the physiology of sentient animals over deep evolutionary time — is positive evidence that any ultimate ground of reality is not perfectly good. The load-bearing premise is the observational record of this suffering's scale and apparent gratuitousness; delete that empirical premise and no case against the ultimate's goodness remains, fixing the item as beta. The move must be evidential — the data lower the probability of a perfectly good ultimate — not a claim of outright logical contradiction.",
+   "topic_domain": "problem of evil — animal/evolutionary suffering (goodness of the ultimate)",
+   "hedging_quota": 2,
+   "length_band": [
+    120,
+    175
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who code an evidential animal-suffering argument as CS1/alpha (the logical problem of evil) rather than CS4/beta.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "load-bearing premise must be observational data on biological suffering (deleting it collapses the argument: beta)",
+    "frame as evidence lowering the probability of a good ultimate, not a logical contradiction (CS4, not CS1)",
+    "no explicit numbers, probabilities, or Bayes factors"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-02",
+   "target": {
+    "d1_step": "S5",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [
+    "H"
+   ],
+   "content_brief": "The abstract reports a longitudinal empirical study tracking cohorts of earnest self-identified seekers who undertake sustained practices aimed at divine encounter, and argues that the observed pattern — a large, stable fraction reporting no encounter across years despite continued openness — is positive evidence against a good ultimate that engages in special post-creation self-disclosure to persons. The load-bearing premise is the longitudinal observational data on seeker outcomes; delete that observational premise and the argument collapses, so the item is beta rather than purely conceptual. Direction is contra the S5 thesis, and because the argument turns on hiddenness routed to special self-disclosure it carries flag H.",
+   "topic_domain": "divine hiddenness — longitudinal outcomes of earnest seekers (special divine self-disclosure)",
+   "hedging_quota": 1,
+   "length_band": [
+    110,
+    160
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who route hiddenness to S1/S2 (existence) or code it alpha, instead of S5/beta with flag H.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "target the S5 self-disclosure thesis and carry flag H (hiddenness edge anchor)",
+    "load-bearing premise must be the longitudinal observational data on earnest-seeker outcomes (beta)",
+    "no explicit numbers (CS4)",
+    "do not use the phrase 'non-resistant nonbelief' or any signature coinage from the published hiddenness literature; the empirical premise must be a distinct, invented seeker-outcome dataset"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-03",
+   "target": {
+    "d1_step": "S5",
+    "d2_direction": "contra",
+    "d3_strength": "CS5",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract reports a controlled outcome study of petitionary/intercessory prayer and argues the measured result is positive evidence against efficacious special divine action. It must state an explicit HYPOTHESIS-LEVEL figure — a Bayes factor or posterior odds favoring the no-special-action hypothesis over the efficacious-prayer hypothesis — and that thesis-level number is what carries the argument; a bare data-level statistic (effect size, relative risk, p-value, outcome ratio) does not satisfy CS5. The underlying trial data are load-bearing: delete them and nothing remains, so the item is beta. The explicit hypothesis-level number makes this CS5, and the direction is contra S5.",
+   "topic_domain": "petitionary/intercessory prayer efficacy (special divine action)",
+   "hedging_quota": 0,
+   "length_band": [
+    100,
+    150
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who accept a bare data-level statistic (p-value, effect size, outcome ratio) as CS5; here the load-bearing figure is a hypothesis-level Bayes factor/posterior odds comparing the two hypotheses, which is what makes the item CS5 rather than CS4.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must state an explicit hypothesis-level number — a Bayes factor or posterior odds comparing the no-special-action hypothesis with the efficacious-prayer hypothesis (a bare p-value, effect size, relative risk, or outcome ratio does not satisfy CS5)",
+    "the underlying trial data must be load-bearing (beta; deleting them leaves no argument)",
+    "the trial must be invented and generic — no named institutions, conditions, or endpoints evoking any real multi-site intercessory-prayer study; the thesis-level Bayes-factor overlay is presented as the paper's own novel analysis of the invented trial"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-04",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that the concretely observed character of physical law — blind, exceptionless, statistically uniform regularity with no trace of agent-like responsiveness or purpose-tracking — is positive evidence that the ground of physical order, if there is one, is impersonal rather than a personal agent. The load-bearing premise is the empirical description of how physical regularities actually behave; delete that observational premise and the argument does not run, fixing it as beta. The target is the personhood of the cause (S2), the direction is contra, and the reasoning is evidential rather than a conceptual claim about what a cause must be.",
+   "topic_domain": "natural theology — character of physical law (personal-agent ground)",
+   "hedging_quota": 3,
+   "length_band": [
+    130,
+    185
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who assign S1 (existence of a cause) when the item targets S2 (its personhood), or who code it alpha.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "target the personhood of the cause (S2), not the existence of a cause (S1)",
+    "load-bearing premise must be the observed behavior of physical law (beta)",
+    "no explicit numbers (CS4)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-05",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract marshals observational cosmological data — for instance measured spatial flatness and the specific character of the earliest observable spectrum — as fitting an invented self-sufficient origin model on which physical reality's earliest structure is internally determined by a closed causal loop (a self-normalizing initial sector) and requires no external cause, and treats that observational fit as positive evidence against S1. The load-bearing premise is the observational data supporting the self-sufficient model; delete it and only untethered metaphysics remains, so the argument fails and the item is beta. The direction is contra the S1 thesis (an external cause or ground of physical reality), and the claim is evidential rather than a neutral survey of models.",
+   "topic_domain": "cosmology — origin of physical reality (external cause/ground)",
+   "hedging_quota": 2,
+   "length_band": [
+    140,
+    195
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who read a self-originating-cosmology item as neutral model-comparison or as alpha, rather than contra-S1/CS4/beta.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "direction must be contra S1 (against an external cause/ground), not a neutral comparison",
+    "load-bearing premise must be observational cosmological data (beta)",
+    "no explicit numbers (CS4)",
+    "the self-sufficiency mechanism must be invented (a closed causal loop or self-normalizing initial sector); do not use 'boundaryless'/'no-boundary' phrasing or evoke any recognizable real cosmological proposal"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-06",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [
+    "CHAIN"
+   ],
+   "content_brief": "This is a reply-chain item: a soul-making style theodicy has claimed that observed suffering is justified because it reliably yields compensating moral or spiritual growth. The abstract presents new observational data — categories of suffering that produce no such growth (pre-conscious infant suffering, deaths that foreclose any developmental arc, large-scale ecological waste), which the theodicy predicts should be rare or absent — and argues that their presence both defeats the theodicy and stands as positive evidence against a perfectly good ultimate. The positive-evidence-against-S4 claim is the explicit primary/closing thesis; the defeat of the theodicy is explicitly subordinate to it. Net direction on the S4 thesis is contra; the load-bearing premise is the observed no-growth suffering (delete it and nothing remains, so beta); carry flag CHAIN and make the net anti-S4 effect explicit.",
+   "topic_domain": "theodicy debate — soul-making reply chain (goodness of the ultimate)",
+   "hedging_quota": 4,
+   "length_band": [
+    150,
+    210
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who let the theodicy framing flip the net direction to pro/neutral, missing the contra-S4 net effect of the reply chain.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must be a reply chain whose net effect on S4 is contra (flag CHAIN)",
+    "load-bearing premise must be the observed no-growth suffering cases (beta)",
+    "no explicit numbers (CS4)",
+    "the positive-evidence-against-S4 claim must be the explicit primary/closing thesis, with the defeat of the soul-making theodicy explicitly subordinate to it (guards against a CS2 reading)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-07",
+   "target": {
+    "d1_step": "B",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [
+    "RE"
+   ],
+   "content_brief": "The abstract argues that empirical findings about religious experience — systematically incompatible cross-cultural object-claims together with reproducible neural correlates that arise without any transcendent object — lower the probability of full theism itself: on theism with veridical self-disclosure such systematically conflicting and object-independent experiences are unexpected, whereas they are expected on naturalism, so the data are positive evidence against the bundled full-God hypothesis — not merely that the experiences fail to be veridical. The load-bearing premise is this observational and neuroscientific data; delete it and the argument collapses, fixing the item as beta. Because the argument concerns religious experience bearing on the bundled full-God target, the D1 target is B and it carries flag RE; the direction is contra.",
+   "topic_domain": "religious experience / neuroscience of religion (bundled full-God target)",
+   "hedging_quota": 1,
+   "length_band": [
+    125,
+    175
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who route a religious-experience item to a single step (e.g. S5) or code it pro, and coders who read non-veridicality as a mere undercutting defeater (CS2) — the abstract claims the findings lower the probability of full theism itself, so the code is B/contra/CS4/beta with flag RE.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "D1 target must be B (bundled full-God target) reached via religious experience (flag RE)",
+    "load-bearing premise must be observational/neuroscientific data on religious experience (beta)",
+    "no explicit numbers (CS4)",
+    "the conclusion must be that the findings lower the probability of full theism itself (unexpected on theism with veridical self-disclosure, expected on naturalism), not merely that the experiences are non-veridical (guards against a CS2 undercutting reading)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-08",
+   "target": {
+    "d1_step": "S7",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "gamma"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues, from textual-critical analysis of the earliest documentary strata, that the empty-tomb and appearance narratives are late accretions absent from the earliest surviving layers and bearing redactional marks of legendary growth, and that this documentary pattern is positive historical evidence against a bodily resurrection. The load-bearing premise is the manuscript-dating and redaction evidence — a historical-documentary premise; delete it and the argument fails, so the item is gamma rather than beta. The direction is contra S7, and the move is positive evidence against the event itself, not a mere rebuttal of an apologetic argument.",
+   "topic_domain": "resurrection historiography — textual criticism (bodily resurrection)",
+   "hedging_quota": 2,
+   "length_band": [
+    140,
+    190
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who code a documentary/redaction resurrection argument as beta, or as CS2 rebuttal, instead of gamma/CS4 positive evidence against S7.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "load-bearing premise must be manuscript-dating/redaction evidence (historical-documentary: gamma)",
+    "must be positive historical evidence against the resurrection, not a rebuttal of an apologetic argument (CS4, not CS2)",
+    "no explicit numbers (CS4)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-09",
+   "target": {
+    "d1_step": "S7",
+    "d2_direction": "contra",
+    "d3_strength": "CS5",
+    "d4_type": "gamma"
+   },
+   "flags": [],
+   "content_brief": "The abstract runs an explicitly quantitative historical argument: from a documented catalogue of comparable ancient resuscitation and apotheosis claims and their attested outcomes, it fixes an explicit prior and likelihood ratio and derives a specific low posterior (or states a specific Bayes factor) for a bodily resurrection. The item must contain an explicit number, and that quantified documentary base rate is load-bearing; delete the historical catalogue and nothing remains, so the item is gamma. The explicit figure makes it CS5 and the direction is contra S7.",
+   "topic_domain": "resurrection historiography — Bayesian history (bodily resurrection)",
+   "hedging_quota": 1,
+   "length_band": [
+    110,
+    165
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who code a numeric historical-base-rate argument as CS4, or as beta, instead of CS5/gamma.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must state an explicit number (posterior probability, odds, or Bayes factor)",
+    "load-bearing premise must be the documented historical base rate of comparable ancient claims (historical-documentary: gamma)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-ii-contrabeta-10",
+   "target": {
+    "d1_step": "S6",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "gamma"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues, from philological and redaction evidence, that key 'predictive' oracles in the Hebrew prophetic corpus were composed or edited after the events they purport to foretell — linguistic-stratum and manuscript evidence indicating post-event composition — and that this documentary finding is positive evidence against the Hebrew prophetic tradition being an authentic bearer of special revelation. The load-bearing premise is the textual-dating and philological evidence; delete it and the argument collapses, so the item is gamma. The target is S6 specifically, not the resurrection or general special action, and the direction is contra.",
+   "topic_domain": "Hebrew Bible prophecy — redaction/philological criticism (authentic revelation bearer)",
+   "hedging_quota": 3,
+   "length_band": [
+    130,
+    185
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Catches coders who assign S7 or S5 to a prophecy-authenticity item that targets S6, or who code the documentary argument as beta.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "target must be S6 (authenticity of the Hebrew prophetic tradition), not S7 or S5",
+    "load-bearing premise must be philological/textual-dating evidence (historical-documentary: gamma)",
+    "no explicit numbers (CS4)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-01",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that the measured extreme orderliness of the universe's earliest observable state (inferred from background-radiation uniformity data) is best explained by a cause external to physical reality, since every surveyed internal physical mechanism has been observed to fail to produce such states. The load-bearing premise is the observational measurement of the early low-entropy condition: if that measurement premise were deleted, only a generic causal principle would remain, which by itself yields no conclusion, so the argument collapses (beta). The conclusion must be stated in positive evidential wording ('better explains', 'more probable than not'), never as mere possibility or permissibility.",
+   "topic_domain": "S1 — physical cosmology: early-universe thermodynamics",
+   "hedging_quota": 1,
+   "length_band": [
+    120,
+    160
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch coding D4 as alpha because first-cause/cosmological topic cues stereotypically signal a priori argumentation.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "conclusion must use positive evidential wording, not possibility or permissibility wording",
+    "no explicit probability, odds, or Bayes-factor figures"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-02",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that three independent observational programs — relic-radiation spectrum measurements, primordial element-abundance surveys, and deep galaxy counts, all described generically — each disconfirm eternal-past cosmological models, and that this convergent disconfirmation makes the thesis that physical reality has an external cause more probable than not. The load-bearing premise is the trio of observational results: delete it and the eternal-past rivals stand unchallenged, leaving the external-cause thesis with no support at all, so the argument collapses (beta). Although rival models are engaged, the abstract's net claim must be a positive evidential verdict for the step thesis, not merely the rebuttal of an objection.",
+   "topic_domain": "S1 — physical cosmology: multi-dataset consilience on a finite past",
+   "hedging_quota": 2,
+   "length_band": [
+    140,
+    180
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch downgrading D3 to CS2 because rival models are engaged — the net claim is positive evidential (CS4), not a defeater rebuttal.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no named observatories, satellites, or collaborations",
+    "no explicit probability, odds, or Bayes-factor figures"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-03",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract presents measurements showing that the parameter region permitting stable, information-processing agents and the much smaller region permitting those agents to communicate intersubjectively (shared, low-noise signaling channels) overlap almost exactly, and argues that this measured double coincidence positively supports the hypothesis that the cause of physical reality is a personal agent who intends a community of communicating minds. The load-bearing premise is the quantified overlap of the agency and intersubjective-communication windows: without that measurement there is no coincidence to explain and the argument collapses (beta). The existence of some external cause is treated as background; the sole thesis defended is the agency of that cause (S2).",
+   "topic_domain": "S2 — invented double coincidence: stable-agent window vs intersubjective-communication window",
+   "hedging_quota": 1,
+   "length_band": [
+    110,
+    150
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch coding D1 as S1 on design-argument topic cues when the defended thesis is the personhood/agency of the cause (S2).",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "existence of an external cause must be framed as background, agency as the sole thesis",
+    "no explicit probability, odds, or Bayes-factor figures",
+    "the coincidence class must be invented (overlap of conditions for stable agents and for intersubjective communication); do not use the habitability–discoverability/measurability overlap of the real fine-tuning literature"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-04",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "pro",
+    "d3_strength": "CS5",
+    "d4_type": "beta"
+   },
+   "flags": [
+    "CHAIN"
+   ],
+   "content_brief": "The abstract opens with a critic's objection that agent hypotheses gain no likelihood advantage from cosmological data because the relevant likelihoods cannot be estimated, then argues from two updated observational datasets that the likelihoods can now be estimated and jointly yield an explicit Bayes factor (an order-of-magnitude figure such as roughly 500 to 1 — the generator may vary the value but MUST state one explicit number) favoring a personal-agent cause over the chance hypothesis. The net effect through the reply chain is pro-S2: the objection is answered and a positive quantitative evidential claim is advanced. The load-bearing premise is the dataset-derived likelihood estimates: delete the data premise and neither the Bayes factor nor the reply survives, so the argument collapses (beta).",
+   "topic_domain": "S2 — Bayesian confirmation from cosmological datasets: agency vs chance",
+   "hedging_quota": 0,
+   "length_band": [
+    150,
+    200
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch reversing D2 to contra because the abstract foregrounds a critic's objection — the net effect through the reply chain is pro.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must state one explicit Bayes factor or odds numeral",
+    "must open from the critic's objection and close with the author's pro verdict"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-05",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that the observed functional integration of physical order — several independent, separately measured regularities that must jointly co-obtain for any goal-directed system to exist — fits an intending agent-cause better than an impersonal principle, and that this convergent qualitative pattern favors agency. The evidential weight comes from the joint, cross-regularity integration, NOT from any single measured parameter being surprisingly narrow or small on the chance hypothesis. The load-bearing premise is the observed multi-regularity integration: delete it and no pattern remains, so the argument collapses (beta). The comparison is stated qualitatively with no numerals; the sole thesis is the agency of the cause (S2), with the existence of an external cause treated as background.",
+   "topic_domain": "S2 — functional integration across independently measured regularities (qualitative agent-vs-impersonal comparison)",
+   "hedging_quota": 2,
+   "length_band": [
+    120,
+    170
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch upgrading D3 to CS5 on comparative-likelihood language — comparison without explicit numbers is CS4 — while avoiding the single-parameter surprise-versus-chance move of worked example WE7.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no probability, odds, or Bayes-factor figures, and no numeral quantifying any parameter",
+    "the surprise/likelihood contrast must be explicit but qualitative, resting on cross-regularity functional integration",
+    "no synthetic item may share both the 4-tuple and the surface move of a coder-prompt worked example; this item must not use the single-measured-parameter surprise-versus-chance move of worked example WE7"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-06",
+   "target": {
+    "d1_step": "S5",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract reports a prospective registry of contemporary, medically documented recoveries meeting pre-set inexplicability criteria, and argues that the observed pattern — tight temporal locking of recoveries to specific petitionary-prayer events and clustering beyond spontaneous-remission expectations — is better explained by particular divine action after creation than by any surveyed natural hypothesis. The load-bearing premise is the present-day clinical case-series data: delete it and only the bare conceptual possibility of special action remains, which supports nothing, so the argument collapses (beta). The documentation must read as ongoing clinical observation, not archival testimony, and the thesis must be special action specifically (S5), not generic theism.",
+   "topic_domain": "S5 — medically documented recoveries and petitionary prayer (prospective case series)",
+   "hedging_quota": 3,
+   "length_band": [
+    160,
+    210
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch coding D4 as gamma because 'documented cases' sounds archival — contemporary medical observation is empirical (beta), not historical-documentary.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "cases must be contemporary and clinically documented, not historical or archival",
+    "no real shrines, hospitals, or registries named; no explicit probability figures"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-07",
+   "target": {
+    "d1_step": "S7",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract stipulates the content of the early appearance reports as common ground and does its novel work with experimental and clinical findings on hallucination phenomenology: measured bereavement hallucinations are individual, brief, and mono-modal, which empirically mismatches the stipulated collective, extended, multimodal profile of the reported appearances, so the leading naturalistic rival is disconfirmed and bodily resurrection is claimed to be the best explanation of that stipulated profile. Per codebook §4-D4 (v1.2a) the stipulated reports are non-load-bearing common ground; the type follows the novel differentiating premise, the psychological-science findings, which are empirical (beta) — delete them and the argument can no longer discriminate resurrection from hallucination. The conclusion must be framed as the best explanation of the stipulated appearance-profile, conditional on the reports as common ground, not a categorical verdict that treats the reports as fresh evidence.",
+   "topic_domain": "S7 — experimental psychology of hallucination vs the appearance-report profile",
+   "hedging_quota": 2,
+   "length_band": [
+    140,
+    190
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch coding D4 as gamma on resurrection topic cues when the load-bearing premise is experimental psychology, not historical-documentary evidence.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "appearance reports must be framed as stipulated common ground, not defended",
+    "no explicit probability, odds, or Bayes-factor figures",
+    "per codebook §4-D4 (v1.2a) the stipulated reports are non-load-bearing common ground; the type follows the novel differentiating premise, the empirical hallucination-phenomenology data (beta)",
+    "the conclusion must be framed as the best explanation of the stipulated appearance-profile given the reports as common ground (conditional on them), not a categorical verdict treating the reports as fresh evidence"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-08",
+   "target": {
+    "d1_step": "S5",
+    "d2_direction": "pro",
+    "d3_strength": "CS5",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract reports a statistical analysis of an invented class of documented material-provision events — independently audited, anomalous replenishments of scarce resources recorded under controlled inventory conditions across many unconnected communities — and concludes the data favor particular divine action over the chance-plus-ordinary-cause hypothesis. It must state exactly one explicit HYPOTHESIS-LEVEL number: a Bayes factor or posterior odds comparing the special-divine-action hypothesis with the chance/ordinary-cause hypothesis (a bare p-value, effect size, or data-pattern odds does not satisfy CS5). The load-bearing premise is the statistical dataset: delete it and no pattern remains, so the argument collapses (beta). The surrounding prose may be hedged, but the thesis-level numeric claim stands unqualified. The item concerns documented-provision special action, NOT prayer efficacy, and is a population-level statistical move distinct from a case-series argument.",
+   "topic_domain": "S5 — statistical study of invented documented material-provision events vs chance (special divine action)",
+   "hedging_quota": 3,
+   "length_band": [
+    150,
+    200
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch coders who accept a data-pattern statistic (e.g. a p-value) as CS5 — the load-bearing figure must be a hypothesis-level Bayes factor/posterior odds — and to diversify the S5 topic spread away from prayer/recovery.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must state exactly one explicit hypothesis-level number — a Bayes factor or posterior odds comparing special divine action with the chance/ordinary-cause hypothesis (a bare p-value, effect size, or data-pattern odds does not satisfy CS5)",
+    "the provision events, communities, and any auditing bodies must be invented, generic, and unnamed; the item must not concern prayer efficacy",
+    "the events must be contemporary and independently documented, not historical or archival"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-09",
+   "target": {
+    "d1_step": "S7",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract stipulates as common ground the reported circumstances of Jesus's execution, death, and burial, and does its novel work with contemporary experimental and clinical findings on human survival physiology and post-mortem change — controlled studies establishing the physiological limits after which spontaneous recovery from the documented trauma and interval is biologically impossible — arguing by inference to the best explanation that, given the stipulated reports, a genuine bodily raising better explains the reported outcome than the leading apparent-death/swoon rival, which the experimental data exclude. The sole load-bearing (novel, differentiating) premise is the contemporary survival-physiology results, which are uncontroversially contemporary-empirical (beta); the stipulated reports are non-load-bearing common ground per §4-D4 (v1.2a). No burial artifact, relic, cloth, image, or provenance claim appears. The conclusion targets the bodily resurrection of Jesus specifically (S7).",
+   "topic_domain": "S7 — contemporary survival-physiology limits versus the apparent-death rival",
+   "hedging_quota": 1,
+   "length_band": [
+    130,
+    180
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch coding D1 as S5 (generic miracle) or D4 as gamma (provenance/historical); here the target is specifically S7 and the sole load-bearing premise is contemporary empirical physiology, with the death/burial reports stipulated as common ground.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no burial artifact, relic, cloth, image-formation motif, or provenance claim may appear (avoids the Shroud-of-Turin collision)",
+    "no explicit probability, odds, or Bayes-factor figures",
+    "the reported death and burial circumstances are stipulated common ground (non-load-bearing per §4-D4 v1.2a); the sole load-bearing premise is uncontroversially contemporary-empirical survival-physiology data (beta)",
+    "the conclusion must target the bodily resurrection of Jesus specifically (S7), framed as the best explanation of the stipulated reports"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iii-probeta-10",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract recounts, in invented generic terms, that an externally-caused-origin model formulated decades earlier entailed a specific then-untested observational signature in the relic radiation, that a later satellite-based measurement found the signature, and argues that this confirmed novel prediction provides genuine positive evidential support for the thesis that physical reality has an external cause. The load-bearing premise is the later confirming measurement: delete it and only an untested prediction remains, so the argument collapses (beta). The abstract must be saturated with hedging (four hedging expressions) yet still assert an unmistakable positive evidential verdict such as 'confirms' or 'renders more probable' — the hedges qualify scope and modesty, never the evidential claim itself.",
+   "topic_domain": "S1 — confirmed novel prediction in observational cosmology",
+   "hedging_quota": 4,
+   "length_band": [
+    170,
+    220
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Designed to catch downgrading D3 to CS1 or CS3 under a heavily hedged register when the load-bearing verdict is positive evidential (CS4).",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "prediction-confirmation episode must be invented, not a recognizable real episode from the history of cosmology",
+    "no explicit probability, odds, or Bayes-factor figures"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-01",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues, from an analysis of the concept of explanation alone, that positing an external cause of physical reality as a whole is explanatorily self-undermining: whatever explains the totality must either fall under a shared structure (making it internal) or 'explain' in no recognizable sense, so the posit adds an unexplained entity for zero explanatory gain, and by a stated a priori parsimony principle the no-external-cause hypothesis is on balance more credible. The load-bearing premise is the conceptual analysis of what explaining consists in, combined with the a priori parsimony principle. No empirical premise appears anywhere, so the deletion test finds nothing empirical or historical to remove and the argument stands whole — alpha. The conclusion must be a positive comparative-credibility verdict against S1, not a mere coherence worry.",
+   "topic_domain": "S1 — causal explanation of physical reality (cosmological-argument dialectic)",
+   "hedging_quota": 1,
+   "length_band": [
+    110,
+    150
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches the folklore reflex that contra-direction evidential language implies beta: here the on-balance credibility claim against S1 is carried by pure conceptual analysis.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no empirical, observational, or historical premise may carry any argumentative weight",
+    "the conclusion must be an on-balance comparative-credibility verdict against an external cause, not a coherence or possibility complaint"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-02",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "contra",
+    "d3_strength": "CS5",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract runs a purely a priori Bayesian argument against an external cause of physical reality: it states a complexity-weighted prior-setting principle (each independent metaphysical posit beyond the physical totality at least halves prior credibility), applies it to the external-cause hypothesis, and concludes with explicit odds of at least 4 to 1 against S1, noting that since no observation is invoked the posterior just is this prior. The load-bearing premise is the stated a priori prior-setting principle; the explicit number must be derived from it and from nothing empirical. There is no empirical or historical premise to delete, so the deletion test leaves the argument fully intact — alpha despite the quantitative apparatus.",
+   "topic_domain": "S1 — a priori Bayesian priors on a first cause",
+   "hedging_quota": 0,
+   "length_band": [
+    120,
+    160
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches coders who treat any explicit probability or odds as an empirical signal and code beta (or demote to CS4) on seeing numbers.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must contain one explicit numerical odds or probability figure (e.g. at least 4 to 1 against) derived from the stated a priori principle, not from any data",
+    "no observational, scientific, or historical premise may appear in any evidential role"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-03",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues from conceptual requirements on agency — that intending, deliberating, and choosing conceptually presuppose alternatives, temporal ordering, and a contrast between agent and environment — that a cause standing outside physical reality lacks the preconditions for personhood, concluding it is more plausible than not that any first cause is non-personal. The load-bearing premise is the conceptual analysis of what agency requires; no findings from psychology or cognitive science may be cited as evidence. With no empirical premise present, the deletion test removes nothing and the argument still runs — alpha. Direction is contra S2 (the cause-is-a-personal-agent thesis) while remaining neutral about S1 itself.",
+   "topic_domain": "S2 — conceptual requirements on personal agency",
+   "hedging_quota": 2,
+   "length_band": [
+    100,
+    140
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches topic-to-code shortcuts that map agency-of-the-first-cause discussion onto pro direction or onto beta via cognitive-science associations.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no psychology, neuroscience, or cognitive-science finding may be cited",
+    "the verdict must be a more-plausible-than-not claim that the first cause, if any, is non-personal, without disputing that there is a first cause"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-04",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [
+    "CHAIN"
+   ],
+   "content_brief": "The abstract replies to a fictitious, unnamed recent a priori case claiming that only agent-causation can terminate the explanatory regress; after rebutting that case, the author advances a positive counter-thesis: personalizing the first cause multiplies conceptual degrees of freedom (beliefs, desires, choice) with no explanatory return, so an impersonal necessitating ground is better supported a priori. The net direction through the reply chain is contra S2 and must be explicit in the closing claim — the paper goes beyond a defeater rebuttal (CS2) to assert that the rival impersonal hypothesis is more credible (CS4). Both the opposed argument and the reply are wholly conceptual, so the deletion test finds no empirical or historical premise to delete — alpha.",
+   "topic_domain": "S2 — regress-termination and agent-causation dialectic (reply chain)",
+   "hedging_quota": 1,
+   "length_band": [
+    140,
+    180
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches coding a reply-chain contra piece as CS2 defeater-rebuttal when the net claim advances to a positive comparative-credibility verdict (CS4).",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "the opposed position must be fictitious and unnamed, and itself purely a priori",
+    "the net direction after the reply chain must be unmistakably contra the personal-agent thesis, stated as a better-supported comparison rather than a mere rebuttal"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-05",
+   "target": {
+    "d1_step": "S3",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract attacks the uniqueness component of the uncreated-ground thesis: conceptual analysis shows nothing in the notion of aseity secures singularity, and a stated a priori symmetry consideration over the space of admissible ground-configurations (none, one, many) renders 'exactly one unique a se ground' less credible than the disjunction of its rivals. The load-bearing premise is the symmetry argument over conceptual space — explicitly not an incoherence charge against aseity itself. The abstract cites no observation and no textual-historical evidence, so the deletion test leaves the argument untouched — alpha. The verdict must be a comparative-credibility claim (less credible than its rivals), not a bare possibility claim.",
+   "topic_domain": "S3 — aseity and the uniqueness of the ultimate ground",
+   "hedging_quota": 3,
+   "length_band": [
+    120,
+    160
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches defaulting a priori metaphysics to CS1 coherence-talk when the stated conclusion is a positive probability comparison against the step thesis.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "the argument must target uniqueness specifically, granting arguendo that some a se ground is coherent",
+    "the verdict sentence must use an explicit less-credible-than (or equivalent comparative) formulation despite the hedges elsewhere"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-06",
+   "target": {
+    "d1_step": "S3",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues from the logic of grounding — transitivity plus the coherence of non-well-founded structures — that an unending dependence order is the more theoretically conservative hypothesis than positing a brute uncreated terminus, and concludes that among admissible ground-structures an uncreated terminus is the less well-supported option. The load-bearing premise is the a priori conservativeness comparison between grounding structures. Exactly one passing allusion to physicists' talk of ever-deeper layers may appear as illustrative color: it must be deletable without weakening any premise, and that is precisely how the deletion test must behave — remove the allusion and the argument runs unchanged, so the item codes alpha, not beta. The conclusion must be phrased so as not to reproduce worked example WE8's conclusion sentence or its independence-excludes-relations move.",
+   "topic_domain": "S3 — grounding regress versus an uncreated terminus",
+   "hedging_quota": 1,
+   "length_band": [
+    150,
+    200
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches beta-coding triggered by an inessential physics mention that fails the deletion test in the alpha direction (the empirical color does no argumentative work).",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "at most one empirical allusion, strictly illustrative, syntactically detachable, and doing no evidential work",
+    "the conclusion must rank an unending dependence order as the more theoretically conservative, better-supported hypothesis (so an uncreated terminus is the less well-supported option), and must not reproduce worked example WE8's conclusion sentence or its independence-excludes-relations move",
+    "no synthetic item may share both the 4-tuple and the surface move of a coder-prompt worked example; differentiate from WE8 (S3/contra/CS4/alpha)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-07",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract mounts a purely modal, a priori argument against the perfect goodness of the ultimate: analysis of moral perfection shows a perfectly good ultimate would have decisive reasons not to actualize any world whose value-structure so much as permits gratuitous disvalue, while the concept of creaturely contingency entails that every creatable world has such a structure; hence an ultimate that grounds a contingent world is more probably not perfectly good. No actual instance of suffering and no observational claim may be cited — the argument runs entirely from conceptual possibility, so the deletion test finds nothing empirical to remove (alpha), even though the piece superficially resembles familiar evidential arguments. Despite the mandated four hedges, the closing verdict must remain a clear more-probable-than-not claim against S4.",
+   "topic_domain": "S4 — modal/a priori axiology of perfect goodness and creation",
+   "hedging_quota": 4,
+   "length_band": [
+    130,
+    170
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches the evidential-problem-of-evil reflex: S4-contra plus probabilistic language coded beta by topic association despite the total absence of any actual-evil premise.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no actual-world evil, suffering case, statistic, or observational claim may appear as a premise",
+    "all four hedges must attach to subsidiary claims; the final verdict sentence must be an unhedged comparative-probability claim against perfect goodness"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-08",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "contra",
+    "d3_strength": "CS5",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues from a stated indifference principle over the conceptual space of value-profiles available to a metaphysically ultimate being: axiological perfection is a single privileged point among indefinitely many admissible profiles, no a priori consideration privileges it, and the abstract therefore assigns an explicit probability of at most 0.1 to the ultimate's being perfectly good. The load-bearing premise is the a priori indifference principle over conceptual space; the number must be derived from that principle, with no observation, survey, or historical datum appearing anywhere. The deletion test consequently has nothing empirical to delete and the argument stands whole — alpha with explicit quantification (CS5).",
+   "topic_domain": "S4 — indifference-based priors over divine value-profiles",
+   "hedging_quota": 0,
+   "length_band": [
+    90,
+    130
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches the CS5-implies-empirical folklore (numbers coded beta) and, secondarily, failure to promote CS4 to CS5 when an explicit probability is present.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must state one explicit numerical probability (e.g. at most 0.1) derived from the stated a priori indifference principle, not from data",
+    "no empirical or historical premise of any kind"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-09",
+   "target": {
+    "d1_step": "S8",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract grants, purely for the sake of argument, that Jesus rose bodily, and then argues on conceptual grounds that the inference from resurrection to incarnation-plus-Trinity fails: the event is conceptually compatible with several rival metaphysical readings (exalted-creature vindication, prophetic sign without any identity claim), and an a priori weighing of these interpretive alternatives makes the incarnational-Trinitarian reading less probable than its rivals. The load-bearing premise is the conceptual gap between an event and its doctrinal interpretation; no testimony is weighed and no sources are assessed, and the granted historical premise does zero evidential work — delete every historical detail and the argument about the entailment runs unchanged, so the item codes alpha, not gamma. Net direction is contra S8 while remaining silent on the truth of S7.",
+   "topic_domain": "S8 — the inference from a resurrection event to incarnation and Trinity",
+   "hedging_quota": 2,
+   "length_band": [
+    160,
+    220
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches gamma-by-topic folklore: resurrection vocabulary coded gamma although the historical premise is granted arguendo and carries no evidential weight.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "the resurrection must be explicitly granted for the sake of argument, with no weighing of testimony, documents, or sources",
+    "the abstract must take no stand on whether the resurrection actually occurred (contra S8, silent on S7)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-iv-contraalpha-10",
+   "target": {
+    "d1_step": "S8",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues from the logic of identity and counting that the doctrinal package S8 asserts — the risen one numerically identical with God while God is triune — carries an a priori cost on every admissible precisification of 'is God': strict identity breeds contradiction, while relative-identity or constitution readings buy consistency only with ad hoc machinery; weighing these options, the package comes out less credible than a simple non-incarnational alternative. The conclusion must be a positive comparative-credibility verdict, not a bare inconsistency charge — that contrast is the point of the item (CS4, not CS1). The argument uses only conceptual and logical resources, so the deletion test finds no empirical or historical premise to remove — alpha.",
+   "topic_domain": "S8 — identity logic of the incarnation-plus-Trinity package",
+   "hedging_quota": 1,
+   "length_band": [
+    110,
+    150
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Catches demotion of a positive comparative-credibility verdict to CS1 merely because the argumentative machinery is formal identity logic.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "the conclusion must compare the doctrinal package unfavorably against a named-in-kind rival reading (less credible than), not merely allege inconsistency",
+    "no historical, textual, or credal-documentary evidence may be invoked"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-01",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "NA"
+   },
+   "flags": [],
+   "content_brief": "The abstract stages the strongest incompatibility-form argument (that suffering is at odds with perfect goodness) against the strongest orthogonality-form response (that facts of suffering are inert with respect to the ultimate's goodness) and diagnoses that the two families rest their disagreement on a single shared, unargued assumption about whether value-justifying structure would be humanly discernible. It advances no first-order argument of its own, so no premise is load-bearing and the deletion test is inapplicable (d4=NA): removing either staged position shortens the diagnosis, not an argument. The abstract must contain an explicit sentence declining to adjudicate, so that despite the evil/suffering topic the text licenses neither pro nor contra on S4. It must not use worked example WE9's classify-into-families-and-list-open-questions shape.",
+   "topic_domain": "S4 evil/suffering — diagnosis of a shared contested assumption between two argument-families",
+   "hedging_quota": 2,
+   "length_band": [
+    110,
+    160
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder sees an evil/suffering topic and auto-codes contra S4 by prior although the text licenses no direction.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must include an explicit non-endorsement sentence declining to adjudicate between the staged positions",
+    "no numeric probabilities, odds, or Bayes factors",
+    "no synthetic item may share both the 4-tuple and the surface move of a coder-prompt worked example; this item must not use worked example WE9's classify-into-families-and-list-open-questions shape — it diagnoses a single shared contested assumption between two staged argument-families"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-02",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract weighs an invented evidential argument from the cross-species distribution and intensity of suffering against an invented empirical counter-argument that the measures of 'gratuitousness' used in such studies are observationally confounded (e.g., systematic under-observation of compensating ecological and behavioral goods), and concludes explicitly that current evidence underdetermines any verdict on divine perfect goodness (non liquet). Both weighed sides rest on empirical premises — comparative observational facts about suffering, and observational facts about measurement confounds — so d4=beta: delete the empirical premises and the entire weighing dissolves, with no residual conceptual argument remaining. The abstract endorses neither side; its only conclusion is unresolvedness, fixing d2=neutral and d3=NA.",
+   "topic_domain": "S4 evil/suffering — empirical distribution of animal suffering",
+   "hedging_quota": 3,
+   "length_band": [
+    130,
+    190
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder converts the explicit non liquet into contra S4 (with CS4) merely because the weighed argument is an evidential argument from suffering.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "closing sentence must state the underdetermination verdict, not a lean toward either side",
+    "no numeric probabilities, odds, or Bayes factors",
+    "both weighed sides must rest on observational/empirical premises (the pro side on suffering-distribution data, the counter side on empirical measurement-confound data) so the deletion test yields beta cleanly"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-03",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "NA"
+   },
+   "flags": [],
+   "content_brief": "The abstract is a third-person survey OF a three-round literature exchange — an evidential argument from gratuitous-seeming suffering, a skeptical rejoinder about limits on value-detection, and a counter-rejoinder about the moral-epistemic costs of that skepticism — mapping what each round concedes and what remains contested, and expressly declining to adjudicate. As a survey it advances no premise of its own, so the deletion test is inapplicable and d4=NA; and per codebook §11 review/survey pieces map to neutral. It is NOT itself a move in the chain, so it carries no CHAIN flag; the abstract's own contribution is a scorecard of open questions, not a verdict, so d2=neutral.",
+   "topic_domain": "S4 evil/suffering — survey of a reply-chain on gratuitous suffering and skeptical rejoinders",
+   "hedging_quota": 2,
+   "length_band": [
+    140,
+    200
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder assigns a CHAIN flag or reads a direction from the last speaker in the surveyed exchange; the piece is a neutral third-person survey (review/survey → neutral, §11), not a move in the chain.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "the exchange must be attributed to unnamed generic disputants (e.g., 'proponents', 'critics'), never to identifiable figures",
+    "must include an explicit refusal-to-adjudicate sentence",
+    "this is a third-person survey of the exchange, not itself a move in it — it must not be codable as a reply-chain item (no CHAIN flag)",
+    "must not use worked example WE9's classify-into-families-and-list-open-questions shape — the survey maps one three-round exchange's concessions and residual disputes round by round, not a family taxonomy of the literature"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-04",
+   "target": {
+    "d1_step": "S5",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "NA"
+   },
+   "flags": [
+    "H"
+   ],
+   "content_brief": "The abstract constructs a logical-space map of candidate explanations of divine silence — constraints internal to relationship formation, human cognitive or affective limits, developmental-stage accounts, and the nonexistence of a self-disclosing agent — organized by which auxiliary assumptions each explanation requires. It argues for no cell of the map and states that the map itself is neutral among them; because no argument is advanced, no premise is load-bearing, the deletion test is inapplicable, and d4=NA. The hiddenness topic routes to S5 via flag H, but the text must not be resolvable into any direction on divine special action.",
+   "topic_domain": "S5 hiddenness — logical-space mapping of explanations of divine silence",
+   "hedging_quota": 3,
+   "length_band": [
+    100,
+    150
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder maps the hiddenness topic to contra S5 by prior instead of reading the verdict-free logical-space map.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must include an explicit sentence that the map does not favor any explanation",
+    "no numeric probabilities, odds, or Bayes factors"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-05",
+   "target": {
+    "d1_step": "S5",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "beta"
+   },
+   "flags": [
+    "H"
+   ],
+   "content_brief": "The abstract weighs an invented argument that demographic patterns of nonresistant nonbelief tell against ongoing divine self-disclosure, against an invented reply that measures of 'openness to belief' are empirically confounded, and concludes with an explicit non liquet: current evidence cannot adjudicate. The load-bearing premise is empirical — survey-style demographic facts about the distribution of nonbelief across populations — so d4=beta: delete the demographic premise and the whole weighing dissolves, leaving no residual conceptual argument. The abstract's sole verdict is underdetermination, so d2=neutral and d3=NA despite the contested topic.",
+   "topic_domain": "S5 hiddenness — demographics of nonresistant nonbelief",
+   "hedging_quota": 4,
+   "length_band": [
+    130,
+    185
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder codes contra S5 with CS4 from the nonbelief-demographics topic although the abstract's only verdict is underdetermination.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "demographic facts must be described qualitatively — no numeric probabilities, odds, or Bayes factors",
+    "closing sentence must state that the evidence underdetermines a verdict"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-06",
+   "target": {
+    "d1_step": "S7",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "gamma"
+   },
+   "flags": [],
+   "content_brief": "The abstract weighs one body of historical-documentary evidence (attested Second-Temple-era burial customs and their bearing on how a body would have been handled) against a countervailing documentary body (epigraphic and inscriptional counter-evidence about disposal practices), and concludes that these documentary bodies pull in opposite directions and jointly fix no determinate finding on the bodily-resurrection question — the sources sustain competing reconstructions of comparable strength. Both weighed sides rest on historical-documentary premises, so d4=gamma: delete the source-critical premises and no argument remains. The abstract endorses neither the pro nor the contra historical case, fixing d2=neutral and d3=NA. The verdict must be phrased as 'the documentary bodies fix no determinate finding' / 'competing reconstructions of comparable strength', not as a claim that historiographical method as such cannot deliver a verdict, and not as worked example WE6's testimony-versus-rivals formulation.",
+   "topic_domain": "S7 resurrection — historiographical weighing of burial-custom evidence versus epigraphic counter-evidence",
+   "hedging_quota": 3,
+   "length_band": [
+    140,
+    200
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder resolves the resurrection topic to pro or contra by topic prior instead of honoring the stated historiographical non liquet.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "weighed materials must be burial-custom evidence versus epigraphic/inscriptional counter-evidence (not testimony chains versus legendary accretion), described generically (no named scholars, texts, or manuscripts)",
+    "no numeric probabilities, odds, or Bayes factors",
+    "the non liquet must be phrased so as not to reproduce a real scholar's signature stance ('historiographical method cannot deliver a verdict') or worked example WE6's testimony-versus-rivals formulation",
+    "no synthetic item may share both the 4-tuple and the surface move of a coder-prompt worked example; differentiate from WE6 (S7/neutral/NA/gamma)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-07",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "NA"
+   },
+   "flags": [],
+   "content_brief": "The abstract organizes the debate over whether physical reality requires an external cause into a decision tree of commitments — on modal explanatory principles, on whether explanation-demands apply to totalities, and on the intelligibility of brute contingency — showing which package of further commitments each branch forces. Its stated aim is cartographic; it defends no branch and must explicitly disclaim adjudication, so a coder cannot extract a direction on S1. Because the abstract asserts no premise of its own, the deletion test is inapplicable and d4=NA; removing any branch shrinks the tree without altering an argument.",
+   "topic_domain": "S1 external cause — decision-tree mapping of contingency-debate commitments",
+   "hedging_quota": 2,
+   "length_band": [
+    110,
+    165
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder infers pro S1 from cosmological-argument vocabulary even though the text is purely cartographic and verdict-free.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must include an explicit sentence disclaiming any verdict on whether an external cause is required",
+    "no numeric probabilities, odds, or Bayes factors"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-08",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract weighs invented conceptual arguments that a first cause would have to be agent-like (because only intention-like selection could pick among symmetrical alternatives without a governing law) against invented conceptual arguments that an impersonal principle can perform the same selective work, and concludes that the conceptual dialectic is exactly symmetrical — an explicit stalemate verdict. Both weighed sides rest wholly on a priori premises: there is no empirical or historical premise anywhere, so the deletion test returns alpha (deleting any empirical aside leaves the whole weighing intact). The abstract's thesis is the symmetry itself, not either side, so d2=neutral and d3=NA.",
+   "topic_domain": "S2 personal agent — conceptual stalemate on agent-like vs. impersonal first cause",
+   "hedging_quota": 3,
+   "length_band": [
+    120,
+    175
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder reads the agent-like-first-cause topic as pro S2 rather than the stated conceptual stalemate that licenses no direction.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no empirical or historical evidence may appear anywhere in the abstract",
+    "closing sentence must assert the stalemate, not a lean"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-09",
+   "target": {
+    "d1_step": "S3",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "NA"
+   },
+   "flags": [],
+   "content_brief": "The abstract taxonomizes rival models of a unique, uncreated, a se ground of reality — ground-as-necessary-being, ground-as-foundational-structure, ground-as-limit-concept — comparing their entailments and theoretical costs, and explicitly presents the comparison as verdict-free. It presents no argument that any model is correct or that such a ground exists, so no premise is load-bearing, the deletion test is inapplicable, and d4=NA. The abstract must contain a sentence stating that the comparison favors neither any particular model nor the existence claim itself, blocking any inferred direction on S3.",
+   "topic_domain": "S3 aseity — comparative taxonomy of models of an uncreated ground",
+   "hedging_quota": 2,
+   "length_band": [
+    95,
+    145
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder codes pro S3 because aseity models are expounded sympathetically, despite the explicit non-endorsement sentence.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "must include an explicit sentence that the comparison endorses neither a model nor the existence of such a ground",
+    "no numeric probabilities, odds, or Bayes factors"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-v-hedgedneutral-10",
+   "target": {
+    "d1_step": "S6",
+    "d2_direction": "neutral",
+    "d3_strength": "NA",
+    "d4_type": "NA"
+   },
+   "flags": [],
+   "content_brief": "The abstract surveys the scholarly positions in the authenticity-and-dating controversies surrounding the Hebrew prophetic tradition considered as a bearer of special revelation — disputes over composition dates, editorial layering, and the criteria by which a prophetic corpus would count as an authentic revelation-bearer — cataloguing the main positions and the assumptions each requires, and expressly taking no stance on whether the tradition is an authentic bearer of special revelation. It advances no argument of its own: described positions are inventory items, not asserted load-bearing premises, so the deletion test is inapplicable and d4=NA. It ends without a verdict and includes an explicit statement that the survey takes no position, so d2=neutral and d3=NA. The target is S6 (the authentic-revelation-bearer thesis); no verdict is licensed.",
+   "topic_domain": "S6 revelation-bearer — survey of authenticity/dating controversies of the Hebrew prophetic tradition",
+   "hedging_quota": 4,
+   "length_band": [
+    120,
+    180
+   ],
+   "anti_folklore": true,
+   "pitfall_guard": "Coder routes a prophecy-authenticity survey to S7 or S5, or codes a direction/beta/gamma from the documentary content, although the piece is a verdict-free S6 survey asserting no premise. Also supplies the second S6 item (with SYN-ii-contrabeta-10) and reduces the S5 prayer concentration.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "target is S6 (the authentic-revelation-bearer thesis); the survey licenses no verdict (neutral) and asserts no load-bearing premise (d4=NA)",
+    "positions and any texts must be described generically — no named scholars and no verbatim scriptural quotation; no numeric probabilities, odds, or Bayes factors",
+    "must include an explicit no-position sentence on whether the prophetic tradition is an authentic bearer of special revelation"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-01",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that observed large-scale structure coincidences — qualitatively described improbable concordances in how cosmic structure (the distribution and clumping of matter on the largest scales) is arranged — are evidence favoring an external cause or ground of physical reality over the brute-fact view. The load-bearing premise is this observational large-scale structure claim; if it were deleted, no argument would remain, so the item is beta. The conclusion must stop at a bare external ground — no agent, intentions, or personality — and must be stated as an explicit comparative evidential claim ('better supported than the brute-fact alternative'), wrapped in tentative framing ('I suggest', 'may give some reason to prefer'). The evidence base must be large-scale structure coincidences, distinct from the early-entropy/initial-condition premise used elsewhere in the battery.",
+   "topic_domain": "S1 cosmology — large-scale structure coincidences and external ground",
+   "hedging_quota": 3,
+   "length_band": [
+    120,
+    170
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Tentative register ('I suggest', 'some reason') tempts a downgrade to CS1 mere-possibility, but the stated conclusion is an explicit comparative evidential claim, so D3 = CS4.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, or Bayes factors (must remain CS4, not CS5)",
+    "hedges attach to authorial voice and framing only; the comparative evidential conclusion (e.g. 'better supported than') must appear explicitly",
+    "the observational premise about large-scale structure must be stated inside the abstract",
+    "conclusion attributes no agency or personality to the cause (pins S1, not S2)",
+    "evidence base must be large-scale structure coincidences, not the early low-entropy/initial-condition premise used elsewhere in the battery"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-02",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that the observed distribution of suffering across sentient life is systematically mismatched with moral agency and desert — its intensity and incidence track neither wrongdoing nor any capacity for moral growth, falling heavily on the morally incapable — and that this observed distributional mismatch qualitatively disconfirms the thesis that the ultimate is perfectly good (renders it less probable than its denial). The load-bearing premise is the empirical distributional-mismatch data; delete it and the argument collapses entirely, so the item is beta. The register must undersell ('might be thought to carry some evidential weight', 'I tentatively conclude'), but the item must go beyond 'theodicies fail': it must assert positive evidential force against S4, on balance. The evidence base must be the suffering-versus-agency distributional mismatch, distinct from the deep-time paleontological premise used elsewhere in the battery.",
+   "topic_domain": "S4 evidential problem of evil — observed mismatch of suffering distribution and moral agency",
+   "hedging_quota": 4,
+   "length_band": [
+    130,
+    190
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Hedged phrasing invites miscoding as CS2 (mere rebuttal of theodicies), but the item asserts positive evidence against the step thesis, so D3 = CS4 contra.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, or Bayes factors (must remain CS4, not CS5)",
+    "the abstract must state the disconfirmation conclusion explicitly ('renders perfect goodness less probable'), with hedges confined to framing",
+    "the distributional-mismatch data (suffering's incidence versus moral agency/desert) must be stated inside the abstract and carry the whole argument",
+    "do not frame the item as a reply to any specific prior paper (no reply chain)",
+    "evidence base must be the distributional mismatch of suffering and moral agency, not paleontological deep-time suffering used elsewhere in the battery",
+    "must not reproduce worked example WE1's pointless-suffering-instances move; the evidential premise is the observed suffering-versus-agency distributional mismatch"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-03",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract runs a purely conceptual argument: analysis of explanatory regress-termination shows that only agent-causation, in which an intention selects among alternatives, can terminate the regress without arbitrariness, so an agential first ground is more credible than a non-agential one. The load-bearing work is a priori analysis of causation and explanation; there is no empirical premise, and any everyday illustration must be plainly decorative — deleting it leaves the argument fully intact, so the item is alpha. The conclusion must be an explicit comparative credibility claim for agency ('on reflection, better supported than the impersonal alternative'), delivered in a self-deprecating, suggestive register.",
+   "topic_domain": "S2 first-cause agency — regress termination by agent-causation",
+   "hedging_quota": 3,
+   "length_band": [
+    110,
+    160
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "The hedged register plus the unusual alpha+CS4 pairing tempts a downgrade to CS1 coherence, but the text asserts comparative credibility, not mere possibility, so D3 = CS4.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, or Bayes factors (must remain CS4, not CS5)",
+    "no empirical or historical premise may carry argumentative weight; any example must be explicitly illustrative and deletable",
+    "the comparative credibility conclusion must be stated in so many words despite the tentative framing",
+    "do not reproduce any named historical argument; invent the regress analysis"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-04",
+   "target": {
+    "d1_step": "S5",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that the observed distribution of recovery and misfortune outcomes across populations is, as far as observation reveals, indifferent to petitionary practice, and that this qualitative pattern is evidence making special post-creation divine action less probable than its absence. The load-bearing premise is the observational outcome-pattern claim; delete it and nothing remains of the argument, so the item is beta. Framing must be cautious ('the pattern may tell against', 'I suggest, with reservations'), but the conclusion must be a positive evidential verdict against S5, not merely that some pro-S5 argument fails.",
+   "topic_domain": "S5 special divine action — petitionary prayer and outcome patterns",
+   "hedging_quota": 4,
+   "length_band": [
+    120,
+    180
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Cautious framing around outcome evidence invites a CS2 reading (undercutting prayer arguments), but the item asserts that the pattern itself disconfirms special action, so D3 = CS4.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, statistics, or Bayes factors (must remain CS4, not CS5)",
+    "describe the outcome pattern qualitatively; do not cite or critique any specific empirical study or trial",
+    "the disconfirmation conclusion must be explicit; hedges modify voice, not the verdict",
+    "no mention of divine hiddenness (avoid triggering the H-flag pathway)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-05",
+   "target": {
+    "d1_step": "S3",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract offers a conceptual analysis of ontological dependence: among candidate global dependence structures (infinite descent, circular dependence, a plurality of independent termini, a single a se terminus), reflection on what dependence requires favors a unique uncreated terminus as the most credible structure. The load-bearing work is a priori structural analysis; no empirical premise appears, and any scientific aside must be decorative, so deletion of empirical material leaves the argument running — alpha. Despite the modest register ('these considerations may lend some support'), the stated conclusion must be that a unique a se ground is better supported than every rival structure, an explicit comparative credibility claim.",
+   "topic_domain": "S3 aseity — global dependence structures and a unique terminus",
+   "hedging_quota": 3,
+   "length_band": [
+    100,
+    150
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "The modest register on an a priori structural argument tempts CS1 (mere coherence of an a se ground), but the text ranks it as more credible than all rivals, so D3 = CS4.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, or Bayes factors (must remain CS4, not CS5)",
+    "no empirical or historical premise may carry argumentative weight",
+    "the comparative 'better supported than the rival structures' conclusion must be stated explicitly under the hedged framing",
+    "conclusion concerns uniqueness and aseity of the ground, not its goodness or agency (pins S3)",
+    "machinery must be the comparative evaluation of the four named global dependence structures (infinite descent, circular, plural termini, single a se terminus); must not use a being-transmission/well-foundedness principle (differentiate from SYN-i-proalpha-06) or a two-ultimates discernibility-grounding move (differentiate from SYN-i-proalpha-05)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-06",
+   "target": {
+    "d1_step": "S2",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues that the accumulated observational and laboratory record of self-organization — complex, apparently purposive order arising repeatedly from generic undirected dynamics — is qualitative evidence favoring a non-agential ground of cosmic order over an intending agent. The load-bearing premise is this empirical self-organization record; delete it and the argument collapses, so the item is beta. The register must be tentative ('may shift the balance', 'I offer this only as a suggestion'), while the conclusion remains an explicit comparative evidential verdict against agency at the ground level.",
+   "topic_domain": "S2 design debate — self-organization and non-agential order",
+   "hedging_quota": 3,
+   "length_band": [
+    120,
+    170
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Soft framing invites reading the item as merely rebutting design arguments (CS2), but it claims the evidence positively favors the non-agential alternative, so D3 = CS4 contra.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, or Bayes factors (must remain CS4, not CS5)",
+    "the self-organization evidence must be described qualitatively inside the abstract and must carry the whole argument",
+    "the comparative 'favors the non-agential hypothesis' conclusion must be explicit despite the hedges",
+    "frame as a direct evidential case, not a reply to a specific design paper (no reply chain)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-07",
+   "target": {
+    "d1_step": "S1",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues on purely conceptual grounds that grounding the physical totality in an external cause would collapse the modal status of the grounded totality: if the external ground necessitates the whole, the contingent world comes out necessary (modal collapse); if it does not necessitate, it fails to ground; so on either horn the external-cause view is less credible than treating physical reality's existence as a brute contingent fact. The load-bearing work is a priori modal analysis of grounding and necessitation; no empirical premise carries weight, so the deletion test yields alpha (any physics mention must be an inert illustration). The framing must undersell ('I do not pretend to settle the matter', 'these reflections may somewhat favor'), while the conclusion explicitly ranks brute-factness as more credible than an external ground. The conceptual machinery must be the modal-collapse dilemma, distinct from the domain-boundedness/parsimony move used elsewhere in the battery.",
+   "topic_domain": "S1 brute-fact totality — modal collapse under external grounding",
+   "hedging_quota": 4,
+   "length_band": [
+    110,
+    165
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "The concessive register tempts CS2 (cosmological arguments fail) or CS1, but the item asserts positive comparative credibility for the denial of the step thesis, so D3 = CS4 contra.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, or Bayes factors (must remain CS4, not CS5)",
+    "no empirical or historical premise may carry argumentative weight; physics mentions must be deletable illustrations",
+    "the explicit ranking claim ('more credible than the external-cause view') must survive the hedged framing",
+    "do not name or reconstruct any real published cosmological argument",
+    "the conceptual machinery must be the modal-collapse dilemma of external grounding (necessitation versus failure to ground), not the domain-boundedness/scope-limits-of-causal-explanation-plus-parsimony move used elsewhere in the battery"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-08",
+   "target": {
+    "d1_step": "S5",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "beta"
+   },
+   "flags": [],
+   "content_brief": "The abstract examines a small set of invented, well-documented anomalous physiological reversals evidenced by converging, testimony-independent physical traces — contemporaneous instrumental records (serial imaging, biomarker assays, physiological monitoring) documenting a reversal for which no natural mechanism is available — and argues that, taken together, they qualitatively favor special divine action over the hypothesis of unknown natural mechanism. The load-bearing premise is the contemporary instrumental-trace data; delete it and nothing runs, so the item is beta. There is no prayer-timing or petition element (distinct from the prayer-locked clinical case series used elsewhere in the battery). The register must be heavily qualified ('I claim no proof', 'these cases may provide some reason'), yet the stated conclusion is that the evidence supports S5 over its rivals on balance — a positive qualitative confirmation claim.",
+   "topic_domain": "S5 miracles — testimony-independent instrumental traces of anomalous physiological reversal",
+   "hedging_quota": 4,
+   "length_band": [
+    140,
+    200
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Dense disclaimers ('no proof', 'some reason') tempt a CS1/CS3 downgrade, but the on-balance support conclusion is a positive evidential claim (CS4); archival phrasing tempts gamma, but the traces are contemporary instrumental data (beta).",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, or Bayes factors (must remain CS4, not CS5)",
+    "cases must be presented as public instrumental documentation, not private religious experience (avoid the RE/B pathway)",
+    "all cases invented; no resemblance to any real documented case or shrine",
+    "the on-balance support conclusion must be stated explicitly beneath the hedges",
+    "cases must be contemporary, ongoing clinical/instrumental documentation, not historical or archival records",
+    "evidence base must be converging testimony-independent instrumental physical traces, not prayer-timed medical-recovery records used elsewhere in the battery; no prayer-schedule or petition-timing element"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-09",
+   "target": {
+    "d1_step": "S4",
+    "d2_direction": "pro",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "The abstract argues conceptually that if there is an ultimate ground, reflection on what could ground normative facts favors its moral perfection: only a ground whose nature is itself good can non-arbitrarily fix the direction of value, so perfect goodness of the ultimate is more credible than indifference or malice. The load-bearing work is a priori axiological analysis; no empirical premise appears, and the deletion test must come out alpha (any real-world moral example is decorative and deletable). The tone is exploratory ('I want to suggest', 'may tilt the scales'), but the conclusion is an explicit comparative credibility claim in favor of S4.",
+   "topic_domain": "S4 axiology — value-grounding and the goodness of the ultimate",
+   "hedging_quota": 3,
+   "length_band": [
+    100,
+    155
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Exploratory framing of an a priori argument tempts CS1 (goodness merely coherent with ultimacy), but the text ranks perfect goodness above its rivals evidentially, so D3 = CS4.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, or Bayes factors (must remain CS4, not CS5)",
+    "no empirical or historical premise may carry argumentative weight; moral examples must be deletable illustrations",
+    "the comparative conclusion ('more credible than an indifferent or malicious ultimate') must be explicit",
+    "the argument conditionalizes on there being an ultimate; it must not argue for the ultimate's existence (pins S4, not S1-S3)"
+   ],
+   "dk_signed": false
+  },
+  {
+   "spec_id": "SYN-vi-hedgedcs4-10",
+   "target": {
+    "d1_step": "S8",
+    "d2_direction": "contra",
+    "d3_strength": "CS4",
+    "d4_type": "alpha"
+   },
+   "flags": [],
+   "content_brief": "Granting for the sake of argument that Jesus was bodily raised, the abstract argues on conceptual grounds that the S8 reading conjoins two logically independent, individually heavy metaphysical posits — incarnation (one person with divine and human natures) AND divine triunity — and that, a priori, a conjunction of independent substantive claims carries a lower prior than a single-posit reading, so incarnation-plus-Trinity is less credible on the granted data than a metaphysically leaner reading positing only one of them (or neither). The load-bearing work is the a priori comparison of the conjunctive and single-posit hypotheses' intrinsic priors; the historical material is stipulated common ground, so deleting any historical detail leaves the comparative argument intact — alpha, not gamma. The register is tentative ('perhaps', 'I suggest only'), but the conclusion must explicitly say the leaner reading is better supported on the same granted data (a positive comparative evidential claim against S8), not merely that the inference to incarnation fails.",
+   "topic_domain": "S8 christology — a priori improbability of the incarnation-and-triunity conjunction",
+   "hedging_quota": 4,
+   "length_band": [
+    130,
+    185
+   ],
+   "anti_folklore": false,
+   "pitfall_guard": "Tentative register plus the grant-arguendo setup tempts CS2 (the resurrection-to-incarnation inference fails) or gamma, but the item makes an a priori comparative support claim against S8, so D3 = CS4 alpha.",
+   "constraints": [
+    "no real author names or real-paper titles",
+    "no verbatim phrases from published abstracts",
+    "self-contained single primary thesis",
+    "no explicit probabilities, odds, percentages, or Bayes factors (must remain CS4, not CS5)",
+    "the resurrection data must be granted arguendo as common ground, never argued for or against (keeps D1 = S8 and D4 = alpha)",
+    "the explicit 'better supported on the same data' conclusion must survive the hedged framing",
+    "the argument must run from the a priori improbability of the conjunctive doctrinal package (incarnation AND triunity), not from a rival vindicated-agent reading (differentiate from SYN-iv-contraalpha-09) or from an identity-logic contradiction (differentiate from SYN-iv-contraalpha-10)"
+   ],
+   "dk_signed": false
+  }
+ ]
+}

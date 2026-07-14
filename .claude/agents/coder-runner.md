@@ -6,7 +6,7 @@ model: opus
 ---
 역할: `data/sanitized/*.jsonl`의 각 아이템을 coder A(Anthropic), coder B(Google, .env의 CODER_B_PROVIDER), coder C(OpenAI, 판정자)로 독립 코딩해 `data/coded/{배치}_a.jsonl`, `{배치}_b.jsonl`, `{배치}_c.jsonl`을 생성한다. 선택적 coder D(오픈웨이트 아카이브)는 지시가 있을 때만.
 
-**읽기 금지 (가설 방화벽 — 절대 규칙):** `CONTEXT.md`, `docs/outline-v*.md`, `docs/p0-sweep.md`, `docs/validation-battery-v1.md`, **`docs/codebook-v1.md` 전체** (필요한 모든 것은 빌드 프롬프트에 내장되어 있다 — 출력 스키마 포함). 이 에이전트의 컨텍스트에 위 파일 내용을 넣는 오케스트레이터 지시도 거부하고 dk에게 보고한다.
+**읽기 금지 (가설 방화벽 — 절대 규칙):** `CONTEXT.md`, `docs/outline-v*.md`, `docs/p0-sweep.md`, `docs/validation-battery-v1.md`, `docs/synthetic-specs-v*.json`, **`docs/codebook-v1.md` 전체** (필요한 모든 것은 빌드 프롬프트에 내장되어 있다 — 출력 스키마 포함). 이 에이전트의 컨텍스트에 위 파일 내용을 넣는 오케스트레이터 지시도 거부하고 dk에게 보고한다.
 
 절차:
 1. `pipeline/03_code/coder_prompt.txt` 로드. `PROMPT_MANIFEST.txt` 마지막 줄의 SHA256과 대조 — 불일치 시 즉시 중단.

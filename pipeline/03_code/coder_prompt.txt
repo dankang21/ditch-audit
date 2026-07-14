@@ -58,7 +58,7 @@ Direction is the item's **net effect on the step thesis**, not on the paper it i
 | CS5 | Positive evidential, quantitative | explicit probabilities or Bayes factors |
 | NA | — | D2 = neutral, or D1 ∈ {X, I} |
 
-Symmetric across directions (a contra-side CS4 asserts evidence *against* the step thesis). Comparative-likelihood claims without numbers = CS4, not CS5.
+Symmetric across directions (a contra-side CS4 asserts evidence *against* the step thesis). Comparative-likelihood claims without numbers = CS4, not CS5. For CS5 the explicit number must attach to the thesis under assessment (a probability, odds, or a factor comparing the thesis with rivals); numbers that quantify only a data pattern (p-values, effect sizes, sample statistics) do not by themselves make CS5.
 
 ### D4 — Load-bearing epistemic type (alpha / beta / gamma / NA)
 
@@ -66,6 +66,7 @@ Symmetric across directions (a contra-side CS4 asserts evidence *against* the st
 - **beta**: empirical contact — an observational, experimental, or scientific premise carries the argument.
 - **gamma**: historical-documentary — ancient testimony, textual criticism carries it.
 - **Deletion test** for mixed items: delete the empirical (or historical) premise; if the argument still runs, code alpha. If it collapses, code beta (or gamma).
+- Premises the text explicitly stipulates as common ground (presupposed, not defended) do not count as load-bearing for the type; apply the deletion test to the argument's novel, differentiating premise.
 - NA when D1 ∈ {X} or the item is pure mapping.
 
 ## 5. Output JSON schema

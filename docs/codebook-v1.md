@@ -89,7 +89,7 @@ Direction is the item's **net effect on the step thesis**, not on the paper it i
 | CS5 | Positive evidential, quantitative | explicit probabilities or Bayes factors |
 | NA | — | D2 = neutral, or D1 ∈ {X, I} |
 
-Symmetric across directions (a contra-side CS4 asserts evidence *against* the step thesis). Comparative-likelihood claims without numbers = CS4, not CS5.
+Symmetric across directions (a contra-side CS4 asserts evidence *against* the step thesis). Comparative-likelihood claims without numbers = CS4, not CS5. For CS5 the explicit number must attach to the thesis under assessment (a probability, odds, or a factor comparing the thesis with rivals); numbers that quantify only a data pattern (p-values, effect sizes, sample statistics) do not by themselves make CS5.
 
 ### D4 — Load-bearing epistemic type (alpha / beta / gamma / NA)
 
@@ -97,6 +97,7 @@ Symmetric across directions (a contra-side CS4 asserts evidence *against* the st
 - **beta**: empirical contact — an observational, experimental, or scientific premise carries the argument.
 - **gamma**: historical-documentary — ancient testimony, textual criticism carries it.
 - **Deletion test** for mixed items: delete the empirical (or historical) premise; if the argument still runs, code alpha. If it collapses, code beta (or gamma).
+- Premises the text explicitly stipulates as common ground (presupposed, not defended) do not count as load-bearing for the type; apply the deletion test to the argument's novel, differentiating premise.
 - NA when D1 ∈ {X} or the item is pure mapping.
 
 ## 5. Output JSON schema
@@ -215,6 +216,7 @@ Assembly note: the deployed prompt is generated from this file by concatenation;
 
 ## 12. Changelog
 
+- **v1.2a (2026-07-14, synthetic-spec audit fixes):** two §4 clarifications surfaced by adversarial audit of the synthetic criterion specs, both recurring coding boundaries: (1) §4-D3 — CS5's explicit number must attach to the thesis under assessment; data-pattern statistics (p-values, effect sizes) alone do not make CS5; (2) §4-D4 — explicitly stipulated common-ground premises are not load-bearing for the type; the deletion test applies to the novel, differentiating premise. Both ship in the coder prompt (rebuilt, manifest logged).
 - **v1.2 (2026-07-14, dk-approved):** Gate G1 redefined from α(A,B) to **min pairwise α over all three coder pairs** (every dimension ≥ 0.70) — all coders code every item, so this costs nothing, removes the arbitrary choice of gate pair, and exposes correlated-prior artifacts as anomalously high single-pair agreement. §1/§9/§10 updated. Coder-facing content unchanged (prompt hash stable). Companion role changes recorded in validation-battery §B0 (E = GLM-class open-weights via Perplexity Agent API with search structurally off; Sonar retired from all blinded roles; conformity checker staffed = Kimi-class; coder D promoted to mandatory).
 - **v1.1a (2026-07-14, firewall-audit fixes):** §1 hypothesis-naming sentence rewritten neutrally (no dimension/direction named); coder-runner now banned from this file entirely (built prompt only — agent def + CLAUDE.md rule 1 updated in tandem); WE5/WE7/WE8 parenthetical notes trimmed (design-register and crosstab-flagging language removed); §3 dimension-independence rule added (symmetric, hypothesis-neutral); §8 heading retitled diagnostic; §10 step 1 actual harvest count annotated, step 6 adds the dev-half synthetic arm; §11 battery reference corrected §B4→§B3; build-script FORBIDDEN token list extended. Prompt rebuilt; manifest logged.
 - **v1.1 (2026-07-14, P1 session 1 — zero-human amendment, dk-approved):** (1) binding zero-human rule: no human codes any item, anywhere in the pipeline; the designer's labor = codebook authorship, synthetic-criterion specs/sign-off, gate approvals. dk pilot hand-coding and the P4 150-item human sample are **removed**; validity now rests on the battery in `validation-battery-v1.md` (new canonical companion). (2) Third coder family added (C = OpenAI, adjudicator); disagreements resolved by majority-of-three, 3-way splits → unresolved protocol; dk item-level HITL adjudication removed. (3) Counter-stereotypical worked examples **WE7–WE9** added to §6 (pro/CS4/beta · contra/CS4/alpha · topic-cue-without-verdict neutral) — rationale: the prior example set was uniformly stereotype-congruent and could teach topic-to-code shortcuts; coder prompt content changes accordingly (rebuilt, manifest logged). (4) Gold-anchor set demoted to diagnostic role (§8); headline construct validity moves to the synthetic criterion set. (5) §9 rewritten (tri-family, per-cell floors, four-estimator stability); §10 rewritten (battery pilot arms); §11 low-information-priors hazard added. Claim-discipline note: the paper claims measurement by a fixed, preregistered, multi-family LLM instrument — not human-equivalent annotation.

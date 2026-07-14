@@ -15,8 +15,8 @@ p0-sweep = 선행문헌 킬 스윕 보고). 지적 계보와 판정 이력: `CON
 1. **가설 방화벽.** 코더에게 전달되는 프롬프트는 `scripts/build_coder_prompt.py`의
    산출물(`pipeline/03_code/coder_prompt.txt`)만 사용한다. 수동 편집 금지.
    coder-runner 에이전트의 컨텍스트에 `CONTEXT.md`, `docs/outline-v*.md`,
-   `docs/p0-sweep.md`, `docs/validation-battery-v1.md`, **`docs/codebook-v1.md`
-   전체**의 내용을 절대 노출하지 않는다 (coder-runner는 빌드 프롬프트만 읽는다;
+   `docs/p0-sweep.md`, `docs/validation-battery-v1.md`, `docs/synthetic-specs-v*.json`,
+   **`docs/codebook-v1.md` 전체**의 내용을 절대 노출하지 않는다 (coder-runner는 빌드 프롬프트만 읽는다;
    금지 목록은 에이전트 정의와 항상 일치 유지). 이유: H1/H2를 아는 코더는
    예측 방향으로 드리프트한다.
 2. **P3 freeze.** 사전등록(P3) 이후 수정 금지 대상: `docs/codebook-v1.md`, 빌드된
