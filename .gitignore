@@ -9,3 +9,4 @@ data/coded/
 *.swp
 __pycache__/
 *.pyc
+data/criterion/
