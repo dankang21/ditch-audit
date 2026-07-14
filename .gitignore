@@ -2,6 +2,7 @@
 data/raw/
 data/sanitized/
 data/coded/
+data/battery/
 !data/**/.gitkeep
 .env
 .env.*
