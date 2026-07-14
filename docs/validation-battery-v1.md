@@ -39,8 +39,8 @@ No family appears in more than one row-group. Assignments frozen at P3 with date
 | Coder A (reliability pair) | Anthropic (pinned snapshot) | G1 primary |
 | Coder B (reliability pair) | Google (pinned snapshot) | G1 primary |
 | Coder C (adjudicator) | OpenAI (pinned snapshot) | majority vote only; excluded from G1 α |
-| Coder D (archival, optional) | open-weights (e.g. Llama/DeepSeek-class, weights archived) | re-executability after endpoint retirement; results reported, not gating |
-| Generator/launderer E | a family used by NO coder (e.g. Mistral-class) | synthetic generation (B3), style laundering (B4), paraphrase/contrast sets (B4) |
+| Coder D (archival, optional) | open-weights, **non-Llama** (DeepSeek/Qwen-class; Llama excluded — family E is Llama-derived), weights archived | re-executability after endpoint retirement; results reported, not gating |
+| Generator/launderer E | **Perplexity (Sonar-class; dk decision 2026-07-14)** | synthetic generation (B3), style laundering (B4), paraphrase/contrast sets (B4). Two binding conditions: (i) **search/grounding disabled on every call and machine-verified** (response must carry no citations/search results; violation = discard the output and log) — a search-enabled launderer could re-identify the paper behind a sanitized abstract and re-inject identifying phrasing; (ii) Sonar models are Llama-derived → **coder D must be a non-Llama open-weights family** (DeepSeek/Qwen-class) to preserve row-group exclusivity. |
 | Conformity checkers | non-coder families **other than family E** + mechanical checks + dk spec sign-off | B3 — E may not certify its own generations |
 
 API call logs published with the audit package to make the no-contact claims verifiable.

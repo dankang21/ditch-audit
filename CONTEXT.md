@@ -95,8 +95,10 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
   (books = qualitative anchors; stated limitation) · D-4 English-only ·
   D-5 §7 formal weight light (primary venue Metaphilosophy) ·
   D-6 (2026-07-14) coder families: A = Anthropic, B = Google, C = OpenAI (adjudicator),
-  D = open-weights archival (recommended); generator/launderer = a non-coder family
-  (role-exclusivity matrix in validation-battery §B0).
+  D = open-weights archival (recommended; non-Llama — see E); generator/launderer
+  E = Perplexity (Sonar; search verifiably disabled per call — a search-enabled
+  launderer would re-identify sanitized items; Sonar is Llama-derived, hence the
+  D exclusion). Role-exclusivity matrix in validation-battery §B0.
 - Venue tiers: T1 general (Mind, Noûs, PQ, APQ, Analysis, Phil Studies, topic-
   filtered) · T2 mainstream specialist (F&P, RS, IJPR, Sophia, 2004–2024) ·
   T3 confessional (Philosophia Christi). F&P's T2 assignment is a preregistered
