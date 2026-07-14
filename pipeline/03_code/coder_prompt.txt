@@ -16,6 +16,7 @@ matching the output schema exactly.
 - **Q4 Strength (D3).** CS1–CS5 per definitions; `NA` if D2 = neutral or D1 ∈ {X}.
 - **Q5 Type (D4).** Deletion test on the load-bearing premise.
 - **Q6 Confidence + flags + one-sentence rationale (≤40 words).**
+- **Dimension independence.** Code each dimension on its own textual evidence; no dimension's value constrains another except the stated NA rules. Any direction may combine with any strength and any type.
 
 ## 4. Dimension definitions
 ### D1 — Step (S1–S8, B, P, I, M, X)
@@ -97,10 +98,19 @@ Flags: `H` hiddenness · `RE` religious experience · `CHAIN` reply-chain item (
 → `B / pro / CS3 / alpha`. (Bundled God-target; permissibility claim, not evidence.)
 
 **WE5** — "At least one of the following holds: technological civilizations almost never reach maturity; mature civilizations run almost no ancestor simulations; or we almost certainly live in a simulation. I defend the disjunction without endorsing any disjunct."
-→ `X / NA / NA / NA`. (No chain-step thesis is supported or opposed; framework-adjacent items are witnesses, not corpus evidence.)
+→ `X / NA / NA / NA`. (No chain-step thesis is supported or opposed.)
 
 **WE6** — "Weighing the early testimony, rival explanations, and the limits of historical method, I argue the evidence concerning the fate of Jesus's body permits no confident verdict in either direction."
 → `S7 / neutral / NA / gamma`, and note verdict-suspension in rationale.
+
+**WE7** — "Recent observational work shows that the range of physical constants compatible with complex chemistry is far narrower than earlier estimates suggested. Taking this measured narrowness as evidence, I argue that intentional selection of the constants is better supported than chance on the total observational data."
+→ `S2 / pro / CS4 / beta`. (Positive evidential claim for agency; the measured-narrowness premise is load-bearing — delete it and nothing runs.)
+
+**WE8** — "Without appeal to any observational premise, I argue that the concept of an uncreated ground that depends on nothing harbors a deep tension: absolute independence excludes the relational properties required for grounding everything else. On reflection, the existence of such a ground is less credible than its denial."
+→ `S3 / contra / CS4 / alpha`. (Positive claim against the step thesis, carried entirely by conceptual analysis; nothing empirical to delete.)
+
+**WE9** — "The literature on arguments from suffering has grown rapidly over two decades. I classify the replies into four families, trace their dialectical relations, and identify the questions each leaves open, without endorsing any verdict about what suffering shows."
+→ `S4 / neutral / NA / NA`. (Pure mapping; the topic alone does not fix a direction — code the verdict, and there is none.)
 
 TEXT TO CODE:
 {{text}}

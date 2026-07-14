@@ -23,6 +23,9 @@ MANIFEST = ROOT / "pipeline" / "03_code" / "PROMPT_MANIFEST.txt"
 FORBIDDEN = [
     "h1", "h2", "hypothes", "predict", "topography", "headwind",
     "contested", "frozen", "prereg", "lessing",
+    # v1.1a firewall-audit additions (hypothesis-adjacent design vocabulary)
+    "stereotyp", "folklore", "battery", "expected", "criterion",
+    "gold", "vault", "launder",
 ]
 
 PREAMBLE = """You are coding one sanitized journal-article abstract for a study of
