@@ -22,7 +22,7 @@ Frozen at P3 preregistration; any post-freeze edit voids the confirmatory run.
 Input unit: abstract (+ optionally first/last paragraph when abstract < 60 words).
 Sanitization pass (scripted + manual spot-check):
 1. Strip metadata fields (author/title/journal/year/DOI/volume).
-2. Regex-scrub in-text self-identifiers: "In this journal", "as I argued in [year]", proper-name self-citations where they identify the author.
+2. Regex-scrub in-text self-identifiers: "In this journal", "as I argued in [year]", proper-name self-citations where they identify the author. Numbered-reference self-citations that expose no name, year, or venue (e.g. "In [4] I argued...") are kept verbatim — they do not identify the author (dk adjudication, P1: anchor A15).
 3. Replace named interlocutors with role tags ONLY when the name identifies the item's own author; otherwise **keep** opponent names (e.g., "Swinburne's argument", "Rowe's inference") — they are content, and removing them destroys codability.
 4. Log every scrub; sanitization log ships with the corpus.
 
@@ -198,6 +198,7 @@ Assembly note: the deployed prompt is generated from this file by concatenation;
 
 ## 12. Changelog
 
+- v1.0 (2026-07-14, P1 session 1, addendum 2): §2.2 clarification per dk adjudication — numbered-reference self-citations without name/year/venue are kept verbatim (case: A15 first_para "In [4] I argued..."). Sanitized outputs unchanged.
 - v1.0 (2026-07-14, P1 session 1, addendum): 9 abstract-less gold anchors sourced with verbatim texts, dk-approved: printed author abstracts recovered from journal originals where they exist (A06/A18/A19 — Faith & Philosophy prints abstracts Crossref lacks), else first/last body paragraphs verbatim (A01/A02/A11/A15 journal scans; A03 Adams & Adams 1990 reprint; A12 Manson 2003 reprint). Extraction dual-checked by independent verbatim verifiers; OCR restorations image-verified and logged (data/raw/gold_fulltext_excerpts.json). No summarization or paraphrase anywhere. G1 gold-accuracy reporting must stratify by text_source (crossref_abstract 11 / printed_abstract 3 / first_last_para 6). No gold-code changes.
 - v1.0 (2026-07-14, P1 session 1): gold anchors A05/A07/A15 web-verified (Crossref/Cambridge Core); citations completed (A05 = RS 41.2, 201-215, part I/II structure confirmed; A07 = Philosophy 43.165, 199-212; A15 = Nous 15.1, 41-51); verify_at_pilot cleared. No gold-code changes.
 - v1.0 (2026-07-14): initial instrument. Verified anchors added: Craig RS 20 (1984) 367–375; Oppy RS 27 (1991) 189–197; Gwiazda RS 45 (2009) 487–493 (Swinburne reply, same issue, 495–498, logged as optional CHAIN anchor). Outline Table 1 correction (White → pro-functional) applied as outline v0.3. Future corpus note: Gellman, "Prospects for a sound stage 3 of cosmological arguments," RS 36 (2000) 195–201 — direct S3 item for the corpus.
