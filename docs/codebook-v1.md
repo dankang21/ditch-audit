@@ -1,8 +1,8 @@
-# ditch-audit — Codebook v1.1 (Coding Instrument)
+# ditch-audit — Codebook v1.2 (Coding Instrument)
 
 2026-07-14 · Owner: dk · Status: ready for pilot (P1) · Companion files: `gold-anchors-v1.json`, `validation-battery-v1.md`
 Frozen at P3 preregistration; any post-freeze edit voids the confirmatory run.
-v1.1 (2026-07-14): zero-human-coding amendment — see §12 changelog and `validation-battery-v1.md`.
+v1.1 (2026-07-14): zero-human-coding amendment · v1.2 (2026-07-14): G1 = min pairwise α — see §12.
 
 ---
 
@@ -13,7 +13,7 @@ v1.1 (2026-07-14): zero-human-coding amendment — see §12 changelog and `valid
 **Blindness rules (hard constraints):**
 - The coder sees **only** sanitized text: no author, no title, no journal, no year, no DOI.
 - The coder prompt (§7) contains **no hypotheses**. The study's hypotheses and analysis plan live in the outline document only. Rationale: a coder that knows the study's expectations will drift toward them. The instrument must be usable by a coder who has never seen the paper's thesis. Coder-facing contexts receive only the built prompt (`pipeline/03_code/coder_prompt.txt`) — never this file.
-- Three coders from **three different model families** (A/B = the reliability pair whose α gates G1; C = adjudicator family), run independently; none sees another's output.
+- Three coders from **three different model families** (all three pairwise αs gate G1; C additionally serves as the majority adjudicator), run independently; none sees another's output.
 - **No human codes any item** (zero-human rule, binding dk decision 2026-07-14). The instrument designer's labor is confined to: codebook authorship, synthetic-criterion item specs and sign-off, and gate approvals.
 
 **Pipeline position:**
@@ -187,7 +187,7 @@ Assembly note: the deployed prompt is generated from this file by concatenation;
 
 - **Coders:** A = Anthropic, B = Google, C = OpenAI (adjudicator), all pinned to dated model snapshots at P3; optionally D = open-weights archival coder (re-executability after API endpoints retire). Role-exclusivity matrix in `validation-battery-v1.md` §B0. No human codes any item.
 - **Krippendorff's α**: nominal for D1, D2, D4; **ordinal for D3** (CS1–CS5 is ordered; NA excluded pairwise).
-- **Gate G1: α(A,B) ≥ 0.70 on every dimension** (primary, unchanged). Report 3-way α(A,B,C) alongside. Fail → codebook revision loop (max 2). Second failure on D3 → collapse to 3 levels {defense = CS1–CS3, positive = CS4–CS5, NA} and re-gate.
+- **Gate G1 (v1.2): min pairwise α over {(A,B), (A,C), (B,C)} ≥ 0.70 on every dimension.** All three coders code every item, so the three pairwise αs cost nothing extra; gating on the minimum removes the arbitrariness of naming one pair the "reliability pair" and turns anomalously high single-pair agreement into a visible red flag (correlated priors, not quality). Report the 3-way joint α alongside. Fail → codebook revision loop (max 2). Second failure on D3 → collapse to 3 levels {defense = CS1–CS3, positive = CS4–CS5, NA} and re-gate.
 - **Per-cell floors:** in addition to the marginal gate, the analysis-critical cells (defined and frozen at P3; see validation-battery §B8) carry preregistered per-cell agreement and criterion-accuracy floors — marginal α can mask garbage in rare cells.
 - **Disagreement resolution:** A/B disagreement → majority-of-three with C. 3-way split → `unresolved` (excluded from primary analysis; sensitivity bounds under each candidate resolution). The full 2-1 resolution matrix is published; headline results must be stable across four estimators (drop-disagreements / A-only / B-only / majority) — validation-battery §B6.
 - All disagreements logged with all rationales by adjudication-logger (scripted majority, no human item-judgment); recurring patterns become codebook clarification drafts — dk approves the *document change* (instrument design), never the item codes — before P3 freeze only.
@@ -198,7 +198,7 @@ Assembly note: the deployed prompt is generated from this file by concatenation;
 2. Fetch the 20 gold-anchor texts.
 3. Sanitize both sets (§2); log scrubs.
 4. Run coders A, B, C on all ~55 items, independently.
-5. Score: (a) coder-vs-coder α(A,B) on ~55 (gate) + 3-way α; (b) coder-vs-gold accuracy on the 20 anchors, per dimension, stratified by recognition score (diagnostic only).
+5. Score: (a) all three pairwise αs on ~55 — gate = the minimum (v1.2) — plus the 3-way joint α; (b) coder-vs-gold accuracy on the 20 anchors, per dimension, stratified by recognition score (diagnostic only).
 6. Battery pilot arms (validation-battery §B): recognition probe (all items) · cue-ablation folklore baseline (all items) · determinism audit (re-code a 20-item subsample) · raw-vs-laundered coding divergence on the 55 (informs the P3 primary-arm decision) · dev-half synthetic coding scored against the §B3 accuracy floors (discriminator AUC gate passes first).
 7. Calibrate: chain-relevance rate for the corpus N estimate (outline §4.1).
 8. Gate G1 decision (dk approves; recommendation prepared by alpha-scorer); log every majority resolution.
@@ -215,6 +215,7 @@ Assembly note: the deployed prompt is generated from this file by concatenation;
 
 ## 12. Changelog
 
+- **v1.2 (2026-07-14, dk-approved):** Gate G1 redefined from α(A,B) to **min pairwise α over all three coder pairs** (every dimension ≥ 0.70) — all coders code every item, so this costs nothing, removes the arbitrary choice of gate pair, and exposes correlated-prior artifacts as anomalously high single-pair agreement. §1/§9/§10 updated. Coder-facing content unchanged (prompt hash stable). Companion role changes recorded in validation-battery §B0 (E = GLM-class open-weights via Perplexity Agent API with search structurally off; Sonar retired from all blinded roles; conformity checker staffed = Kimi-class; coder D promoted to mandatory).
 - **v1.1a (2026-07-14, firewall-audit fixes):** §1 hypothesis-naming sentence rewritten neutrally (no dimension/direction named); coder-runner now banned from this file entirely (built prompt only — agent def + CLAUDE.md rule 1 updated in tandem); WE5/WE7/WE8 parenthetical notes trimmed (design-register and crosstab-flagging language removed); §3 dimension-independence rule added (symmetric, hypothesis-neutral); §8 heading retitled diagnostic; §10 step 1 actual harvest count annotated, step 6 adds the dev-half synthetic arm; §11 battery reference corrected §B4→§B3; build-script FORBIDDEN token list extended. Prompt rebuilt; manifest logged.
 - **v1.1 (2026-07-14, P1 session 1 — zero-human amendment, dk-approved):** (1) binding zero-human rule: no human codes any item, anywhere in the pipeline; the designer's labor = codebook authorship, synthetic-criterion specs/sign-off, gate approvals. dk pilot hand-coding and the P4 150-item human sample are **removed**; validity now rests on the battery in `validation-battery-v1.md` (new canonical companion). (2) Third coder family added (C = OpenAI, adjudicator); disagreements resolved by majority-of-three, 3-way splits → unresolved protocol; dk item-level HITL adjudication removed. (3) Counter-stereotypical worked examples **WE7–WE9** added to §6 (pro/CS4/beta · contra/CS4/alpha · topic-cue-without-verdict neutral) — rationale: the prior example set was uniformly stereotype-congruent and could teach topic-to-code shortcuts; coder prompt content changes accordingly (rebuilt, manifest logged). (4) Gold-anchor set demoted to diagnostic role (§8); headline construct validity moves to the synthetic criterion set. (5) §9 rewritten (tri-family, per-cell floors, four-estimator stability); §10 rewritten (battery pilot arms); §11 low-information-priors hazard added. Claim-discipline note: the paper claims measurement by a fixed, preregistered, multi-family LLM instrument — not human-equivalent annotation.
 - v1.0 (2026-07-14, P1 session 1, addendum 2): §2.2 clarification per dk adjudication — numbered-reference self-citations without name/year/venue are kept verbatim (case: A15 first_para "In [4] I argued..."). Sanitized outputs unchanged.

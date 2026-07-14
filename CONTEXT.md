@@ -94,11 +94,15 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
 - D-1 EJPR out of T2 · D-2 T3 = Philosophia Christi only · D-3 articles-only
   (books = qualitative anchors; stated limitation) · D-4 English-only ·
   D-5 §7 formal weight light (primary venue Metaphilosophy) ·
-  D-6 (2026-07-14) coder families: A = Anthropic, B = Google, C = OpenAI (adjudicator),
-  D = open-weights archival (recommended; non-Llama — see E); generator/launderer
-  E = Perplexity (Sonar; search verifiably disabled per call — a search-enabled
-  launderer would re-identify sanitized items; Sonar is Llama-derived, hence the
-  D exclusion). Role-exclusivity matrix in validation-battery §B0.
+  D-6 (2026-07-14, rev. same day after allocation review): coder families A = Anthropic,
+  B = Google, C = OpenAI (provisional adjudicator; final seat by preregistered rule,
+  battery §B6); G1 = min pairwise α over all three pairs (codebook v1.2). D = open-weights
+  archival, mandatory. Generator/launderer E = GLM-class open-weights via the Perplexity
+  Agent API with web_search omitted (structurally no search). Sonar barred from blinded
+  roles — its disable_search proves non-surfacing, not non-grounding, and its base lineage
+  is undocumented/mutable (web-verified 2026-07-14); Sonar serves only as P2 harvest aid.
+  Conformity checker = Kimi-class (Moonshot), same route. No-new-keys constraint (dk).
+  Role-exclusivity matrix in validation-battery §B0.
 - Venue tiers: T1 general (Mind, Noûs, PQ, APQ, Analysis, Phil Studies, topic-
   filtered) · T2 mainstream specialist (F&P, RS, IJPR, Sophia, 2004–2024) ·
   T3 confessional (Philosophia Christi). F&P's T2 assignment is a preregistered

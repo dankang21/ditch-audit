@@ -36,18 +36,20 @@ No family appears in more than one row-group. Assignments frozen at P3 with date
 
 | Role | Family | Notes |
 |---|---|---|
-| Coder A (reliability pair) | Anthropic (pinned snapshot) | G1 primary |
-| Coder B (reliability pair) | Google (pinned snapshot) | G1 primary |
-| Coder C (adjudicator) | OpenAI (pinned snapshot) | majority vote only; excluded from G1 α |
-| Coder D (archival, optional) | open-weights, **non-Llama** (DeepSeek/Qwen-class; Llama excluded — family E is Llama-derived), weights archived | re-executability after endpoint retirement; results reported, not gating |
-| Generator/launderer E | **Perplexity (Sonar-class; dk decision 2026-07-14)** | synthetic generation (B3), style laundering (B4), paraphrase/contrast sets (B4). Two binding conditions: (i) **search/grounding disabled on every call and machine-verified** (response must carry no citations/search results; violation = discard the output and log) — a search-enabled launderer could re-identify the paper behind a sanitized abstract and re-inject identifying phrasing; (ii) Sonar models are Llama-derived → **coder D must be a non-Llama open-weights family** (DeepSeek/Qwen-class) to preserve row-group exclusivity. |
-| Conformity checkers | non-coder families **other than family E** + mechanical checks + dk spec sign-off | B3 — E may not certify its own generations |
+| Coder A | Anthropic (pinned dated snapshot, direct API) | G1 = min pairwise α over all three coder pairs (v1.2) |
+| Coder B | Google (pinned dated snapshot, direct API) | G1 as above |
+| Coder C | OpenAI (pinned dated snapshot, direct API) | G1 as above + majority adjudicator. Seat-assignment rule preregistered (B6) |
+| Coder D (archival, **mandatory**) | open-weights, lineage disjoint from Z.AI and Moonshot (DeepSeek/Qwen/Llama-class all admissible), weights archived; family confirmed at P3 | re-executability after endpoint retirement; results reported, not gating |
+| Generator/launderer E | **GLM-class open-weights (Z.AI lineage) served via the Perplexity Agent API** (dk decision 2026-07-14; no new keys) — **`web_search` tool omitted on every call = structurally no search**; each response's `tool_calls_details` and absent `search_results` logged as proof; exact model string + call date archived with the artifact hashes | synthetic generation (B3), laundering/paraphrase/contrast sets (B4). **Sonar-class models are barred from every blinded role**: their retrieval grounding cannot be verified off (`disable_search` proves non-surfacing, not non-grounding) and their base lineage is undocumented/mutable. E-output drift is tolerable — artifacts are one-shot, frozen, hashed |
+| Conformity checkers | **Kimi-class (Moonshot lineage) via the same Agent API, search tool omitted** + mechanical checks; dk spec sign-off is the FINAL gate, logged before any coding results are seen | B3 — E may not certify its own generations; checker lineage disjoint from all coders and E |
+| Harvest aid (unblinded) | Perplexity Sonar (search ON) | P2 abstract-coverage backfill only — the one role where retrieval grounding is an asset; never touches sanitized/blinded material |
 
 API call logs published with the audit package to make the no-contact claims verifiable.
 
 ## B1. Instrument fixation
 
 - Dated model snapshots pinned in the OSF manifest; provider version headers logged per call.
+- Each pinned snapshot's **published retirement date** verified to cover the full P4-plus-reproduction window and recorded in the manifest; full request/response logs archived so retired-endpoint results remain auditable.
 - Mid-run model-deprecation policy preregistered (halt → substitute snapshot → full recode of the affected coder's assignments; never mixed within one coder column).
 - **Determinism audit:** re-code an n=20 (P1) / n=50 (P4) subsample twice per family; report exact-match rate. PROVISIONAL floor: ≥ 95% exact match per dimension.
 - Prompt = build artifact with SHA256 manifest (existing rule); coder-runner verifies hash before every run.
@@ -87,6 +89,8 @@ API call logs published with the audit package to make the no-contact claims ver
   toward corpus surface statistics (length, hedge rate, readability); each coder family then
   classifies real-vs-synthetic on sanitized text in fresh contexts. PROVISIONAL pass: discriminator
   AUC ≤ 0.60 (CI including 0.5 preferred); fail → re-launder before any accuracy scoring.
+  **Iteration cap: 3 regeneration rounds per item**, every regeneration logged with its trigger —
+  an uncapped patch loop would let the discriminator gate become an expectancy channel.
 - PROVISIONAL accuracy floors (per coder, dev half at P1): D1 ≥ 85%, D2 ≥ 85%, D3 ≥ 70% (±1 level ≥ 90%), D4 ≥ 75%.
 
 ## B4. Perturbation arms
@@ -101,6 +105,12 @@ API call logs published with the audit package to make the no-contact claims ver
   is maximally paraphrase-stable; interpret only jointly with B2. PROVISIONAL: code-flip ≤ 10%.
 - **Entity-swap:** named interlocutors replaced by role tags on a subsample; code divergence flags
   memorization-adjacent coding.
+- **Laundering method hierarchy (v1.2):** prefer **mechanical identity-scrubbing** (the existing
+  sanitizer, with scrub logs) wherever the item passes the recognition probe; full paraphrase only
+  where scrubbing fails the probe. Every paraphrased item carries a **cue-fidelity check**:
+  hedging/modal/directive term counts preserved within a preregistered band; violations
+  re-laundered (same 3-round cap as B3). Rationale: paraphrase perturbs exactly the dimensions
+  being measured (claim-strength register), so it is a last resort, not a default.
 - **Raw-vs-laundered arm:** at P1, the 55 pilot items are coded both raw and style-laundered;
   divergence measured. At P3, dk decides which arm is primary for P4 (laundered coding also
   neutralizes venue-register leakage → feeds B9); the other becomes a preregistered sensitivity.
@@ -118,6 +128,11 @@ API call logs published with the audit package to make the no-contact claims ver
 
 ## B6. Adjudication integrity
 
+- **Adjudicator-seat rule (v1.2, preregistered before any P1 coder run):** the C seat (majority
+  adjudicator) is provisionally OpenAI; final assignment at P3 by a fixed rule — the family with
+  the highest dev-half synthetic accuracy (B3) and the lowest asymmetric error-correlation with
+  the other two, computed on synthetic-dev items only (never on the memorization-suspect anchors).
+  The rule, not the outcome, is what freezes.
 - Majority-of-three (A, B, C). 3-way splits → `unresolved`: excluded from primary analysis;
   sensitivity bounds computed under each candidate resolution; per-cell unresolved rates reported.
 - **2-1 resolution matrix** published, cross-tabulated against analysis-predicted cells;
@@ -180,6 +195,15 @@ at low hundreds of USD — logged in `data/coded/cost_log.md`.
 
 ## Changelog
 
+- v1.2 (2026-07-14, allocation review, dk-approved): G1 redefined to min pairwise α (codebook v1.2).
+  E reassigned Sonar → GLM-class open-weights via Perplexity Agent API with `web_search` omitted
+  (structural no-search; Sonar's `disable_search` proves non-surfacing only, and its lineage is
+  undocumented — web-verified 2026-07-14); Sonar barred from blinded roles, retained as P2 harvest
+  aid. Conformity checker staffed (Kimi-class, same route). Coder D mandatory; Llama re-admitted to
+  D's candidate pool (E no longer Llama-derived). Laundering hierarchy (mechanical scrub first,
+  cue-fidelity band), discriminator iteration cap, adjudicator-seat rule, snapshot-retirement
+  manifest requirement added. No new API keys (dk constraint).
 - v1.0 (2026-07-14): initial battery, drafted from the red-team synthesis (3 adversarial reviews,
-  6-agent research sweep); dk approvals of record: zero-human rule (absolute), coder C = OpenAI,
-  dk synthetic-spec sign-off, document package. Thresholds PROVISIONAL until P3.
+  6-agent research sweep); dk approvals of record: zero-human rule (absolute), coder C = OpenAI
+  (v1.2: provisional, rule-based final assignment), dk synthetic-spec sign-off, document package.
+  Thresholds PROVISIONAL until P3.
