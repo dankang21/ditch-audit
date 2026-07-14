@@ -1,7 +1,7 @@
 # ditch-audit — Paper Outline & Coding Protocol
 
-**v0.3** · 2026-07-14 · Owner: dk · Status: D-1..D-5 confirmed · G0 PASS · **P1 instrument shipped** (`ditch-audit-codebook-v1.md` + `ditch-audit-gold-anchors-v1.json`) · Table 1 correction: White (Noûs 2000) → S1 functional pro · Next: pilot run (RS 2015 + 20 anchors), gate G1 α ≥ 0.70
-Codename: `ditch-audit` · AI-use disclosure: drafted with Claude; final disclosure text per target-venue policy at submission.
+**v0.4** · 2026-07-14 · Owner: dk · Status: D-1..D-6 confirmed · G0 PASS · **P1 instrument shipped** (codebook v1.1 + gold-anchors v1 + validation-battery v1) · v0.4 amendment: **zero-human coding** (binding dk decision) — dk pilot hand-coding and the P4 human-coded sample removed; tri-family coders + preregistered validation battery replace them (§4.6, T-5/T-6) · Next: pilot run (RS 2015 + 20 anchors), gate G1 α ≥ 0.70
+Codename: `ditch-audit` · AI-use disclosure: drafted with Claude; **all corpus coding performed by LLMs with zero human item-coding — disclosed in the abstract's own voice and detailed in methods**; final disclosure text per target-venue policy at submission.
 
 ---
 
@@ -10,7 +10,7 @@ Codename: `ditch-audit` · AI-use disclosure: drafted with Claude; final disclos
 **One-line thesis.** The inferential chain from "physical reality has an external cause" to Nicene Christian theism, individuated by a witness-based criterion, has eight logically independent steps; a systematic audit of 20 years of peer-reviewed philosophy of religion shows (i) dispute status tracks epistemic type — contested ⟺ a priori, empirically exposed ⟺ one-sidedly against — and (ii) strong positive claims migrate to confessionally affiliated venues. Lessing's ditch as a measurable property of the literature, not an aphorism.
 
 **Abstract draft (~150 words).**
-> The inferential chain from a bare first cause to the God of Nicene Christianity has been discussed piecewise — as the "gap problem," as "ramified natural theology," as the "dwindling probabilities" debate — but never measured as a whole. We introduce a witness-based criterion for individuating the chain's logically independent steps, yielding an eight-step canonical partition whose burden count is invariant under definitional bundling. We then audit twenty years of the peer-reviewed philosophy-of-religion literature (N ≈ [pilot-calibrated]), coding each article's step, direction, claim strength, and the epistemic type of its load-bearing evidence. Two regularities are predicted and tested: (1) positive evidential claims *for* chain steps are overwhelmingly a priori, while positive claims *against* are empirical or historical; (2) strong pro-side claims migrate from mainstream to confessionally affiliated venues — a pattern not attributable to hostile gatekeeping, given the subfield's majority-theist composition. Implications for cumulative-case natural theology are discussed.
+> The inferential chain from a bare first cause to the God of Nicene Christianity has been discussed piecewise — as the "gap problem," as "ramified natural theology," as the "dwindling probabilities" debate — but never measured as a whole. We introduce a witness-based criterion for individuating the chain's logically independent steps, yielding an eight-step canonical partition whose burden count is invariant under definitional bundling. We then audit twenty years of the peer-reviewed philosophy-of-religion literature (N ≈ [pilot-calibrated]), coding each article's step, direction, claim strength, and the epistemic type of its load-bearing evidence. All coding was performed by a fixed, preregistered, multi-family LLM instrument with zero human item-coding, validated by a preregistered contamination-control battery. Two regularities are predicted and tested: (1) positive evidential claims *for* chain steps are overwhelmingly a priori, while positive claims *against* are empirical or historical; (2) strong pro-side claims migrate from mainstream to confessionally affiliated venues — a pattern not attributable to hostile gatekeeping, given the subfield's majority-theist composition. Implications for cumulative-case natural theology are discussed.
 
 ---
 
@@ -128,14 +128,17 @@ Statistic: tier × strength × direction log-linear model; report the two ORs an
 
 **Null handling (kill criterion).** H1 ∧ H2 both null → no journal submission; downgrade to descriptive-map preprint + essay. No salami-slicing, no post-hoc hypothesis swaps.
 
-### 4.6 LLM-assisted coding pipeline
-- **Blind coding:** strip author, title, journal, and year before the model sees the text. Rationale: contamination control — models recognize famous papers and may code by reputation instead of content.
-- **Dual coders** from different model families, run independently; disagreements → human adjudication (dk).
-- **Gold set:** n = 150, stratified by journal × year, human-coded. Reliability: Krippendorff's α per dimension; **gate: α ≥ 0.70** each dimension. Fail → codebook revision loop (max 2; then simplify D3 to a 3-level scale).
+### 4.6 LLM coding pipeline (v0.4 — zero-human)
+- **Zero-human rule (binding, 2026-07-14):** no human codes any item — no human coder, no human item-adjudication, no human validation sample. The designer's labor = instrument design (codebook, synthetic-item specs/sign-off, gate approvals). The paper claims **measurement by a fixed, preregistered, multi-family LLM instrument**, not human-equivalent annotation; the abstract discloses this in its own voice.
+- **Blind coding:** strip author, title, journal, and year before the model sees the text. Rationale: contamination control — models recognize famous papers and may code by reputation instead of content (input-level masking is the validated countermeasure; prompt-level instructions are not).
+- **Tri-family coders:** A (Anthropic) ∥ B (Google) — the reliability pair gating G1 — ∥ C (OpenAI, adjudicator). Disagreements → majority-of-three; 3-way splits → unresolved protocol with sensitivity bounds. Optional D = open-weights archival coder (re-executability). Dated snapshots pinned at preregistration.
+- **Validity evidence** (replacing the former human-coded sample): the preregistered battery in `validation-battery-v1.md` — cue-ablation folklore baseline; dk-spec'd synthetic criterion set (dev/vaulted halves) with style-laundering and a discriminator test; contrast sets and paraphrase arms; recognition probes with fame-stratified analyses; four-estimator stability; per-cell agreement floors; reversed-default deletion-test sensitivity. Numeric thresholds and failure consequences frozen at P3.
+- **Reliability:** Krippendorff's α per dimension on independent first-pass codes; **gate: α(A,B) ≥ 0.70** each dimension. Fail → codebook revision loop (max 2; then simplify D3 to a 3-level scale).
 - **Codebook = versioned prompt** (git). Frozen at preregistration; any post-freeze edit voids the run.
+- **Known limitation (stated, not hidden):** with no human criterion, instrument accuracy on the real corpus distribution is formally unidentified; the battery bounds the identifiable artifact classes and the claim is disciplined accordingly.
 
 ### 4.7 Preregistration
-OSF. Freeze after pilot (P1), before full run (P4): hypotheses, codebook version, tier assignments, k thresholds, analysis code skeleton. Pilot data explicitly excluded from confirmatory analysis.
+OSF. Freeze after pilot (P1), before full run (P4): hypotheses, codebook version, tier assignments, k thresholds, analysis code skeleton, **model snapshots (dated), the full validation-battery threshold table and failure consequences (validation-battery §B10), the role-exclusivity matrix, and the vaulted synthetic-half hash**. Pilot data explicitly excluded from confirmatory analysis.
 
 ---
 
@@ -153,7 +156,8 @@ OSF. Freeze after pilot (P1), before full run (P4): hypotheses, codebook version
 - **T-2 abstract-only coding** may miss claim-strength nuance. Mitigation: full text mandatory for all CS4/CS5 candidates.
 - **T-3 survivorship:** the published record only; no inference to submission or suppression flows. Fence stated in §1 and §9.
 - **T-4 gatekeeping objection — and its reversal.** Objection: "mainstream venues are biased against theism, so H2 measures bias, not epistemics." Reply: the specialist subfield is majority-theist — PhilPapers survey (Bourget & Chalmers, Phil. Studies 2014): ≈72% of philosophy-of-religion specialists accept or lean toward theism — and T2 editors/referees are drawn from that pool. A "defenses pass, strong positive claims migrate" pattern **cannot** be explained by hostile gatekeeping in a majority-theist subfield; field composition biases against H2, so a positive H2 result is conservative. Secondary anchors: Draper & Nichols, "Diagnosing cognitive biases in philosophy of religion" (Monist 96(3), 2013); De Cruz's empirical program — Episteme 14(1) (2017): argument-strength ratings track prior belief, with her PoR sample ≈58% Christian theist vs ≈16% atheist; Res Philosophica (2018): most philosophers of religion were theists *before* entering the field. The selection-bias data sharpens the reversal: composition is prior to and independent of gatekeeping.
-- **T-5 LLM contamination.** Mitigation: blind coding + dual-family + gold set (§4.6).
+- **T-5 LLM contamination (item-level memorization).** Mitigation: input-level blinding + recognition probes with fame-stratified re-estimation + paraphrase/entity-swap perturbation (validation-battery §B4–B5).
+- **T-6 shared training-prior ("folklore") artifact — the design's principal threat (v0.4).** All coder families read the field's secondary discourse in pretraining; the headline pattern coincides with field folklore, so inter-family agreement alone cannot evidence text-driven coding, and majority adjudication can resolve toward the shared prior. Mitigations: cue-ablation folklore baseline with a text-driven-stratum requirement for any confirmatory claim (§B2); counter-stereotypical worked examples in the frozen prompt (codebook WE7–WE9); anti-folklore synthetic criterion cells and code-flipping contrast sets (§B3–B4); four-estimator stability and 2-1 resolution audits (§B6); reversed-default deletion test (§B7). Residual risk stated as a limitation: a folklore component below the battery's detection floor cannot be excluded.
 
 ---
 
@@ -186,6 +190,7 @@ Target: T ≡ S1 ∧ … ∧ S8. Chain rule: P(T|E) = Π_i P(S_i | S_1..i−1, E
 - **Stretch: Religious Studies** — boldest placement: the audit published inside the audited field.
 - **Preprint:** PhilPapers Archive + OSF (philosophy has no arXiv; PhilPapers is the analog).
 - **Framing variants,** decided at P5 by effect sizes: (a) methods-forward — "an audit methodology for cumulative-case arguments," theism as case study (most transferable); (b) results-forward — "the topography of the ditch."
+- **Zero-human triage risk (v0.4).** 2024–26 methods guidelines treat human gold validation as a required item; a fully zero-human study is precedent-setting, not precedent-following. Consequences: methods-forward framing gains weight; the abstract discloses zero-human coding up front; venue order tilts Metaphilosophy/Synthese-class and computational-humanities outlets; the existing kill-criteria downgrade path (preprint + essay) absorbs a desk-reject cascade. Battery components double as the reviewer-response arsenal.
 
 ---
 
@@ -194,10 +199,10 @@ Target: T ≡ S1 ∧ … ∧ S8. Chain rule: P(T|E) = Π_i P(S_i | S_1..i−1, E
 | Phase | Work | Duration | Gate |
 |---|---|---|---|
 | P0 | Prior-art sweep: PhilPapers queries ("ramified natural theology", "gap problem", "dwindling probabilities", "cumulative case" × meta); cited-by walks on Gauch 2013 / Ocampo 2024 / Draper–Nichols 2013 | 1–3 d | **G0:** no substantially overlapping meta-study exists → proceed; else differentiation memo or stop |
-| P1 | Codebook v1 + pilot: Religious Studies 2015 full year (~50 arts) + 20 canonical anchors from Table 1; hand-code (dk) ∥ dual-LLM; compute α | 2–3 wk | **G1:** Krippendorff α ≥ 0.70 all dimensions |
+| P1 | Codebook v1.1 + pilot: Religious Studies 2015 full year (~50 arts) + 20 canonical anchors from Table 1; tri-LLM coding (A ∥ B ∥ C) + battery pilot arms (recognition probe, cue-ablation baseline, determinism audit, raw-vs-laundered divergence); compute α | 2–3 wk | **G1:** Krippendorff α(A,B) ≥ 0.70 all dimensions |
 | P2 | Corpus build: OAI/Crossref harvest, dedupe, metadata QA, abstract-coverage report, exact per-journal counts | 1–2 wk | **G2:** ≥ 90% abstract availability |
 | P3 | OSF preregistration freeze | 3 d | — |
-| P4 | Full coding run incl. gold-set validation | 2–3 wk | — |
+| P4 | Full coding run (tri-family) incl. full battery: vaulted synthetic half opened, recognition probes, contrast sets, per-cell floors, four-estimator stability (no human validation — zero-human rule) | 2–3 wk | — |
 | P5 | Analysis; H1/H2 verdicts | 2 wk | **G5:** framing decision (§9) |
 | P6 | English draft + venue-specific AI disclosure | 3–4 wk | — |
 
@@ -215,3 +220,4 @@ Target: T ≡ S1 ∧ … ∧ S8. Chain rule: P(T|E) = Π_i P(S_i | S_1..i−1, E
 | D-3 | Books excluded from quantitative core (articles-only), used as qualitative anchors — confirm. Known cost: the field's monograph culture; stated as limitation | confirm |
 | D-4 | English-only corpus — confirm | confirm |
 | D-5 | §7 formal weight: light (→ Metaphilosophy) vs heavy (→ Synthese). Provisional until P5 but affects notation now | light |
+| D-6 | Coder families under the zero-human rule: A = Anthropic, B = Google, C = OpenAI (adjudicator), D = open-weights archival (recommended); generator/launderer E = a non-coder family. Role-exclusivity matrix: validation-battery §B0 | **decided 2026-07-14** |

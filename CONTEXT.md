@@ -73,12 +73,30 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
 8. **A07 (Swinburne 1968, design) is in the gold set deliberately**: a pro/CS4/beta
    item, i.e., the *opposite* of H1's modal pattern — guards against
    confirmation-coding.
+9. **Zero-human rule (dk, 2026-07-14, absolute).** No human codes any item — no human
+   coder, no human item-adjudication, no human validation sample; dk's pilot hand-coding
+   and the P4 150-item human sample are removed. dk's labor = instrument design only
+   (codebook authorship, synthetic-criterion specs and per-item sign-off, gate approvals).
+   Consequences accepted with the rule: (a) claim discipline — the paper claims measurement
+   by a fixed preregistered multi-family LLM instrument, never human-equivalent annotation,
+   with zero-human coding disclosed in the abstract; (b) a third coder family (C = OpenAI)
+   joins for majority adjudication; an open-weights archival coder (D) is recommended for
+   re-executability; (c) validity evidence moves to the preregistered battery
+   (docs/validation-battery-v1.md), designed against the red-team finding of record: the
+   shared-training-folklore artifact coincides with H1's predicted pattern, so inter-family
+   agreement alone is not evidence of text-driven coding — the cue-ablation baseline (§B2)
+   carries the confirmatory burden; (d) the gold-20 (this file's §4.2 lineage) is demoted
+   to a recognition-stratified diagnostic; (e) real-distribution accuracy is formally
+   unidentified — stated limitation, venue strategy tilts methods-forward.
 
 ## 5. Locked decisions and audit status
 
 - D-1 EJPR out of T2 · D-2 T3 = Philosophia Christi only · D-3 articles-only
   (books = qualitative anchors; stated limitation) · D-4 English-only ·
-  D-5 §7 formal weight light (primary venue Metaphilosophy).
+  D-5 §7 formal weight light (primary venue Metaphilosophy) ·
+  D-6 (2026-07-14) coder families: A = Anthropic, B = Google, C = OpenAI (adjudicator),
+  D = open-weights archival (recommended); generator/launderer = a non-coder family
+  (role-exclusivity matrix in validation-battery §B0).
 - Venue tiers: T1 general (Mind, Noûs, PQ, APQ, Analysis, Phil Studies, topic-
   filtered) · T2 mainstream specialist (F&P, RS, IJPR, Sophia, 2004–2024) ·
   T3 confessional (Philosophia Christi). F&P's T2 assignment is a preregistered
@@ -103,9 +121,14 @@ cut) · abstract understatement (full text for CS4+ candidates) · survivorship
 fence (published record only; no suppression inference) · gatekeeping reversal
 (the PoR subfield is majority-theist — De Cruz: ~58% Christian theist vs ~16%
 atheist; Bourget & Chalmers 2014: ≈72% theism among specialists — so H2 cannot be
-hostile-gatekeeping artifact; composition biases against H2) · LLM contamination
-(blind coding, dual families, gold set upper-bounds accuracy; true validation =
-P4's 150-item human sample).
+hostile-gatekeeping artifact; composition biases against H2) · LLM contamination,
+two layers (v0.4): item-level memorization (blind coding, recognition probes,
+fame-stratified re-estimation, perturbation arms) and the deeper shared-folklore
+artifact — H1's pattern is itself field folklore in every coder family's pretraining,
+handled by the cue-ablation text-driven-stratum requirement, anti-folklore criterion
+items, counter-stereotypical worked examples, and four-estimator stability
+(docs/validation-battery-v1.md; replaces the former human-sample defense — the
+150-item human sample no longer exists under the zero-human rule, §4.9).
 
 ## 7. Kill criteria and honesty rules
 
