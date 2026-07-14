@@ -198,4 +198,5 @@ Assembly note: the deployed prompt is generated from this file by concatenation;
 
 ## 12. Changelog
 
+- v1.0 (2026-07-14, P1 session 1): gold anchors A05/A07/A15 web-verified (Crossref/Cambridge Core); citations completed (A05 = RS 41.2, 201-215, part I/II structure confirmed; A07 = Philosophy 43.165, 199-212; A15 = Nous 15.1, 41-51); verify_at_pilot cleared. No gold-code changes.
 - v1.0 (2026-07-14): initial instrument. Verified anchors added: Craig RS 20 (1984) 367–375; Oppy RS 27 (1991) 189–197; Gwiazda RS 45 (2009) 487–493 (Swinburne reply, same issue, 495–498, logged as optional CHAIN anchor). Outline Table 1 correction (White → pro-functional) applied as outline v0.3. Future corpus note: Gellman, "Prospects for a sound stage 3 of cosmological arguments," RS 36 (2000) 195–201 — direct S3 item for the corpus.

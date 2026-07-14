@@ -50,10 +50,10 @@
     },
     {
       "anchor_id": "A05",
-      "citation": "Schellenberg, 'The hiddenness argument revisited (I)', Religious Studies 41 (2005)",
+      "citation": "Schellenberg, 'The hiddenness argument revisited (I)', Religious Studies 41.2 (2005), 201-215, DOI 10.1017/S0034412505007614 [companion: '(II)', 41.3 (2005), 287-303, DOI 10.1017/S0034412505007791]",
       "in_corpus_venue_class": "T2",
-      "verification": "memory",
-      "verify_at_pilot": true,
+      "verification": "web-verified 2026-07-14 (Crossref; part I/II structure confirmed)",
+      "verify_at_pilot": false,
       "gold": { "d1_step": "S5", "d2_direction": "contra", "d3_strength": "CS4", "d4_type": "beta" },
       "flags": ["H"],
       "rationale": "Edge-anchor rule routes hiddenness to S5. Mixed type adjudicated beta: nonresistant-nonbelief premise is empirical and load-bearing under the deletion test."
@@ -70,10 +70,10 @@
     },
     {
       "anchor_id": "A07",
-      "citation": "Swinburne, 'The Argument from Design', Philosophy 43 (1968)",
+      "citation": "Swinburne, 'The Argument from Design', Philosophy 43.165 (1968), 199-212, DOI 10.1017/S0031819100009189",
       "in_corpus_venue_class": "out-of-window (pre-2004) T1-class",
-      "verification": "memory",
-      "verify_at_pilot": true,
+      "verification": "web-verified 2026-07-14 (Cambridge Core + Crossref)",
+      "verify_at_pilot": false,
       "gold": { "d1_step": "S2", "d2_direction": "pro", "d3_strength": "CS4", "d4_type": "beta" },
       "flags": [],
       "rationale": "Teleological edge-anchor rule routes design to S2; temporal-order premise is empirical and load-bearing. Teaches that pro-CS4-beta exists (guards against confirmation-coding)."
@@ -150,10 +150,10 @@
     },
     {
       "anchor_id": "A15",
-      "citation": "Plantinga, 'Is Belief in God Properly Basic?', Nous 15 (1981)",
+      "citation": "Plantinga, 'Is Belief in God Properly Basic?', Nous 15.1 (1981), 41-51, DOI 10.2307/2215239",
       "in_corpus_venue_class": "out-of-window (pre-2004) T1-class",
-      "verification": "memory",
-      "verify_at_pilot": true,
+      "verification": "web-verified 2026-07-14 (Crossref; JSTOR 2215239)",
+      "verify_at_pilot": false,
       "gold": { "d1_step": "B", "d2_direction": "pro", "d3_strength": "CS3", "d4_type": "alpha" },
       "flags": [],
       "rationale": "Bundled God-target; claims warrant without propositional evidence - the canonical CS3 pattern."
