@@ -2,9 +2,9 @@
   "meta": {
     "project": "ditch-audit",
     "file": "gold-anchors",
-    "version": "1.0",
+    "version": "1.1",
     "date": "2026-07-14",
-    "usage": "Held-out validation set. None of these items appears in the coder prompt. Fetch real abstracts at pilot, sanitize, code blind, score against gold. Contamination caveat: famous papers; gold accuracy upper-bounds corpus accuracy.",
+    "usage": "Recognition-stratified DIAGNOSTIC set (codebook s8 v1.1; zero-human amendment). None of these items appears in the coder prompt. Fetch real texts at pilot, sanitize, code blind. Report accuracy ONLY stratified by the validation-battery sB5 identifiability score; zero headline construct-validity weight (these are famous, memorization-suspect papers coded by the hypothesis-aware instrument designer). Construct validity lives in the synthetic criterion set (validation-battery sB3). Gold codes unchanged from v1.0.",
     "coverage_gaps": "S6: no anchor (promote first clear pilot item to A21). CS5: no in-corpus anchor (known exemplars live outside corpus venues; recorded as expected-distribution observation)."
   },
   "anchors": [

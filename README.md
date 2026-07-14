@@ -4,7 +4,8 @@ Empirical meta-study of the peer-reviewed philosophy-of-religion literature:
 step x direction x claim strength x epistemic type x venue, over the 8-step
 inferential chain from "external cause" to Nicene theism.
 
-Canonical documents: `docs/` (outline v0.3, P0 sweep report, codebook v1, gold anchors).
+Canonical documents: `docs/` (outline v0.4, P0 sweep report, codebook v1 (v1.1),
+gold anchors (diagnostic), validation battery v1).
 Operating rules for Claude Code: `CLAUDE.md`. Intellectual lineage: `CONTEXT.md`.
 
 Quickstart:
