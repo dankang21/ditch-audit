@@ -1,0 +1,8 @@
+# copyrighted abstracts + coder outputs stay local; never push to a public remote
+data/raw/
+data/sanitized/
+data/coded/
+!data/**/.gitkeep
+.env
+__pycache__/
+*.pyc

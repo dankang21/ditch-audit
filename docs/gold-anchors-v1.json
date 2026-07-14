@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "project": "ditch-audit",
+    "file": "gold-anchors",
+    "version": "1.0",
+    "date": "2026-07-14",
+    "usage": "Held-out validation set. None of these items appears in the coder prompt. Fetch real abstracts at pilot, sanitize, code blind, score against gold. Contamination caveat: famous papers; gold accuracy upper-bounds corpus accuracy.",
+    "coverage_gaps": "S6: no anchor (promote first clear pilot item to A21). CS5: no in-corpus anchor (known exemplars live outside corpus venues; recorded as expected-distribution observation)."
+  },
+  "anchors": [
+    {
+      "anchor_id": "A01",
+      "citation": "Rowe, 'The Problem of Evil and Some Varieties of Atheism', American Philosophical Quarterly 16 (1979), 335-341",
+      "in_corpus_venue_class": "T1",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S4", "d2_direction": "contra", "d3_strength": "CS4", "d4_type": "beta" },
+      "flags": [],
+      "rationale": "Positive evidential claim from apparently gratuitous suffering; observational premise is load-bearing (deletion test fails without it)."
+    },
+    {
+      "anchor_id": "A02",
+      "citation": "Draper, 'Pain and Pleasure: An Evidential Problem for Theists', Nous 23 (1989), 331-350",
+      "in_corpus_venue_class": "T1",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S4", "d2_direction": "contra", "d3_strength": "CS4", "d4_type": "beta" },
+      "flags": [],
+      "rationale": "Comparative likelihood of observed pain/pleasure distribution on indifference vs theism; qualitative comparison, so CS4 not CS5."
+    },
+    {
+      "anchor_id": "A03",
+      "citation": "Wykstra, 'The Humean Obstacle to Evidential Arguments from Suffering', International Journal for Philosophy of Religion 16 (1984), 73-93",
+      "in_corpus_venue_class": "T2",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S4", "d2_direction": "pro", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": [],
+      "rationale": "CORNEA undercuts the noseeum inference; rebuts the evidential argument without positive evidence for goodness."
+    },
+    {
+      "anchor_id": "A04",
+      "citation": "Law, 'The Evil-God Challenge', Religious Studies 46 (2010), 353-373",
+      "in_corpus_venue_class": "T2",
+      "verification": "web-verified 2026-07-14 (cited in RS 52 reference list)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S4", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": [],
+      "rationale": "Symmetry undercutter: defenses of good-god equally save evil-god, undermining the reasonableness of the goodness claim."
+    },
+    {
+      "anchor_id": "A05",
+      "citation": "Schellenberg, 'The hiddenness argument revisited (I)', Religious Studies 41 (2005)",
+      "in_corpus_venue_class": "T2",
+      "verification": "memory",
+      "verify_at_pilot": true,
+      "gold": { "d1_step": "S5", "d2_direction": "contra", "d3_strength": "CS4", "d4_type": "beta" },
+      "flags": ["H"],
+      "rationale": "Edge-anchor rule routes hiddenness to S5. Mixed type adjudicated beta: nonresistant-nonbelief premise is empirical and load-bearing under the deletion test."
+    },
+    {
+      "anchor_id": "A06",
+      "citation": "Morriston, 'Must the Beginning of the Universe Have a Personal Cause?', Faith and Philosophy 17 (2000), 149-169",
+      "in_corpus_venue_class": "T2",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S2", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": [],
+      "rationale": "Rebuts the inference from a first cause to a personal agent; no positive claim that the ground is impersonal."
+    },
+    {
+      "anchor_id": "A07",
+      "citation": "Swinburne, 'The Argument from Design', Philosophy 43 (1968)",
+      "in_corpus_venue_class": "out-of-window (pre-2004) T1-class",
+      "verification": "memory",
+      "verify_at_pilot": true,
+      "gold": { "d1_step": "S2", "d2_direction": "pro", "d3_strength": "CS4", "d4_type": "beta" },
+      "flags": [],
+      "rationale": "Teleological edge-anchor rule routes design to S2; temporal-order premise is empirical and load-bearing. Teaches that pro-CS4-beta exists (guards against confirmation-coding)."
+    },
+    {
+      "anchor_id": "A08",
+      "citation": "Craig, 'Professor Mackie and the Kalam Cosmological Argument', Religious Studies 20 (1984), 367-375",
+      "in_corpus_venue_class": "out-of-window (pre-2004) T2-class",
+      "verification": "web-verified 2026-07-14 (Cambridge Core; Oppy 1991 citation)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S1", "d2_direction": "pro", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": ["CHAIN"],
+      "rationale": "Defends the kalam argument by rebutting Mackie's objections; net effect on S1 thesis positive; no new positive evidence."
+    },
+    {
+      "anchor_id": "A09",
+      "citation": "Oppy, 'Craig, Mackie, and the Kalam Cosmological Argument', Religious Studies 27 (1991), 189-197",
+      "in_corpus_venue_class": "out-of-window (pre-2004) T2-class",
+      "verification": "web-verified 2026-07-14 (Cambridge Core, DOI 10.1017/S0034412500020837)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S1", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": ["CHAIN"],
+      "rationale": "Reply-to-a-reply: defends Mackie's objections against Craig's rebuttal; tracing the chain, net effect on S1 thesis is negative. Canonical net-effect-rule teacher."
+    },
+    {
+      "anchor_id": "A10",
+      "citation": "Malpass & Morriston, 'Endless and Infinite', Philosophical Quarterly 70 (2020)",
+      "in_corpus_venue_class": "T1",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S1", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": [],
+      "rationale": "Rebuts the successive-addition case against an infinite past; undercuts a kalam premise without asserting the universe is uncaused."
+    },
+    {
+      "anchor_id": "A11",
+      "citation": "White, 'Fine-Tuning and Multiple Universes', Nous 34 (2000), 260-276",
+      "in_corpus_venue_class": "T1",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S1", "d2_direction": "pro", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": ["CHAIN"],
+      "rationale": "FUNCTIONAL DIRECTION: rebuts the multiverse rejoinder to fine-tuning (inverse gambler's fallacy); net effect pro the S1 thesis regardless of author's worldview. Correction of outline v0.2 shelving."
+    },
+    {
+      "anchor_id": "A12",
+      "citation": "McGrew, McGrew & Vestrup, 'Probabilities and the Fine-Tuning Argument: A Sceptical View', Mind 110 (2001)",
+      "in_corpus_venue_class": "T1",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S1", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": [],
+      "rationale": "Normalizability problem undercuts the fine-tuning argument's probability machinery; a priori measure-theoretic point is load-bearing."
+    },
+    {
+      "anchor_id": "A13",
+      "citation": "Rasmussen, 'From a Necessary Being to God', International Journal for Philosophy of Religion 66 (2009)",
+      "in_corpus_venue_class": "T2",
+      "verification": "web-verified (P0 sweep: gap-problem literature)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S3", "d2_direction": "pro", "d3_strength": "CS4", "d4_type": "alpha" },
+      "flags": [],
+      "rationale": "Positive a priori case that a necessary being would have divine attributes; qualitative support for the S3 bridge."
+    },
+    {
+      "anchor_id": "A14",
+      "citation": "Gwiazda, 'Richard Swinburne's argument to the simplicity of God via the infinite', Religious Studies 45 (2009), 487-493",
+      "in_corpus_venue_class": "T2",
+      "verification": "web-verified 2026-07-14 (Cambridge Core abstract; Swinburne reply 495-498 same issue)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S3", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": ["CHAIN"],
+      "rationale": "Rebuts the simplicity inference to a maximal unique being by exposing a tension in Swinburne's construal of the omni-properties."
+    },
+    {
+      "anchor_id": "A15",
+      "citation": "Plantinga, 'Is Belief in God Properly Basic?', Nous 15 (1981)",
+      "in_corpus_venue_class": "out-of-window (pre-2004) T1-class",
+      "verification": "memory",
+      "verify_at_pilot": true,
+      "gold": { "d1_step": "B", "d2_direction": "pro", "d3_strength": "CS3", "d4_type": "alpha" },
+      "flags": [],
+      "rationale": "Bundled God-target; claims warrant without propositional evidence - the canonical CS3 pattern."
+    },
+    {
+      "anchor_id": "A16",
+      "citation": "Bostrom, 'Are You Living in a Computer Simulation?', Philosophical Quarterly 53 (2003), 243-255",
+      "in_corpus_venue_class": "T1",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "X", "d2_direction": "NA", "d3_strength": "NA", "d4_type": "NA" },
+      "flags": [],
+      "rationale": "No chain-step thesis supported or opposed; witness-role papers are framework citations, not corpus evidence. Teaches the X code."
+    },
+    {
+      "anchor_id": "A17",
+      "citation": "Tuggy, 'The Unfinished Business of Trinitarian Theorizing', Religious Studies 39 (2003)",
+      "in_corpus_venue_class": "T2",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S8", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": [],
+      "rationale": "Argues extant Trinity theories fail their coherence task; rebuts the coherence defenses rather than adducing evidence against the doctrine's truth."
+    },
+    {
+      "anchor_id": "A18",
+      "citation": "Brower & Rea, 'Material Constitution and the Trinity', Faith and Philosophy 22 (2005)",
+      "in_corpus_venue_class": "T2",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S8", "d2_direction": "pro", "d3_strength": "CS1", "d4_type": "alpha" },
+      "flags": [],
+      "rationale": "Coherence-only: a constitution model on which the Trinity is consistent; no claim of evidence for its truth. Canonical CS1."
+    },
+    {
+      "anchor_id": "A19",
+      "citation": "Swinburne, 'Natural Theology, Its Dwindling Probabilities and Lack of Rapport', Faith and Philosophy 21 (2004), 533-546",
+      "in_corpus_venue_class": "T2",
+      "verification": "web-verified (P0 sweep: PhilPapers record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "M", "d2_direction": "pro", "d3_strength": "CS2", "d4_type": "alpha" },
+      "flags": ["CHAIN"],
+      "rationale": "Method-level: rebuts Plantinga's structural objection to ramified natural theology (evidence entering at stages); defends the case-making machinery, not a step."
+    },
+    {
+      "anchor_id": "A20",
+      "citation": "Allison, 'The Resurrection of Jesus: Apologetics, Polemics, History', T&T Clark (2021) [book]",
+      "in_corpus_venue_class": "out-of-corpus (monograph; anchors may exceed corpus)",
+      "verification": "audited (conversation record)",
+      "verify_at_pilot": false,
+      "gold": { "d1_step": "S7", "d2_direction": "neutral", "d3_strength": "NA", "d4_type": "gamma" },
+      "flags": [],
+      "rationale": "Explicit non liquet after weighing testimony and rivals: the canonical neutral/verdict-suspension pattern, historical-documentary type."
+    }
+  ]
+}
