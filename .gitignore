@@ -4,5 +4,8 @@ data/sanitized/
 data/coded/
 !data/**/.gitkeep
 .env
+.env.*
+!.env.example
+*.swp
 __pycache__/
 *.pyc
