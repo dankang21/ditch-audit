@@ -622,11 +622,12 @@ def append_cost_log(batch_name: str, provider: ProviderBase, stats: Stats):
         f.write("\n".join(lines) + "\n")
 
 
-def run_batch(batch_path: str, coders: list, limit, env: dict, template: str) -> int:
+def run_batch(batch_path: str, coders: list, limit, env: dict, template: str,
+              out_suffix: str = "") -> int:
     items = load_batch(batch_path)
     if limit is not None:
         items = items[:limit]
-    batch_name = os.path.splitext(os.path.basename(batch_path))[0]
+    batch_name = os.path.splitext(os.path.basename(batch_path))[0] + out_suffix
     os.makedirs(CODED_DIR, exist_ok=True)
     print(f"[batch] {batch_name}: {len(items)} item(s), coders={','.join(coders)}")
 
@@ -730,6 +731,9 @@ def main(argv=None) -> int:
     ap.add_argument("--limit", type=int, default=None, help="process only the first N items")
     ap.add_argument("--smoke", action="store_true",
                     help="1 call per provider with a built-in dummy text; no data/coded writes")
+    ap.add_argument("--out-suffix", default="",
+                    help="appended to the output batch name, e.g. '.r2' for "
+                         "self-consistency repeat runs (majority-of-3; battery B1/B6)")
     args = ap.parse_args(argv)
 
     coders = [c.strip() for c in args.coders.split(",") if c.strip()]
@@ -754,7 +758,8 @@ def main(argv=None) -> int:
     batch_path = resolve_path(args.batch)
     if not os.path.exists(batch_path):
         die(f"batch file not found: {batch_path}", 2)
-    return run_batch(batch_path, coders, args.limit, env, template)
+    return run_batch(batch_path, coders, args.limit, env, template,
+                     out_suffix=args.out_suffix)
 
 
 if __name__ == "__main__":
