@@ -203,9 +203,19 @@ def run_item(item, spec):
             feedback_history.append(("(no text produced)", ["API returned no usable response"]))
             continue
 
-        clean, proof = gs.no_search_proof(resp, gs.GEN_MODEL)
-        text = gs.extract_text(resp)
-        usage = resp.get("usage", {})
+        try:
+            clean, proof = gs.no_search_proof(resp, gs.GEN_MODEL)
+            text = gs.extract_text(resp)
+            usage = resp.get("usage") or {}
+        except Exception as e:
+            # any malformed/degraded response is a retryable attempt, never a run abort
+            attempts += 1
+            append_fsync(ATTEMPTS_PATH, {"item_id": sid, "call": total_calls,
+                                            "phase": "restyle",
+                                            "error": f"response processing: {type(e).__name__}: {e}"})
+            gs.log(f"[{sid}] call {total_calls}: response processing error ({type(e).__name__}) -> retry")
+            feedback_history.append(("(no text produced)", ["API response was malformed"]))
+            continue
         rec = {"item_id": sid, "call": total_calls, "phase": "restyle",
                "model": gs.GEN_MODEL, "text": text, "no_search_proof": proof,
                "usage": {k: usage.get(k) for k in
@@ -324,7 +334,14 @@ def main():
             futs = {ex.submit(run_item, it, specs[it["item_id"]]): it["item_id"]
                     for it in items}
             for fut in concurrent.futures.as_completed(futs):
-                fut.result()
+                sid = futs[fut]
+                try:
+                    fut.result()
+                except Exception as e:
+                    # one item's unexpected exception must not kill the run;
+                    # the item stays un-checkpointed and is retried on resume
+                    gs.log(f"[{sid}] worker exception ({type(e).__name__}: {e}) "
+                           f"-> item skipped this run, resume will retry")
     except BaseException as e:
         exit_code = 1
         gs.log(f"run aborted: {type(e).__name__}: {e}")
