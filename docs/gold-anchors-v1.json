@@ -2,9 +2,9 @@
   "meta": {
     "project": "ditch-audit",
     "file": "gold-anchors",
-    "version": "1.1",
+    "version": "1.2",
     "date": "2026-07-14",
-    "usage": "Recognition-stratified DIAGNOSTIC set (codebook s8 v1.1; zero-human amendment). None of these items appears in the coder prompt. Fetch real texts at pilot, sanitize, code blind. Report accuracy ONLY stratified by the validation-battery sB5 identifiability score; zero headline construct-validity weight (these are famous, memorization-suspect papers coded by the hypothesis-aware instrument designer). Construct validity lives in the synthetic criterion set (validation-battery sB3). Gold codes unchanged from v1.0.",
+    "usage": "Recognition-stratified DIAGNOSTIC set (codebook s8 v1.1; zero-human amendment). None of these items appears in the coder prompt. Fetch real texts at pilot, sanitize, code blind. Report accuracy ONLY stratified by the validation-battery sB5 identifiability score; zero headline construct-validity weight (these are famous, memorization-suspect papers coded by the hypothesis-aware instrument designer). Construct validity lives in the synthetic criterion set (validation-battery sB3). Gold codes unchanged from v1.0. v1.2 (2026-07-16): dk re-adjudication of A04/A05/A07 from sanitized text alone, triggered by the unison-miss gold audit — see codebook s8 audit rule and s12 changelog v1.4b.",
     "coverage_gaps": "S6: no anchor (promote first clear pilot item to A21). CS5: no in-corpus anchor (known exemplars live outside corpus venues; recorded as expected-distribution observation)."
   },
   "anchors": [
@@ -14,7 +14,12 @@
       "in_corpus_venue_class": "T1",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S4", "d2_direction": "contra", "d3_strength": "CS4", "d4_type": "beta" },
+      "gold": {
+        "d1_step": "S4",
+        "d2_direction": "contra",
+        "d3_strength": "CS4",
+        "d4_type": "beta"
+      },
       "flags": [],
       "rationale": "Positive evidential claim from apparently gratuitous suffering; observational premise is load-bearing (deletion test fails without it)."
     },
@@ -24,7 +29,12 @@
       "in_corpus_venue_class": "T1",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S4", "d2_direction": "contra", "d3_strength": "CS4", "d4_type": "beta" },
+      "gold": {
+        "d1_step": "S4",
+        "d2_direction": "contra",
+        "d3_strength": "CS4",
+        "d4_type": "beta"
+      },
       "flags": [],
       "rationale": "Comparative likelihood of observed pain/pleasure distribution on indifference vs theism; qualitative comparison, so CS4 not CS5."
     },
@@ -34,7 +44,12 @@
       "in_corpus_venue_class": "T2",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S4", "d2_direction": "pro", "d3_strength": "CS2", "d4_type": "alpha" },
+      "gold": {
+        "d1_step": "S4",
+        "d2_direction": "pro",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
       "flags": [],
       "rationale": "CORNEA undercuts the noseeum inference; rebuts the evidential argument without positive evidence for goodness."
     },
@@ -42,21 +57,34 @@
       "anchor_id": "A04",
       "citation": "Law, 'The Evil-God Challenge', Religious Studies 46 (2010), 353-373",
       "in_corpus_venue_class": "T2",
-      "verification": "web-verified 2026-07-14 (cited in RS 52 reference list)",
+      "verification": "web-verified 2026-07-14 (cited in RS 52 reference list) · dk re-adjudication 2026-07-16 (sanitized text; D4 alpha->beta under the multi-fatal-premise dominance rule)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S4", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "gold": {
+        "d1_step": "S4",
+        "d2_direction": "contra",
+        "d3_strength": "CS2",
+        "d4_type": "beta"
+      },
       "flags": [],
-      "rationale": "Symmetry undercutter: defenses of good-god equally save evil-god, undermining the reasonableness of the goodness claim."
+      "rationale": "Symmetry undercutter: defenses of good-god equally save evil-god. D4 beta (v1.2): the observed mixture of good and evil is a deletion-fatal empirical premise alongside the conceptual symmetry principle; dominance rule codes beta."
     },
     {
       "anchor_id": "A05",
       "citation": "Schellenberg, 'The hiddenness argument revisited (I)', Religious Studies 41.2 (2005), 201-215, DOI 10.1017/S0034412505007614 [companion: '(II)', 41.3 (2005), 287-303, DOI 10.1017/S0034412505007791]",
       "in_corpus_venue_class": "T2",
-      "verification": "web-verified 2026-07-14 (Crossref; part I/II structure confirmed)",
+      "verification": "web-verified 2026-07-14 (Crossref; part I/II structure confirmed) · dk re-adjudication 2026-07-16 (sanitized text; was coded from the 1993 argument's reputation, not this paper — designer memorization error caught by unison-miss audit)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S5", "d2_direction": "contra", "d3_strength": "CS4", "d4_type": "beta" },
-      "flags": ["H"],
-      "rationale": "Edge-anchor rule routes hiddenness to S5. Mixed type adjudicated beta: nonresistant-nonbelief premise is empirical and load-bearing under the deletion test."
+      "gold": {
+        "d1_step": "S5",
+        "d2_direction": "contra",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
+      "flags": [
+        "H",
+        "CHAIN"
+      ],
+      "rationale": "Reply-chain defense of the hiddenness argument: rebuts critics' objections as irrelevant (defeater-rebuttal, CS2/DEF), carried by conceptual analysis of the objections (alpha). Net effect contra the S5 thesis; edge-anchor rule routes hiddenness to S5."
     },
     {
       "anchor_id": "A06",
@@ -64,7 +92,12 @@
       "in_corpus_venue_class": "T2",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S2", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "gold": {
+        "d1_step": "S2",
+        "d2_direction": "contra",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
       "flags": [],
       "rationale": "Rebuts the inference from a first cause to a personal agent; no positive claim that the ground is impersonal."
     },
@@ -72,11 +105,16 @@
       "anchor_id": "A07",
       "citation": "Swinburne, 'The Argument from Design', Philosophy 43.165 (1968), 199-212, DOI 10.1017/S0031819100009189",
       "in_corpus_venue_class": "out-of-window (pre-2004) T1-class",
-      "verification": "web-verified 2026-07-14 (Cambridge Core + Crossref)",
+      "verification": "web-verified 2026-07-14 (Cambridge Core + Crossref) · dk re-adjudication 2026-07-16 (sanitized text; same memorization-error class as A05)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S2", "d2_direction": "pro", "d3_strength": "CS4", "d4_type": "beta" },
+      "gold": {
+        "d1_step": "S2",
+        "d2_direction": "pro",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
       "flags": [],
-      "rationale": "Teleological edge-anchor rule routes design to S2; temporal-order premise is empirical and load-bearing. Teaches that pro-CS4-beta exists (guards against confirmation-coding)."
+      "rationale": "Abstract announces a defeater-rebuttal: no formal objection of Hume's Philo is valid against a carefully articulated design argument (CS2/DEF, conceptual — alpha). Former anti-folklore role (pro/CS4/beta exemplar) is superseded by synthetic criterion cells iii/iv."
     },
     {
       "anchor_id": "A08",
@@ -84,8 +122,15 @@
       "in_corpus_venue_class": "out-of-window (pre-2004) T2-class",
       "verification": "web-verified 2026-07-14 (Cambridge Core; Oppy 1991 citation)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S1", "d2_direction": "pro", "d3_strength": "CS2", "d4_type": "alpha" },
-      "flags": ["CHAIN"],
+      "gold": {
+        "d1_step": "S1",
+        "d2_direction": "pro",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
+      "flags": [
+        "CHAIN"
+      ],
       "rationale": "Defends the kalam argument by rebutting Mackie's objections; net effect on S1 thesis positive; no new positive evidence."
     },
     {
@@ -94,8 +139,15 @@
       "in_corpus_venue_class": "out-of-window (pre-2004) T2-class",
       "verification": "web-verified 2026-07-14 (Cambridge Core, DOI 10.1017/S0034412500020837)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S1", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
-      "flags": ["CHAIN"],
+      "gold": {
+        "d1_step": "S1",
+        "d2_direction": "contra",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
+      "flags": [
+        "CHAIN"
+      ],
       "rationale": "Reply-to-a-reply: defends Mackie's objections against Craig's rebuttal; tracing the chain, net effect on S1 thesis is negative. Canonical net-effect-rule teacher."
     },
     {
@@ -104,7 +156,12 @@
       "in_corpus_venue_class": "T1",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S1", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "gold": {
+        "d1_step": "S1",
+        "d2_direction": "contra",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
       "flags": [],
       "rationale": "Rebuts the successive-addition case against an infinite past; undercuts a kalam premise without asserting the universe is uncaused."
     },
@@ -114,8 +171,15 @@
       "in_corpus_venue_class": "T1",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S1", "d2_direction": "pro", "d3_strength": "CS2", "d4_type": "alpha" },
-      "flags": ["CHAIN"],
+      "gold": {
+        "d1_step": "S1",
+        "d2_direction": "pro",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
+      "flags": [
+        "CHAIN"
+      ],
       "rationale": "FUNCTIONAL DIRECTION: rebuts the multiverse rejoinder to fine-tuning (inverse gambler's fallacy); net effect pro the S1 thesis regardless of author's worldview. Correction of outline v0.2 shelving."
     },
     {
@@ -124,7 +188,12 @@
       "in_corpus_venue_class": "T1",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S1", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "gold": {
+        "d1_step": "S1",
+        "d2_direction": "contra",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
       "flags": [],
       "rationale": "Normalizability problem undercuts the fine-tuning argument's probability machinery; a priori measure-theoretic point is load-bearing."
     },
@@ -134,7 +203,12 @@
       "in_corpus_venue_class": "T2",
       "verification": "web-verified (P0 sweep: gap-problem literature)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S3", "d2_direction": "pro", "d3_strength": "CS4", "d4_type": "alpha" },
+      "gold": {
+        "d1_step": "S3",
+        "d2_direction": "pro",
+        "d3_strength": "CS4",
+        "d4_type": "alpha"
+      },
       "flags": [],
       "rationale": "Positive a priori case that a necessary being would have divine attributes; qualitative support for the S3 bridge."
     },
@@ -144,8 +218,15 @@
       "in_corpus_venue_class": "T2",
       "verification": "web-verified 2026-07-14 (Cambridge Core abstract; Swinburne reply 495-498 same issue)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S3", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
-      "flags": ["CHAIN"],
+      "gold": {
+        "d1_step": "S3",
+        "d2_direction": "contra",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
+      "flags": [
+        "CHAIN"
+      ],
       "rationale": "Rebuts the simplicity inference to a maximal unique being by exposing a tension in Swinburne's construal of the omni-properties."
     },
     {
@@ -154,7 +235,12 @@
       "in_corpus_venue_class": "out-of-window (pre-2004) T1-class",
       "verification": "web-verified 2026-07-14 (Crossref; JSTOR 2215239)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "B", "d2_direction": "pro", "d3_strength": "CS3", "d4_type": "alpha" },
+      "gold": {
+        "d1_step": "B",
+        "d2_direction": "pro",
+        "d3_strength": "CS3",
+        "d4_type": "alpha"
+      },
       "flags": [],
       "rationale": "Bundled God-target; claims warrant without propositional evidence - the canonical CS3 pattern."
     },
@@ -164,7 +250,12 @@
       "in_corpus_venue_class": "T1",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "X", "d2_direction": "NA", "d3_strength": "NA", "d4_type": "NA" },
+      "gold": {
+        "d1_step": "X",
+        "d2_direction": "NA",
+        "d3_strength": "NA",
+        "d4_type": "NA"
+      },
       "flags": [],
       "rationale": "No chain-step thesis supported or opposed; witness-role papers are framework citations, not corpus evidence. Teaches the X code."
     },
@@ -174,7 +265,12 @@
       "in_corpus_venue_class": "T2",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S8", "d2_direction": "contra", "d3_strength": "CS2", "d4_type": "alpha" },
+      "gold": {
+        "d1_step": "S8",
+        "d2_direction": "contra",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
       "flags": [],
       "rationale": "Argues extant Trinity theories fail their coherence task; rebuts the coherence defenses rather than adducing evidence against the doctrine's truth."
     },
@@ -184,7 +280,12 @@
       "in_corpus_venue_class": "T2",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S8", "d2_direction": "pro", "d3_strength": "CS1", "d4_type": "alpha" },
+      "gold": {
+        "d1_step": "S8",
+        "d2_direction": "pro",
+        "d3_strength": "CS1",
+        "d4_type": "alpha"
+      },
       "flags": [],
       "rationale": "Coherence-only: a constitution model on which the Trinity is consistent; no claim of evidence for its truth. Canonical CS1."
     },
@@ -194,8 +295,15 @@
       "in_corpus_venue_class": "T2",
       "verification": "web-verified (P0 sweep: PhilPapers record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "M", "d2_direction": "pro", "d3_strength": "CS2", "d4_type": "alpha" },
-      "flags": ["CHAIN"],
+      "gold": {
+        "d1_step": "M",
+        "d2_direction": "pro",
+        "d3_strength": "CS2",
+        "d4_type": "alpha"
+      },
+      "flags": [
+        "CHAIN"
+      ],
       "rationale": "Method-level: rebuts Plantinga's structural objection to ramified natural theology (evidence entering at stages); defends the case-making machinery, not a step."
     },
     {
@@ -204,7 +312,12 @@
       "in_corpus_venue_class": "out-of-corpus (monograph; anchors may exceed corpus)",
       "verification": "audited (conversation record)",
       "verify_at_pilot": false,
-      "gold": { "d1_step": "S7", "d2_direction": "neutral", "d3_strength": "NA", "d4_type": "gamma" },
+      "gold": {
+        "d1_step": "S7",
+        "d2_direction": "neutral",
+        "d3_strength": "NA",
+        "d4_type": "gamma"
+      },
       "flags": [],
       "rationale": "Explicit non liquet after weighing testimony and rivals: the canonical neutral/verdict-suspension pattern, historical-documentary type."
     }

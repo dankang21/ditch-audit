@@ -66,6 +66,7 @@ Symmetric across directions (a contra-side POS asserts evidence *against* the st
 - **gamma**: historical-documentary — ancient testimony, textual criticism carries it.
 - **Deletion test** for mixed items: delete the empirical (or historical) premise; if the argument still runs, code alpha. If it collapses, code beta (or gamma).
 - *Best-explanation-from-a-regularity sub-rule:* if deleting the specific empirical/measured premise leaves a **different** argument (a purely conceptual one) that reaches the same conclusion, code alpha; if deletion leaves **no** argument to the conclusion, code beta (or gamma).
+- *Multi-fatal-premise dominance:* when more than one premise is deletion-fatal, empirical and historical premises dominate conceptual ones — code beta (or gamma) if **any** deletion-fatal premise is empirical (or historical-documentary); code alpha only when no such premise is fatal.
 - Premises the text explicitly stipulates as common ground (presupposed, not defended) do not count as load-bearing for the type; apply the deletion test to the argument's novel, differentiating premise.
 - NA when D1 ∈ {X, I}, or when the item is pure mapping with no load-bearing empirical/historical premise (stop-rule cascade, §3).
 - **Survey/mapping rule:** for verdict-free survey or mapping items, D4 = NA unless the item itself weighs evidence (the non-liquet pattern: the weighed premises are load-bearing — code their type). The type of the *surveyed* arguments never determines D4.
