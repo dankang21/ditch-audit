@@ -22,7 +22,10 @@ DIMS = {
     "d3_strength": "ordinal",
     "d4_type": "nominal",
 }
-CS_ORDER = ["CS1", "CS2", "CS3", "CS4", "CS5"]
+CS_ORDER = ["CS1", "CS2", "CS3", "CS4", "CS5"]      # legacy 5-level scale (rounds 1-3)
+D3_ORDER = ["DEF", "POS"]                             # codebook v1.4 collapsed scale
+CS_TO_D3 = {"CS1": "DEF", "CS2": "DEF", "CS3": "DEF", "CS4": "POS", "CS5": "POS",
+            "DEF": "DEF", "POS": "POS"}
 GATE = 0.70
 
 
@@ -113,7 +116,11 @@ def cmd_rel(paths):
     ok = True
     for dim, metric in DIMS.items():
         units = dim_units(files, dim)
-        order = CS_ORDER if dim == "d3_strength" else None
+        if dim == "d3_strength":
+            seen = {v for u in units for v in u if v is not None}
+            order = D3_ORDER if seen <= set(D3_ORDER) else CS_ORDER
+        else:
+            order = None
         a = krippendorff(units, metric, order)
         verdict = "-" if a is None else ("PASS" if a >= GATE else "FAIL")
         ok &= (a is not None and a >= GATE)
@@ -137,7 +144,11 @@ def cmd_gold(coder_paths, gold_path):
                 if rec is None:
                     continue
                 tot += 1
-                if rec.get(dim) == a["gold"][dim]:
+                gv, cv = a["gold"][dim], rec.get(dim)
+                if dim == "d3_strength":  # legacy CS gold vs v1.4 DEF/POS codes
+                    gv = CS_TO_D3.get(gv, gv)
+                    cv = CS_TO_D3.get(cv, cv)
+                if cv == gv:
                     hit += 1
                 else:
                     misses.append(f"{a['anchor_id']}:{rec.get(dim)}!={a['gold'][dim]}")

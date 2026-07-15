@@ -1,4 +1,4 @@
-# ditch-audit — Codebook v1.3 (Coding Instrument)
+# ditch-audit — Codebook v1.4 (Coding Instrument)
 
 2026-07-14 · Owner: dk · Status: ready for pilot (P1) · Companion files: `gold-anchors-v1.json`, `validation-battery-v1.md`
 Frozen at P3 preregistration; any post-freeze edit voids the confirmatory run.
@@ -44,7 +44,7 @@ Sanitization pass (scripted + manual spot-check):
   - *M / step / X decision order:* (a) primary conclusion is a claim about the case-making itself and takes a verdict on that machinery → `M`; (b) the text merely uses an argument's topic as illustration, with no verdict on any thesis or on the machinery → `X`; (c) the text takes a verdict on a first-order step thesis *through* a methodological critique → code the step, not `M`. Applies alike whichever side's case-making is discussed.
 - **Q2 Step (D1).** Assign the single step whose thesis the primary conclusion most directly supports or opposes.
 - **Q3 Direction (D2).** Relative to the **step thesis**, not the immediately targeted paper (net-effect rule, §4-D2).
-- **Q4 Strength (D3).** CS1–CS5 per definitions; `NA` if D2 = neutral or D1 ∈ {X, I}.
+- **Q4 Strength (D3).** DEF/POS per definitions; `NA` if D2 = neutral or D1 ∈ {X, I}.
 - **Q5 Type (D4).** Deletion test on the load-bearing premise.
 - **Stop-rule cascade (NA schema).** Q1 stop codes cascade to NA on all un-coded downstream dimensions: `X` → D2, D3, D4 = NA · `I` → D2, D3, D4 = NA · `P` → D3, D4 = NA (direction is still coded) · pure-mapping neutral → D3 = NA, while D4 may still carry a type where a load-bearing empirical or historical premise exists (WE6 pattern).
 - **Q6 Confidence + flags + one-sentence rationale (≤40 words).**
@@ -77,22 +77,18 @@ Sanitization pass (scripted + manual spot-check):
 Direction is the item's **net effect on the step thesis**, not on the paper it immediately targets.
 - Rebutting an objection to a pro-step argument = **pro** (e.g., defending a fine-tuning argument against the multiverse rejoinder).
 - Defending an objection against a rebuttal = **contra** (reply-chain items: trace the chain to the step thesis and take the net sign).
-- Verdict-suspension / explicit non liquet / pure mapping = **neutral**. `neutral` is reserved for these cases **only**: a *successful* defeater-rebuttal or coherence-defense has a directional net effect on the step thesis (pro, typically at CS1–CS2), and a successful objection to a pro-step argument is contra — without either author asserting or denying the thesis outright.
+- Verdict-suspension / explicit non liquet / pure mapping = **neutral**. `neutral` is reserved for these cases **only**: a *successful* defeater-rebuttal or coherence-defense has a directional net effect on the step thesis (pro, typically DEF), and a successful objection to a pro-step argument is contra — without either author asserting or denying the thesis outright.
 - D1 ∈ {X, I} → NA.
 
-### D3 — Claim strength (CS1–CS5, NA)
+### D3 — Claim strength (DEF / POS / NA)
 
-| Code | Definition | Calibration phrase |
+| Code | Definition | Calibration phrases |
 |---|---|---|
-| CS1 | Coherence/possibility | "X is not incoherent / has a consistent model" |
-| CS2 | Defeater rebuttal (incl. undercutting) | "Argument A for/against X fails" |
-| CS3 | Epistemic permissibility | "Belief in X can be warranted/rational without propositional evidence" |
-| CS4 | Positive evidential, qualitative | "E confirms X / X is more probable than not on E" |
-| CS5 | Positive evidential, quantitative | explicit probabilities or Bayes factors |
+| DEF | Defensive: the item shows a thesis is coherent/possible, rebuts an objection or defeater (incl. undercutting), or claims belief can be warranted/rational without propositional evidence | "X is not incoherent / has a consistent model" · "Argument A for/against X fails" · "Belief in X can be warranted without propositional evidence" |
+| POS | Positive evidential: the item claims evidence supports (or disconfirms) the thesis — qualitatively or with explicit numbers | "E confirms X" · "X is more probable than not on E" · explicit probabilities, odds, or comparative factors |
 | NA | — | D2 = neutral, or D1 ∈ {X, I} |
 
-Symmetric across directions (a contra-side CS4 asserts evidence *against* the step thesis). Comparative-likelihood claims without numbers = CS4, not CS5. For CS5 the explicit number must attach to the thesis under assessment (a probability, odds, or a factor comparing the thesis with rivals); numbers that quantify only a data pattern (p-values, effect sizes, sample statistics) do not by themselves make CS5.
-**CS1 vs CS2 tie-break:** code CS1 when the load-bearing move is the exhibition of a consistent model/possibility with no specific stated opponent argument as its target; code CS2 when it is showing that a specific stated objection or defeater fails. When an item does both, code CS2 (the rebuttal presupposes and subsumes the coherence claim).
+Symmetric across directions (a contra-side POS asserts evidence *against* the step thesis). The boundary is evidential import, not confidence of tone: a number that quantifies only a data pattern (a p-value, an effect size) inside a defeater-rebuttal does not make the item POS; POS requires a support claim attaching to the thesis under assessment.
 
 ### D4 — Load-bearing epistemic type (alpha / beta / gamma / NA)
 
@@ -103,6 +99,7 @@ Symmetric across directions (a contra-side CS4 asserts evidence *against* the st
 - *Best-explanation-from-a-regularity sub-rule:* if deleting the specific empirical/measured premise leaves a **different** argument (a purely conceptual one) that reaches the same conclusion, code alpha; if deletion leaves **no** argument to the conclusion, code beta (or gamma).
 - Premises the text explicitly stipulates as common ground (presupposed, not defended) do not count as load-bearing for the type; apply the deletion test to the argument's novel, differentiating premise.
 - NA when D1 ∈ {X, I}, or when the item is pure mapping with no load-bearing empirical/historical premise (stop-rule cascade, §3).
+- **Survey/mapping rule:** for verdict-free survey or mapping items, D4 = NA unless the item itself weighs evidence (the non-liquet pattern: the weighed premises are load-bearing — code their type). The type of the *surveyed* arguments never determines D4.
 
 ## 5. Output JSON schema
 
@@ -111,7 +108,7 @@ Symmetric across directions (a contra-side CS4 asserts evidence *against* the st
   "item_id": "string",
   "d1_step": "S1|S2|S3|S4|S5|S6|S7|S8|B|P|I|M|X",
   "d2_direction": "pro|contra|neutral|NA",
-  "d3_strength": "CS1|CS2|CS3|CS4|CS5|NA",
+  "d3_strength": "DEF|POS|NA",
   "d4_type": "alpha|beta|gamma|NA",
   "flags": ["H","RE","CHAIN","MULTI","LOWTEXT"],
   "confidence": 0.0,
@@ -124,16 +121,16 @@ Flags: `H` hiddenness · `RE` religious experience · `CHAIN` reply-chain item (
 ## 6. Worked examples (SYNTHETIC — written for this codebook; not real abstracts)
 
 **WE1** — "Some instances of intense suffering appear to serve no outweighing good. If an omnipotent, perfectly good being existed, such suffering would not occur. Observation of such cases therefore renders the existence of a perfectly good ultimate improbable."
-→ `S4 / contra / CS4 / beta`. (Positive evidential claim; the observational premise is load-bearing — delete it and nothing runs.)
+→ `S4 / contra / POS / beta`. (Positive evidential claim; the observational premise is load-bearing — delete it and nothing runs.)
 
 **WE2** — "Arguments from apparently pointless suffering assume that if there were a justifying good, we would likely see it. Given the cognitive distance between humans and an omniscient being, that assumption is unwarranted; the inference from 'we see no reason' to 'there is no reason' fails."
-→ `S4 / pro / CS2 / alpha`. (Undercuts the inference; asserts no positive evidence for goodness.)
+→ `S4 / pro / DEF / alpha`. (Undercuts the inference; asserts no positive evidence for goodness.)
 
 **WE3** — "A recent defense of the argument that the universe began and therefore has a cause replies to the objection that an actual infinite past is possible. I show the reply fails: the objection stands, and the argument's second premise remains unsupported."
-→ `S1 / contra / CS2 / alpha`, flag `CHAIN`. (Reply-to-a-reply; net effect on S1 thesis is negative.)
+→ `S1 / contra / DEF / alpha`, flag `CHAIN`. (Reply-to-a-reply; net effect on S1 thesis is negative.)
 
 **WE4** — "Belief in God need not rest on propositional evidence. Like perceptual beliefs, it can be properly basic: formed by a truth-aimed faculty in appropriate circumstances, and warranted so long as no defeater is in play."
-→ `B / pro / CS3 / alpha`. (Bundled God-target; permissibility claim, not evidence.)
+→ `B / pro / DEF / alpha`. (Bundled God-target; permissibility claim, not evidence.)
 
 **WE5** — "At least one of the following holds: technological civilizations almost never reach maturity; mature civilizations run almost no ancestor simulations; or we almost certainly live in a simulation. I defend the disjunction without endorsing any disjunct."
 → `X / NA / NA / NA`. (No chain-step thesis is supported or opposed.)
@@ -142,10 +139,10 @@ Flags: `H` hiddenness · `RE` religious experience · `CHAIN` reply-chain item (
 → `S7 / neutral / NA / gamma`, and note verdict-suspension in rationale.
 
 **WE7** — "Recent observational work shows that the range of physical constants compatible with complex chemistry is far narrower than earlier estimates suggested. Taking this measured narrowness as evidence, I argue that intentional selection of the constants is better supported than chance on the total observational data."
-→ `S2 / pro / CS4 / beta`. (Positive evidential claim for agency; the measured-narrowness premise is load-bearing — delete it and nothing runs.)
+→ `S2 / pro / POS / beta`. (Positive evidential claim for agency; the measured-narrowness premise is load-bearing — delete it and nothing runs.)
 
 **WE8** — "Without appeal to any observational premise, I argue that the concept of an uncreated ground that depends on nothing harbors a deep tension: absolute independence excludes the relational properties required for grounding everything else. On reflection, the existence of such a ground is less credible than its denial."
-→ `S3 / contra / CS4 / alpha`. (Positive claim against the step thesis, carried entirely by conceptual analysis; nothing empirical to delete.)
+→ `S3 / contra / POS / alpha`. (Positive claim against the step thesis, carried entirely by conceptual analysis; nothing empirical to delete.)
 
 **WE9** — "The literature on arguments from suffering has grown rapidly over two decades. I classify the replies into four families, trace their dialectical relations, and identify the questions each leaves open, without endorsing any verdict about what suffering shows."
 → `S4 / neutral / NA / NA`. (Pure mapping; the topic alone does not fix a direction — code the verdict, and there is none.)
@@ -220,6 +217,7 @@ Assembly note: the deployed prompt is generated from this file by concatenation;
 
 ## 12. Changelog
 
+- **v1.4 (2026-07-15, G1 revision loop round 2 of 2 — kill-criterion path, dk-approved sequencing):** (1) **D3 collapsed to three levels** {DEF = defensive (coherence/possibility + defeater-rebuttal + permissibility), POS = positive evidential (qualitative or quantitative), NA} per the preregistered kill criterion (D3 failed the min-pairwise gate in rounds 1 and 2 and under the coder-A pin revision; analytic collapse of round-3 codes passed all pairs .718/.840/.873). The collapse preserves the POS(=CS4+) boundary the analyses require; CS-level resolution is a stated descriptive loss. Legacy CS codes in gold anchors and synthetic-spec targets map CS1–3→DEF, CS4–5→POS at scoring. (2) D4 survey/mapping rule: verdict-free surveys take D4=NA unless the item itself weighs evidence; the surveyed arguments' type never determines D4 (residual A′×C NA↔alpha pattern, 8/10 cells). (3) Coder-A pin revision of record: claude-sonnet-5 → claude-opus-4-8 (see CONTEXT D-6; sonnet-5 rounds archived). Prompt rebuilt; full tri-coder re-code for the final re-gate.
 - **v1.3 (2026-07-15, G1 revision loop round 1 of 2 — dk-approved CL-1..CL-5 from docs/adjudication-log.md §7):** G1 round 1 FAILED at min pairwise α (D2 .673, D3 .608, D4 .569; D1 passed .734); mechanical adjudication of 64 disagreement cells identified 9 recurring patterns rooted in five boundary under-specifications, all clarified hypothesis-neutrally: (1) CL-1 §3-Q1 M/step/X decision order; (2) CL-2 stop-rule NA cascade stated explicitly in §3 and aligned in §4-D3/D4 ({X, I} wording reconciled — the largest pattern, 9× D4 NA/alpha, was an NA-schema under-specification, not a coding dispute); (3) CL-3 §4-D2 neutral reserved for verdict-suspension/non-liquet/pure mapping only; successful rebuttals/coherence-defenses take the net-effect direction; (4) CL-4 §4-D3 CS1/CS2 tie-break (specific-target rule; both → CS2); (5) CL-5 §4-D4 best-explanation-from-a-regularity sub-rule for the deletion test. Prompt rebuilt (manifest logged); round-1 coded outputs archived to data/coded/round1/; full 55-item tri-coder re-code follows for the re-gate.
 - **v1.2a (2026-07-14, synthetic-spec audit fixes):** two §4 clarifications surfaced by adversarial audit of the synthetic criterion specs, both recurring coding boundaries: (1) §4-D3 — CS5's explicit number must attach to the thesis under assessment; data-pattern statistics (p-values, effect sizes) alone do not make CS5; (2) §4-D4 — explicitly stipulated common-ground premises are not load-bearing for the type; the deletion test applies to the novel, differentiating premise. Both ship in the coder prompt (rebuilt, manifest logged).
 - **v1.2 (2026-07-14, dk-approved):** Gate G1 redefined from α(A,B) to **min pairwise α over all three coder pairs** (every dimension ≥ 0.70) — all coders code every item, so this costs nothing, removes the arbitrary choice of gate pair, and exposes correlated-prior artifacts as anomalously high single-pair agreement. §1/§9/§10 updated. Coder-facing content unchanged (prompt hash stable). Companion role changes recorded in validation-battery §B0 (E = GLM-class open-weights via Perplexity Agent API with search structurally off; Sonar retired from all blinded roles; conformity checker staffed = Kimi-class; coder D promoted to mandatory).
