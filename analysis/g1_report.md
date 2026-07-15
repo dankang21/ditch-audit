@@ -1,5 +1,10 @@
 # G1 Reliability Report — P1 Pilot (ditch-audit), FINAL (v1.4a re-gate)
 
+> **GATE DECLARATION (dk, 2026-07-16): G1 = PASS.** Declared on the preregistered statistic
+> (min pairwise α ≥ 0.70, every dimension, n=89, coder output = majority-of-3) with the three
+> honesty caveats below carried forward to methods. P1 closed; P2 (corpus build) authorized.
+
+
 **Date:** 2026-07-16 · **Scope:** P1 pilot, **n=89** items = RS 2015 (35) + IJPR 2015 (34) + gold anchors (20), triple-coded (A=Anthropic `claude-opus-4-8`, B=Google `gemini-3.5-flash`, C=OpenAI `gpt-5.5-2026-04-23`). **Coder output = per-dimension majority of 3 independent identical runs** (codebook v1.4a §9); per-run originals in `data/coded/*.r{1,2,3}_*.jsonl`, preserved under each record's `_runs` field. **parse_fail = 0.**
 
 **Gate spec (codebook v1.4a §9):** G1 = per-dimension **minimum pairwise Krippendorff α over {(A,B),(A,C),(B,C)} ≥ 0.70** on every dimension; 3-way joint α reported alongside; D1/D2/D4 nominal, D3 ordinal (NA = pairwise exclusion). D3 is the v1.4 collapsed 2-level scale {DEF, POS} (kill-criterion path); legacy CS gold/spec targets map CS1–3→DEF, CS4–5→POS at scoring.
