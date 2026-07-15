@@ -46,7 +46,7 @@ COST_LOG_PATH = os.path.join(CODED_DIR, "cost_log.md")
 ENV_PATH = os.path.join(REPO_ROOT, ".env")
 
 # ---- pinned models & endpoints (dk-confirmed pins, see data/coded/cost_log.md) ----
-MODEL_A = "claude-sonnet-5"
+MODEL_A = "claude-opus-4-8"  # P1 calibration swap (dk, 2026-07-15): sonnet-5 scope-boundary readings isolated it from B/C; full trajectory in cost_log + g1 report
 MODEL_B = "gemini-3.5-flash"
 MODEL_C = "gpt-5.5-2026-04-23"
 URL_A = "https://api.anthropic.com/v1/messages"

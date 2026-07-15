@@ -104,6 +104,11 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
   Conformity checker = Kimi-class (Moonshot), same route. No-new-keys constraint (dk).
   Role-exclusivity matrix in validation-battery §B0. Pins (dk, 2026-07-14, session 2):
   A = claude-sonnet-5 · B = gemini-3.5-flash · C = gpt-5.5-2026-04-23.
+  Pin revision (dk, 2026-07-15, P1 calibration — pre-freeze, fully logged): A → claude-opus-4-8.
+  Rationale: G1 rounds 1–2 failing cells were exclusively A-pairs; sonnet-5 scored 97–100% on the
+  synthetic dev-half yet resolved ambiguous scope boundaries (Q0/Q1 → NA cascades) systematically
+  apart from B/C; codebook-wording remedies were exhausted (CL-1..5 lifted B×C to .84-level).
+  Selection-at-pilot is disclosed in methods; trajectory preserved in data/coded/round1,2 archives.
 - Venue tiers: T1 general (Mind, Noûs, PQ, APQ, Analysis, Phil Studies, topic-
   filtered) · T2 mainstream specialist (F&P, RS, IJPR, Sophia, 2004–2024) ·
   T3 confessional (Philosophia Christi). F&P's T2 assignment is a preregistered
