@@ -61,7 +61,7 @@ FLUSH_EVERY = 50            # checkpoint cadence (flush + fsync)
 
 D1_VALUES = {"S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "B", "P", "I", "M", "X"}
 D2_VALUES = {"pro", "contra", "neutral", "NA"}
-D3_VALUES = {"CS1", "CS2", "CS3", "CS4", "CS5", "NA"}
+D3_VALUES = {"DEF", "POS", "NA"}  # codebook v1.4 collapsed scale (legacy CS1-CS5 archived in data/coded/round*)
 D4_VALUES = {"alpha", "beta", "gamma", "NA"}
 SCHEMA_KEYS = [
     "item_id", "d1_step", "d2_direction", "d3_strength", "d4_type",
