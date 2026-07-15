@@ -2,9 +2,9 @@
   "meta": {
     "project": "ditch-audit",
     "file": "gold-anchors",
-    "version": "1.2",
+    "version": "1.3",
     "date": "2026-07-14",
-    "usage": "Recognition-stratified DIAGNOSTIC set (codebook s8 v1.1; zero-human amendment). None of these items appears in the coder prompt. Fetch real texts at pilot, sanitize, code blind. Report accuracy ONLY stratified by the validation-battery sB5 identifiability score; zero headline construct-validity weight (these are famous, memorization-suspect papers coded by the hypothesis-aware instrument designer). Construct validity lives in the synthetic criterion set (validation-battery sB3). Gold codes unchanged from v1.0. v1.2 (2026-07-16): dk re-adjudication of A04/A05/A07 from sanitized text alone, triggered by the unison-miss gold audit — see codebook s8 audit rule and s12 changelog v1.4b.",
+    "usage": "Recognition-stratified DIAGNOSTIC set (codebook s8 v1.1; zero-human amendment). None of these items appears in the coder prompt. Fetch real texts at pilot, sanitize, code blind. Report accuracy ONLY stratified by the validation-battery sB5 identifiability score; zero headline construct-validity weight (these are famous, memorization-suspect papers coded by the hypothesis-aware instrument designer). Construct validity lives in the synthetic criterion set (validation-battery sB3). Gold codes unchanged from v1.0. v1.2 (2026-07-16): dk re-adjudication of A04/A05/A07 from sanitized text alone, triggered by the unison-miss gold audit — see codebook s8 audit rule and s12 changelog v1.4b. v1.3 (2026-07-16, unison audit round 2): A06 S2->S1 (abstract-vs-paper gap; instrument codes the abstract), A12 S1->S2 (edge anchor: design-argument target), A04 D3 reviewed and SUSTAINED (DEF).",
     "coverage_gaps": "S6: no anchor (promote first clear pilot item to A21). CS5: no in-corpus anchor (known exemplars live outside corpus venues; recorded as expected-distribution observation)."
   },
   "anchors": [
@@ -57,7 +57,7 @@
       "anchor_id": "A04",
       "citation": "Law, 'The Evil-God Challenge', Religious Studies 46 (2010), 353-373",
       "in_corpus_venue_class": "T2",
-      "verification": "web-verified 2026-07-14 (cited in RS 52 reference list) · dk re-adjudication 2026-07-16 (sanitized text; D4 alpha->beta under the multi-fatal-premise dominance rule)",
+      "verification": "web-verified 2026-07-14 (cited in RS 52 reference list) · dk re-adjudication 2026-07-16 (sanitized text; D4 alpha->beta under the multi-fatal-premise dominance rule) · dk review 2026-07-16 (unison audit round 2: coders' unanimous POS reviewed; gold DEF SUSTAINED — the parity claim is an undercutter of the goodness claim's reasonableness, not new disconfirming evidence)",
       "verify_at_pilot": false,
       "gold": {
         "d1_step": "S4",
@@ -90,16 +90,16 @@
       "anchor_id": "A06",
       "citation": "Morriston, 'Must the Beginning of the Universe Have a Personal Cause?', Faith and Philosophy 17 (2000), 149-169",
       "in_corpus_venue_class": "T2",
-      "verification": "audited (conversation record)",
+      "verification": "audited (conversation record) · dk re-adjudication 2026-07-16 (unison audit round 2: abstract foregrounds the causal-principle challenge; the paper's S2 thesis is under-represented in the abstract — instrument codes the abstract, so S1)",
       "verify_at_pilot": false,
       "gold": {
-        "d1_step": "S2",
+        "d1_step": "S1",
         "d2_direction": "contra",
         "d3_strength": "CS2",
         "d4_type": "alpha"
       },
       "flags": [],
-      "rationale": "Rebuts the inference from a first cause to a personal agent; no positive claim that the ground is impersonal."
+      "rationale": "Challenges the kalam causal principle ('whatever begins to exist must have a cause') as stated in the abstract's primary conclusion — contra S1, defeater-rebuttal (CS2/DEF), conceptual (alpha). Paper-level S2 material noted as abstract-vs-paper gap."
     },
     {
       "anchor_id": "A07",
@@ -186,16 +186,16 @@
       "anchor_id": "A12",
       "citation": "McGrew, McGrew & Vestrup, 'Probabilities and the Fine-Tuning Argument: A Sceptical View', Mind 110 (2001)",
       "in_corpus_venue_class": "T1",
-      "verification": "audited (conversation record)",
+      "verification": "audited (conversation record) · dk re-adjudication 2026-07-16 (unison audit round 2: abstract frames the target as cosmological DESIGN arguments — designer-agent conclusion, edge anchor routes to S2)",
       "verify_at_pilot": false,
       "gold": {
-        "d1_step": "S1",
+        "d1_step": "S2",
         "d2_direction": "contra",
         "d3_strength": "CS2",
         "d4_type": "alpha"
       },
       "flags": [],
-      "rationale": "Normalizability problem undercuts the fine-tuning argument's probability machinery; a priori measure-theoretic point is load-bearing."
+      "rationale": "Normalizability problem undercuts the design/fine-tuning argument's probability machinery; abstract targets designer-agent conclusions (edge anchor: design -> S2). A priori measure-theoretic point is load-bearing."
     },
     {
       "anchor_id": "A13",
