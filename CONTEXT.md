@@ -73,6 +73,14 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
 8. **A07 (Swinburne 1968, design) is in the gold set deliberately**: a pro/CS4/beta
    item, i.e., the *opposite* of H1's modal pattern — guards against
    confirmation-coding.
+9a. **Gold re-adjudication episode (dk, 2026-07-16).** Three-family unison misses on
+   A04/A05/A07 triggered dk text-only re-adjudication: A05 and A07 had been gold-coded from
+   the arguments' reputations (the 1993 hiddenness book; the design argument as such), not the
+   papers' abstracts (both are reply-chain defeater-rebuttals → CS2/alpha); A04 D4 → beta under
+   the new multi-fatal-premise dominance rule. The coders' unison "misses" were correct readings.
+   Second instrument-disciplines-its-makers episode (after A11); the memorization failure mode
+   the battery guards against in coders manifested in the designer. Codified: codebook §8 gold
+   audit rule (unison contradiction → designer text-re-adjudication), §4-D4 dominance rule.
 9. **Zero-human rule (dk, 2026-07-14, absolute).** No human codes any item — no human
    coder, no human item-adjudication, no human validation sample; dk's pilot hand-coding
    and the P4 150-item human sample are removed. dk's labor = instrument design only
