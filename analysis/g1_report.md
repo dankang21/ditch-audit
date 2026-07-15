@@ -1,8 +1,15 @@
 # G1 Reliability Report — P1 Pilot (ditch-audit), FINAL (v1.4a re-gate)
 
-> **GATE DECLARATION (dk, 2026-07-16): G1 = PASS.** Declared on the preregistered statistic
-> (min pairwise α ≥ 0.70, every dimension, n=89, coder output = majority-of-3) with the three
-> honesty caveats below carried forward to methods. P1 closed; P2 (corpus build) authorized.
+> **GATE DECLARATION (dk, 2026-07-16, amended after pre-declaration review): G1 = PASS,
+> declared on the preregistered point statistic (min pairwise α ≥ .70, every dimension, n=89,
+> majority-of-3). Validity of the sequentially-revised instrument is CONDITIONAL on the P4
+> confirmatory checkpoint (frozen at P3): fresh non-pilot items from held-out venue-years,
+> dual statistic — point min-pairwise ≥ .70 AND bootstrap 95% lower bound ≥ .667.**
+> Basis for the tightened trigger: the gold-exclusion sensitivity check (n=69) drops three cells
+> marginally under .70 (A×B D1 .696 · A×C D2 .696 · A×C D4 .676; B×C all pass), confirming that
+> recognition-advantaged anchors (22% of the gate sample) contributed to the n=89 pass, and the
+> five-round sequential revision makes the passing estimate a selected estimate (optional-stopping
+> structure). The checkpoint is therefore load-bearing, not decorative. P1 closed; P2 authorized.
 
 
 **Date:** 2026-07-16 · **Scope:** P1 pilot, **n=89** items = RS 2015 (35) + IJPR 2015 (34) + gold anchors (20), triple-coded (A=Anthropic `claude-opus-4-8`, B=Google `gemini-3.5-flash`, C=OpenAI `gpt-5.5-2026-04-23`). **Coder output = per-dimension majority of 3 independent identical runs** (codebook v1.4a §9); per-run originals in `data/coded/*.r{1,2,3}_*.jsonl`, preserved under each record's `_runs` field. **parse_fail = 0.**
@@ -245,3 +252,62 @@ Chain-relevance (RS 2015, n=35, single-run): A 26/35, B 25/35, C 26/35, majority
 ## R1.8 — r1 recommendation (superseded)
 
 r1 recommended entering the codebook revision loop (round 1 of 2), priority D4 > D3 > D2 > D1-scope, and explicitly **not** collapsing D3 yet (a second D3 failure trigger). That loop (v1.3 CL-1..5 → r2, A pin revision → r3, D3 collapse → r4, majority-of-3 → final) is the §1 trajectory; its terminus is the §7 PASS recommendation.
+
+
+---
+
+# Post-declaration review addendum (dk review, 2026-07-16)
+
+## A. Gold-exclusion sensitivity (pre-declaration check, dk item 0)
+
+| dim | A×B | A×C | B×C | min (n=69) | min (n=89) |
+|---|---|---|---|---|---|
+| D1 | **.696** | .767 | .768 | **.696** | .736 |
+| D2 | .743 | **.696** | .799 | **.696** | .727 |
+| D3 | .785 | .784 | 1.000 | .784 | .808 |
+| D4 | .809 | **.676** | .758 | **.676** | .705 |
+
+Three cells slip marginally below .70 when the 20 recognition-advantaged anchors are excluded.
+Declaration stands on the preregistered n=89 statistic; this table is the stated basis for the
+tightened confirmatory-checkpoint trigger (declaration banner).
+
+## B. H1 power recalibration (dk item 3 — corrected past relevance to the H1 denominator)
+
+Pilot-69 cross-coder majority: P(S-coded) = 20/69 = 29.0% (S4 13, S5 3, S8 2, S2 2; B/M/I/P/X
+are not chain steps). P(POS | S) = 3/20 = 15% (wide CI; n=20). Effective H1 rate ≈ 4.3%:
+1,500 abstracts → ~65 POS items; 200 POS needs ≈ 4,600 abstracts; 300 needs ≈ 6,900.
+The outline's power sketch (300–450 CS4+ from 1,500) is off by ~5× on pilot rates.
+**P3-freeze action (mandatory): recompute N_abstracts = target_POS / [P(S)·P(POS|S)·P(non-NA)]
+on P2 corpus relevance data; if short, expand harvest before any P4 spend (collides with the
+3× majority-of-3 cost multiplier — resolve jointly at freeze).**
+
+## C. Family-correlation diagnostic (dk item 4)
+
+P(B=C | A≠B) on n=89: D1 45%, D2 71%, D3 73%, D4 75% — no lockstep B–C bloc.
+B6 adjudicator-seat rule amended (validation-battery): error-correlation term is computed on
+pilot real-corpus disagreement items (dev-half is at ceiling, 97–100%, leaving error correlation
+unidentifiable); checkpoint adds the conditional-agreement diagnostic with a preregistered
+alarm at sustained P(B=C | A≠B) ≈ 1.
+
+## D. Criterion-validity gap named (dk item 5)
+
+dev-half accuracy 97–100% vs real-corpus pairwise α .70–.74: synthetic items are easier than
+real ones; "near-ceiling construct validity" is correspondingly weaker than it sounds. The
+exam-mode null shows no coding contamination but does not rebut the difficulty mismatch.
+P3 decision item registered: (a) state as limitation with the gap quantified, or (b) couple a
+hypothesis-blind hired-human audit (~50 real-corpus items) to the P4 checkpoint — requires a
+dk amendment to absolute rule 5 (zero-human), dk's stated preference is (b).
+
+## E. Gold audit trigger (dk item 2 — pending dk re-adjudication)
+
+Unison misses A04/A05/A07 suspected to be designer memorization errors (gold coded from the
+argument's reputation, not the abstract). dk re-adjudication from sanitized text only is pending;
+proposed codebook additions await that ruling: (i) unison gold-contradiction triggers a
+designer text-re-adjudication (gold audit rule); (ii) multi-fatal-premise dominance rule for D4
+({γ, β} dominate α when any empirical/historical premise is deletion-fatal).
+
+## F. Minor (dk item 6, registered for the freeze batch)
+
+D3 2-level ordinal ≡ nominal (notation cleanup); CL-1..5 hypothesis-wording audit by dk;
+H2 denominator definition frozen in the analysis plan; B1 table A′ cell shows all four values
+(95/95/95/100).
