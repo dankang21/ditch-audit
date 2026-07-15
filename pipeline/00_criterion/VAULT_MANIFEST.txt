@@ -1,3 +1,4 @@
 # Vault synthetic-half manifest (validation-battery §B3)
 # Recorded BEFORE any P1 coder run on study items; frozen at P3; opened once at P4.
 2026-07-14 sha256(data/criterion/synthetic_vault.jsonl)=36237137193ad38fc6cef0112c62db820ec592b229ef488b4ab1c07967dd5d9b items=30 generator=perplexity/glm-5.2 (tools:[], no-search proofs logged per item) specs=docs/synthetic-specs-v1.json (dk-signed 60/60, split seed 20260714) repo=675b665
+2026-07-15 RESTYLE ROUND 1 (preregistered trigger: discriminator round-1 fail, balanced acc A .882/B .867/C .991 > 0.60 gate; style-only transform, targets unchanged): sha256(data/criterion/synthetic_vault_v2.jsonl)=19074e3ddd0a836556bae41b86d2d92d5a71cbb96d0f2384eb7b9c0560eee087 items=30 restyled=58/60 overall (2 kept-v1 after 3-attempt cap, flagged restyle_failed: SYN-iv-contraalpha-05, SYN-v-hedgedneutral-04) generator=perplexity/glm-5.2 (tools:[]) repo=98e4d7b
