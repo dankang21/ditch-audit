@@ -11,10 +11,12 @@ matching the output schema exactly.
 ## 3. Coding procedure (ordered; earlier questions gate later ones)
 - **Q0 Relevance.** Does the primary conclusion bear on any chain-step thesis (S1–S8, listed in §4), on a bundled God-conclusion, on pragmatic grounds for belief, on intra-theistic attribute puzzles, or on the methodology of such arguments? If none → `X`, stop.
 - **Q1 Special classes.** Bundled full-God target (ontological arguments; generic religious-experience arguments) → `B` (+flag `RE` if experience-based). Pragmatic (wager-type) → `P`, stop after direction. Intra-theistic attribute puzzle (omnipotence paradox, foreknowledge–freedom) → `I`, stop. Methodology of the case itself (structure, probability machinery, epistemology of cumulative cases) → `M`, continue to D2–D4.
+  - *M / step / X decision order:* (a) primary conclusion is a claim about the case-making itself and takes a verdict on that machinery → `M`; (b) the text merely uses an argument's topic as illustration, with no verdict on any thesis or on the machinery → `X`; (c) the text takes a verdict on a first-order step thesis *through* a methodological critique → code the step, not `M`. Applies alike whichever side's case-making is discussed.
 - **Q2 Step (D1).** Assign the single step whose thesis the primary conclusion most directly supports or opposes.
 - **Q3 Direction (D2).** Relative to the **step thesis**, not the immediately targeted paper (net-effect rule, §4-D2).
-- **Q4 Strength (D3).** CS1–CS5 per definitions; `NA` if D2 = neutral or D1 ∈ {X}.
+- **Q4 Strength (D3).** CS1–CS5 per definitions; `NA` if D2 = neutral or D1 ∈ {X, I}.
 - **Q5 Type (D4).** Deletion test on the load-bearing premise.
+- **Stop-rule cascade (NA schema).** Q1 stop codes cascade to NA on all un-coded downstream dimensions: `X` → D2, D3, D4 = NA · `I` → D2, D3, D4 = NA · `P` → D3, D4 = NA (direction is still coded) · pure-mapping neutral → D3 = NA, while D4 may still carry a type where a load-bearing empirical or historical premise exists (WE6 pattern).
 - **Q6 Confidence + flags + one-sentence rationale (≤40 words).**
 - **Dimension independence.** Code each dimension on its own textual evidence; no dimension's value constrains another except the stated NA rules. Any direction may combine with any strength and any type.
 
@@ -44,8 +46,8 @@ matching the output schema exactly.
 Direction is the item's **net effect on the step thesis**, not on the paper it immediately targets.
 - Rebutting an objection to a pro-step argument = **pro** (e.g., defending a fine-tuning argument against the multiverse rejoinder).
 - Defending an objection against a rebuttal = **contra** (reply-chain items: trace the chain to the step thesis and take the net sign).
-- Verdict-suspension / explicit non liquet / pure mapping = **neutral**.
-- D1 ∈ {X} → NA.
+- Verdict-suspension / explicit non liquet / pure mapping = **neutral**. `neutral` is reserved for these cases **only**: a *successful* defeater-rebuttal or coherence-defense has a directional net effect on the step thesis (pro, typically at CS1–CS2), and a successful objection to a pro-step argument is contra — without either author asserting or denying the thesis outright.
+- D1 ∈ {X, I} → NA.
 
 ### D3 — Claim strength (CS1–CS5, NA)
 
@@ -59,6 +61,7 @@ Direction is the item's **net effect on the step thesis**, not on the paper it i
 | NA | — | D2 = neutral, or D1 ∈ {X, I} |
 
 Symmetric across directions (a contra-side CS4 asserts evidence *against* the step thesis). Comparative-likelihood claims without numbers = CS4, not CS5. For CS5 the explicit number must attach to the thesis under assessment (a probability, odds, or a factor comparing the thesis with rivals); numbers that quantify only a data pattern (p-values, effect sizes, sample statistics) do not by themselves make CS5.
+**CS1 vs CS2 tie-break:** code CS1 when the load-bearing move is the exhibition of a consistent model/possibility with no specific stated opponent argument as its target; code CS2 when it is showing that a specific stated objection or defeater fails. When an item does both, code CS2 (the rebuttal presupposes and subsumes the coherence claim).
 
 ### D4 — Load-bearing epistemic type (alpha / beta / gamma / NA)
 
@@ -66,8 +69,9 @@ Symmetric across directions (a contra-side CS4 asserts evidence *against* the st
 - **beta**: empirical contact — an observational, experimental, or scientific premise carries the argument.
 - **gamma**: historical-documentary — ancient testimony, textual criticism carries it.
 - **Deletion test** for mixed items: delete the empirical (or historical) premise; if the argument still runs, code alpha. If it collapses, code beta (or gamma).
+- *Best-explanation-from-a-regularity sub-rule:* if deleting the specific empirical/measured premise leaves a **different** argument (a purely conceptual one) that reaches the same conclusion, code alpha; if deletion leaves **no** argument to the conclusion, code beta (or gamma).
 - Premises the text explicitly stipulates as common ground (presupposed, not defended) do not count as load-bearing for the type; apply the deletion test to the argument's novel, differentiating premise.
-- NA when D1 ∈ {X} or the item is pure mapping.
+- NA when D1 ∈ {X, I}, or when the item is pure mapping with no load-bearing empirical/historical premise (stop-rule cascade, §3).
 
 ## 5. Output JSON schema
 ```json

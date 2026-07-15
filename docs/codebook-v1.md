@@ -1,4 +1,4 @@
-# ditch-audit — Codebook v1.2 (Coding Instrument)
+# ditch-audit — Codebook v1.3 (Coding Instrument)
 
 2026-07-14 · Owner: dk · Status: ready for pilot (P1) · Companion files: `gold-anchors-v1.json`, `validation-battery-v1.md`
 Frozen at P3 preregistration; any post-freeze edit voids the confirmatory run.
@@ -41,10 +41,12 @@ Sanitization pass (scripted + manual spot-check):
 
 - **Q0 Relevance.** Does the primary conclusion bear on any chain-step thesis (S1–S8, listed in §4), on a bundled God-conclusion, on pragmatic grounds for belief, on intra-theistic attribute puzzles, or on the methodology of such arguments? If none → `X`, stop.
 - **Q1 Special classes.** Bundled full-God target (ontological arguments; generic religious-experience arguments) → `B` (+flag `RE` if experience-based). Pragmatic (wager-type) → `P`, stop after direction. Intra-theistic attribute puzzle (omnipotence paradox, foreknowledge–freedom) → `I`, stop. Methodology of the case itself (structure, probability machinery, epistemology of cumulative cases) → `M`, continue to D2–D4.
+  - *M / step / X decision order:* (a) primary conclusion is a claim about the case-making itself and takes a verdict on that machinery → `M`; (b) the text merely uses an argument's topic as illustration, with no verdict on any thesis or on the machinery → `X`; (c) the text takes a verdict on a first-order step thesis *through* a methodological critique → code the step, not `M`. Applies alike whichever side's case-making is discussed.
 - **Q2 Step (D1).** Assign the single step whose thesis the primary conclusion most directly supports or opposes.
 - **Q3 Direction (D2).** Relative to the **step thesis**, not the immediately targeted paper (net-effect rule, §4-D2).
-- **Q4 Strength (D3).** CS1–CS5 per definitions; `NA` if D2 = neutral or D1 ∈ {X}.
+- **Q4 Strength (D3).** CS1–CS5 per definitions; `NA` if D2 = neutral or D1 ∈ {X, I}.
 - **Q5 Type (D4).** Deletion test on the load-bearing premise.
+- **Stop-rule cascade (NA schema).** Q1 stop codes cascade to NA on all un-coded downstream dimensions: `X` → D2, D3, D4 = NA · `I` → D2, D3, D4 = NA · `P` → D3, D4 = NA (direction is still coded) · pure-mapping neutral → D3 = NA, while D4 may still carry a type where a load-bearing empirical or historical premise exists (WE6 pattern).
 - **Q6 Confidence + flags + one-sentence rationale (≤40 words).**
 - **Dimension independence.** Code each dimension on its own textual evidence; no dimension's value constrains another except the stated NA rules. Any direction may combine with any strength and any type.
 
@@ -75,8 +77,8 @@ Sanitization pass (scripted + manual spot-check):
 Direction is the item's **net effect on the step thesis**, not on the paper it immediately targets.
 - Rebutting an objection to a pro-step argument = **pro** (e.g., defending a fine-tuning argument against the multiverse rejoinder).
 - Defending an objection against a rebuttal = **contra** (reply-chain items: trace the chain to the step thesis and take the net sign).
-- Verdict-suspension / explicit non liquet / pure mapping = **neutral**.
-- D1 ∈ {X} → NA.
+- Verdict-suspension / explicit non liquet / pure mapping = **neutral**. `neutral` is reserved for these cases **only**: a *successful* defeater-rebuttal or coherence-defense has a directional net effect on the step thesis (pro, typically at CS1–CS2), and a successful objection to a pro-step argument is contra — without either author asserting or denying the thesis outright.
+- D1 ∈ {X, I} → NA.
 
 ### D3 — Claim strength (CS1–CS5, NA)
 
@@ -90,6 +92,7 @@ Direction is the item's **net effect on the step thesis**, not on the paper it i
 | NA | — | D2 = neutral, or D1 ∈ {X, I} |
 
 Symmetric across directions (a contra-side CS4 asserts evidence *against* the step thesis). Comparative-likelihood claims without numbers = CS4, not CS5. For CS5 the explicit number must attach to the thesis under assessment (a probability, odds, or a factor comparing the thesis with rivals); numbers that quantify only a data pattern (p-values, effect sizes, sample statistics) do not by themselves make CS5.
+**CS1 vs CS2 tie-break:** code CS1 when the load-bearing move is the exhibition of a consistent model/possibility with no specific stated opponent argument as its target; code CS2 when it is showing that a specific stated objection or defeater fails. When an item does both, code CS2 (the rebuttal presupposes and subsumes the coherence claim).
 
 ### D4 — Load-bearing epistemic type (alpha / beta / gamma / NA)
 
@@ -97,8 +100,9 @@ Symmetric across directions (a contra-side CS4 asserts evidence *against* the st
 - **beta**: empirical contact — an observational, experimental, or scientific premise carries the argument.
 - **gamma**: historical-documentary — ancient testimony, textual criticism carries it.
 - **Deletion test** for mixed items: delete the empirical (or historical) premise; if the argument still runs, code alpha. If it collapses, code beta (or gamma).
+- *Best-explanation-from-a-regularity sub-rule:* if deleting the specific empirical/measured premise leaves a **different** argument (a purely conceptual one) that reaches the same conclusion, code alpha; if deletion leaves **no** argument to the conclusion, code beta (or gamma).
 - Premises the text explicitly stipulates as common ground (presupposed, not defended) do not count as load-bearing for the type; apply the deletion test to the argument's novel, differentiating premise.
-- NA when D1 ∈ {X} or the item is pure mapping.
+- NA when D1 ∈ {X, I}, or when the item is pure mapping with no load-bearing empirical/historical premise (stop-rule cascade, §3).
 
 ## 5. Output JSON schema
 
@@ -216,6 +220,7 @@ Assembly note: the deployed prompt is generated from this file by concatenation;
 
 ## 12. Changelog
 
+- **v1.3 (2026-07-15, G1 revision loop round 1 of 2 — dk-approved CL-1..CL-5 from docs/adjudication-log.md §7):** G1 round 1 FAILED at min pairwise α (D2 .673, D3 .608, D4 .569; D1 passed .734); mechanical adjudication of 64 disagreement cells identified 9 recurring patterns rooted in five boundary under-specifications, all clarified hypothesis-neutrally: (1) CL-1 §3-Q1 M/step/X decision order; (2) CL-2 stop-rule NA cascade stated explicitly in §3 and aligned in §4-D3/D4 ({X, I} wording reconciled — the largest pattern, 9× D4 NA/alpha, was an NA-schema under-specification, not a coding dispute); (3) CL-3 §4-D2 neutral reserved for verdict-suspension/non-liquet/pure mapping only; successful rebuttals/coherence-defenses take the net-effect direction; (4) CL-4 §4-D3 CS1/CS2 tie-break (specific-target rule; both → CS2); (5) CL-5 §4-D4 best-explanation-from-a-regularity sub-rule for the deletion test. Prompt rebuilt (manifest logged); round-1 coded outputs archived to data/coded/round1/; full 55-item tri-coder re-code follows for the re-gate.
 - **v1.2a (2026-07-14, synthetic-spec audit fixes):** two §4 clarifications surfaced by adversarial audit of the synthetic criterion specs, both recurring coding boundaries: (1) §4-D3 — CS5's explicit number must attach to the thesis under assessment; data-pattern statistics (p-values, effect sizes) alone do not make CS5; (2) §4-D4 — explicitly stipulated common-ground premises are not load-bearing for the type; the deletion test applies to the novel, differentiating premise. Both ship in the coder prompt (rebuilt, manifest logged).
 - **v1.2 (2026-07-14, dk-approved):** Gate G1 redefined from α(A,B) to **min pairwise α over all three coder pairs** (every dimension ≥ 0.70) — all coders code every item, so this costs nothing, removes the arbitrary choice of gate pair, and exposes correlated-prior artifacts as anomalously high single-pair agreement. §1/§9/§10 updated. Coder-facing content unchanged (prompt hash stable). Companion role changes recorded in validation-battery §B0 (E = GLM-class open-weights via Perplexity Agent API with search structurally off; Sonar retired from all blinded roles; conformity checker staffed = Kimi-class; coder D promoted to mandatory).
 - **v1.1a (2026-07-14, firewall-audit fixes):** §1 hypothesis-naming sentence rewritten neutrally (no dimension/direction named); coder-runner now banned from this file entirely (built prompt only — agent def + CLAUDE.md rule 1 updated in tandem); WE5/WE7/WE8 parenthetical notes trimmed (design-register and crosstab-flagging language removed); §3 dimension-independence rule added (symmetric, hypothesis-neutral); §8 heading retitled diagnostic; §10 step 1 actual harvest count annotated, step 6 adds the dev-half synthetic arm; §11 battery reference corrected §B4→§B3; build-script FORBIDDEN token list extended. Prompt rebuilt; manifest logged.
