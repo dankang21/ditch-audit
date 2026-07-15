@@ -129,11 +129,16 @@ API call logs published with the audit package to make the no-contact claims ver
 
 ## B6. Adjudication integrity
 
-- **Adjudicator-seat rule (v1.2, preregistered before any P1 coder run):** the C seat (majority
-  adjudicator) is provisionally OpenAI; final assignment at P3 by a fixed rule — the family with
-  the highest dev-half synthetic accuracy (B3) and the lowest asymmetric error-correlation with
-  the other two, computed on synthetic-dev items only (never on the memorization-suspect anchors).
-  The rule, not the outcome, is what freezes.
+- **Adjudicator-seat rule (v1.2; error-correlation term amended post-G1, dk review item 4):** the
+  C seat (majority adjudicator) is provisionally OpenAI; final assignment at P3 by a fixed rule —
+  the family with the highest dev-half synthetic accuracy (B3) and the lowest asymmetric
+  error-correlation with the other two, computed on **pilot real-corpus disagreement items**
+  (the synthetic dev-half is at ceiling, 97–100%, leaving error correlation unidentifiable there;
+  anchors remain excluded as memorization-suspect). The rule, not the outcome, is what freezes.
+- **Conditional-agreement diagnostic (post-G1 addition):** the P4 confirmatory checkpoint reports
+  P(B=C | A≠B) per dimension (P1 baseline: 45–75%, no lockstep bloc); a sustained value ≈ 1 is a
+  preregistered family-correlation alarm — seating C as adjudicator would then double-count the
+  B-family prior, and the majority rule is re-examined.
 - Majority-of-three (A, B, C). 3-way splits → `unresolved`: excluded from primary analysis;
   sensitivity bounds computed under each candidate resolution; per-cell unresolved rates reported.
 - **2-1 resolution matrix** published, cross-tabulated against analysis-predicted cells;
@@ -171,6 +176,19 @@ on the cell's B3 items, n ≥ 10), and cell-wise confusion matrices in the publi
 - PROVISIONAL: AUC > 0.65 on T3-vs-rest → the laundered arm (B4) becomes mandatory-primary for the
   tier analysis; additionally re-estimate within register-matched strata and with predicted-tier
   as covariate.
+
+## B9a. P4 confirmatory reliability checkpoint (post-G1 declaration condition — load-bearing)
+
+The G1 PASS declaration (2026-07-16) is **conditional** on this checkpoint; it exists because the
+pilot gate estimate is a selected estimate (five sequential revisions, optional-stopping
+structure) and the gold-exclusion sensitivity dropped three cells marginally under .70.
+- Sample: fresh items only (no pilot overlap), drawn from held-out venue-years; size frozen at P3.
+- Dual statistic, both required: point min-pairwise α ≥ .70 on every dimension AND bootstrap 95%
+  lower bound ≥ .667 (Krippendorff's tentative-conclusion floor) on every dimension.
+- Reporting frame for the paper: tentative-band reliability, checkpoint-confirmed.
+- Failure consequence (frozen at P3): halt P4 coding; no confirmatory claims; dk decides between
+  descriptive downgrade and instrument redesign (outside the exhausted G1 revision budget).
+- Also reported at checkpoint: conditional-agreement diagnostic (B6), per-cell floors (B8).
 
 ## B10. Battery pass/fail semantics (frozen at P3)
 
