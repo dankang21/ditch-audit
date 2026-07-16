@@ -426,7 +426,7 @@ Headline effects (OR_H1, OR_pro, OR_contra, ROR) are computed under five estimat
 | E0 | unanimous-consensus-only (drop all items with any coder disagreement on denominator dimensions) |
 | E1 | coder A only |
 | E2 | coder B only |
-| E3 | coder C only *(extension beyond battery §B6's four — [dk: pending, §12 item 12])* |
+| E3 | coder C only *(extension beyond battery §B6's four — [dk: approved 2026-07-17, §12 item 12])* |
 | E4 | majority-of-three (**primary**) |
 
 **Denominator semantics (v1.1):** single-coder estimators E1–E3 evaluate denominator membership
@@ -655,7 +655,7 @@ All items in this section are **non-confirmatory** (sensitivity/robustness), pub
   same frozen coders, a frozen two-way split rule appended as a build-variant prompt — never a
   modification of the primary prompt; **the variant prompt is a freeze-manifest artifact,
   item 23, conditional on item 9**). PROPOSED: run the split pass post-P4 as preregistered
-  sensitivity [dk: pending — §12 item 9]. H1/H2 must persist (decision rules re-met) across all
+  sensitivity [dk: approved 2026-07-17 — §12 item 9]. H1/H2 must persist (decision rules re-met) across all
   admissible grains for the invariance claim; divergences reported per grain.
 - **R2 — F&P tier flip.** H2 recomputed with F&P assigned T3. Both assignments published;
   the primary is the frozen tier table.
@@ -774,12 +774,12 @@ the manifest does not enumerate.**
 
 ## 12. dk decision register (open items blocking or shaping the freeze)
 
-Each item: evidence pointer → options → proposed default → `[dk: pending]`.
+Each item: evidence pointer → options → proposed default → `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`.
 
 **0. Denominator wording (DEN-H1/DEN-H2, §3.1–3.2, incl. B-inclusion sensitivity).**
 G1-review carry-over (addendum F: "H2 denominator definition frozen in the analysis plan").
 Default: adopt §3 as written (incl. the v1.1 condition-6 exception and membership
-re-evaluation rules). `[dk: pending]`
+re-evaluation rules). `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **1. Primary arm — raw vs laundered coding for P4 (battery §B4; G1 §8 item 3).**
 Evidence: r1 both-arm gate comparison — raw min-α D1 .734 / D2 .673 / D3 .608 / D4 .569 vs
@@ -793,7 +793,7 @@ ungated-arm loop):** whichever arm is primary, the §6 checkpoint tranche is cod
 and the B9 switch is subject to the §6 laundered-arm eligibility rule — if B9 fires and the
 laundered arm has not independently passed the dual checkpoint statistic, H2 degrades to
 non-confirmatory instead of switching onto an ungated instrument. Default: **(a) + rider**.
-`[dk: pending]`
+`[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **2. B1 determinism floors (§9 rows B1a–B1c).**
 The 95% per-run floor is unreachable at B/C endpoints; proposal shifts the binding floor to the
@@ -805,7 +805,7 @@ full re-consolidation) is registered as **expected possibly-live at P4**. Option
 proposed in §9; (b) preregister self-consistency-of-k with k = 5 from the start (cost +67%);
 (c) **measure B1c pre-freeze** on a small slice (e.g., 20 items × 2 pipeline re-runs = 6 extra
 runs/item/coder) to replace the projection with a datum before committing to the floor.
-Default: **(a)**, with (c) recommended if budget allows. `[dk: pending]`
+Default: **(a)**, with (c) recommended if budget allows. `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **3. Hypothesis-blind hired-human audit (~50 real-corpus items) coupled to the checkpoint
 (G1 addendum D; dk's stated preference on record = (b)).**
@@ -847,7 +847,7 @@ are re-estimated under the alternative seating (A as adjudicator) and published 
 primary, with a **frozen divergence rule: if the two seatings yield different §2.2/§2.3 verdicts
 on any hypothesis, confirmatory language for that hypothesis is withdrawn** (reported as
 adjudication-dependent). Default: **(a) + the co-analysis**, with the §6.3 alarm as the
-in-flight guard. `[dk: pending]`
+in-flight guard. `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **5. Checkpoint-tranche (first 150 P4 items) in the confirmatory denominators.**
 Options: (a) exclude (clean pilot-analogy; costs ≈ 5% of corpus ≈ 6–7 expected POS items —
@@ -862,7 +862,7 @@ at 150/2,900 but not zero. Default **(b)** is therefore adopted only with two fr
 but not with it excluded, the excluded verdict governs** and the discrepancy is reported (the
 sensitivity column is claim-relevant, not publish-only); (2) the tranche is a **seeded random
 draw** within the venue/year constraints (§6; seed in manifest item 11), so no ordering
-discretion exists. `[dk: pending]`
+discretion exists. `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **5′. Calibration-sample disposition (the 150 coder-B single-run pre-freeze items; §7.0).**
 v1.0 referenced this register item without creating it — 150 real-corpus items touched by one
@@ -874,12 +874,12 @@ exposure disclosed; per-call statelessness noted, disclosure registered anyway);
 sensitivity: headline effects recomputed excluding the 150. (b) exclude from confirmatory
 denominators entirely (cost: ≈ 10 expected POS items at calibration rates — material at the §7
 power margin). Disclosure artifact either way: manifest item 25. Default: **(a)**.
-`[dk: pending]`
+`[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **6. Review-essay 15 (reversibly excluded at G2).**
 Options: (a) sustain exclusion (consistent with the article-only inclusion rule; count reported);
 (b) include as a flagged separate class (descriptive only, never in DEN-H1/H2). Default: **(a)**.
-`[dk: pending]`
+`[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **7. CL-1..CL-5 hypothesis-wording audit (G1 addendum F).**
 dk audits the five v1.3 clarifications for hypothesis-neutrality before freeze; sign-off recorded
@@ -895,13 +895,13 @@ frozen instrument (G1 measured v1.4c, and the registration may not present gate 
 does not pertain to the registered instrument) and (ii) designates the §6 checkpoint as the SOLE
 reliability gate for v1.4d — halt semantics unchanged, checkpoint parameters unmodifiable in
 response.** If that trade is unattractive, the default (decline both) is the only clean option.
-Default: **decline both** (the residue is a measured property; §5/§6 monitor it). `[dk: pending]`
+Default: **decline both** (the residue is a measured property; §5/§6 monitor it). `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **9. R1 split-variant supplementary coding pass (§8).**
 The 10-step grain requires recoding S3/S4 items under a frozen split rule (build-variant prompt;
 manifest item 23). Options: (a) approve as post-P4 sensitivity pass; (b) drop split grains, run
 merge/drop grains only (weakens the R1 answer to the grain objection). Default: **(a)**.
-`[dk: pending]`
+`[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **10. Power shortfall response rule (§7) — single frozen two-stage trigger (v1.1 rewrite; v1.0
 left two operationalizations simultaneously live).**
@@ -917,7 +917,7 @@ boolean and marginal S/POS counts — no D2×D4, strength, or tier cross-tabs ar
 any agent context) before the expansion decision is logged** (an interim look at the outcome
 margin that changes the population definition is defensible only if provably blind to the
 association under test and deterministic in response). Budget interaction noted in manifest
-item 17. Default: adopt as written. `[dk: pending]`
+item 17. Default: adopt as written. `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **11. Estimand of record + missingness machinery (§4; v1.1 restructure).**
 Default: (a) primary confirmatory claim = **post-2008 population** (matches the effective G2
@@ -926,16 +926,16 @@ gate; the pre-2008 stratum is structural MNAR and any rate-borrowing is untestab
 tipping-point margins, §4.2); (c) M3 anchor frozen = checkpoint-tranche adjudicated
 distributions with the §4.2 fallback ladder (pilot → uniform, logged). Alternative: v1.0's
 whole-window-primary with M3-as-blocker (rejected by the v1.1 review: the M-scenarios are not
-bounds on the volume/DEF/tier margins, and the anchor was double-defined). `[dk: pending]`
+bounds on the volume/DEF/tier margins, and the anchor was double-defined). `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **12. Estimator battery extension E3 = C-only (§5.1).**
-Battery §B6 names four estimators; symmetry argues for five. Default: **approve**. `[dk: pending]`
+Battery §B6 names four estimators; symmetry argues for five. Default: **approve**. `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **13. B3 discriminator disposition (G1 §8 item 2; §9 rows B3-dis/B3-dis′).**
 Options: (a) accept-with-mitigation (AUC descriptive + frozen B3-dis′ contamination check with
 BLOCK teeth, now with the §9 frozen test procedure); (b) diversify the generator beyond family
 E — constrained by the no-new-keys rule and the B0 lineage-disjointness requirements.
-Default: **(a)**. `[dk: pending]`
+Default: **(a)**. `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **14. Codebook non-coder-facing refresh (pre-freeze; requires dk approval as a codebook
 revision — absolute rule 2 changelog entry).**
@@ -945,7 +945,7 @@ hashed as-is into manifest item 1: (i) §9 "ordinal for D3 (CS1–CS5 is ordered
 archival coder" → D **mandatory** (plan §1.1; battery §B0); (iii) §11 cost-line pointer "outline
 §4.5" → outline §4.1 (where the USD 300–800 line lives). All three sections are non-coder-facing
 (no prompt rebuild; the build manifest verifies). Logged in codebook §12. Default: **apply
-before hashing manifest item 1**. `[dk: pending]`
+before hashing manifest item 1**. `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **15. Real-corpus direction-bias probes with BLOCK teeth (§2.4 items 7–8; §5.2; §9 B5-strat).**
 v1.0's blocking gates all measured agreement or synthetic accuracy — functions of the same three
@@ -960,7 +960,7 @@ for the affected hypothesis. Independently of this item, §2.6's instrument-rela
 vocabulary freezes. If dk declines both promotions, §2.6 is the only remaining mitigation and
 the limitation section must say so (the battery preamble already concedes real-corpus accuracy
 is formally unidentified). Options: adopt both (default) / adopt one / decline both.
-`[dk: pending]`
+`[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 **16. H2 power contingency (§7; v1.1 — H2's confirmatory element was never powered).**
 The §7 freeze recalculation now covers H2: registered expected counts for all 8 analysis-critical
@@ -969,7 +969,7 @@ registered ROR power < **.5**, H2's confirmatory element re-scopes to **OR_pro**
 ROR remains registered *estimation*, reported with CI but carrying no supported/null verdict),
 and the kill criterion reads "H2 null" against the re-scoped element. Alternative: extend the T3
 frame pre-freeze (more PC venue-years / additional T3 venue — interacts with locked D-1 and
-budget). Default: compute at freeze; adopt the re-scope iff power < .5. `[dk: pending]`
+budget). Default: compute at freeze; adopt the re-scope iff power < .5. `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`
 
 ---
 
