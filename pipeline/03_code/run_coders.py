@@ -401,6 +401,80 @@ class OpenAICoder(ProviderBase):
         return text, meta
 
 
+def verify_ollama_digest() -> str:
+    """GET /api/tags and verify the pinned model's digest starts with
+    DIGEST_PREFIX_D. Runs once at provider construction (i.e. before any coding
+    call). Missing model / prefix mismatch -> abort: pin violation."""
+    data = None
+    for attempt in range(len(RETRY_DELAYS) + 1):
+        try:
+            req = urllib.request.Request(URL_D_TAGS, method="GET")
+            with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
+                data = json.loads(resp.read().decode("utf-8", "replace"))
+            break
+        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError,
+                json.JSONDecodeError) as e:
+            if attempt >= len(RETRY_DELAYS):
+                die(f"coder d unavailable: cannot query {URL_D_TAGS} ({e})", 3)
+            delay = RETRY_DELAYS[attempt]
+            print(f"  [retry] coder d tags lookup failed; backing off {delay:.1f}s",
+                  file=sys.stderr)
+            time.sleep(delay)
+    digest = None
+    for m in data.get("models") or []:
+        if isinstance(m, dict) and MODEL_D in (m.get("name"), m.get("model")):
+            digest = m.get("digest") or ""
+            break
+    if digest is None:
+        die(f"coder d PIN VIOLATION: model {MODEL_D!r} not present at {URL_D_TAGS}", 3)
+    if not digest.startswith(DIGEST_PREFIX_D):
+        die(
+            f"coder d PIN VIOLATION: digest {digest!r} does not start with "
+            f"{DIGEST_PREFIX_D} — aborting before any call (pinned snapshot rule)",
+            3,
+        )
+    print(f"[ok] coder d digest pin verified ({digest[:12]}…)")
+    return digest
+
+
+class OllamaCoder(ProviderBase):
+    coder = "d"
+    model = MODEL_D
+
+    def __init__(self):
+        super().__init__()
+        self.digest = verify_ollama_digest()  # abort on pin violation (startup)
+        # Freeze-spec request (battery B0): stream/think off, num_ctx 16384,
+        # temperature 0, num_predict 400. All fixed — nothing droppable.
+        self.fixed_params = {
+            "stream": False,
+            "think": False,
+            "options": {"num_ctx": 16384, "temperature": 0, "num_predict": 400},
+        }
+        self.opt_params = {}
+
+    def _call_once(self, prompt: str):
+        payload = {"model": self.model, "prompt": prompt}
+        payload.update(self.fixed_params)
+        payload.update(self.opt_params)
+        data, resp_headers, _ = post_json(URL_D, {}, payload)
+        self.model_reported = data.get("model", self.model)
+        text = data.get("response") or ""
+        meta = {
+            "coder": self.coder,
+            "model": self.model_reported,
+            "digest": self.digest,
+            "params": self.effective_params(),
+            "usage": {
+                "input_tokens": data.get("prompt_eval_count"),
+                "output_tokens": data.get("eval_count"),
+            },
+            "version_headers": pick_version_headers(resp_headers),
+            "ts": utcnow(),
+        }
+        return text, meta
+
+
 def make_provider(coder: str, env: dict) -> ProviderBase:
     if coder == "a":
         key = env.get("ANTHROPIC_API_KEY")
@@ -420,7 +494,9 @@ def make_provider(coder: str, env: dict) -> ProviderBase:
         if not key:
             die("OPENAI_API_KEY missing from .env — coder c unavailable", 3)
         return OpenAICoder(key)
-    die(f"unknown coder {coder!r} (expected a, b, c)", 3)
+    if coder == "d":
+        return OllamaCoder()  # local Ollama, no key; digest pin checked in __init__
+    die(f"unknown coder {coder!r} (expected a, b, c, d)", 3)
 
 
 # ------------------------------------------------------------ parsing & validation
@@ -729,10 +805,11 @@ def run_smoke(coders: list, env: dict, template: str) -> int:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(
-        description="Tri-family blind coder runner (A=Anthropic, B=Google, C=OpenAI)."
+        description="Tri-family blind coder runner (A=Anthropic, B=Google, C=OpenAI; "
+                    "D=local Ollama open-weights archival)."
     )
     ap.add_argument("--batch", help="sanitized JSONL batch, e.g. data/sanitized/pilot_rs2015.jsonl")
-    ap.add_argument("--coders", default="a,b,c", help="comma list among a,b,c (default a,b,c)")
+    ap.add_argument("--coders", default="a,b,c", help="comma list among a,b,c,d (default a,b,c)")
     ap.add_argument("--limit", type=int, default=None, help="process only the first N items")
     ap.add_argument("--smoke", action="store_true",
                     help="1 call per provider with a built-in dummy text; no data/coded writes")
@@ -742,9 +819,9 @@ def main(argv=None) -> int:
     args = ap.parse_args(argv)
 
     coders = [c.strip() for c in args.coders.split(",") if c.strip()]
-    bad = [c for c in coders if c not in ("a", "b", "c")]
+    bad = [c for c in coders if c not in ("a", "b", "c", "d")]
     if bad or not coders:
-        die(f"--coders must be a comma list among a,b,c (got {args.coders!r})", 2)
+        die(f"--coders must be a comma list among a,b,c,d (got {args.coders!r})", 2)
 
     verify_prompt_manifest()  # abort before anything else on mismatch
 
