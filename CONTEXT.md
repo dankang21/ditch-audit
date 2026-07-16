@@ -73,6 +73,15 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
 8. **A07 (Swinburne 1968, design) is in the gold set deliberately**: a pro/CS4/beta
    item, i.e., the *opposite* of H1's modal pattern — guards against
    confirmation-coding.
+9b. **G2 stratified interpretation (dk, 2026-07-17).** Corpus abstract-coverage gate judged
+   stratified rather than flat: effective gate = post-2008 T2∪T3 coverage ≥ 90% (F&P retry
+   pending at ruling time; 93.3% excluding the WAF-blocked tranche), with the pre-2008
+   no-abstract era (~480 items across PC 2004-07 and IJPR/Sophia early years) declared a
+   **preregistered missingness stratum**: era×venue bias table published, H1/H2 sensitivity
+   analyses carry missing-abstract scenarios. Rationale: missingness is structural (publishing-
+   practice era boundary), not random — model it, don't hide it. Review reclassification of
+   record: 552 source-confirmed book reviews excluded from the denominator (15 abstract-bearing
+   review essays reversibly excluded, dk may revisit).
 9a. **Gold re-adjudication episode (dk, 2026-07-16).** Three-family unison misses on
    A04/A05/A07 triggered dk text-only re-adjudication: A05 and A07 had been gold-coded from
    the arguments' reputations (the 1993 hiddenness book; the design argument as such), not the

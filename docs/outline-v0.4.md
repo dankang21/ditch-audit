@@ -200,7 +200,7 @@ Target: T ≡ S1 ∧ … ∧ S8. Chain rule: P(T|E) = Π_i P(S_i | S_1..i−1, E
 |---|---|---|---|
 | P0 | Prior-art sweep: PhilPapers queries ("ramified natural theology", "gap problem", "dwindling probabilities", "cumulative case" × meta); cited-by walks on Gauch 2013 / Ocampo 2024 / Draper–Nichols 2013 | 1–3 d | **G0:** no substantially overlapping meta-study exists → proceed; else differentiation memo or stop |
 | P1 | Codebook v1.1 + pilot: Religious Studies 2015 full year (~50 arts) + 20 canonical anchors from Table 1; tri-LLM coding (A ∥ B ∥ C) + battery pilot arms (recognition probe, cue-ablation baseline, determinism audit, raw-vs-laundered divergence); compute α | 2–3 wk | **G1:** Krippendorff α(A,B) ≥ 0.70 all dimensions |
-| P2 | Corpus build: OAI/Crossref harvest, dedupe, metadata QA, abstract-coverage report, exact per-journal counts | 1–2 wk | **G2:** ≥ 90% abstract availability |
+| P2 | Corpus build: OAI/Crossref harvest, dedupe, metadata QA, abstract-coverage report, exact per-journal counts | 1–2 wk | **G2:** ≥ 90% abstract availability — **stratified interpretation (dk, 2026-07-17):** gate applies to post-2008 T2∪T3; the pre-2008 no-abstract era is a preregistered missingness stratum (era×venue bias table + sensitivity scenarios), CONTEXT §4.9b |
 | P3 | OSF preregistration freeze | 3 d | — |
 | P4 | Full coding run (tri-family) incl. full battery: vaulted synthetic half opened, recognition probes, contrast sets, per-cell floors, four-estimator stability (no human validation — zero-human rule) | 2–3 wk | — |
 | P5 | Analysis; H1/H2 verdicts | 2 wk | **G5:** framing decision (§9) |
