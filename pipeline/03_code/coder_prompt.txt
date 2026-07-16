@@ -46,7 +46,7 @@ matching the output schema exactly.
 Direction is the item's **net effect on the step thesis**, not on the paper it immediately targets.
 - Rebutting an objection to a pro-step argument = **pro** (e.g., defending a fine-tuning argument against the multiverse rejoinder).
 - Defending an objection against a rebuttal = **contra** (reply-chain items: trace the chain to the step thesis and take the net sign).
-- Verdict-suspension / explicit non liquet / pure mapping = **neutral**. `neutral` is reserved for these cases **only**: a *successful* defeater-rebuttal or coherence-defense has a directional net effect on the step thesis (pro, typically DEF), and a successful objection to a pro-step argument is contra — without either author asserting or denying the thesis outright.
+- Verdict-suspension / explicit non liquet / pure mapping = **neutral**. `neutral` is reserved for these cases **only** — a *successful* defeater-rebuttal or coherence-defense takes the direction of the thesis it protects (typically at DEF strength), and a successful objection takes the opposing direction; neither is neutral merely because the author stops short of asserting or denying the thesis outright.
 - D1 ∈ {X, I} → NA.
 
 ### D3 — Claim strength (DEF / POS / NA)
