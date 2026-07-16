@@ -12,6 +12,8 @@ Guarantees:
     (the draw is only valid against the exact bytes it was drawn from);
   * verbatim pass-through — matched records are copied as their ORIGINAL JSONL
     lines (no re-serialization), preserving byte-identity with the locked corpus;
+    enforced, not assumed: a matched line that is not strip-invariant
+    (line != stripped + "\n") aborts instead of silently normalizing;
   * completeness — every manifest id must be found exactly once; duplicate ids
     across files take the first occurrence in manifest input order (mirrors the
     builder's dedup rule, which recorded dup_dropped for the draw);
@@ -55,9 +57,17 @@ def main() -> int:
         return 2
 
     out_path = args.out if os.path.isabs(args.out) else os.path.join(REPO_ROOT, args.out)
-    if os.path.exists(out_path):
+    if os.path.exists(out_path) or os.path.islink(out_path):
         print(f"ABORT: output already exists (refusing to overwrite): {out_path}", file=sys.stderr)
         return 2
+
+    # manifest input paths are data-only: refuse reads outside <repo>/data
+    data_root = os.path.join(os.path.realpath(REPO_ROOT), "data") + os.sep
+    for inp in man["inputs"]:
+        path = inp["path"] if os.path.isabs(inp["path"]) else os.path.join(REPO_ROOT, inp["path"])
+        if not os.path.realpath(path).startswith(data_root):
+            print(f"ABORT: manifest input escapes data/: {path}", file=sys.stderr)
+            return 2
 
     # corpus-drift guard: recompute every recorded input hash before reading a line
     for inp in man["inputs"]:
@@ -78,6 +88,11 @@ def main() -> int:
                     continue
                 iid = json.loads(stripped)["item_id"]
                 if iid in want and iid not in lines:
+                    if line != stripped + "\n":
+                        print(f"ABORT: matched line for {iid} is not strip-invariant "
+                              f"(would be normalized, breaking verbatim guarantee): {path}",
+                              file=sys.stderr)
+                        return 5
                     lines[iid] = stripped
 
     missing = [i for i in ids if i not in lines]

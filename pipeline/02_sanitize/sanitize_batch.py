@@ -11,9 +11,16 @@ This wrapper imports the frozen module UNMODIFIED and reuses ``process()``
 verbatim — identical record-level sanitization logic, identical RAW -> OUT
 paths for the batch file itself — and redirects only the run logs to
 batch-suffixed paths (``scrub_log_<name>.jsonl`` / ``exclusions_<name>.jsonl``).
-Freeze-listed files are never opened for writing; batch names that would
-collide with one are refused. Post-freeze operational tooling: no method
-change, no new sanitization behavior.
+Freeze-listed files are never opened for writing. Post-freeze operational
+tooling: no method change, no new sanitization behavior.
+
+Name validation (adversarial-audit hardening, 2026-07-17): ``name`` flows into
+the frozen ``process()`` where ``dst = OUT / f"{name}.jsonl"`` is opened in
+truncating "w" mode, so a traversal payload ('../raw/gold_anchors') would
+bypass a basename-only guard and truncate a manifest-listed file. Names must
+therefore be a single path component; resolved outputs must stay inside OUT
+and may not be symlinks; the wrapper's own log namespace (scrub_log_*/
+exclusions_*) is reserved to prevent cross-batch clobber.
 
 Usage: sanitize_batch.py <raw-basename> [...]   (e.g. tranche_ckpt)
 """
@@ -37,31 +44,69 @@ FROZEN_LISTED = {
 }
 
 
+def refuse(msg: str) -> int:
+    print(f"REFUSED: {msg}", file=sys.stderr)
+    return 3
+
+
+def validate_name(name: str) -> str | None:
+    """Return an error string, or None if the batch name is safe."""
+    p = Path(name)
+    if p.is_absolute() or len(p.parts) != 1 or p.parts[0] in ("..", "."):
+        return f"batch name must be a single path component (no '/', '..'): {name!r}"
+    if name.startswith(("scrub_log_", "exclusions_")):
+        return f"batch name {name!r} collides with the wrapper's log namespace"
+    for out_name in (f"{name}.jsonl", f"scrub_log_{name}.jsonl", f"exclusions_{name}.jsonl"):
+        if out_name in FROZEN_LISTED:
+            return f"output {out_name} is freeze-listed (PREREG_MANIFEST Section C)"
+    return None
+
+
+def checked_out_path(filename: str) -> Path | None:
+    """Resolve an output path and refuse anything outside OUT / symlinked / frozen."""
+    dst = S.OUT / filename
+    if dst.is_symlink():
+        return None
+    resolved = dst.resolve()
+    if resolved.parent != S.OUT.resolve() or resolved.name in FROZEN_LISTED:
+        return None
+    return dst
+
+
 def main(argv: list[str]) -> int:
     names = argv[1:]
     if not names:
         print("usage: sanitize_batch.py <raw-basename> [...]", file=sys.stderr)
         return 2
+    if len(set(names)) != len(names):
+        return refuse("duplicate batch names in one invocation")
     for name in names:
-        for out_name in (f"{name}.jsonl", f"scrub_log_{name}.jsonl", f"exclusions_{name}.jsonl"):
-            if out_name in FROZEN_LISTED:
-                print(f"REFUSED: output {out_name} is freeze-listed (PREREG_MANIFEST Section C)",
-                      file=sys.stderr)
-                return 3
+        err = validate_name(name)
+        if err:
+            return refuse(err)
         if not (S.RAW / f"{name}.jsonl").exists():
             print(f"REFUSED: input not found: data/raw/{name}.jsonl", file=sys.stderr)
             return 2
 
     S.OUT.mkdir(parents=True, exist_ok=True)
     for name in names:
+        paths = {}
+        for kind, fname in (("batch", f"{name}.jsonl"),
+                            ("scrub", f"scrub_log_{name}.jsonl"),
+                            ("excl", f"exclusions_{name}.jsonl")):
+            dst = checked_out_path(fname)
+            if dst is None:
+                return refuse(f"unsafe output path for {fname} (symlink/escape/frozen)")
+            paths[kind] = dst
+
         log: list = []
         excluded: list = []
         lowtext: list = []
         written = S.process(name, log, excluded, lowtext)
-        with (S.OUT / f"scrub_log_{name}.jsonl").open("w", encoding="utf-8") as f:
+        with paths["scrub"].open("w", encoding="utf-8") as f:
             for e in log:
                 f.write(json.dumps(e, ensure_ascii=False) + "\n")
-        with (S.OUT / f"exclusions_{name}.jsonl").open("w", encoding="utf-8") as f:
+        with paths["excl"].open("w", encoding="utf-8") as f:
             for e in excluded:
                 f.write(json.dumps(e, ensure_ascii=False) + "\n")
         print(f"=== sanitize_batch {name} ===")
