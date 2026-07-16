@@ -263,7 +263,7 @@ fresh machine check, not on assertion. Manifest not touched.
 
 | Tool (repo-relative path) | SHA256 | size (B) | commit provenance |
 |---|---|---|---|
-| `pipeline/05_analysis/checkpoint_stats.py` | `c4f7c39010d9705f86d3edd64a168bfba59f5b9adf09821cee60552676740530` | 18242 | introduced `827d718` |
+| `pipeline/05_analysis/checkpoint_stats.py` | `c4f7c39010d9705f86d3edd64a168bfba59f5b9adf09821cee60552676740530` | 18242 | introduced `827d718` — **SUPERSEDED, see rev 2 below** |
 | `pipeline/02_sanitize/sanitize_batch.py` | `f1c08bc6a60f7b69bdeb65a96c6d944230d8ffd80cf4831b9224cc1c85bf44cd` | 4947 | added `9a74408`, repaired `164e1b4` |
 | `pipeline/05_analysis/extract_tranche_items.py` | `592e80598baf25f42a3122631084ce24bb391ca1832b5bdb38632f91c44d56cc` | 4854 | added `9a74408`, repaired `164e1b4` |
 
@@ -295,3 +295,33 @@ Frozen artifacts confirmed untouched (precondition VERIFY / Run 4 above); `PRERE
 modified. These three entries are the §11-item-11 hash record for post-freeze operational scripts,
 to be re-checked on drift like any registered analysis script. **No freeze violation observed at
 HEAD `827d718`.**
+
+### Revision — `checkpoint_stats.py` rev 2 (3-lens adversarial-audit repair, FIX-REQUIRED ×2)
+
+- when (utc): 2026-07-16T15:29:03Z
+- HEAD commit: `fb1f68daaba8ed362cb9109e1b7582b8aa8a608c`
+- repair commit: `fb1f68d` ("checkpoint_stats hardened per 3-lens adversarial audit …")
+- **rev 2 SHA256 (direct recompute, verified):** `b1d113cd32e63ad080d075209d69ffaf60090c094d6e86afef323642d6e92bd9`  (30004 B)
+- **rev 1 SHA256:** `c4f7c39010d9705f86d3edd64a168bfba59f5b9adf09821cee60552676740530` (18242 B, `827d718`) —
+  retained as history, **superseded by rev 2 (pre-first-use repair; never used in a gate run).** No
+  prior gate/checkpoint result depends on the superseded hash.
+
+Two FIX-REQUIRED findings from the 3-lens adversarial audit drove rev 2. All repairs are inside
+`checkpoint_stats.py` only — no frozen artifact touched, and the plan §6/§2.5/§6.3/§9 statistical
+**definitions are unchanged**; they are implemented more strictly (fail-closed), not redefined:
+1. **Consolidated-input enforcement** — every record must carry `_runs` (per-run file misfeed and
+   the silent 0% B1b it would otherwise produce are blocked).
+2. **Refuse-to-adjudicate (exit 3)** on coder-seat / coverage-completeness / tranche-n validation failure.
+3. **B1c denominator = union of the two re-runs** — item loss counts as a mismatch, not a silent drop.
+4. **Degenerate-replicate refusal** — if a degenerate replicate is present, that dimension's
+   **Statistic-2 = FAIL** (`b_eff == B` required).
+5. **Frozen-parameter hard-lock** (B=1000 / α-gate .70 / conditional .667 / CI .95 / n=150); any
+   deviation ⇒ **NON-CONFIRMATORY branding (exit 5)**.
+6. **B1b > 5% ⇒ alarm-only (exit 4)**.
+- selftest: **10 cases PASS** (incl. CLI-guard battery).
+
+### Frozen-set reconfirmation (rev 2)
+Per coordinator scope, no full manifest VERIFY was required for this revision — only a frozen-set
+no-touch check. `git diff --stat -- PREREG_MANIFEST.txt` = **empty ⇒ manifest byte-for-byte
+unchanged.** `checkpoint_stats.py` is an operational (non-manifest) script; this is a §11-item-11
+hash-record update, not a freeze modification. **No freeze violation at HEAD `fb1f68d`.**
