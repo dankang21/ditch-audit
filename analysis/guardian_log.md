@@ -198,3 +198,42 @@ or the vault texts). ADD to INCLUDE:
   item-12 lists; the only `data/raw/` files cleared for upload)
 Unchanged EXCLUDE: `data/{raw(except locks/),sanitized,coded}` texts, `data/criterion/synthetic_vault*`
 (vaulted until P4), caches, `.env`, `CONTEXT.md`, `docs/draft/*`.
+
+---
+
+## Session-start VERIFY (post-freeze #1, P4 kickoff)
+
+- when (utc): 2026-07-16T14:43:05Z
+- HEAD commit: `bafc712db95cdd31b1cbf00040ea4c1bcf1dd352` (seal commit; sealed `PREREG_MANIFEST.txt`
+  + `analysis/guardian_log.md` + CONTEXT.md §4.9e + CLAUDE.md phase table against content commit `83d0b499`).
+- mode: VERIFY only — manifest re-hashed & compared against working tree. **No regeneration; manifest not touched.**
+- working tree: clean (`git status` empty).
+
+### Comparison result
+
+| Basis | Result |
+|---|---|
+| Section A itemized (48) | 48/48 SHA256 match |
+| Section B corpus-lock JSONL (16) | 16/16 SHA256 match |
+| **Section A+B total** | **64/64 match** (0 mismatch, 0 missing, 0 size-mismatch) |
+| Section C batch aggregates (6) | **6/6 match** (data/sanitized, data/coded, data/criterion, data/battery, data/raw, data/raw/locks) |
+
+- Verification basis is file-content SHA256 (not commit hash), per the freeze definition. Aggregate
+  recompute reproduces each recorded `aggregate_sha256` via the documented rule
+  (`sha256` over sorted `"filehash␠␠relpath\n"` lines, full repo-relative paths).
+- mtime not treated as a criterion (git does not preserve mtime across checkout); every hash matched
+  regardless, so all frozen content is byte-identical to the sealed manifest.
+
+### Non-frozen changes confirmed benign
+- `CONTEXT.md`, `CLAUDE.md`: NOT in the frozen list (operational docs). Their update in seal commit
+  `bafc712` (CONTEXT §4.9e freeze note; CLAUDE phase table P3->FREEZE) is expected and permitted.
+- Extra on-disk files in batch dirs (`data/{sanitized,coded,raw}/.gitkeep`,
+  `data/raw/{fp_recover,pc_recover}.log`, `data/raw/{fp_recover,pc_recover}.run.out`,
+  `data/raw/{t1_recover,t1_run}.out`): all **untracked + .gitignore'd**, absent from the `bafc712`
+  tree, and outside every declared batch file set — operational logs/placeholders, not frozen
+  artifacts. No effect on the 6 aggregates (recomputed over the manifest's declared file lists).
+
+### Guardian verdict — Run 3 (session-start VERIFY)
+**INTACT.** 64/64 itemized + 6/6 aggregates reproduce against working tree at HEAD
+`bafc712`. No frozen artifact altered since seal; no violation. Manifest left unmodified.
+P4 (main coding) may proceed.
