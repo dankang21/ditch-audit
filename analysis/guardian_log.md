@@ -237,3 +237,61 @@ Unchanged EXCLUDE: `data/{raw(except locks/),sanitized,coded}` texts, `data/crit
 **INTACT.** 64/64 itemized + 6/6 aggregates reproduce against working tree at HEAD
 `bafc712`. No frozen artifact altered since seal; no violation. Manifest left unmodified.
 P4 (main coding) may proceed.
+
+---
+
+## Post-freeze operational tooling registered (P4 kickoff prep)
+
+- when (utc): 2026-07-16T15:13:59Z
+- HEAD commit at registration: `827d718471b7ec97bfbc621ec38286f0f757915d`
+- mode: **log-registration only — NOT a manifest edit.** Per absolute-rule 2 the frozen set is
+  immutable; per analysis-plan-v1 §11 item 11 (analysis-script hash convention) the SHA256 of
+  post-freeze operational scripts is recorded here in the guardian log. These three tools are
+  **not** members of `PREREG_MANIFEST.txt` (grep count 0) and were deliberately NOT added to it —
+  the manifest was left byte-for-byte unmodified this session.
+
+### Precondition re-verified this session (independent VERIFY, Run 4)
+Before registering, the sealed manifest was independently re-hashed against the working tree at HEAD
+`827d718`: **INTACT — 48/48 Section A itemized + 16/16 Section B corpus-lock (64/64) SHA256 match,
+and 6/6 Section C batch aggregates reproduce.** Aggregate rule reconfirmed = `sha256` over
+**path-sorted** `"<filehash>␠␠<repo-relative-path>"` lines with a trailing `\n` (individual Section C
+member hashes all match; the aggregate is order-sensitive on path, not on the hash-prefixed line).
+No frozen artifact altered since the seal. So the "frozen files untouched" claims below rest on a
+fresh machine check, not on assertion. Manifest not touched.
+
+### Registered tools — direct SHA256 recompute (this session)
+
+| Tool (repo-relative path) | SHA256 | size (B) | commit provenance |
+|---|---|---|---|
+| `pipeline/05_analysis/checkpoint_stats.py` | `c4f7c39010d9705f86d3edd64a168bfba59f5b9adf09821cee60552676740530` | 18242 | introduced `827d718` |
+| `pipeline/02_sanitize/sanitize_batch.py` | `f1c08bc6a60f7b69bdeb65a96c6d944230d8ffd80cf4831b9224cc1c85bf44cd` | 4947 | added `9a74408`, repaired `164e1b4` |
+| `pipeline/05_analysis/extract_tranche_items.py` | `592e80598baf25f42a3122631084ce24bb391ca1832b5bdb38632f91c44d56cc` | 4854 | added `9a74408`, repaired `164e1b4` |
+
+### What each implements, and why it does not touch the frozen set
+Each tool only **implements** a definition that is frozen in the plan; none redefines one, and none
+writes to any freeze-listed artifact.
+
+- **`checkpoint_stats.py`** — computes the analysis-plan **§6 dual statistic** (point min-pairwise α
+  + per-dimension **bootstrap min-pairwise 95% lower bound**, drawn under the **§2.5** nearest-rank
+  bootstrap convention), the **§6.3** conditional-agreement watch, and the **§9 B1b** run-split
+  rates + **§9 B1c** consolidated exact-match. α is `import alpha` from the **frozen `scripts/alpha.py`
+  (manifest item 11)** — reused unmodified, per the in-file line-55 marker "FROZEN α harness …
+  imported, never edited." Statistical definitions live in the plan (§6/§2.5/§9), not in this script.
+- **`sanitize_batch.py`** — a batch wrapper that does `import sanitize as S` and reuses the **frozen
+  `sanitize.py` `process()` (manifest item 24)** unmodified (line-34 marker: "FROZEN module …
+  imported, never edited"). All scrub/redaction logic is the frozen item-24 sanitizer; the wrapper
+  adds only batching plus a freeze-listed-file inviolability guard and path-traversal / symlink /
+  namespace defenses. (Adversarial-audit BLOCKER — a `'../sanitized/pilot_rs2015'` write that
+  truncated a frozen file in an isolated repro — was repaired at `164e1b4` before this registration.)
+- **`extract_tranche_items.py`** — materializes a checkpoint tranche's raw items from the locked P2
+  corpus by manifest id (supports §6/§15 checkpoint tranche builds). It defines no statistic. It
+  enforces a **corpus-drift guard** (recomputes every recorded input `sha256`, aborts on any
+  mismatch), strip-invariance on each matched line (aborts rather than silently normalizing), and
+  `data/`-containment + symlink refusal on all paths. It reads only corpus locks and writes under
+  `data/` (`.gitignore`'d, copyright-isolated per absolute-rule 3); it modifies nothing frozen.
+
+### Guardian note
+Frozen artifacts confirmed untouched (precondition VERIFY / Run 4 above); `PREREG_MANIFEST.txt` not
+modified. These three entries are the §11-item-11 hash record for post-freeze operational scripts,
+to be re-checked on drift like any registered analysis script. **No freeze violation observed at
+HEAD `827d718`.**
