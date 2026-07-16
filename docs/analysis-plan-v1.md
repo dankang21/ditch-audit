@@ -772,6 +772,28 @@ the manifest does not enumerate.**
 
 ---
 
+### 11.1 Frozen operationalization choices (2026-07-17, recorded before manifest generation)
+
+Six interpretation points surfaced during freeze-script authoring; the shipped script defaults
+are hereby FROZEN as the choices of record (each script's `interpretation_notes` cross-references
+this section):
+
+1. **Tranche eligibility** (build_checkpoint_tranche.py): abstract-bearing items only — items
+   without abstracts are uncodable; `--allow-missing-abstract` exists but is NOT the frozen path.
+2. **Text-driven-stratum unresolved handling** (build_text_driven_stratum.py): STRICT — an item
+   counts as divergent only when both the stub-arm and full-text adjudicated codes exist and
+   differ; `--unresolved stub-differs` is a preregistered sensitivity, not the primary.
+3. **Tipping-point comparator population** (tipping_point.py missing): tier-restricted — the H1
+   comparator uses the T1∪T2 missing-stratum pool, not the flat 462; the full-pool figure is
+   reported descriptively.
+4. **H2 adversarial-flip objective** (adversarial_flip.py): minimize the minimum decision-rule
+   margin min(LCL−1) across OR_pro and ROR (H1 uses the spec's single-effect wording directly).
+5. **P(non-excluded) numerator** (firewalled_yield.py): item-level D1-unresolved basis
+   (pilot-consistent); `--excl-dims all` is a preregistered sensitivity.
+6. **Flip-candidate scope** (tipping_point.py flips): all 2-1 majority verdicts are candidates
+   (not stub-congruent only); congruence flags are exported so the congruent-only variant is a
+   computable sensitivity.
+
 ## 12. dk decision register (open items blocking or shaping the freeze)
 
 Each item: evidence pointer → options → proposed default → `[dk: **approved 2026-07-17 — default adopted** (register batch ruling: group A wholesale + group B per defaults)]`.
