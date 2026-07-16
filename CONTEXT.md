@@ -95,6 +95,18 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
    Second instrument-disciplines-its-makers episode (after A11); the memorization failure mode
    the battery guards against in coders manifested in the designer. Codified: codebook §8 gold
    audit rule (unison contradiction → designer text-re-adjudication), §4-D4 dominance rule.
+9f. **P4 opened (dk, 2026-07-17): OSF registered; seed = 20260717; cost_log prefix-integrity ruling.**
+   dk confirmed the OSF registration is complete — the registration date **20260717** binds, per
+   the §2.5 convention, the four frozen seeds (§2.5 bootstrap / §6 checkpoint tranche / §3.6
+   FN-audit / §3.8 subsample). Note of record: it numerically coincides with the calibration
+   seed (item 25), which was set from the calibration date; the coincidence is benign — the two
+   draws sample different pools under different scripts. dk also approved the **prefix-integrity
+   ruling** for `data/coded/cost_log.md`: the freeze-time 33,815 bytes must remain the exact
+   byte prefix (SHA256-verified), everything after is append-only audit territory — resolving
+   the frozen-hash-vs-mandatory-cost-append contradiction surfaced by the P4-prep adversarial
+   audit (run_coders.py appends per batch by frozen design; CLAUDE.md requires the cost log at
+   P4). Recorded in the guardian agent definition; to be listed as a preregistered deviation in
+   OSF transparent-changes. R5 citation snapshot remains deferred to P5 (script frozen).
 9e. **P3 FREEZE ESTABLISHED (dk declaration 2026-07-17; guardian-verified).** prereg-guardian
    Run 2 = FREEZE-CLEAN at content commit 83d0b499: 64 itemized artifacts + 6 aggregate hashes
    (137 data products), 13 machine checks PASS, zero blocking findings. Run 1 had honestly
