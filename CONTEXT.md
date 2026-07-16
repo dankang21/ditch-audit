@@ -95,6 +95,12 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
    Second instrument-disciplines-its-makers episode (after A11); the memorization failure mode
    the battery guards against in coders manifested in the designer. Codified: codebook §8 gold
    audit rule (unison contradiction → designer text-re-adjudication), §4-D4 dominance rule.
+9d. **Zero-human rule re-affirmed against the audit exception (dk, 2026-07-17).** The
+   checkpoint-coupled hired-human audit (~50 items, G1-review item 5 / register item 3) was
+   REJECTED: any human audit channel commissioned by the designer is a designer-opinion
+   contamination path — the PI is the only hypothesis-aware human, so PI-selected auditors do
+   not restore independence. Absolute rule 5 stands unamended; the criterion-validity gap is
+   carried as the paper's stated principal limitation (option a), quantified.
 9. **Zero-human rule (dk, 2026-07-14, absolute).** No human codes any item — no human
    coder, no human item-adjudication, no human validation sample; dk's pilot hand-coding
    and the P4 150-item human sample are removed. dk's labor = instrument design only

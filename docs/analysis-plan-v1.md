@@ -819,7 +819,7 @@ preregistered audit protocol (sampling frame, blinding, no adjudication authorit
 *measured against*, never *overrides*, the instrument). If (b), the protocol must be frozen at P3
 with the rest. Interaction (v1.1): if (b) is adopted, it supplements but does not replace the
 §12 item 15 probes — the audit measures accuracy, item 15 guards direction-bias. Default: none —
-this is an absolute-rule amendment and is dk's alone. `[dk: pending]`
+this is an absolute-rule amendment and is dk's alone. `[dk: **REJECTED 2026-07-17** — zero-human rule stands unamended. dk's stated rationale: any human audit channel the designer commissions is a designer-opinion contamination path ("인간 감사는 내 의견이 들어갈 수 있으므로 거절. 모두 기계로만"); the PI is the system's only hypothesis-aware human, so a hired auditor selected/briefed by the PI does not restore independence. Option (a) adopted: the criterion-validity gap is stated as the principal limitation with the dev-half (97–100%) vs real-corpus pairwise-α (.70–.84) figures quoted, and no human criterion exists anywhere in the pipeline — by design, not by omission.]`
 
 **4. Adjudicator seat (C) — final assignment by the preregistered B6 rule.**
 Rule of record: "highest dev-half synthetic accuracy AND lowest asymmetric error-correlation with
