@@ -2,7 +2,8 @@
 # Tri-family blind coder runner (zero-human design, codebook v1.1).
 # Prereqs: Python 3.10+, stdlib only (urllib.request, json, hashlib, time, argparse, os, re).
 # Env (.env): ANTHROPIC_API_KEY (A), GOOGLE_API_KEY + CODER_B_PROVIDER=google (B),
-#             OPENAI_API_KEY (C, adjudicator). Optional coder D = open-weights archival.
+#             OPENAI_API_KEY (C, adjudicator). Optional coder D = open-weights archival
+#             (local Ollama qwen3.5:4b, no key; digest pin verified at startup).
 #
 # HARD RULES (coder-runner agent, CLAUDE.md rules 1 & 5):
 #   - Prompt = pipeline/03_code/coder_prompt.txt ONLY (docs/codebook-v1.md is BANNED;
@@ -22,10 +23,10 @@
 #
 # Usage:
 #   python3 pipeline/03_code/run_coders.py --batch data/sanitized/<file>.jsonl \
-#       --coders a,b,c [--limit N]
+#       --coders a,b,c[,d] [--limit N]
 #   python3 pipeline/03_code/run_coders.py --smoke        # built-in dummy item only;
 #                                                         # writes nothing under data/coded
-# Out: data/coded/{batch}_a.jsonl, {batch}_b.jsonl, {batch}_c.jsonl
+# Out: data/coded/{batch}_a.jsonl, {batch}_b.jsonl, {batch}_c.jsonl (and _d.jsonl if requested)
 
 import argparse
 import hashlib
@@ -49,10 +50,14 @@ ENV_PATH = os.path.join(REPO_ROOT, ".env")
 MODEL_A = "claude-opus-4-8"  # P1 calibration swap (dk, 2026-07-15): sonnet-5 scope-boundary readings isolated it from B/C; full trajectory in cost_log + g1 report
 MODEL_B = "gemini-3.5-flash"
 MODEL_C = "gpt-5.5-2026-04-23"
+MODEL_D = "qwen3.5:4b"  # open-weights archival coder (battery B0 freeze spec)
 URL_A = "https://api.anthropic.com/v1/messages"
 ANTHROPIC_VERSION = "2023-06-01"
 URL_B = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_B}:generateContent"
 URL_C = "https://api.openai.com/v1/chat/completions"
+URL_D = "http://127.0.0.1:11434/api/generate"   # local Ollama, no key
+URL_D_TAGS = "http://127.0.0.1:11434/api/tags"  # digest pin lookup at startup
+DIGEST_PREFIX_D = "2a654d98e6fb"                # pinned snapshot; mismatch -> abort
 
 HTTP_TIMEOUT = 240          # seconds per request
 RETRY_DELAYS = [1.0, 2.0, 4.0]  # exponential backoff, 3 retries on network/429/5xx
