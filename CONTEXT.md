@@ -73,6 +73,11 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
 8. **A07 (Swinburne 1968, design) is in the gold set deliberately**: a pro/CS4/beta
    item, i.e., the *opposite* of H1's modal pattern — guards against
    confirmation-coding.
+9c. **G2 = PASS (dk declaration, 2026-07-17).** Final figures after publisher-source recovery:
+   stratified gate (post-2008 T2∪T3) = 92.8% (2,496/2,690) ≥ 90%; overall 88.0% (2,958/3,362);
+   pre-2008 missingness stratum 210/672 (31.2%) as preregistered. Corpus of record: T2 2,818 +
+   T3 544 (denominator after 620 source-confirmed review exclusions) + T1 candidates 296 (94.3%)
+   + APQ backfill 151. P2 closed; P3 (preregistration freeze) authorized.
 9b. **G2 stratified interpretation (dk, 2026-07-17).** Corpus abstract-coverage gate judged
    stratified rather than flat: effective gate = post-2008 T2∪T3 coverage ≥ 90% (F&P retry
    pending at ruling time; 93.3% excluding the WAF-blocked tranche), with the pre-2008
