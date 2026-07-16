@@ -135,3 +135,66 @@ EXCLUDE (hash-only in manifest, or withhold entirely):
 
 Post-P4 (deferred publication, not at registration): vault texts + full coded data may be released
 per the data-availability statement once the vault is opened and copyright-safe aggregates are ready.
+
+---
+
+## Run 2 — P3 manifest REGENERATION (after dk resolved F1 + F2) — FREEZE-CLEAN
+
+- when (utc): 2026-07-16T14:27:48Z
+- git commit: `83d0b499c1f5065417bef70206c9ae4d86fa6991` (was `993b8f8` at Run 1)
+- working tree: clean (`git status` empty; Run 1 manifest/log + all resolutions committed).
+- output: `PREREG_MANIFEST.txt` regenerated — **64 itemized artifacts** (Section A = 48,
+  incl. 13 new F2 files; Section B = 16 corpus-lock JSONL) + **6 batch/aggregate dir hashes**
+  (data/raw/locks added) + seeds + pins. Prior Run-1 manifest values NOT reused — full recompute.
+
+### F1 resolution verified
+- what: `docs/validation-battery-v1.md` PROVISIONAL count **0** (was ≥12 at `993b8f8`);
+  12 occurrences relabeled to `ADOPTED-FROZEN`, header Status line included. Bright-line
+  precondition ("halt if PROVISIONAL remains") now **PASSES**. Numeric values of record remain
+  in analysis-plan §9.
+
+### F2 resolution verified — all six §11-named artifacts materialized (0 absent)
+- item 11: `pipeline/05_analysis/headline_effects.py` (40,558 B) — H1/H2 headline-effect + bootstrap.
+- item 12: `data/raw/locks/{review_exclusions(627), review_essays(15), missingness_stratum(672;210 missing;462 covered), confirmatory_exclusions(89=69real+20gold)}.json` + `pipeline/01_fetch/build_locks.py`. Counts reconcile with plan §1.2/§4/§3.8/§11 (C10a–d PASS). Legacy 0-byte `data/sanitized/exclusions.jsonl` superseded (retained only in sanitized batch hash).
+- item 18: `pipeline/01_fetch/t1_keywords_frozen.json` + `freeze_t1_keywords.py`.
+- item 21: `pipeline/04_battery/{venue_inference_probe,metadata_null_baseline}.py` (B5 probe already present).
+- item 22: `pipeline/05_analysis/fetch_citation_snapshot.py` — plan §11 line 768 authoritative path (coordinator note said `01_fetch/`; the plan governs). Script frozen now; snapshot data pulled at P5 by design (deferred like the seeds). Resolved.
+- item 23: `scripts/build_coder_prompt_r1split.py` + `pipeline/03_code/coder_prompt_r1split.txt`. PROMPT_MANIFEST last row extended: `... prompt=7e77804b… r1split_prompt=9babf168…`.
+
+### Machine checks (all PASS)
+
+| # | Check | Result | Evidence |
+|---|---|---|---|
+| — | 64 itemized rows re-hash | **PASS** | 0 mismatch |
+| C1 | vault v2 == VAULT_MANIFEST | **PASS** | `19074e3d…` |
+| C2 | vault v1 == VAULT_MANIFEST | **PASS** | `36237137…` |
+| C3 | gold docs == data (identity) | **PASS** | `0cb5a722…` |
+| C4 | primary prompt == PROMPT_MANIFEST `prompt=` | **PASS** | `7e77804b…` (row 2026-07-16T14:20:24Z) |
+| C4b | r1split prompt == `r1split_prompt=` | **PASS** | `9babf168…` |
+| C5 | codebook == PROMPT_MANIFEST `codebook=` | **PASS** | `5eba8c60…` (v1.4e; unchanged from Run 1) |
+| C6 | copyright dirs gitignored | **PASS** | raw/coded/sanitized/criterion |
+| C7 | pins A/B/C/D/E + checker present | **PASS** | D digest `2a654d98e6fb` |
+| C8 | calibration disclosure present | **PASS** | manifest + 150 ids seed 20260717 |
+| C9 | role matrix §B0 present | **PASS** | item03 hash |
+| C10 | item-12 lock counts == plan (627/15/672·210/89) | **PASS** | C10a–d |
+| F1 | PROVISIONAL bright-line == 0 | **PASS** | battery count 0 |
+| F2 | §11 named artifacts absent == 0 | **PASS** | all 13 new files present |
+
+### Guardian conclusion for Run 2
+No blocking findings. All Run-1 F1/F2 conditions resolved and machine-verified at commit
+`83d0b499`. Manifest internally consistent; no value altered to mask any condition.
+
+**FREEZE-CLEAN** — the OSF-signed manifest may be registered against commit `83d0b499` (bind the
+registration-date seeds and pull the R5 citation snapshot per their deferred-by-design schedule).
+
+### OSF upload list — Run 2 update
+Same policy as Run 1 (docs + scripts + hashes; never `data/{raw,sanitized,coded}` abstract text
+or the vault texts). ADD to INCLUDE:
+- `pipeline/05_analysis/{headline_effects,fetch_citation_snapshot}.py`
+- `pipeline/01_fetch/{build_locks,freeze_t1_keywords}.py`, `pipeline/01_fetch/t1_keywords_frozen.json`
+- `pipeline/04_battery/{venue_inference_probe,metadata_null_baseline}.py`
+- `scripts/build_coder_prompt_r1split.py`, `pipeline/03_code/coder_prompt_r1split.txt`
+- `data/raw/locks/*.json` (DOIs/item-ids only, no abstract text — publish as the machine-readable
+  item-12 lists; the only `data/raw/` files cleared for upload)
+Unchanged EXCLUDE: `data/{raw(except locks/),sanitized,coded}` texts, `data/criterion/synthetic_vault*`
+(vaulted until P4), caches, `.env`, `CONTEXT.md`, `docs/draft/*`.

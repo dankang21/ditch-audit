@@ -95,6 +95,17 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
    Second instrument-disciplines-its-makers episode (after A11); the memorization failure mode
    the battery guards against in coders manifested in the designer. Codified: codebook §8 gold
    audit rule (unison contradiction → designer text-re-adjudication), §4-D4 dominance rule.
+9e. **P3 FREEZE ESTABLISHED (dk declaration 2026-07-17; guardian-verified).** prereg-guardian
+   Run 2 = FREEZE-CLEAN at content commit 83d0b499: 64 itemized artifacts + 6 aggregate hashes
+   (137 data products), 13 machine checks PASS, zero blocking findings. Run 1 had honestly
+   blocked on two findings (PROVISIONAL bright-line; six unmaterialized §11 artifacts) — both
+   resolved and re-verified. Also caught pre-freeze: the 210/462 missingness inversion in the
+   plan (via the paper draft's factual audit) and the 620→627 review-exclusion reconciliation.
+   Frozen set: codebook v1.4e, coder prompt (+R1 split variant), battery v1.3, analysis plan
+   v1.1 (+§11.1), gold v1.3, synthetic specs (dk-signed), vault v2 hash, pins A/B/C/D/E+checker,
+   role matrix, seeds, 6 freeze scripts, corpus locks. Registration-date seeds and the R5
+   citation snapshot bind at OSF registration (deferred by design). From this point the
+   guardian runs at every session start; any post-freeze edit voids the confirmatory run.
 9d. **Zero-human rule re-affirmed against the audit exception (dk, 2026-07-17).** The
    checkpoint-coupled hired-human audit (~50 items, G1-review item 5 / register item 3) was
    REJECTED: any human audit channel commissioned by the designer is a designer-opinion
