@@ -53,7 +53,7 @@ item 7; battery §B1 v1.3 amended in tandem).
 |---|---|---|
 | T2∪T3 post-2008 (**effective G2 gate; primary estimand population — §4.0**) | 2,690 | 2,496 = **92.8%** (≥ 90% gate) |
 | T2∪T3 pre-2008 (**preregistered missingness stratum**, §4) | 672 | missing 210 = 31.2% (462 abstract-covered) |
-| T2∪T3 overall (T2 2,818 + T3 544; denominator after 620 source-confirmed review exclusions) | 3,362 | 2,958 = 88.0% |
+| T2∪T3 overall (T2 2,818 + T3 544; denominator after 627 source-confirmed (reconciled at lock generation) review exclusions) | 3,362 | 2,958 = 88.0% |
 | T1 topic-filtered candidates | 296 | 94.3% |
 | APQ backfill (T1) | 151 | (per P2 records) |
 
@@ -755,7 +755,7 @@ the manifest does not enumerate.**
 | 9 | Venue-tier assignment table (incl. F&P = T2 primary, R2 flip preregistered) |
 | 10 | Step-status k thresholds {2, 3, 5} + the §10 decision-list predicates |
 | 11 | Analysis code skeleton hashes (`scripts/alpha.py`, `scripts/adjudicate.py`, `scripts/consolidate_runs.py`, + the H1/H2 analysis and bootstrap scripts to be added pre-freeze; stdlib-only) **+ fixed seeds: §2.5 bootstrap seed · §3.8 subsample seed · §6 tranche seed · §3.6 FN-audit seed** **+ the §4.2 tipping-point search and §5.2 adversarial-flip search scripts** |
-| 12 | Corpus lock: P2 harvest JSONL hashes, review-exclusion list (620), review-essay list (15), missingness-stratum item list (672 items; 210 missing), T1 candidate list, **machine-readable confirmatory-exclusion id list (89 pilot-phase = 69 real + 20 gold; §3.8)** |
+| 12 | Corpus lock: P2 harvest JSONL hashes, review-exclusion list (627 — reconciled count of record in data/raw/locks/review_exclusions.json; the earlier '620' was the pre-lock nominal figure), review-essay list (15), missingness-stratum item list (672 items; 210 missing), T1 candidate list, **machine-readable confirmatory-exclusion id list (89 pilot-phase = 69 real + 20 gold; §3.8)** |
 | 13 | Denominator definitions DEN-H1 / DEN-H2 (§3) as dk-approved |
 | 14 | Adjudicator-seat rule + frozen seat outcome + its computation inputs + **the both-seat co-analysis divergence rule** (§12 item 4) |
 | 15 | Checkpoint spec (§6) incl. **the tranche-construction script (frozen artifact + hash + seed — authored pre-freeze; v1.0 froze a pointer to a nonexistent rule)**, the exact interval-statistic definition (four per-dimension min-pairwise quantities), the determinism sub-audit run accounting, the laundered-arm eligibility rule, and the misclassification-sensitivity scenario grid |
@@ -765,7 +765,7 @@ the manifest does not enumerate.**
 | 19 | B4-cue lexicon: the frozen hedge/modal/directive term list behind the ±20% band |
 | 20 | B2 stub-degradation script + text-driven-stratum builder script |
 | 21 | Probe prompt templates: B5 recognition probe · B9 venue-inference probe · B7b metadata-only baseline (coder-facing instruments; hash prevents silent drift) |
-| 22 | R5 citation snapshot: the downloaded snapshot file (hashed) + source and date |
+| 22 | R5 citation snapshot: **script frozen now** (`pipeline/05_analysis/fetch_citation_snapshot.py`, hashed); **snapshot data pulled at P5** (citation counts are analysis-time covariates, not instrument) — at pull time the downloaded snapshot file itself is hashed + source and date recorded (the script's `*_manifest.json`) |
 | 23 | R1 split-rule build-variant prompt (conditional on §12 item 9 = (a)) |
 | 24 | Sanitizer + laundering pipeline versions (script hashes) underpinning the raw-vs-laundered arms |
 | 25 | Calibration-exposure disclosure: the 150 calib item ids + coder-B calibration outputs (§12 item 5′ artifact) |
