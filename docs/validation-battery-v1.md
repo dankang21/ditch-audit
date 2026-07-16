@@ -1,7 +1,6 @@
 # ditch-audit — Zero-Human Validation Battery v1.3
 
-2026-07-14 (v1.0/v1.2) · 2026-07-17 (v1.3) · Owner: dk · Status: draft thresholds (PROVISIONAL →
-numeric values frozen at P3; frozen values proposed in analysis-plan §9)
+2026-07-14 (v1.0/v1.2) · 2026-07-17 (v1.3) · Owner: dk · Status: thresholds ADOPTED-FROZEN — numeric values of record live in analysis-plan §9 (dk batch ruling 2026-07-17)
 Companion to `codebook-v1.md` (v1.1+) and `analysis-plan-v1.md` (v1.1 — **the full battery
 document, not only the B10 table, is the frozen manifest artifact**; body sections below are
 kept consistent with the plan's §9 by co-amendment).
@@ -115,11 +114,11 @@ API call logs published with the audit package to make the no-contact claims ver
   never coded from text; their only per-cell control is the B8 agreement floor.
 - **Style laundering + discriminator test:** all synthetic items pass through family-E laundering
   toward corpus surface statistics (length, hedge rate, readability); each coder family then
-  classifies real-vs-synthetic on sanitized text in fresh contexts. PROVISIONAL pass: discriminator
+  classifies real-vs-synthetic on sanitized text in fresh contexts. ADOPTED-FROZEN (numeric value of record in analysis-plan §9) pass: discriminator
   AUC ≤ 0.60 (CI including 0.5 preferred); fail → re-launder before any accuracy scoring.
   **Iteration cap: 3 regeneration rounds per item**, every regeneration logged with its trigger —
   an uncapped patch loop would let the discriminator gate become an expectancy channel.
-- PROVISIONAL accuracy floors (per coder, dev half at P1): D1 ≥ 85%, D2 ≥ 85%, D3 ≥ 70% (±1 level ≥ 90%), D4 ≥ 75%.
+- ADOPTED-FROZEN (numeric value of record in analysis-plan §9) accuracy floors (per coder, dev half at P1): D1 ≥ 85%, D2 ≥ 85%, D3 ≥ 70% (±1 level ≥ 90%), D4 ≥ 75%.
   **v1.3: proposed frozen floors move D3 to ≥ 85%** (the 70% floor was set for the 5-level CS
   scale; at the 2-level {DEF, POS} scale chance = 50% and measured dev-half is 97–100 — plan §9
   row B3-acc). The ±1-level criterion is void at 2 levels.
@@ -135,13 +134,13 @@ API call logs published with the audit package to make the no-contact claims ver
 - **Contrast sets (code-flipping minimal pairs):** family E produces minimal edits that flip a
   code (negate the conclusion; add/remove a strength hedge to move CS2↔CS4; swap the load-bearing
   premise empirical↔conceptual to flip beta↔alpha), verified against spec like B3 items.
-  Coders must track the flip. PROVISIONAL: flip-tracking ≥ 80% per dimension.
+  Coders must track the flip. ADOPTED-FROZEN (numeric value of record in analysis-plan §9): flip-tracking ≥ 80% per dimension.
 - **Paraphrase stability:** semantics-preserving paraphrase (family E, cue statistics constrained:
   hedge rate and register vocabulary preserved; two intensities — light rewording / deep
   restructure, **classified mechanically by the pipeline stage that produced the variant
   (distinct build artifacts), never by post-hoc output judgment (v1.3)**). NOTE (red-team
   finding): stability is necessary, not sufficient — a folklore coder is maximally
-  paraphrase-stable; interpret only jointly with B2. PROVISIONAL: code-flip ≤ 10% light /
+  paraphrase-stable; interpret only jointly with B2. ADOPTED-FROZEN (numeric value of record in analysis-plan §9): code-flip ≤ 10% light /
   ≤ 20% deep (plan §9 B4-para). The cue-fidelity hedge/modal/directive lexicon behind the ±20%
   band is a frozen manifest artifact (plan §11 item 19).
 - **Entity-swap:** named interlocutors replaced by role tags on a subsample; code divergence flags
@@ -161,7 +160,7 @@ API call logs published with the audit package to make the no-contact claims ver
 - Every real item: each coder family, fresh context, asked to name author/title/venue from the
   sanitized text; scored by script against metadata.
 - **Probe validation:** the 20 gold anchors + a planted set of known-famous texts must be detected.
-  PROVISIONAL: ≥ 90% planted-famous detection, else the stratification is not used.
+  ADOPTED-FROZEN (numeric value of record in analysis-plan §9): ≥ 90% planted-famous detection, else the stratification is not used.
 - Claim discipline: a negative probe excludes **verbatim/item-level recall only** — topic-level
   priors are B2's job (Duan et al. COLM 2024 caveat).
 - Analyses stratified by recognizability; headline effects re-estimated on the unrecognized
@@ -201,7 +200,7 @@ API call logs published with the audit package to make the no-contact claims ver
   DIRECTIONAL headline effects only (OR_H1, OR_pro, ROR). OR_contra is exempt** (registered
   prediction ≈ 1: near-1 sign chatter across estimators is the design succeeding; OR_contra is
   scored solely by the plan's §2.3 contra-control row, with its evaluability floor).
-  PROVISIONAL: per-family OR ratio within [0.5, 2] (breach = NOTE); sign instability and
+  ADOPTED-FROZEN (numeric value of record in analysis-plan §9): per-family OR ratio within [0.5, 2] (breach = NOTE); sign instability and
   CI-overlap failure = BLOCK (plan §2.4 item 5).
 - Tipping-point analysis: fraction (and cell pattern) of 2-1 resolutions that must be wrong to
   nullify each headline effect.
@@ -226,9 +225,9 @@ entering the interaction contrast.
 
 - **Agreement floor (all analysis-critical cells; mechanized v1.3):** cell membership by
   **adjudicated** codes; per-dimension raw agreement computed between each coder pair over the
-  coders' consolidated codes on the cell's items (denominator-relevant dimensions); PROVISIONAL
+  coders' consolidated codes on the cell's items (denominator-relevant dimensions); ADOPTED-FROZEN (numeric value of record in analysis-plan §9)
   ≥ 0.60 applied to the **minimum over the three pairs**; defined at cell n ≥ 15.
-- **Synthetic-criterion accuracy floor (the four B3-covered construct cells ONLY; PROVISIONAL
+- **Synthetic-criterion accuracy floor (the four B3-covered construct cells ONLY; ADOPTED-FROZEN (numeric value of record in analysis-plan §9)
   ≥ 70% on the cell's B3 items, n ≥ 10).** **Venue-tier cells are exempt from the synthetic
   floor** (consistent with B3's coverage rule: D5 is metadata-joined, never coded from text);
   their only per-cell control is the agreement floor. (v1.3 fixes the internal contradiction
@@ -246,7 +245,7 @@ entering the interaction contrast.
 - **Run phase:** P4 (the P1 pilot corpus is single-tier — T3 absent — so T3-vs-rest AUC is not
   estimable before the P3 arm decision). The trigger below is preregistered as a **conditional
   rule** that overrides the P3 primary-arm choice for the tier analysis only.
-- PROVISIONAL → v1.3 frozen form: **trigger = MAX over the three families' AUCs > 0.65 on
+- ADOPTED-FROZEN (numeric value of record in analysis-plan §9) → v1.3 frozen form: **trigger = MAX over the three families' AUCs > 0.65 on
   T3-vs-rest** (most conservative aggregation; frozen to prevent an any/all/pooled choice at a
   primary-arm flip). Trigger consequences: the laundered arm (B4) becomes mandatory-primary for
   the tier analysis **only if it has independently passed the B9a dual statistic on the
@@ -281,7 +280,7 @@ structure) and the gold-exclusion sensitivity dropped three cells marginally und
 
 ## B10. Battery pass/fail semantics (frozen at P3)
 
-- Every PROVISIONAL threshold above receives a frozen numeric value and a frozen consequence
+- Every ADOPTED-FROZEN (numeric value of record in analysis-plan §9) threshold above receives a frozen numeric value and a frozen consequence
   (confirmatory-claim block vs sensitivity-note vs instrument-revision trigger) in the OSF
   registration. No post-hoc threshold selection; no narrative rescue of failed components.
 - **Single-authority rule (v1.3): the plan's §2.4 gate chain is the exhaustive registry of
@@ -335,4 +334,4 @@ at low hundreds of USD — logged in `data/coded/cost_log.md`.
 - v1.0 (2026-07-14): initial battery, drafted from the red-team synthesis (3 adversarial reviews,
   6-agent research sweep); dk approvals of record: zero-human rule (absolute), coder C = OpenAI
   (v1.2: provisional, rule-based final assignment), dk synthetic-spec sign-off, document package.
-  Thresholds PROVISIONAL until P3.
+  Thresholds ADOPTED-FROZEN (numeric value of record in analysis-plan §9) until P3.

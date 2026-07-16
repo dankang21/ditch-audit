@@ -52,7 +52,7 @@ item 7; battery §B1 v1.3 amended in tandem).
 | Stratum | Items | Abstract coverage |
 |---|---|---|
 | T2∪T3 post-2008 (**effective G2 gate; primary estimand population — §4.0**) | 2,690 | 2,496 = **92.8%** (≥ 90% gate) |
-| T2∪T3 pre-2008 (**preregistered missingness stratum**, §4) | 672 | 210 = 31.2% (462 missing) |
+| T2∪T3 pre-2008 (**preregistered missingness stratum**, §4) | 672 | missing 210 = 31.2% (462 abstract-covered) |
 | T2∪T3 overall (T2 2,818 + T3 544; denominator after 620 source-confirmed review exclusions) | 3,362 | 2,958 = 88.0% |
 | T1 topic-filtered candidates | 296 | 94.3% |
 | APQ backfill (T1) | 151 | (per P2 records) |
@@ -334,7 +334,7 @@ handling: §12 item 5. Calibration-sample handling: §12 item 5′.
 
 ### 4.0 Estimand of record (v1.1 restructure)
 
-The pre-2008 no-abstract stratum (672 items; 462 missing abstracts, concentrated in PC 2004–07
+The pre-2008 no-abstract stratum (672 items; 210 missing abstracts, concentrated in PC 2004–07
 and IJPR/Sophia early years) is **structural missingness** (publishing-practice era boundary),
 not random: any rate borrowed from post-2008 items rests on an untestable MAR assumption. v1.0
 treated whole-window estimates as primary with M1–M3 presented as "bounds"; the v1.1 review found
@@ -364,7 +364,7 @@ differences reported per venue.
 Missing pre-2008 items cannot be coded; this section bounds what they could have done to the
 whole-window estimates.
 
-**(a) Raw adversarial bound (reported once, expected uninformative):** all 462 missing items
+**(a) Raw adversarial bound (reported once, expected uninformative):** all 210 missing items
 assumed in-chain POS with the adversarial direction×type assignment. This bound will typically
 nullify any effect and is reported to demonstrate the necessity of (b).
 
@@ -377,9 +377,9 @@ mechanical (greedy adversarial cell allocation; stdlib script, hash in manifest 
 statistics are reported per hypothesis:
 
 - `TP_pos` — adversarial allocation restricted to imputed in-chain **POS** items, read against
-  the 95% joint-UCL expected missing in-chain POS count (462 × UCL[P(S)] × UCL[P(POS|S)]);
+  the 95% joint-UCL expected missing in-chain POS count (210 × UCL[P(S)] × UCL[P(POS|S)]);
 - `TP_free` — all margins free (POS and DEF), read against the 95% UCL expected missing
-  **in-chain** count (462 × UCL[P(S)]).
+  **in-chain** count (210 × UCL[P(S)]).
 
 For H1, imputation is restricted to the missing stratum's **T1∪T2 portion** (DEN-H1 excludes T3;
 the PC portion enters only the H2/DEN-H2 computation).
@@ -755,7 +755,7 @@ the manifest does not enumerate.**
 | 9 | Venue-tier assignment table (incl. F&P = T2 primary, R2 flip preregistered) |
 | 10 | Step-status k thresholds {2, 3, 5} + the §10 decision-list predicates |
 | 11 | Analysis code skeleton hashes (`scripts/alpha.py`, `scripts/adjudicate.py`, `scripts/consolidate_runs.py`, + the H1/H2 analysis and bootstrap scripts to be added pre-freeze; stdlib-only) **+ fixed seeds: §2.5 bootstrap seed · §3.8 subsample seed · §6 tranche seed · §3.6 FN-audit seed** **+ the §4.2 tipping-point search and §5.2 adversarial-flip search scripts** |
-| 12 | Corpus lock: P2 harvest JSONL hashes, review-exclusion list (620), review-essay list (15), missingness-stratum item list (672/462), T1 candidate list, **machine-readable confirmatory-exclusion id list (89 pilot-phase = 69 real + 20 gold; §3.8)** |
+| 12 | Corpus lock: P2 harvest JSONL hashes, review-exclusion list (620), review-essay list (15), missingness-stratum item list (672 items; 210 missing), T1 candidate list, **machine-readable confirmatory-exclusion id list (89 pilot-phase = 69 real + 20 gold; §3.8)** |
 | 13 | Denominator definitions DEN-H1 / DEN-H2 (§3) as dk-approved |
 | 14 | Adjudicator-seat rule + frozen seat outcome + its computation inputs + **the both-seat co-analysis divergence rule** (§12 item 4) |
 | 15 | Checkpoint spec (§6) incl. **the tranche-construction script (frozen artifact + hash + seed — authored pre-freeze; v1.0 froze a pointer to a nonexistent rule)**, the exact interval-statistic definition (four per-dimension min-pairwise quantities), the determinism sub-audit run accounting, the laundered-arm eligibility rule, and the misclassification-sensitivity scenario grid |
@@ -784,7 +784,7 @@ this section):
    counts as divergent only when both the stub-arm and full-text adjudicated codes exist and
    differ; `--unresolved stub-differs` is a preregistered sensitivity, not the primary.
 3. **Tipping-point comparator population** (tipping_point.py missing): tier-restricted — the H1
-   comparator uses the T1∪T2 missing-stratum pool, not the flat 462; the full-pool figure is
+   comparator uses the T1∪T2 missing-stratum pool, not the flat all-tier missing pool (210); the full-pool figure is
    reported descriptively.
 4. **H2 adversarial-flip objective** (adversarial_flip.py): minimize the minimum decision-rule
    margin min(LCL−1) across OR_pro and ROR (H1 uses the spec's single-effect wording directly).
