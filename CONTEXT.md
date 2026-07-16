@@ -132,6 +132,10 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
   Conformity checker = Kimi-class (Moonshot), same route. No-new-keys constraint (dk).
   Role-exclusivity matrix in validation-battery §B0. Pins (dk, 2026-07-14, session 2):
   A = claude-sonnet-5 · B = gemini-3.5-flash · C = gpt-5.5-2026-04-23.
+  Coder D confirmed (dk, 2026-07-17): qwen3.5:4b, local Ollama, digest-pinned, Q4_K_M,
+  think:false/temp 0/ctx 16384; weights archived locally. (dk's Fable-5 suggestion was
+  declined: closed weights fail D's archival purpose; Anthropic family already seats coder A;
+  orchestrator-model optics.) Register item 17 closed — all P3 decision-register items resolved.
   Pin revision (dk, 2026-07-15, P1 calibration — pre-freeze, fully logged): A → claude-opus-4-8.
   Rationale: G1 rounds 1–2 failing cells were exclusively A-pairs; sonnet-5 scored 97–100% on the
   synthetic dev-half yet resolved ambiguous scope boundaries (Q0/Q1 → NA cascades) systematically
