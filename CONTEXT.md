@@ -95,6 +95,20 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
    Second instrument-disciplines-its-makers episode (after A11); the memorization failure mode
    the battery guards against in coders manifested in the designer. Codified: codebook §8 gold
    audit rule (unison contradiction → designer text-re-adjudication), §4-D4 dominance rule.
+9g. **P4 CHECKPOINT FAIL — coding halted (2026-07-17).** The §6 confirmatory checkpoint on the
+   seeded fresh tranche (n=150, seed 20260717) FAILED the frozen dual statistic on all four
+   dimensions: point min-pairwise α D1 .736 / D2 .676 / D3 .691 / D4 .705 (gate ≥ .70 — D2, D3
+   fail) and bootstrap 95% LBs .650 / .572 / .390 / .586 (gate ≥ .667 — all fail). Sub-audits
+   clean (B1a determinism PASS, B1b ≤2% PASS, §6.3 no family-lockstep, .41–.52): the failure is
+   substantive coding disagreement on fresh text, not a mechanism artifact. Frozen consequence
+   (§6 On FAIL): P4 halted; NO confirmatory claims from any coded material; the G1 conditional
+   PASS's condition resolved NEGATIVE. dk's remaining registered decision: descriptive downgrade
+   (methods-forward preprint per kill criteria) vs full instrument redesign (revision budget
+   exhausted — restarts the gate cycle). Coincident with (and governed independently of) dk's
+   same-day budget stop; laundered arm left incomplete (A 150/150, B 65/150, r1 only), B1c not
+   run — both moot under FAIL. H1/H2 never tested; no outcome data examined; draft v0 resolves
+   to the negative-instrument branch. Report of record: analysis/checkpoint_report.md +
+   checkpoint_dual_raw.json.
 9f. **P4 opened (dk, 2026-07-17): OSF registered; seed = 20260717; cost_log prefix-integrity ruling.**
    dk confirmed the OSF registration is complete — the registration date **20260717** binds, per
    the §2.5 convention, the four frozen seeds (§2.5 bootstrap / §6 checkpoint tranche / §3.6

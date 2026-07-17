@@ -1,0 +1,198 @@
+{
+ "arm_label": "raw",
+ "artifact": "P4 checkpoint dual statistic (plan §6; §2.5 bootstrap; §6.3; §9 B1b)",
+ "b": 1000,
+ "b1b_alarm_over_5pct": false,
+ "b1b_all_within_2pct": true,
+ "b1b_run_split": {
+  "a": {
+   "dims": {
+    "d1_step": {
+     "alarm_5pct": false,
+     "n_unstable": 0,
+     "over_floor_2pct": false,
+     "rate": 0.0
+    },
+    "d2_direction": {
+     "alarm_5pct": false,
+     "n_unstable": 0,
+     "over_floor_2pct": false,
+     "rate": 0.0
+    },
+    "d3_strength": {
+     "alarm_5pct": false,
+     "n_unstable": 1,
+     "over_floor_2pct": false,
+     "rate": 0.006666666666666667
+    },
+    "d4_type": {
+     "alarm_5pct": false,
+     "n_unstable": 0,
+     "over_floor_2pct": false,
+     "rate": 0.0
+    }
+   },
+   "n_records": 150,
+   "n_with_runs_field": 150
+  },
+  "b": {
+   "dims": {
+    "d1_step": {
+     "alarm_5pct": false,
+     "n_unstable": 0,
+     "over_floor_2pct": false,
+     "rate": 0.0
+    },
+    "d2_direction": {
+     "alarm_5pct": false,
+     "n_unstable": 0,
+     "over_floor_2pct": false,
+     "rate": 0.0
+    },
+    "d3_strength": {
+     "alarm_5pct": false,
+     "n_unstable": 0,
+     "over_floor_2pct": false,
+     "rate": 0.0
+    },
+    "d4_type": {
+     "alarm_5pct": false,
+     "n_unstable": 0,
+     "over_floor_2pct": false,
+     "rate": 0.0
+    }
+   },
+   "n_records": 150,
+   "n_with_runs_field": 150
+  },
+  "c": {
+   "dims": {
+    "d1_step": {
+     "alarm_5pct": false,
+     "n_unstable": 2,
+     "over_floor_2pct": false,
+     "rate": 0.013333333333333334
+    },
+    "d2_direction": {
+     "alarm_5pct": false,
+     "n_unstable": 1,
+     "over_floor_2pct": false,
+     "rate": 0.006666666666666667
+    },
+    "d3_strength": {
+     "alarm_5pct": false,
+     "n_unstable": 0,
+     "over_floor_2pct": false,
+     "rate": 0.0
+    },
+    "d4_type": {
+     "alarm_5pct": false,
+     "n_unstable": 1,
+     "over_floor_2pct": false,
+     "rate": 0.006666666666666667
+    }
+   },
+   "n_records": 150,
+   "n_with_runs_field": 150
+  }
+ },
+ "condagree_6_3": {
+  "d1_step": {
+   "n_a_neq_b": 32,
+   "p_bc_given_a_neq_b": 0.40625,
+   "watch_trigger": false
+  },
+  "d2_direction": {
+   "n_a_neq_b": 30,
+   "p_bc_given_a_neq_b": 0.4666666666666667,
+   "watch_trigger": false
+  },
+  "d3_strength": {
+   "n_a_neq_b": 27,
+   "p_bc_given_a_neq_b": 0.5185185185185185,
+   "watch_trigger": false
+  },
+  "d4_type": {
+   "n_a_neq_b": 24,
+   "p_bc_given_a_neq_b": 0.4583333333333333,
+   "watch_trigger": false
+  }
+ },
+ "d3_order": [
+  "DEF",
+  "POS"
+ ],
+ "dual_pass": false,
+ "id_mismatch": {},
+ "lb_floor": 0.667,
+ "n_items": 150,
+ "non_confirmatory": false,
+ "point_gate": 0.7,
+ "seed": 20260717,
+ "statistic1_pass": false,
+ "statistic1_point": {
+  "d1_step": {
+   "min": 0.7356540958695952,
+   "pairwise": {
+    "AB": 0.7356540958695952,
+    "AC": 0.7748368382886149,
+    "BC": 0.7777380100214746
+   }
+  },
+  "d2_direction": {
+   "min": 0.676079734219269,
+   "pairwise": {
+    "AB": 0.676079734219269,
+    "AC": 0.745964316057774,
+    "BC": 0.7701263042284459
+   }
+  },
+  "d3_strength": {
+   "min": 0.6912681912681913,
+   "pairwise": {
+    "AB": 0.8227194492254734,
+    "AC": 0.6912681912681913,
+    "BC": 0.7483870967741936
+   }
+  },
+  "d4_type": {
+   "min": 0.7052614285127531,
+   "pairwise": {
+    "AB": 0.7052614285127531,
+    "AC": 0.7537777411784082,
+    "BC": 0.7325690124811969
+   }
+  }
+ },
+ "statistic2_interval": {
+  "d1_step": {
+   "b_effective": 1000,
+   "degenerate_replicates": 0,
+   "lb95": 0.6498638344226579,
+   "median": 0.7314809775213629,
+   "ub95": 0.8027591349739001
+  },
+  "d2_direction": {
+   "b_effective": 1000,
+   "degenerate_replicates": 0,
+   "lb95": 0.571601763409258,
+   "median": 0.6740670760510156,
+   "ub95": 0.775247115420754
+  },
+  "d3_strength": {
+   "b_effective": 1000,
+   "degenerate_replicates": 0,
+   "lb95": 0.38953488372093015,
+   "median": 0.6654135338345865,
+   "ub95": 0.8493150684931507
+  },
+  "d4_type": {
+   "b_effective": 1000,
+   "degenerate_replicates": 0,
+   "lb95": 0.5862770633241088,
+   "median": 0.6919775078336265,
+   "ub95": 0.7761882979165801
+  }
+ },
+ "statistic2_pass": false
+}
