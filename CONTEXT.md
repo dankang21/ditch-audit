@@ -95,6 +95,16 @@ Islam/Judaism (S6), Lapide (S8 — accepts S1–S7).
    Second instrument-disciplines-its-makers episode (after A11); the memorization failure mode
    the battery guards against in coders manifested in the designer. Codified: codebook §8 gold
    audit rule (unison contradiction → designer text-re-adjudication), §4-D4 dominance rule.
+9h. **Descriptive downgrade elected (dk, 2026-07-17).** Following the checkpoint FAIL (9g), dk
+   elected option (a) of the §6 On-FAIL fork: descriptive downgrade per the kill criteria —
+   methods-forward preprint + essay, no journal submission, no salami. Draft v0.2 (commit
+   0b359fe) resolves the outcome-blind v0.1 shells to the realized branch: §5.1.1 carries the
+   checkpoint numbers and the spend-stop disclosure; all P5 markers resolved to not-run; the
+   Scenario D publication rule quoted verbatim; tense/scope repairs applied per a 3-lens
+   adversarial audit (self-contradicting abstract tense, zero-human claim scoped to
+   corpus/pipeline items vs the designer-authored gold key, selection reading marked
+   preregistered vs domain-shift marked post-hoc). The back-matter resolution note is the
+   single change inventory of record; the v0.1→v0.2 diff is audit-package material.
 9g. **P4 CHECKPOINT FAIL — coding halted (2026-07-17).** The §6 confirmatory checkpoint on the
    seeded fresh tranche (n=150, seed 20260717) FAILED the frozen dual statistic on all four
    dimensions: point min-pairwise α D1 .736 / D2 .676 / D3 .691 / D4 .705 (gate ≥ .70 — D2, D3
