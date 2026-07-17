@@ -1,10 +1,21 @@
+% !TeX program = xelatex
 % Lessing's Ditch as a Measurable Property of the Literature — preprint, draft v0.2
 % Build: tectonic main.tex  (XeLaTeX engine)
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=1.15in]{geometry}
-\usepackage{fontspec}
-\setmainfont{Liberation Serif}
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath}
+\usepackage{iftex}
+\ifPDFTeX
+  % pdfLaTeX path (Overleaf default compiler)
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{newtxtext,newtxmath}
+\else
+  % XeLaTeX / LuaLaTeX path
+  \usepackage{fontspec}
+  \IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{\setmainfont{Liberation Serif}}
+  \usepackage{amssymb}
+\fi
 \usepackage{longtable,booktabs,array,calc}
 \usepackage{etoolbox}
 \AtBeginEnvironment{longtable}{\small}
