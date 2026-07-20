@@ -19,8 +19,8 @@ frozen ourselves out of every way of arguing with it.
 
 ## The setup
 
-The study was an attempt to measure a literature rather than argue with it: twenty years of
-peer-reviewed philosophy of religion, ~3,500 articles, each to be coded for which step of
+The study was an attempt to measure a literature rather than argue with it: twenty-one issue-years
+(2004–2024) of peer-reviewed philosophy of religion, ~3,500 articles, each to be coded for which step of
 natural theology's inferential chain it addresses, in which direction, at what claim strength,
 on what kind of evidence (preprint §§2–4). The coding was to be done with zero human
 item-coding — three LLM coder families from disjoint providers, disagreements resolved by

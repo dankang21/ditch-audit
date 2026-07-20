@@ -1,3 +1,7 @@
+> **Superseded working file.** The manuscript of record is `draft-v0.md` (assembled from
+> these sections at v0; revised in place thereafter). Facts and figures here may be stale —
+> do not cite from this file.
+
 # §4.4 The validation battery and preregistration: a zero-human validity architecture
 
 > Draft section for *Lessing's ditch as a measurable property of the literature* (outline v0.4).

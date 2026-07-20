@@ -325,3 +325,9 @@ Per coordinator scope, no full manifest VERIFY was required for this revision �
 no-touch check. `git diff --stat -- PREREG_MANIFEST.txt` = **empty ⇒ manifest byte-for-byte
 unchanged.** `checkpoint_stats.py` is an operational (non-manifest) script; this is a §11-item-11
 hash-record update, not a freeze modification. **No freeze violation at HEAD `fb1f68d`.**
+
+---
+
+## Session-start VERIFY (2026-07-20, draft v0.4 repair cycle)
+
+- when: 2026-07-20 · session: draft v0.4 repair cycle · HEAD `226727ab6240abf346688d851ddd7cd6ba24e6b7` · **CLEAN** — Section A 48/48 + Section B 16/16 (64/64) SHA256 match against sealed manifest; `data/coded/cost_log.md` prefix-integrity intact (first 33,815 B = `ca87bec5…`; +10,798 B append-only growth, frozen prefix unmodified); Section C 6/6 batch aggregates reproduce (path-sorted `"<filehash>␠␠<relpath>\n"`, cost_log via frozen-prefix hash). No frozen artifact altered; only `docs/draft/*` (P6 draft, non-frozen) dirty in working tree. Manifest not touched.

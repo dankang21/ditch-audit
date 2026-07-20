@@ -3,7 +3,7 @@
 **A preregistered zero-human LLM measurement design — and the confirmatory checkpoint that
 rejected its instrument.**
 
-This repository is the public audit trail of a study that set out to measure twenty years
+This repository is the public audit trail of a study that set out to measure twenty-one issue-years
 (2004–2024) of the peer-reviewed philosophy-of-religion literature — coding ~3,500 articles
 for which step of natural theology's inferential chain each addresses, in which direction, at
 what claim strength, on what kind of evidence — using a fixed, preregistered, multi-family LLM
@@ -15,8 +15,8 @@ failed on all four coding dimensions. Under the frozen decision tree this stoppe
 no hypothesis was ever tested. Per the preregistered kill criterion, the project downgraded to
 a methods-forward preprint plus a companion essay — no journal submission.
 
-- **Preprint** (v0.3, 43 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
-  `docs/draft/preprint-v0.3.zip` · *(archive DOI: to be added at upload)*
+- **Preprint** (v0.4, 47 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
+  `docs/draft/preprint-v0.4.zip` · *(archive DOI: to be added at upload)*
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our
   Study — and Why We're Glad It Did"
 - **Checkpoint result of record**: `analysis/checkpoint_report.md` + `checkpoint_dual_raw.json`

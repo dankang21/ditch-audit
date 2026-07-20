@@ -1,3 +1,7 @@
+> **Superseded working file.** The manuscript of record is `draft-v0.md` (assembled from
+> these sections at v0; revised in place thereafter). Facts and figures here may be stale —
+> do not cite from this file.
+
 <!--
 DRAFT §4.1 Corpus — ditch-audit paper (working title: Lessing's ditch as a
 measurable property of the literature). Status: outcome-blind draft; no result

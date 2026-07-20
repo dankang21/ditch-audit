@@ -1,3 +1,7 @@
+> **Superseded working file.** The manuscript of record is `draft-v0.md` (assembled from
+> these sections at v0; revised in place thereafter). Facts and figures here may be stale —
+> do not cite from this file.
+
 # Lessing's Ditch as a Measurable Property of the Literature
 
 *Draft v0.1 — §§1–3 (Introduction · Individuation criterion · Canonical partition). Sources: outline v0.4 §§0–3, §8; CONTEXT.md §§1–2; p0-sweep.md. Outcome-blind: written before any confirmatory coding run; no result of H1 or H2 is stated or implied.*

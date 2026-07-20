@@ -1,3 +1,7 @@
+> **Superseded working file.** The manuscript of record is `draft-v0.md` (assembled from
+> these sections at v0; revised in place thereafter). Facts and figures here may be stale —
+> do not cite from this file.
+
 # Draft — §5 Results (preregistered shell), §6 Robustness, §8 Objections & replies, §9 What the map licenses, back matter
 
 Draft status: outcome-blind shell, authored before any P4/P5 data exist. Every empirical cell

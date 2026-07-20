@@ -1,3 +1,7 @@
+> **Superseded working file.** The manuscript of record is `draft-v0.md` (assembled from
+> these sections at v0; revised in place thereafter). Facts and figures here may be stale —
+> do not cite from this file.
+
 # §7 Formal appendix — burden invariance and canonical partitions
 
 <!-- Draft v0.1 · sources: outline-v0.4.md §7 (with §1–§3 for the criterion and Table 1), CONTEXT.md §4–§5 · outcome-blind: no H1/H2 results exist at drafting time -->

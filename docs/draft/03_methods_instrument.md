@@ -1,3 +1,7 @@
+> **Superseded working file.** The manuscript of record is `draft-v0.md` (assembled from
+> these sections at v0; revised in place thereafter). Facts and figures here may be stale —
+> do not cite from this file.
+
 <!-- Draft §4.2–4.3 (methods: instrument). Sources of record: docs/codebook-v1.md (v1.4 lineage),
 analysis/g1_report.md (v1.4a re-gate, final), docs/adjudication-log.md (Round 1 + Final round),
 CONTEXT.md §4 (binding adjudications). Outcome-blind: no H1/H2 result is stated or implied. -->
