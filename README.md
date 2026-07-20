@@ -23,19 +23,24 @@ a methods-forward preprint plus a companion essay — no journal submission.
 
 ## Outcome-blindness evidence
 
-This public repository is a **snapshot release** of the project's current state. The dated
-development record — every phase-tagged commit, freeze verification, and gate declaration —
-is preserved in the project's private archive and ships with the OSF audit package; its
-narrative form, with dates and commit hashes, is in `CONTEXT.md` and
-`analysis/guardian_log.md`.
+This repository publishes the **full, dated development history** (85+ commits,
+phase-tagged). The commits of record for the paper's central evidentiary claim — that the
+result shells, decision rules, and outcome scenarios predate the result — are directly
+inspectable:
 
-The paper's central proof object is included here directly:
-`analysis/audit-exports/draft-v0.1-to-v0.2.diff` is the exact diff between the outcome-blind
-draft (committed before any confirmatory run; commit `1493e46`, sealed baseline `83d0b49`)
-and the post-checkpoint resolution (`0b359fe`) — it shows that the result shells, decision
-rules, and outcome scenarios predate the result and were not altered by it, only resolved.
-The freeze manifest (`PREREG_MANIFEST.txt`) pins the frozen artifact set by SHA256, so any
-copy of those files can be verified against the seal independent of git history.
+| tag | commit | what it seals |
+|---|---|---|
+| `prereg-content` | `83d0b49` | preregistration content of record |
+| `p3-freeze` | `bafc712` | freeze manifest sealed (guardian CLEAN) |
+| `draft-v0.1-outcome-blind` | `1493e46` | full draft with neutral result shells, before any confirmatory run |
+| `p4-checkpoint-fail` | `c894932` | checkpoint FAIL of record |
+| `draft-v0.2-resolution` | `0b359fe` | shells resolved to *not run*; no shell rewritten |
+
+`analysis/audit-exports/draft-v0.1-to-v0.2.diff` remains as a convenient extract of the
+v0.1 → v0.2 comparison. Two verification anchors are independent of git metadata (commit
+timestamps alone are not tamper-proof): the freeze manifest (`PREREG_MANIFEST.txt`) pins the
+frozen artifact set by SHA256, so any copy can be checked against the seal, and the OSF
+registration's own timestamp externally anchors the ordering of freeze and checkpoint.
 
 ## Repository map
 
