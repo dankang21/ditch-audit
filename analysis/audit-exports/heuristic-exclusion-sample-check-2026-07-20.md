@@ -9,6 +9,8 @@ random sample, source-confirmed against publisher item-type fields (pdcnet
 **Method.** Population: the 473 lock entries with reason prefix "book review (PDC
 reclassified" (469 missing+short(≤5pp) + 4 review-signature). Draw: `random.Random(20260720).sample(pool, 20)`.
 Verification: DOI resolution → publisher landing page item-type field, one pass per item.
+The date-derived seed was fixed before any sampled record was inspected; one draw was made,
+with no reruns or alternative seeds.
 Transparency note: a transcription slip in the verification tasking caused one sampled DOI
 (10.5840/faithphil201330218) to be checked twice and one (10.5840/faithphil200825446) to be
 checked in a separate follow-up pass; all 20 unique sampled items are covered below.

@@ -15,8 +15,8 @@ failed on all four coding dimensions. Under the frozen decision tree this stoppe
 no hypothesis was ever tested. Per the preregistered kill criterion, the project downgraded to
 a methods-forward preprint plus a companion essay — no journal submission.
 
-- **Preprint** (v0.7, 56 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
-  `docs/draft/preprint-v0.7.zip` · *(archive DOI: to be added at upload)*
+- **Preprint** (v0.8, 58 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
+  `docs/draft/preprint-v0.8.zip` · *(archive DOI: to be added at upload)*
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our
   Study — and Why We're Glad It Did"
 - **Checkpoint result of record**: `analysis/checkpoint_report.md` + `checkpoint_dual_raw.json`
