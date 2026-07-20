@@ -29,17 +29,14 @@ PQ 70(281); Nickel 2015 = G. Nickel, De Gruyter chapter; Ocampo 2024, IJPR 96(1)
 CD000368; STEP trial; Leslie 1979; Hick 1989; Alston 1991; Hume; Russell & Copleston
 1948/1957; Borde–Guth–Vilenkin 2003; Krippendorff 2004).
 
-**4 entries carry a `% dk-confirm` flag in references.tex — author sign-off requested:**
-
-1. Chambers & Tzavella (2022) — standard RR reference added at v0.3 for the reading guide.
-2. Duan et al. (2024) — best-match identification of the §4.4.3 memorization caveat.
-3. Hume (1748) — edition choice for the formal entry (Beauchamp/OUP suggested).
-4. Swinburne (2004a) — mapping of the Table 1 S2 anchor to *The Existence of God* 2nd ed.
+**All entries finalized.** The four flagged judgment calls (Chambers & Tzavella 2022;
+Duan et al. 2024 identification; Hume edition; Swinburne 2004a anchor mapping) were approved
+by the author on 2026-07-20. No outstanding bibliography actions.
 
 Three body corrections found during verification were applied and inventoried in the draft's
 v0.3 resolution note: Plantinga reply year 2004 → 2006 (Philosophia Christi 8(1), 7–22);
 Swinburne 2004 disambiguated to 2004a/2004b; the argument-strength-ratings finding re-keyed
 from De Cruz (2017) to De Cruz & De Smedt (2016).
 
-Author line and the title-page footnote are placeholders — edit in main.tex.
+Author line and the title-page footnote: confirm before upload (main.tex).
 Generated from draft-v0.md (v0.3); companion essay: docs/draft/essay-checkpoint.md.

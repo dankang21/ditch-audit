@@ -809,8 +809,10 @@ Table 1 S2 anchor) and 2004b (the *Faith and Philosophy* dwindling-probabilities
 §§1, 7.3), and one finding re-attributed to its verified source: the argument-strength-ratings
 result moved from the De Cruz (2017) key to De Cruz and De Smedt (2016), with the 2017 study's
 actual finding (disagreement assessments track prior belief) stated in its place (§1);
-(7) this note. Bibliography entries were web-verified where flagged; entries the
-verification could not resolve remain flagged for author verification.
+(7) this note. All bibliography entries were web-verified against publisher records; the
+four remaining judgment calls (the Registered-Reports reference, the Duan et al. 2024
+identification, the Hume edition, and the Swinburne 2004a anchor mapping) were approved by
+the author on 2026-07-20.
 
 ### Draft resolution note (v0.2, 2026-07-17)
 
