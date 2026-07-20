@@ -1,4 +1,4 @@
-# LaTeX package — preprint (draft v0.4, 2026-07-20)
+# LaTeX package — preprint (draft v0.5, 2026-07-20)
 
 **A Preregistered Zero-Human LLM Measurement Design, and the Confirmatory Checkpoint That
 Rejected Its Instrument** — subtitle: *Lessing's Ditch as a Measurable Property of the
@@ -9,21 +9,22 @@ Literature: design, validation battery, and halt report of the audit*
     tectonic main.tex        # or: xelatex main.tex (twice), or pdflatex main.tex (twice)
 
 Engine-agnostic preamble: pdfLaTeX uses newtx (Times); XeLaTeX/LuaLaTeX use fontspec
-(TeX Gyre Termes if available, else Liberation Serif). A compiled main.pdf (47 pp.) is included.
+(TeX Gyre Termes if available, else Liberation Serif). A compiled main.pdf (50 pp.) is included.
 
 ## Files
 
 - main.tex        — preamble, title block, abstract wrapper, inputs
-- abstract.tex    — abstract (generated from docs/draft/draft-v0.md, v0.4)
-- front.tex       — keywords + "How to read this document" (v0.4)
+- abstract.tex    — abstract (generated from docs/draft/draft-v0.md, v0.5)
+- front.tex       — keywords + "How to read this document" (v0.5)
 - body.tex        — full body (generated; source of truth is draft-v0.md — regenerate, don't hand-edit)
-- references.tex  — 75 entries; all in-text citations covered (completeness-swept at v0.3; 14 entries added at v0.4)
+- references.tex  — 79 entries; all in-text citations covered (completeness-swept at v0.3; 14 added at v0.4, 4 at v0.5)
 - main.pdf        — compiled preview
 
 ## Bibliography status (v0.3)
 
 All entries were web-verified against publisher/DOI records in a 7-agent verification pass
-(2026-07-17), including a completeness sweep that added 13 entries missing from v0.2
+(2026-07-17) — verification scope: bibliographic existence and metadata, not interpretive
+support, which the verification memos document separately — including a completeness sweep that added 13 entries missing from v0.2
 (Table 1 anchors: Adams 2019 = F. C. Adams, Physics Reports 807; Malpass & Morriston 2020,
 PQ 70(281); Nickel 2015 = G. Nickel, De Gruyter chapter; Ocampo 2024, IJPR 96(1); Cochrane
 CD000368; STEP trial; Leslie 1979; Hick 1989; Alston 1991; Hume; Russell & Copleston
@@ -48,5 +49,11 @@ All fourteen were web-verified on 2026-07-20 with no corrections required (verif
 memos in analysis/audit-exports/). Lessing entry now carries the Chadwick translation
 pages (51--56).
 
+## v0.5 additions (2026-07-20)
+
+Four entries added with the second-review repair cycle: Carnley 1987 and 2019 (the verified
+S7 stance-witness), Maimonides (Touger trans., 1987, uncensored 11:4), and Abdel Haleem 2004
+(Qur'an translation of record). All four web-verified; memos in analysis/audit-exports/.
+
 Author line and the title-page footnote: confirm before upload (main.tex).
-Generated from draft-v0.md (v0.4); companion essay: docs/draft/essay-checkpoint.md.
+Generated from draft-v0.md (v0.5); companion essay: docs/draft/essay-checkpoint.md.

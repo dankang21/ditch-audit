@@ -23,7 +23,7 @@ The study was an attempt to measure a literature rather than argue with it: twen
 (2004–2024) of peer-reviewed philosophy of religion, ~3,500 articles, each to be coded for which step of
 natural theology's inferential chain it addresses, in which direction, at what claim strength,
 on what kind of evidence (preprint §§2–4). The coding was to be done with zero human
-item-coding — three LLM coder families from disjoint providers, disagreements resolved by
+coding of corpus or checkpoint items — three LLM coder families from disjoint providers, disagreements resolved by
 mechanical majority, the whole thing wrapped in a validation battery targeting the artifact
 classes that make "three models agree" weaker evidence than it sounds: shared training
 folklore, memorization, style leakage, decoding noise, majority-vote error laundering
