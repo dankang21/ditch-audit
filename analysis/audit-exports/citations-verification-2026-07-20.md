@@ -51,3 +51,15 @@ faith rests on present acquaintance with the living Christ. The Sydney evangelic
 his primatial installation over precisely this denial corroborates the S1–S6-yes / S7-no
 structure. Mode note: his S5 acceptance runs through the Spirit's present activity, not a
 general apologetic of nature-miracles.
+
+## Addendum (v0.7 cycle, 2026-07-20) — Carnley page loci
+
+The page loci quoted in the paper's witness note (Carnley 1987, "limits of historical
+enquiry" clustered at 72–103; "spiritual body" at 231–233) were localized in a dedicated
+v0.7-cycle verification pass against the 1987 Clarendon edition's own index and table of
+contents (full-text copy): index entry "historical enquiry: limits of" = pp. 23–26, 72–73,
+80–81, 94–103, 113–115, 125–127, 129–131 (core cluster 72–103, within the Part One critique
+of the resurrection-as-historical-event approach); index entry "spiritual body" = pp. 231–233
+(with "Paul, on resurrection body" at 58, 237), inside ch. VI "The Raised Christ: Appearance
+and Presence" (223–265). Bibliography re-confirmed against the JTS 40/1 (1989) 324–328,
+SJT 42/3 (1989), and Theology Today 45(4) reviews.
