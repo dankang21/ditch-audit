@@ -77,6 +77,9 @@ this README): **CC BY 4.0** — see `LICENSE-docs`.
 ## Authorship & AI disclosure
 
 Jaehoon Kang (design, gate approvals, synthetic-spec sign-off). Repository commits are
-authored under the name Daniel Kang; both names refer to the same person. All item coding was performed
+authored as `dk` and `Daniel Kang` under a single email (see `.mailmap`, which normalizes
+the display name); all three names refer to the same person. The history is published
+as-is — rewriting it to normalize names would change every commit hash and void the
+hash-anchored evidence above. All item coding was performed
 by LLMs under the zero-human rule; prose drafting and orchestration were assisted by an LLM
 (Claude). Full disclosure in the preprint's back matter.
