@@ -15,8 +15,8 @@ failed on all four coding dimensions. Under the frozen decision tree this stoppe
 no hypothesis was ever tested. Per the preregistered kill criterion, the project downgraded to
 a methods-forward preprint plus a companion essay — no journal submission.
 
-- **Preprint** (v0.5, 50 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
-  `docs/draft/preprint-v0.5.zip` · *(archive DOI: to be added at upload)*
+- **Preprint** (v0.6, 53 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
+  `docs/draft/preprint-v0.6.zip` · *(archive DOI: to be added at upload)*
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our
   Study — and Why We're Glad It Did"
 - **Checkpoint result of record**: `analysis/checkpoint_report.md` + `checkpoint_dual_raw.json`
@@ -71,6 +71,7 @@ this README): **CC BY 4.0** — see `LICENSE-docs`.
 
 ## Authorship & AI disclosure
 
-Jaehoon Kang (design, gate approvals, synthetic-spec sign-off). All item coding was performed
+Jaehoon Kang (design, gate approvals, synthetic-spec sign-off). Repository commits are
+authored under the name Daniel Kang; both names refer to the same person. All item coding was performed
 by LLMs under the zero-human rule; prose drafting and orchestration were assisted by an LLM
 (Claude). Full disclosure in the preprint's back matter.

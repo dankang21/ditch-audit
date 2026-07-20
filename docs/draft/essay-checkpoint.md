@@ -1,7 +1,7 @@
 # The Checkpoint That Killed Our Study — and Why We're Glad It Did
 
 *Companion essay to the preprint "A Preregistered Zero-Human LLM Measurement Design, and the
-Confirmatory Checkpoint That Rejected Its Instrument" (draft v0.3). Every empirical figure
+Confirmatory Checkpoint That Rejected Its Instrument" (current draft; see its version-history summary). Every empirical figure
 below is stated in, and citable from, the preprint; section references point there. This essay
 is the second half of the study's preregistered kill-criterion output ("descriptive-map
 preprint plus essay") and makes no claim beyond the preprint's.*
@@ -61,8 +61,9 @@ The pilot pass was declared *conditional* — by its own banner — on a confirm
 stratified script frozen in the manifest, coded by the frozen instrument in triplicate, judged
 by a dual statistic fixed in advance: point minimum-pairwise α ≥ .70 on every dimension, *and*
 a per-dimension bootstrap 95% lower bound ≥ .667. The sample size was chosen so the test would
-be load-bearing: a true-α ≈ .78 instrument passes comfortably; a true-α ≈ .70 instrument
-fails the interval criterion. The consequence of failure was frozen before the draw: halt
+be load-bearing — the registration's stated projection (a bootstrap-interval shrinkage
+heuristic applied to pilot-calibrated intervals) was that a true-α ≈ .78 instrument passes
+comfortably while a true-α ≈ .70 instrument fails the interval criterion. The consequence of failure was frozen before the draw: halt
 everything, no confirmatory claims from any already-coded material (preprint §5.1.1).
 
 The result: point minima .676–.736 (two dimensions under the .70 floor), bootstrap lower
@@ -125,7 +126,8 @@ fresh data contradicted within days.
 ## Coda
 
 Lessing's ditch — the gap between historical evidence and doctrinal certainty that the
-original study meant to measure as a property of a literature — remains unmeasured. What got
+original study meant to measure as a property of a literature — remains unmeasured by this
+study and, so far as its prior-art sweep could determine, by any other. What got
 measured instead is narrower and, we think, worth the substitution for what it teaches:
 exactly how far a carefully tuned pilot number stands from the same instrument's behavior on
 data it has never seen, and what it takes, procedurally, to be forced to believe the second
