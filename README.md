@@ -21,23 +21,21 @@ a methods-forward preprint plus a companion essay — no journal submission.
   Study — and Why We're Glad It Did"
 - **Checkpoint result of record**: `analysis/checkpoint_report.md` + `checkpoint_dual_raw.json`
 
-## Why the commit history is part of the paper
+## Outcome-blindness evidence
 
-The paper's outcome-blindness claim is mechanically checkable here:
+This public repository is a **snapshot release** of the project's current state. The dated
+development record — every phase-tagged commit, freeze verification, and gate declaration —
+is preserved in the project's private archive and ships with the OSF audit package; its
+narrative form, with dates and commit hashes, is in `CONTEXT.md` and
+`analysis/guardian_log.md`.
 
-| Tag | Commit | What it proves |
-|---|---|---|
-| `g1-conditional-pass` | `e043fad` | Pilot gate passed — declared conditional on the checkpoint |
-| `draft-v0.1-outcome-blind` | `1493e46` | Full paper drafted, Results as empty preregistered shells, **before** any confirmatory run |
-| `prereg-content` | `83d0b49` | The artifact set the freeze manifest seals (64 items, SHA256) |
-| `p3-freeze` | `bafc712` | Preregistration freeze established (guardian-verified) |
-| `p4-checkpoint-fail` | `c894932` | The checkpoint FAIL of record — dual statistic unmet on all dimensions |
-| `draft-v0.2-resolution` | `0b359fe` | Shells resolved to the realized (rejection) branch; diff-verifiable change inventory |
-| `draft-v0.3` | `4763093` | Preprint repositioning + verified bibliography |
-
-The diff from `draft-v0.1-outcome-blind` to `draft-v0.2-resolution` is the proof object: the
-result shells, decision rules, and outcome scenarios predate the result and were not altered
-by it — only resolved.
+The paper's central proof object is included here directly:
+`analysis/audit-exports/draft-v0.1-to-v0.2.diff` is the exact diff between the outcome-blind
+draft (committed before any confirmatory run; commit `1493e46`, sealed baseline `83d0b49`)
+and the post-checkpoint resolution (`0b359fe`) — it shows that the result shells, decision
+rules, and outcome scenarios predate the result and were not altered by it, only resolved.
+The freeze manifest (`PREREG_MANIFEST.txt`) pins the frozen artifact set by SHA256, so any
+copy of those files can be verified against the seal independent of git history.
 
 ## Repository map
 
@@ -52,10 +50,10 @@ by it — only resolved.
 | `CONTEXT.md` | Intellectual lineage and every binding design adjudication, dated |
 | `CLAUDE.md` | The operating rules the orchestration ran under (absolute rules incl. the zero-human rule) |
 
-**Not in this repository** (by absolute rule, enforced by `.gitignore` throughout history):
-the copyrighted abstract corpora (`data/raw|sanitized|coded`), coder outputs, and the sealed
-synthetic vault. Their SHA256 hashes are in the freeze manifest; aggregates and codes ship
-with the OSF audit package. API keys were never committed.
+**Not in this repository** (excluded by design, absolute rule 3): the copyrighted abstract
+corpora (`data/raw|sanitized|coded`), coder outputs, and the sealed synthetic vault. Their
+SHA256 hashes are in the freeze manifest; aggregates and codes ship with the OSF audit
+package. API keys live only in an untracked `.env` and appear nowhere in this release.
 
 ## Reproduction
 
@@ -64,6 +62,12 @@ The frozen instrument is re-executable: coder D is a pinned open-weights model
 is stdlib-only Python 3.10+ with fixed seeds (registration date 20260717). See
 `pipeline/05_analysis/checkpoint_stats.py selftest` and `scripts/alpha.py selftest` for the
 statistic implementations, and the preprint's §4 for the design.
+
+## License
+
+Code (`scripts/`, `pipeline/`, `.claude/`): **MIT** — see `LICENSE`.
+Documents (`docs/` including the preprint and essay, `analysis/`, `CLAUDE.md`, `CONTEXT.md`,
+this README): **CC BY 4.0** — see `LICENSE-docs`.
 
 ## Authorship & AI disclosure
 

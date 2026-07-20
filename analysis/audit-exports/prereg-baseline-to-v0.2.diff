@@ -1,0 +1,456 @@
+diff --git a/docs/draft/draft-v0.md b/docs/draft/draft-v0.md
+index 34d67ba..4e0ce6b 100644
+--- a/docs/draft/draft-v0.md
++++ b/docs/draft/draft-v0.md
+@@ -1,8 +1,10 @@
+ # Lessing's Ditch as a Measurable Property of the Literature
+ 
++**A preregistered zero-human measurement design, and the confirmatory checkpoint that rejected its instrument**
++
+ *Manuscript draft v0 — assembled 2026-07-16, at the close of P3 (preregistration) preparation and before any confirmatory (P4/P5) result existed; the companion P3 artifacts it cites (analysis plan v1.1, validation battery v1.3, codebook v1.4d/e) carry document dates of 2026-07-17, reflecting the same pre-freeze repair session in which this draft was assembled and audited. See the drafting-protocol note preceding §5.*
+ 
+-**Abstract.** The inferential chain from a bare first cause to the God of Nicene Christianity has been discussed piecewise — as the "gap problem," as "ramified natural theology," as the "dwindling probabilities" debate — but never measured as a whole. We introduce a witness-based criterion for individuating the chain's logically independent steps, yielding an eight-step canonical partition whose burden count is invariant under definitional bundling. We then audit twenty years (2004–2024) of the peer-reviewed philosophy-of-religion literature — 3,536 articles across eleven journals in three venue tiers, with the post-2008 stratum as the primary confirmatory population — coding each article's step, direction, claim strength, and the epistemic type of its load-bearing evidence. All coding was performed by a fixed, preregistered, multi-family LLM instrument with zero human item-coding, validated by a preregistered contamination-control battery. Two preregistered hypotheses are tested: (1) that among positive evidential claims, pro-side items are predominantly a priori and contra-side items predominantly empirical or historical (registered odds ratio ≥ 3); (2) that positive evidential pro-side claims are more prevalent in confessionally affiliated than in mainstream venues. The subfield's majority-theist composition biases against the second prediction — a point about the test's stringency, not its outcome. A preregistered kill criterion binds the symmetric case: a two-null result downgrades the project to a descriptive-map preprint, with no journal claim. [Results and implications for cumulative-case natural theology: TO BE FILLED AT P5.]
++**Abstract.** The inferential chain from a bare first cause to the God of Nicene Christianity has been discussed piecewise — as the "gap problem," as "ramified natural theology," as the "dwindling probabilities" debate — but never measured as a whole. We introduce a witness-based criterion for individuating the chain's logically independent steps, yielding an eight-step canonical partition whose burden count is invariant under definitional bundling. We then designed, and preregistered in full, an audit of twenty years (2004–2024) of the peer-reviewed philosophy-of-religion literature — 3,536 articles across eleven journals in three venue tiers, locked with the post-2008 stratum as the primary confirmatory population — under which each article's step, direction, claim strength, and the epistemic type of its load-bearing evidence was to be coded. All coding was to be performed by a fixed, preregistered, multi-family LLM instrument with zero human item-coding, gated by a preregistered contamination-control battery. Two hypotheses were preregistered: (1) that among positive evidential claims, pro-side items are predominantly a priori and contra-side items predominantly empirical or historical (registered odds ratio ≥ 3); (2) that positive evidential pro-side claims are more prevalent in confessionally affiliated than in mainstream venues. The subfield's majority-theist composition biases against the second prediction — a point about the test's stringency, not its outcome. A preregistered kill criterion binds the symmetric case: a two-null result downgrades the project to a descriptive-map preprint, with no journal claim. Neither hypothesis was tested. At the start of the confirmatory run, the preregistered reliability checkpoint — 150 fresh, seed-drawn items coded in triplicate by the frozen instrument — failed its dual statistic on all four coding dimensions (minimum pairwise Krippendorff's α .676–.736 against the .70 floor; bootstrap 95% lower bounds .390–.650 against the .667 floor), with the run-level determinism (B1a/B1b) and family-collusion sub-audits clean. Under the frozen decision tree this halts all coding, blocks every confirmatory claim, and resolves the pilot gate's conditional declaration negatively: the pilot reliability that licensed the instrument — explicitly flagged in the preregistration as a selected estimate under optional stopping — did not survive contact with fresh data. The paper accordingly reports the measurement design, the validation battery, the locked corpus infrastructure, and the complete preregistered trajectory ending in instrument rejection, as a methods contribution and a cautionary result for LLM-based content analysis: a preregistered fresh-data reliability checkpoint is cheap relative to a full run, and it does exactly what it is designed to do.
+ 
+ ---
+ 
+@@ -12,17 +14,17 @@ In 1777 Lessing declared that he could not cross the "ugly, broad ditch" between
+ 
+ Three well-developed literatures already address segments of this chain, but they do not talk to one another and none measures the record as a whole. First, the *gap problem* — Pruss's (2009) name for the residue left after a cosmological argument succeeds: how does one get from a first cause to a being with the divine attributes? Rasmussen (2009) and, most systematically, Ocampo (2024) map "Stage II" bridging strategies, but for a single segment of the chain and by argument-analysis rather than corpus measurement. Second, *ramified natural theology* — Swinburne's coinage for the pro-side program that argues from bare theism onward to specifically Christian doctrine (Holder 2021; Gauch 2013). This is a constructive project: it builds the crossing, it does not survey the traffic. Third, the *dwindling probabilities* exchange over the multiplicative structure of cumulative cases, initiated by Plantinga (2000), answered by Swinburne (2004) and McGrew (2004), and continued through McGrew and McGrew (2006) and Nickel (2015). That debate concerns the formal behavior of chained arguments, not the empirical distribution of the arguments actually published. The chain, in short, has been discussed piecewise but never measured whole.
+ 
+-Our contribution is accordingly of an unusual type for the philosophy of religion: measurement of the dialectic, not participation in it. The paper makes one framework claim and two empirical claims. The framework claim (§2) is that a witness-based criterion individuates the chain into a canonical eight-step partition, and (§7) that the count of independent evidential burdens this partition exposes is invariant under logical and definitional repackaging — bundling the steps into "a maximally great being exists" relocates the burdens into the bundle's prior; it does not reduce them. The empirical claims are two preregistered hypotheses about the shape of the published record, described below and tested in §5.
++Our contribution is accordingly of an unusual type for the philosophy of religion: measurement of the dialectic, not participation in it. The paper makes one framework claim and two empirical claims. The framework claim (§2) is that a witness-based criterion individuates the chain into a canonical eight-step partition, and (§7) that the count of independent evidential burdens this partition exposes is invariant under logical and definitional repackaging — bundling the steps into "a maximally great being exists" relocates the burdens into the bundle's prior; it does not reduce them. The empirical claims are two preregistered hypotheses about the shape of the published record, described below; their preregistered test is reported in §5, where the gate chain halted at its first item before either was run.
+ 
+ The empirical program this project joins — and must be distinguished from — measures people, not literatures. De Cruz's studies measure philosophers: argument-strength ratings track the rater's prior religious belief (De Cruz 2017); natural-theological arguments have been evaluated experimentally (De Cruz and De Smedt 2016); and most philosophers of religion were theists before entering the field, a selection effect documented qualitatively (De Cruz 2018). Draper and Nichols (2013) diagnose field-level cognitive biases and issue recommendations, without a coded corpus. The PhilPapers surveys measure the field's composition (Bourget and Chalmers 2014). The nearest genre precedent lies outside the field entirely: Bystranowski, Dranseika and Żuradzki (2022) topic-model half a century of bioethics across seven field journals — but topics are not claims, and no direction, strength, or epistemic type is coded. A structured prior-art sweep (seven query families; cited-by walks on the nearest neighbors and a category-level sweep were completed at registration: 81 citing works and 281 category-screened records yielded no prior item-level coding of this literature) found no prior work that measures a philosophical literature's *argumentative structure* — step by direction by claim strength by epistemic type by venue. That is the lane this audit occupies.
+ 
+-Two patterns are predicted and tested. **H1** (the type–direction hypothesis): among mainstream-venue articles making positive evidential claims (POS, the upper level of the two-level claim-strength scale defined in §4.2), the distribution of load-bearing evidence types differs by direction — pro-side items predominantly a priori, contra-side items predominantly empirical or historical; the preregistered prediction is an odds ratio of at least 3. **H2** (venue topography): among pro-side items, the prevalence of positive evidential (POS) claims is higher in confessionally affiliated venues than in mainstream venues, with contra-side items as a control (predicted null or reversed). We emphasize what these hypotheses are: predictions, exposed to the data, and defeasible. Should H2's venue pattern obtain, it could not be attributed to hostile mainstream gatekeeping, since the specialist subfield is majority-theist — roughly 72% of philosophy-of-religion specialists accept or lean toward theism (Bourget and Chalmers 2014) — so field composition biases *against* H2; but whether the pattern obtains is precisely what the audit exists to find out. A preregistered kill criterion binds us to the symmetric outcome: if both hypotheses are null, the project is downgraded to a descriptive-map preprint and no journal claim is made. Nothing in the sections that follow presupposes either verdict.
++Two patterns were predicted for test. **H1** (the type–direction hypothesis): among mainstream-venue articles making positive evidential claims (POS, the upper level of the two-level claim-strength scale defined in §4.2), the distribution of load-bearing evidence types differs by direction — pro-side items predominantly a priori, contra-side items predominantly empirical or historical; the preregistered prediction is an odds ratio of at least 3. **H2** (venue topography): among pro-side items, the prevalence of positive evidential (POS) claims is higher in confessionally affiliated venues than in mainstream venues, with contra-side items as a control (predicted null or reversed). We emphasize what these hypotheses are: predictions, exposed to the data, and defeasible. Should H2's venue pattern obtain, it could not be attributed to hostile mainstream gatekeeping, since the specialist subfield is majority-theist — roughly 72% of philosophy-of-religion specialists accept or lean toward theism (Bourget and Chalmers 2014) — so field composition biases *against* H2; but whether the pattern obtains is precisely what the audit exists to find out. A preregistered kill criterion binds us to the symmetric outcome: if both hypotheses are null, the project is downgraded to a descriptive-map preprint and no journal claim is made. Nothing in the sections that follow presupposes either verdict.
+ 
+ A word on the instrument, detailed in §4. All corpus coding is performed by a fixed, preregistered, multi-family ensemble of large language models, with zero human item-coding — no human coder, no human item-adjudication, no human validation sample. Items are blinded (author, title, journal, and year stripped) before coding, and the instrument's validity evidence comes from a preregistered contamination-control battery rather than from human benchmark annotation. The paper therefore claims measurement by a fixed, preregistered instrument, not human-equivalent annotation; the residual limitation — accuracy on the real corpus distribution is formally unidentified without a human criterion — is stated, bounded by the battery, and carried honestly.
+ 
+ Equally important is what this paper does not claim. It is not first-order atheology: we take no position on the truth of any step, and the audit's categories are deliberately side-neutral. It is not a claim that theism is irrational: claims of epistemic permissibility (folded into the defensive grade, DEF, of our claim-strength scale) are orthogonal to the evidential claims the hypotheses concern. It is not a suppression or censorship claim: we measure the published record and infer nothing about submission flows or editorial conduct. And it is not a citation-weighted "importance" ranking: citation counts measure fashion, and enter only as an optional robustness check. These fences are load-bearing and are restated where they matter (§9).
+ 
+-The paper proceeds as follows. Section 2 states the individuation criterion. Section 3 applies it, yielding the canonical eight-step partition (Table 1), and explains in what sense the table's qualitative status verdicts are priors that the audit will test — and, if need be, overturn. Section 4 describes the corpus, the codebook, and the zero-human coding pipeline; §5 reports results; §6 the robustness battery; §7 the formal treatment of burden invariance, positioned against Roche and Shogenji's (2014) result on confirmation transmission; §8 answers five objections; §9 states what the map licenses.
++The paper proceeds as follows. Section 2 states the individuation criterion. Section 3 applies it, yielding the canonical eight-step partition (Table 1), and explains in what sense the table's qualitative status verdicts are priors the audit was designed to test — and, if need be, overturn. Section 4 describes the corpus, the codebook, and the zero-human coding pipeline; §5 reports results; §6 the robustness battery; §7 the formal treatment of burden invariance, positioned against Roche and Shogenji's (2014) result on confirmation transmission; §8 answers five objections; §9 states what the map licenses.
+ 
+ ## 2. The witness-based individuation criterion
+ 
+@@ -160,7 +162,7 @@ A coder's code for an item is not a single model call. The pinned endpoints are
+ 
+ ### 4.3.3 Adjudication and the unresolved protocol
+ 
+-Cross-coder disagreements are resolved mechanically. Where two coders agree and one differs, the majority value is adopted and the minority coder logged; where all three differ, the cell is `unresolved`: it is excluded from the primary analysis, and sensitivity bounds are computed under each candidate resolution. The adjudication script is deterministic — re-runs are byte-identical, and the final-round script is regression-pinned byte-identical to the round-one script on the original inputs, so the mechanical rule is provably unchanged across calibration rounds. No human, the designer included, adjudicated, overrode, or tie-broke any item; the designer's only interventions were approvals of codebook document changes (never item codes) before the freeze.
++Cross-coder disagreements are resolved mechanically. Where two coders agree and one differs, the majority value is adopted and the minority coder logged; where all three differ, the cell is `unresolved`: it is excluded from the primary analysis, and sensitivity bounds are computed under each candidate resolution. The adjudication script is deterministic — re-runs are byte-identical, and the final-round script is regression-pinned byte-identical to the round-one script on the original inputs, so the mechanical rule is provably unchanged across calibration rounds. No human, the designer included, adjudicated, overrode, or tie-broke any item; the designer's only interventions were approvals of codebook document changes (never corpus item codes) before the freeze. One scoping note: the twenty-item diagnostic gold-anchor key is designer-authored instrument material — it carries zero headline weight and was revisable only through the document-level gold-audit rule (§4.3.5), under which the coders twice overrode it; the zero-human claim is about corpus and pipeline items, and is stated with that scope here and in the disclosure.
+ 
+ The pilot's final adjudication round gives the flavor of the machinery's output: of 356 item-dimension cells (89 items × 4 dimensions), 280 (78.7%) were unanimous, 70 were resolved 2–1, and 6 were three-way unresolved — all six sitting on the step/scope locus or the direction call that cascades from it, none on strength or type. The full 2–1 resolution matrix (which coder was outvoted, on which dimension, from which value to which) is published, and recurring disagreement patterns were tallied against a fixed recurrence threshold (≥ 3, recorded in the adjudication log) to generate candidate codebook clarifications — always as document changes for designer approval, never as item re-codings. Where a majority resolution contradicted a gold-anchor code, the conflict was flagged and the majority allowed to stand; gold anchors carry no authority over the pipeline (§4.3.5 explains why this humility turned out to be warranted). Finally, because a 2–1 rule can in principle manufacture consensus, headline results are required to be stable across five estimators — unanimous-only, each single coder (A, B, C), and majority — a stability requirement fixed in the validation battery before any confirmatory coding.
+ 
+@@ -182,7 +184,7 @@ The first episode concerns anchor A11, a fine-tuning paper that rebuts the multi
+ 
+ The second episode is the sharper one, because the correction ran from the coders to the designer. In the final calibration round, all three families unanimously contradicted the gold codes on three anchors (A04, A05, A07). Under the adjudication protocol those majorities were flagged and left standing, and gold was not overridden — but a unanimous three-family contradiction of a designer-adjudicated key is exactly the pattern one would expect if the key, not the coders, were wrong. The designer re-adjudicated the three anchors from the sanitized text alone and found precisely that: two of the three gold codes had been assigned from the arguments' reputations — a famous hiddenness monograph, the design argument as such — rather than from what the sanitized abstracts actually argue, which in both cases is a reply-chain defeater-rebuttal (defensive, conceptual) rather than a positive evidential case. The third anchor's type code changed under the newly articulated multi-fatal-premise dominance rule. In other words, the memorization failure mode the validation battery was built to guard against in the coders had manifested in the designer, and the coders' unison "misses" were correct readings of the text. The episode was codified into the instrument as the gold audit rule: any unanimous three-family contradiction of a gold code triggers a designer re-adjudication from sanitized text alone, with gold revision remaining a designer-only, document-level act. A second audit round under the same rule subsequently moved two further anchors' step codes across the S1/S2 boundary (one an abstract-versus-paper gap, duly noted) and sustained one challenged strength code with the boundary recorded as a known hard case for the instrument.
+ 
+-We read these episodes as the strongest available evidence that the measurement layer is doing independent work: the instrument's rules, mechanically applied, overrode the intuitions of the people who wrote them — once through a table correction forced by a coding rule, once through three blind coders outvoting their designer's memory of the literature. The confirmatory phase will test the study's preregistered hypotheses on the frozen instrument; nothing in this section anticipates that result, and under the study's kill criteria a null outcome forecloses journal-format claims rather than reframing them.
++We read these episodes as the strongest available evidence that the measurement layer is doing independent work: the instrument's rules, mechanically applied, overrode the intuitions of the people who wrote them — once through a table correction forced by a coding rule, once through three blind coders outvoting their designer's memory of the literature. The confirmatory phase was to test the study's preregistered hypotheses on the frozen instrument (it halted at the reliability checkpoint, §5.1.1); nothing in this section anticipates a hypothesis result, and under the study's kill criteria a null outcome forecloses journal-format claims rather than reframing them.
+ 
+ ### 4.4 Validation battery and preregistration
+ 
+@@ -212,7 +214,7 @@ The cue-ablation baseline (battery §B2) is the primary anti-folklore instrument
+ 
+ The recognition probe (battery §B5) bounds memorization. Every real item is presented, sanitized, to each family in a fresh context with the task of naming author, title, and venue, scored by script against metadata. The probe is validated before use — it must detect ≥ 90% of a planted set of known-famous texts, and did (pooled 19/20 = 95% at pilot). Claim discipline is deliberately narrow: a negative probe excludes *verbatim, item-level recall only*; it does not exclude topic-level priors, which are the cue-ablation baseline's job (the standard caveat from the memorization literature, Duan et al. 2024). Headline effects are re-estimated on the unrecognized stratum, and sign persistence there has been promoted from sensitivity note to confirmatory block, guarded by an evaluability floor (the block applies when the stratum holds ≥ 30 items of the hypothesis's denominator; below that, the analysis is reported as not evaluable and flagged as a limitation — never as passed).
+ 
+-The 20 famous gold anchors carry zero headline weight: curated, recognition-advantaged, memorization-suspect, their accuracy is reported only within the recognition stratification, as a diagnostic. The caution was vindicated from an unexpected direction. When all three families unanimously contradicted the designer's gold codes on three anchors, the gold-audit rule triggered a designer re-adjudication *from the sanitized text alone* — which found that two anchors had been gold-coded from the arguments' reputations rather than the papers' abstracts, and a third fell to a newly codified dominance rule. The coders' unison "misses" were correct readings; the memorization failure mode the battery guards against in coders had manifested in the designer. This was the second instrument-disciplines-its-makers episode (the first, A11, was a direction mis-shelving in an early version of Table 1 itself, caught by the act of gold-coding). Both episodes are why the paper presents its qualitative priors — including Table 1's qualitative-prior column — as computable, correctable quantities the audit will test, not as settled judgments.
++The 20 famous gold anchors carry zero headline weight: curated, recognition-advantaged, memorization-suspect, their accuracy is reported only within the recognition stratification, as a diagnostic. The caution was vindicated from an unexpected direction. When all three families unanimously contradicted the designer's gold codes on three anchors, the gold-audit rule triggered a designer re-adjudication *from the sanitized text alone* — which found that two anchors had been gold-coded from the arguments' reputations rather than the papers' abstracts, and a third fell to a newly codified dominance rule. The coders' unison "misses" were correct readings; the memorization failure mode the battery guards against in coders had manifested in the designer. This was the second instrument-disciplines-its-makers episode (the first, A11, was a direction mis-shelving in an early version of Table 1 itself, caught by the act of gold-coding). Both episodes are why the paper presents its qualitative priors — including Table 1's qualitative-prior column — as computable, correctable quantities the audit was designed to test, not as settled judgments.
+ 
+ ### 4.4.4 Adjudication integrity, estimator stability, and the adversarial probes
+ 
+@@ -246,7 +248,7 @@ Preregistration is enforced mechanically. The freeze manifest enumerates twenty-
+ 
+ What the battery cannot do is stated as plainly as what it can. Each component bounds an identified artifact class: the recognition probe bounds verbatim recall; the cue-ablation stratum, topic-prior coding; the synthetic vault, construct failure on items whose true codes are known by construction; the perturbation arms, surface-cue dependence; the determinism audit, decoding noise; the estimator battery and adjudication audits, majority-vote laundering; the adversarial flip and stratum-persistence blocks, direction-correlated tie-breaking. But the union of these bounds is not identification. Accuracy on the real corpus distribution — obscure, hedged, contemporary professional prose, coded by models that have read an unknowable fraction of it — remains formally unidentified, because no item in that distribution comes with a criterion label a zero-human design is permitted to consult. This is the design's principal limitation, conceded in the battery's preamble, embedded in the registered verdict vocabulary, and repeated in the paper's limitation section: the direction-bias probes bound bias; they do not identify accuracy. The claim the architecture licenses is deliberately modest and, we argue, exactly calibrated to its evidence: a fixed, preregistered, exhaustively audited instrument measured the literature; every identifiable way the measurement could be an artifact was given a frozen test with teeth; and every one of those tests, with its outcome, pass or fail, is published.
+ 
+-**Drafting protocol (outcome-blind).** The remainder of this manuscript, including the Results section that follows, was drafted and assembled after the P3 preregistration materials were prepared — corpus lock, frozen codebook and built prompt, validation battery v1.3, analysis plan v1.1 — and before any confirmatory (P4) coding run or (P5) analysis existed. Each section was written under an explicit outcome-blind rule: no result of H1 or H2 is stated, implied, or foreshadowed anywhere in the draft, and every empirical cell is marked [TO BE FILLED AT P5]. The claim that the Results shells predate the results is itself mechanically checkable: the project's standing practice is to commit every phase artifact to a version-controlled repository under dated, phase-tagged messages, so this assembled draft enters the commit history before the confirmatory run begins. At P5 the shells are filled, the verdict sentences are returned by the frozen decision rules quoted verbatim below, and nothing else in the section may change; interpretation is confined to the four preregistered outcome scenarios of §5.7, stated with equal standing before the data exist.
++**Drafting protocol (outcome-blind).** The remainder of this manuscript, including the Results section that follows, was drafted and assembled after the P3 preregistration materials were prepared — corpus lock, frozen codebook and built prompt, validation battery v1.3, analysis plan v1.1 — and before any confirmatory (P4) coding run or (P5) analysis existed. Each section was written under an explicit outcome-blind rule: no result of H1 or H2 is stated, implied, or foreshadowed anywhere in the draft, and every empirical cell was marked [TO BE FILLED AT P5] (resolved at P4 — see the §5 resolution note). The claim that the Results shells predate the results is itself mechanically checkable: the project's standing practice is to commit every phase artifact to a version-controlled repository under dated, phase-tagged messages, so this assembled draft enters the commit history before the confirmatory run begins. At P5 the shells are filled, the verdict sentences are returned by the frozen decision rules quoted verbatim below, and nothing else in the section may change; interpretation is confined to the four preregistered outcome scenarios of §5.7, stated with equal standing before the data exist.
+ 
+ ## 5. Results
+ 
+@@ -260,6 +262,15 @@ instrument-relative: the registered sentence form is "H1 [H2] supported, as meas
+ frozen, preregistered multi-family LLM instrument," and unqualified "the law holds" phrasing is
+ barred from the abstract and conclusions.
+ 
++**P4 resolution (added 2026-07-17, dated).** The gate chain below resolved at its first item:
++the confirmatory reliability checkpoint failed on all four dimensions (§5.1.1). Under the
++frozen decision tree, no confirmatory coding was performed, no outcome data exist, and every
++downstream shell in this section resolves to *not run* rather than to a filled cell. Per the
++outcome-blind drafting protocol above, the shells, decision rules, and scenario texts are
++retained verbatim as committed before the result was known; the edits dated to this resolution
++are enumerated exhaustively in the back-matter resolution note (v0.2) — the single change
++inventory of record.
++
+ ### 5.1 Gate-chain status (reported first)
+ 
+ No headline estimate is interpreted before the confirmatory gate chain is reported. A result
+@@ -269,31 +280,80 @@ outside it.
+ 
+ | # | Gate item (plan §2.4) | Status |
+ |---|---|---|
+-| 1 | P4 reliability checkpoint (dual statistic, n = 150) | [TO BE FILLED AT P5] |
+-| 2 | B2 text-driven stratum retention | [TO BE FILLED AT P5] |
+-| 3 | B3 vaulted-half synthetic accuracy ≥ frozen floors | [TO BE FILLED AT P5] |
+-| 4 | B3-dis′ coding-contamination check | [TO BE FILLED AT P5] |
+-| 5 | B6 estimator stability (directional effects only) | [TO BE FILLED AT P5] |
+-| 6 | B8 analysis-critical cell floors (incl. n ≥ 15 at analysis time) | [TO BE FILLED AT P5] |
+-| 7 | B5-strat sign persistence, unrecognized stratum (where evaluable) | [TO BE FILLED AT P5] |
+-| 8 | Adversarial folklore-flip survival (25% fraction) | [TO BE FILLED AT P5] |
+-| 9 | Missingness criteria (whole-window extension claims only) | [TO BE FILLED AT P5] |
+-| 10 | Hypothesis-specific decision rule met | [TO BE FILLED AT P5] |
++| 1 | P4 reliability checkpoint (dual statistic, n = 150) | **FAIL — all four dimensions (§5.1.1)** |
++| 2 | B2 text-driven stratum retention | not reached — chain halted at item 1 |
++| 3 | B3 vaulted-half synthetic accuracy ≥ frozen floors | not reached — chain halted at item 1 |
++| 4 | B3-dis′ coding-contamination check | not reached — chain halted at item 1 |
++| 5 | B6 estimator stability (directional effects only) | not reached — chain halted at item 1 |
++| 6 | B8 analysis-critical cell floors (incl. n ≥ 15 at analysis time) | not reached — chain halted at item 1 |
++| 7 | B5-strat sign persistence, unrecognized stratum (where evaluable) | not reached — chain halted at item 1 |
++| 8 | Adversarial folklore-flip survival (25% fraction) | not reached — chain halted at item 1 |
++| 9 | Missingness criteria (whole-window extension claims only) | not reached — chain halted at item 1 |
++| 10 | Hypothesis-specific decision rule met | not reached — chain halted at item 1 |
+ 
+ Failure of item 1 halts P4 entirely; failure of 2–5 blocks all confirmatory claims; failure of
+ 6–8 blocks the affected hypothesis; failure of 9 blocks only the whole-window extension. All
+ component results, including failures, are published (battery §B10).
+ 
++### 5.1.1 The checkpoint result (P4, 2026-07-17)
++
++The checkpoint's tranche draw, sanitization, raw-arm coding, and dual statistic executed
++exactly as frozen: n = 150 fresh items drawn by the seeded stratified
++rule (seed = the OSF registration date, 20260717; five venues, twenty-one years; zero pilot
++overlap; pilot venue-years excluded wholesale), sanitized by the frozen pipeline, and coded in
++three independent runs by each API coder with per-dimension majority-of-three consolidation.
++Coverage was complete (150/150 items in all three coder files); the bootstrap ran at the full
++B = 1,000 with zero degenerate replicates; the statistic implementation enforces the frozen
++parameters and refuses off-spec input, and its hash is registered in the guardian log.
++
++| Dimension | α(A,B) | α(A,C) | α(B,C) | min pairwise | bootstrap 95% LB | dual gate |
++|---|---|---|---|---|---|---|
++| D1 step | .7357 | .7748 | .7777 | .7357 | .6499 | FAIL (LB) |
++| D2 direction | .6761 | .7460 | .7701 | .6761 | .5716 | FAIL (point, LB) |
++| D3 strength | .8227 | .6913 | .7484 | .6913 | .3895 | FAIL (point, LB) |
++| D4 type | .7053 | .7538 | .7326 | .7053 | .5863 | FAIL (LB) |
++
++Gate: point min-pairwise α ≥ .70 on every dimension **and** per-dimension bootstrap 95% lower
++bound ≥ .667. Statistic 1 failed on D2 and D3; statistic 2 failed on all four dimensions.
++
++The sub-audits do not rescue the result — they localize it. Run-level determinism (B1a, n = 50,
++two extra invocations per item per coder) passed for every coder on every dimension (A .90–.96,
++B .96–.98, C .88–.90 exact-match, all above the frozen 70% sanity floor). The consolidated
++run-split rate (B1b) was at most 1.3% per coder per dimension, within the 2% cap. The
++family-correlation watch (§6.3) read P(B = C | A ≠ B) between .41 and .52 on all dimensions,
++far from the .90 collusion trigger. The failure is therefore not decoding noise, not a
++two-family bloc outvoting the third, and not a computational artifact: it is substantive,
++reproducible disagreement among three model families about what fresh abstracts say, at a
++level the frozen gate was designed to catch. Two components of the
++checkpoint did not complete: the laundered-arm coding was interrupted mid-run (coder A 150/150,
++coder B 65/150 at the stop) and the B1c pipeline-rerun audit never started. The proximate
++interrupter was a PI-ordered spend stop, issued the same day as — and independently of — the
++gate computation; the gate failure is the governing, preregistered reason coding does not
++continue, and both components, moot under it, are disclosed in the audit package.
++
++Two readings of the gap between the pilot gate (min pairwise .705–.808 at n = 89) and the
++checkpoint (.676–.736 at n = 150) present themselves. The first was anticipated in the
++preregistration itself — selection: the pilot estimate followed five sequential codebook
++revisions under an optional-stopping structure, and §6 of the frozen plan states that "a
++true-α ≈ .70 instrument will fail statistic 2 — which is the intended behavior (the checkpoint
++is load-bearing, not decorative)." The second is a post-hoc reading, not preregistered —
++domain shift: the pilot drew on two journal-years; the tranche spans five venues and
++twenty-one years, including strata (early-2000s issues, shorter abstracts) the pilot never
++saw. On either reading the conclusion for the measurement claim is the same:
++the instrument's reliability on the population it was built to measure is at or below the
++tentative band, and the design's own rule — no confirmatory measurement on such an
++instrument — governs.
++
+ ### 5.2 H1 — type–direction hypothesis
+ 
+ Population: DEN-H1 (mainstream-venue T1∪T2, S-coded, POS-strength items), post-2008 primary.
+ 
+ | D2 direction | D4 = α | D4 = β∪γ | Total |
+ |---|---|---|---|
+-| pro | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| contra | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
++| pro | *not run* | *not run* | *not run* |
++| contra | *not run* | *not run* | *not run* |
+ 
+-OR_H1 with Woolf 95% CI: [TO BE FILLED AT P5]. Fisher exact p: [TO BE FILLED AT P5].
++OR_H1 with Woolf 95% CI: *not run*. Fisher exact p: *not run*.
+ Registered prediction: OR_H1 ≥ 3.
+ 
+ Preregistered decision semantics, quoted verbatim from the frozen plan (§2.2):
+@@ -304,7 +364,7 @@ Preregistered decision semantics, quoted verbatim from the frozen plan (§2.2):
+ | 95% CI lower bound > 1 and 1 < point OR < 3 | H1 directionally supported, registered magnitude not met (reported as such; no re-framing) |
+ | 95% CI includes 1, or point OR ≤ 1 | **H1 null** (kill-criterion input) |
+ 
+-Verdict returned by the frozen rule: [TO BE FILLED AT P5].
++Verdict returned by the frozen rule: *not run*.
+ 
+ ### 5.3 H2 — venue topography
+ 
+@@ -312,13 +372,13 @@ Population: DEN-H2 (tiers T1∪T2 and T3), post-2008 primary. The 2×2×2 shell:
+ 
+ | Tier | Direction | POS | DEF |
+ |---|---|---|---|
+-| T3 | pro | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| T3 | contra | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| T1∪T2 | pro | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| T1∪T2 | contra | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
++| T3 | pro | *not run* | *not run* |
++| T3 | contra | *not run* | *not run* |
++| T1∪T2 | pro | *not run* | *not run* |
++| T1∪T2 | contra | *not run* | *not run* |
+ 
+-OR_pro: [TO BE FILLED AT P5] · OR_contra: [TO BE FILLED AT P5] · ROR with 95% CI:
+-[TO BE FILLED AT P5]. Registered predictions: (i) OR_pro > 1; (ii) OR_contra ≈ 1 or < 1;
++OR_pro: *not run* · OR_contra: *not run* · ROR with 95% CI:
++*not run*. Registered predictions: (i) OR_pro > 1; (ii) OR_contra ≈ 1 or < 1;
+ (iii) ROR > 1.
+ 
+ Preregistered decision semantics, quoted verbatim from the frozen plan (§2.3):
+@@ -335,7 +395,7 @@ An H2 confirmatory verdict additionally requires every H2 analysis-critical cell
+ n ≥ 15, and no confirmatory ROR may rest on a Haldane-corrected analysis-critical cell. If the
+ registered pre-freeze ROR power computation fell below .5, H2's confirmatory element is the
+ re-scoped OR_pro test, and this subsection reports against the re-scoped element as registered.
+-Verdict returned by the frozen rule: [TO BE FILLED AT P5].
++Verdict returned by the frozen rule: *not run*.
+ 
+ ### 5.4 Estimator battery
+ 
+@@ -346,13 +406,13 @@ because it is predicted ≈ 1, and is published descriptively.
+ 
+ | Estimator | OR_H1 (95% CI) | OR_pro (95% CI) | OR_contra (95% CI) | ROR (95% CI) |
+ |---|---|---|---|---|
+-| E0 unanimous-only | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| E1 coder A only | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| E2 coder B only | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| E3 coder C only | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| E4 majority (primary) | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
++| E0 unanimous-only | *not run* | *not run* | *not run* | *not run* |
++| E1 coder A only | *not run* | *not run* | *not run* | *not run* |
++| E2 coder B only | *not run* | *not run* | *not run* | *not run* |
++| E3 coder C only | *not run* | *not run* | *not run* | *not run* |
++| E4 majority (primary) | *not run* | *not run* | *not run* | *not run* |
+ 
+-Alternative-seat co-analysis (adjudicator = A): [TO BE FILLED AT P5]. Frozen divergence rule: if
++Alternative-seat co-analysis (adjudicator = A): *not run*. Frozen divergence rule: if
+ the two seatings yield different verdicts on any hypothesis, confirmatory language for that
+ hypothesis is withdrawn.
+ 
+@@ -363,18 +423,18 @@ modeled, not hidden. Three preregistered deliverables:
+ 
+ Era×venue bias table — rows = venue, columns = era (2004–2007, 2008–2024); cells = item count,
+ abstract coverage, and abstract-free covariate profiles (article type, frozen-keyword topic
+-profile, page count): [TO BE FILLED AT P5].
++profile, page count): *not run*.
+ 
+ Tipping-point statistics — minimum number of missing items that overturns each decision rule
+ under adversarial allocation over all free margins:
+ 
+ | Hypothesis | TP_pos | UCL comparator (POS) | TP_free | UCL comparator (in-chain) |
+ |---|---|---|---|---|
+-| H1 | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| H2 | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
++| H1 | *not run* | *not run* | *not run* | *not run* |
++| H2 | *not run* | *not run* | *not run* | *not run* |
+ 
+ Anchored scenario envelope (M1 all-pro / M2 all-contra / M3 anchored-proportional, anchor =
+-checkpoint-tranche adjudicated distributions): [TO BE FILLED AT P5]. A whole-window extension
++checkpoint-tranche adjudicated distributions): *not run*. A whole-window extension
+ claim requires the decision rule met on the whole-window estimate, survival under M3, and both
+ tipping-point margins exceeding their UCL comparators. The post-2008 primary claim does not
+ depend on any row of this subsection.
+@@ -389,14 +449,14 @@ the direction fielding the POS items); (3) frozen: no POS either side in the tra
+ 
+ | Step | Qualitative prior (Table 1, under test) | k = 2 | k = 3 | k = 5 |
+ |---|---|---|---|---|
+-| S1 | contested | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| S2 | contested | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| S3 | contested/frozen | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| S4 | headwind | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| S5 | strong headwind | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| S6 | headwind/near-frozen | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| S7 | strong headwind | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| S8 | defensive | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
++| S1 | contested | *not run* | *not run* | *not run* |
++| S2 | contested | *not run* | *not run* | *not run* |
++| S3 | contested/frozen | *not run* | *not run* | *not run* |
++| S4 | headwind | *not run* | *not run* | *not run* |
++| S5 | strong headwind | *not run* | *not run* | *not run* |
++| S6 | headwind/near-frozen | *not run* | *not run* | *not run* |
++| S7 | strong headwind | *not run* | *not run* | *not run* |
++| S8 | defensive | *not run* | *not run* | *not run* |
+ 
+ The "qualitative prior" column restates Table 1's status verdicts for what they are: the
+ designers' pre-audit qualitative reading, which the computation either reproduces or corrects.
+@@ -411,7 +471,7 @@ mode the battery guards against in the coders, manifest in the designer; the cod
+ were correct readings, and the gold codes were revised. The prior column above therefore
+ carries no evidentiary weight in this paper; the computed columns do.
+ 
+-Also reported here, all [TO BE FILLED AT P5]: per-step direction × strength × type maps;
++Also registered for this subsection, all *not run*: per-step direction × strength × type maps;
+ venue-tier topography maps; B-prevalence (input to §7); the S6 scarcity check; flag-class
+ tallies; per-cell unresolved rates; the published 2-1 adjudication matrix.
+ 
+@@ -446,6 +506,16 @@ published regardless — a two-null outcome is a finding about the literature's
+ reported as such, and the implications discussion is limited to what the descriptive map
+ licenses (§9).
+ 
++**Realized branch (added at P4 resolution, 2026-07-17).** None of the four scenarios activated.
++The realized outcome sits one node higher in the frozen decision tree: gate item 1 failed, so
++no confirmatory estimate was ever computed and no outcome scenario was reached. This branch is
++not an escape from the scenario discipline — it is itself preregistered, with its own frozen
++consequence (halt; no confirmatory claims; PI chooses between descriptive downgrade and full
++redesign, the revision budget being exhausted). The project takes the downgrade: this
++manuscript is the preregistered-trajectory report, and the kill criterion's publication rule applies
++by extension, verbatim from Scenario D: "no journal submission; the project downgrades to a
++descriptive-map preprint plus essay. No salami-slicing; no post-hoc hypothesis swaps."
++
+ ## 6. Robustness battery (preregistered shell)
+ 
+ All items in this section are non-confirmatory and are published in full, whatever they show.
+@@ -454,18 +524,18 @@ All items in this section are non-confirmatory and are published in full, whatev
+   the 10-step grain (S3 and S4 split; supplementary coding pass under a frozen build-variant
+   prompt), and the liberal-target variant (S7 dropped). Invariance claim requires the decision
+   rules re-met across all admissible grains; per-grain divergences reported.
+-  [TO BE FILLED AT P5]
++  *not run*
+ - R2 — *Faith and Philosophy* tier flip. H2 recomputed with *Faith and Philosophy* assigned T3; both assignments
+-  published; the frozen tier table is primary. [TO BE FILLED AT P5]
++  published; the frozen tier table is primary. *not run*
+ - R3 — dominant-author exclusion. Items by Swinburne, Plantinga, Draper, Oppy dropped
+-  (metadata join, post-coding); H1/H2 recomputed. [TO BE FILLED AT P5]
++  (metadata join, post-coding); H1/H2 recomputed. *not run*
+ - R4 — time split. 2004–2013 vs 2014–2024, plus the 2008 era boundary; topography per window.
+-  [TO BE FILLED AT P5]
++  *not run*
+ - R5 — citation-weighted rerun. Weights = log(1 + citations), single frozen snapshot;
+-  robustness-only by preregistered fiat. [TO BE FILLED AT P5]
++  robustness-only by preregistered fiat. *not run*
+ - B7a — reversed-default deletion test. D4 re-derived under reversed tie-break polarity;
+-  tie-break-decided fraction reported; H1 under both polarities. [TO BE FILLED AT P5]
+-- B7b — strata monitors and the metadata-only prior-ceiling baseline. [TO BE FILLED AT P5]
++  tie-break-decided fraction reported; H1 under both polarities. *not run*
++- B7b — strata monitors and the metadata-only prior-ceiling baseline. *not run*
+ 
+ Mirror audit (exploratory appendix, preregistered for the honesty rule). A three-step
+ naturalism mini-chain — N1 cosmogenesis/brute-fact viability, N2 naturalistic fine-tuning
+@@ -476,9 +546,9 @@ present. No confirmatory status.
+ 
+ | Mirror step | Direction × strength × type map | Notes |
+ |---|---|---|
+-| N1 | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| N2 | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
+-| N3 | [TO BE FILLED AT P5] | [TO BE FILLED AT P5] |
++| N1 | *not run* | *not run* |
++| N2 | *not run* | *not run* |
++| N3 | *not run* | *not run* |
+ 
+ ## 7. Formal appendix — burden invariance and canonical partitions
+ 
+@@ -589,7 +659,15 @@ unexaminable background assumption.
+ 
+ ## 9. What the map licenses — and what it does not
+ 
+-This paper produces a map of the published dialectic: which steps of the chain are disputed, in
++**Scope note at P4 resolution (2026-07-17).** No map was produced: the gate chain halted at
++item 1 before any corpus coding. This section is retained as the preregistered licensing
++statement it was — binding on any future run under a repaired, re-gated instrument — and as
++the record of what this design refused to claim without one. What the present paper itself
++licenses is confined to the methodological findings of §5.1.1, the design contributions of
++§§2–4, and the formal result of §7 (burden invariance), which stands independently of the
++failed coding run.
++
++This paper was designed to produce a map of the published dialectic: which steps of the chain are disputed, in
+ which direction, at what claim strength, on what kind of evidence, in which venues. The
+ following claims are licensed by such a map, conditional on the gate chain: claims about the
+ distribution of argument types over directions in the published record; claims about the
+@@ -636,8 +714,11 @@ literature. Whether the ditch can be crossed is a question the map locates but d
+ 
+ ### AI-use disclosure
+ 
+-All corpus coding in this study was performed by large language models, with zero human
+-item-coding: no human — including the authors — coded, adjudicated, or validated any item. The
++All item coding that occurred in this study was performed by large language models, with zero
++human item-coding: no human — including the authors — coded, adjudicated, or validated any
++corpus or pipeline item. (The twenty-item diagnostic gold-anchor key is designer-authored
++instrument material with zero headline weight, revisable only via the document-level gold-audit
++rule — under which the coders twice overrode the designers; see §4.3.5.) The
+ human contribution was confined to instrument design: codebook authorship, synthetic-criterion
+ specification and sign-off, and phase-gate approvals. The instrument is a fixed, preregistered,
+ multi-family ensemble — coder A (Anthropic), coder B (Google), coder C (OpenAI, adjudicator
+@@ -652,20 +733,25 @@ Two further disclosures. First, instrument selection at pilot: the pilot reliabi
+ that gated the instrument is a selected estimate — it followed five sequential codebook
+ revisions under an optional-stopping structure — and for that reason the design treats the
+ pilot gate as conditional on an independent confirmatory reliability checkpoint on fresh items
+-at the start of the full run, whose failure halts coding entirely. Second, the full design
++at the start of the full run, whose failure halts coding entirely. That checkpoint failed
++(§5.1.1), and the halt executed as designed. Second, the full design
+ trajectory is public: the versioned codebook with changelog, the adjudication logs (including
+ the episodes in which the coders corrected the designers' gold codes), the decision register
+ with every designer judgment call and its recorded resolution, the battery results including
+ failures, and the API call logs that make the no-contact claims verifiable. Prose drafting was
+ assisted by an LLM (Claude); all analysis code is stdlib-only Python, hashed in the freeze
+-manifest. Final disclosure wording follows the target venue's policy at submission.
++manifest. Final disclosure wording follows the hosting venue's policy — a preprint venue: the kill
++criterion's no-journal-submission rule governs.
+ 
+ ### Data and code availability
+ 
+ The audit package (OSF + repository) contains: all analysis and adjudication code with hashes
+ and fixed seeds; the frozen codebook, prompts, battery, and analysis plan; item-level coded
+-data and all aggregate tables; the full battery results including failed components; the
+-adjudication and cost logs. Copyrighted abstracts are not republished: the raw and sanitized
++data and all aggregate tables for every run that occurred (pilot, calibration, and the
++checkpoint tranche — the full-corpus run was never performed); the full battery results
++including failed components and the two checkpoint components interrupted by the halt; the
++adjudication and cost logs. The synthetic criterion vault was never opened (vault opening was
++scheduled after the checkpoint) and remains sealed and hash-verifiable in the freeze manifest. Copyrighted abstracts are not republished: the raw and sanitized
+ text corpora are excluded from the public package, and the paper reports codes and aggregates
+ only, with item identifiers sufficient to relocate every source in the published record.
+ Because API-served models retire, one coder (D) is open-weights with weights, prompts, and
+@@ -673,6 +759,42 @@ harness archived, so that the instrument supports re-execution — not merely re
+ the coding run after endpoint retirement; the availability statement in the published version
+ states this distinction explicitly.
+ 
++### Draft resolution note (v0.2, 2026-07-17)
++
++At P4 the confirmatory checkpoint failed (§5.1.1) and the PI elected the preregistered
++descriptive downgrade. This version resolves the outcome-blind v0.1 shells to the realized
++branch. The baseline for the diff is v0.1 as amended by the pre-freeze corpus-lock
++reconciliation (commit `83d0b49`, review-exclusion count 620 → 627 in §4.1 — an outcome-blind
++edit dated before the checkpoint run). Changes of record in v0.2, exhaustively:
++
++- title block: subtitle added;
++- abstract: the final bracket resolved to the negative outcome, and three sentences recast
++  from performed/present to design mood ("designed, and preregistered in full, an audit",
++  "was to be performed", "Two hypotheses were preregistered"), with the sub-audit clause
++  scoped to B1a/B1b;
++- §1: two sentences recast ("their preregistered test is reported in §5, where the gate chain
++  halted…"; "Two patterns were predicted for test");
++- §4.3.3 and the AI-use disclosure: the zero-human claim scoped to corpus and pipeline items,
++  with the designer-authored gold-anchor key disclosed as instrument material;
++- §4.3.5: the confirmatory-phase sentence recast to past-design mood with the halt noted;
++- §1 (roadmap) and §4.4: two "the audit will test" clauses recast to design mood;
++- §5 preamble: dated resolution paragraph added, pointing here as the single change inventory;
++- §5.1: gate table resolved (item 1 FAIL; items 2–10 not reached);
++- §5.1.1 added: checkpoint numbers, sub-audits, the spend-stop disclosure, and the
++  selection (preregistered) vs domain-shift (post-hoc) readings;
++- all downstream `[TO BE FILLED AT P5]` markers resolved to *not run* (one §5.6 frame word
++  adjusted: "Also registered for this subsection");
++- §5.7: realized-branch note appended, quoting the Scenario D publication rule verbatim;
++- §9: scope note added, and the opening sentence recast to "was designed to produce";
++- the drafting-protocol paragraph's marker meta-reference moved to past tense;
++- back matter: AI-use disclosure and availability statements updated for the halt (vault
++  unopened; coded data = pilot, calibration, checkpoint tranche only; disclosure-venue line
++  aligned to the no-journal-submission rule); this note added.
++
++No shell, threshold, denominator, decision rule, or scenario text committed at the baseline
++was altered. The baseline commits precede the checkpoint run in the repository history, and
++the diff between the baseline and v0.2 is itself part of the audit package.
++
+ ### Draft repair note (v0.1, 2026-07-16)
+ 
+ This assembled draft was audited against the project record (G1 report, adjudication log,
