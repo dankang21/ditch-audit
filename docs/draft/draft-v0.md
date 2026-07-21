@@ -8,7 +8,7 @@
 
 *Keywords:* large language models; automated content analysis; inter-rater reliability; Krippendorff's alpha; protocol precommitment; confirmatory checkpoint; zero-human annotation; validation battery; philosophy of religion; natural theology; Lessing's ditch.
 
-**How to read this document (added at v0.3, 2026-07-17).** The paper's sole confirmatory result is §5.1.1 — the confirmatory checkpoint that rejected the instrument — and its methods contribution lives in §4 (the zero-human instrument and its validation battery; §4.4.10 tabulates the battery at a glance). Sections 2–3 build the case-study apparatus: a witness-based criterion that motivates an eight-step working partition of natural theology's inferential chain (§7.2 states what is and is not claimed for it), with §7 proving a burden-invariance result that stands independently of the halted audit; §8 answers objections to the design. Sections 5.2–5.7 and 6 are precommitted result shells resolved to *not run*: they are preserved in place, unfilled with outcome data (their resolution markers are dated and inventoried), because the outcome-blind commit history of these shells is part of the paper's evidentiary claim — in the spirit of the Registered Reports program's commitment to outcome-independent publication (Chambers and Tzavella 2022) — though this is a self-sealed study with a locally frozen decision tree, not a journal-reviewed Registered Report. Methods readers: §4, §5.1.1, §4.4.10. Philosophy readers: §§2–3, §7, §8. The change inventories of record are the back-matter resolution notes (v0.2 for the P4 resolution; v0.3 for this repositioning; v0.4–v0.11 for the post-review repairs and the v0.9 correction of record), preceded by a version-history summary. *Terminology (v0.10; extended v0.11).* Following the v0.9 correction, the paper's own voice says *precommitted*, *prospectively frozen*, or *sealed* where earlier versions said "preregistered" (and, for the project's own acts, "registered"): the protocol was frozen locally under a SHA256 manifest, without the externally timestamped registration the earlier label implied. The frozen result shells (§§5.2–5.7, §6), verbatim quotations from the sealed documents, artifact names retaining the historical prefix (`PREREG_MANIFEST.txt`; the `prereg-guardian` agent), the proper noun Registered Reports, and the dated revision notes below keep the original vocabulary; references to the OSF event itself, ledger nouns (the decision and threshold registers), and the linguistic sense of "register" are not freeze-vocabulary and stand as written.
+**How to read this document (added at v0.3, 2026-07-17).** The paper's sole confirmatory result is §5.1.1 — the confirmatory checkpoint that rejected the instrument — and its methods contribution lives in §4 (the zero-human instrument and its validation battery; §4.4.10 tabulates the battery at a glance). Sections 2–3 build the case-study apparatus: a witness-based criterion that motivates an eight-step working partition of natural theology's inferential chain (§7.2 states what is and is not claimed for it), with §7 proving a burden-invariance result that stands independently of the halted audit; §8 answers objections to the design. Sections 5.2–5.7 and 6 are precommitted result shells resolved to *not run*: they are preserved in place, unfilled with outcome data (their resolution markers are dated and inventoried), because the outcome-blind commit history of these shells is part of the paper's evidentiary claim — in the spirit of the Registered Reports program's commitment to outcome-independent publication (Chambers and Tzavella 2022) — though this is a self-sealed study with a locally frozen decision tree, not a journal-reviewed Registered Report. Methods readers: §4, §5.1.1, §4.4.10. Philosophy readers: §§2–3, §7, §8. The change inventories of record are the back-matter resolution notes (v0.2 for the P4 resolution; v0.3 for this repositioning; v0.4–v0.12 for the post-review repairs and the v0.9 correction of record), preceded by a version-history summary. *Terminology (v0.10; extended v0.11).* Following the v0.9 correction, the paper's own voice says *precommitted*, *prospectively frozen*, or *sealed* where earlier versions said "preregistered" (and, for the project's own acts, "registered"): the protocol was frozen locally under a SHA256 manifest, without the externally timestamped registration the earlier label implied. The frozen result shells (§§5.2–5.7, §6), verbatim quotations from the sealed documents, artifact names retaining the historical prefix (`PREREG_MANIFEST.txt`; the `prereg-guardian` agent), the proper noun Registered Reports, and the dated revision notes below keep the original vocabulary; references to the OSF event itself, ledger nouns (the decision and threshold registers), and the linguistic sense of "register" are not freeze-vocabulary and stand as written.
 
 ---
 
@@ -50,7 +50,7 @@ structure of the published dispute. The witness condition does the main philosop
 
 The criterion also excludes. Intra-theistic attribute puzzles — the omnipotence paradox, the foreknowledge–freedom debate — are internal disputes about how to articulate an attribute, not tolls on the path to the target: following Geach (1973), Christianity needs the *pantokrator*, not the philosopher's omnipotence, and open theism shows that strong omniscience is not a Nicene-minimal component (cf. Hasker 1989). Such items are coded to a separate class and excluded from the chain. Arguments that conclude directly to a conjunctive God — ontological arguments, generic arguments from religious experience — are retained but tagged as *bundled*; the prevalence of bundling is itself a datum for §7, not noise to be discarded.
 
-One objection deserves a forward reference now (O1, §8): is the integer eight not an artifact of grain? We acknowledge grain-dependence up front. The published claim is not "eight" but the pair of invariants: the hypotheses were required to survive the precommitted grain variants — the sealed plan's operationalization of grain-robustness, not a survey of every admissible partition, a set §7.2 concedes is open — and the robustness battery (§6, R1) re-runs the analyses under a seven-step partition (merging S7 and S8), a ten-step partition (splitting S3's unicity/aseity from sovereignty, and splitting S4 along Mill's finite-god line), and a liberal-target variant (dropping S7) — variants that, like all of §6, never ran (§5.1). The canonicity argument — why witness-certified partitions are the *admissible* accounting units for cumulative cases, and how this adjudicates the partition choices presupposed on both sides of the dwindling-probabilities exchange — is made in §7.
+One objection deserves a forward reference now (O1, §8): is the integer eight not an artifact of grain? We acknowledge grain-dependence up front. The design did not treat the integer eight as an empirical conclusion; it imposed a pair of precommitted requirements instead: the hypotheses had to survive the precommitted grain variants — the sealed plan's operationalization of grain-robustness, not a survey of every admissible partition, a set §7.2 concedes is open — and the factor-count identity had to hold relative to whatever fixed partition is chosen (§7). The robustness battery (§6, R1) was built to re-run the analyses under a seven-step partition (merging S7 and S8), a ten-step partition (splitting S3's unicity/aseity from sovereignty, and splitting S4 along Mill's finite-god line), and a liberal-target variant (dropping S7); like all of §6, R1 never ran (§5.1), so no grain-robust empirical conclusion exists. The canonicity argument — why witness-certified partitions are the *admissible* accounting units for cumulative cases, and how this adjudicates the partition choices presupposed on both sides of the dwindling-probabilities exchange — is made in §7.
 
 ## 3. The precommitted eight-step partition
 
@@ -83,7 +83,7 @@ With the partition fixed and its priors flagged, the measurement question become
 
 ## 4. Methods: corpus, instrument, and validation
 
-This section describes the corpus (§4.1), the coding instrument and the zero-human measurement pipeline (§§4.2–4.3), and the validation battery and protocol freeze architecture (§4.4). The full protocol documents — codebook, validation battery, and analysis plan — are frozen at the protocol freeze, SHA256-hashed into its manifest, and archived with it; what follows is a complete account of every design decision that bears on the confirmatory analyses.
+This section describes the corpus (§4.1), the coding instrument and the zero-human measurement pipeline (§§4.2–4.3), and the validation battery and protocol freeze architecture (§4.4). The full protocol documents — codebook, validation battery, and analysis plan — were frozen during the protocol freeze, SHA256-hashed into the sealed manifest, and archived with it; what follows is a complete account of every design decision that bears on the confirmatory analyses.
 
 ### 4.1 Corpus
 
@@ -313,9 +313,11 @@ two components interrupted when coding stopped (§5.1.1 discloses the proximate 
 
 ## 5. Results
 
-This section is written, in its entirety, before the confirmatory data exist. Its structure,
+**Frozen pre-run preamble, retained verbatim:** This section is written, in its entirety, before the confirmatory data exist. Its structure,
 table shells, decision rules, and reporting order are fixed by the precommitted analysis plan;
 at P5 the shells are filled and nothing else changes. Two constraints govern everything below.
+
+*(Reader's note, v0.12: the sentence above is the pre-run draft's own voice, preserved as evidence. It is true of the result shells and decision rules below — written before confirmatory data existed — but not of the section as it now stands: the dated P4 resolution markers and §5.1.1 were added after the checkpoint halt.)*
 First, the primary confirmatory estimand is the post-2008 population (the stratum on which the
 corpus gate certified 92.8% abstract coverage); whole-window (2004–2024) estimates are a
 precommitted extension carrying their own gate (§5.5). Second, all confirmatory verdicts are
@@ -691,9 +693,11 @@ disputing literature, which ties the partition to dialectically real joints rath
 analyst's taste. The formal section (§7) shows that, for a fixed partition, the burden ledger is invariant
 under bundling and notational coarsening — not that it is invariant under arbitrary
 re-partition — and R1 recomputes both hypotheses at the 7-step, 10-step, and liberal-target
-grains. The published claim is not "there are exactly eight steps"; it is that the invariants
-under study are not artifacts of the precommitted grain choices — a claim R1 was built to test
-rather than assert, and, the run having halted, never tested (§5.1).
+grains. The paper does not claim "there are exactly eight steps" as an empirical conclusion, and it
+does not claim that the invariants under study survived changes of grain: it claims only that
+survival across the three precommitted variants was a required test — one R1 was built to
+run and, the run having halted, never did (§5.1). No grain-robust empirical conclusion is
+available.
 
 O2 — the Thomist entailment objection: "there is no gap; the attributes follow from pure
 actuality, so S3–S4 are not independent steps." The entailment claim is itself a contested
@@ -860,10 +864,30 @@ states this distinction explicitly.
 | v0.9 | 2026-07-21 | **Correction of record:** the OSF registration reported complete on 2026-07-17 was found never to have been completed (account check during upload preparation). The preregistration of record is restated as the git-sealed SHA256 freeze; the seed's pre-commitment is restated (frozen rule plus freeze-date value, recorded before the draw); the OSF deposit is re-scoped as a post-halt archive. Repository published with full history; author ORCID added. |
 | v0.10 | 2026-07-21 | Sixth-review repairs — the vocabulary follows the v0.9 facts: title recast to "Prospectively Frozen"; the paper's own voice moves from "preregistered" to precommitted/locally frozen/sealed (shells, quotations, artifact names, the Registered Reports proper noun, and historical notes keep the original term); the title-page footnote corrected to the post-halt deposit; the seed constant no longer called "the freeze date" (the manifest's generation timestamp is 2026-07-16T14:27:48Z); §5.1.1 states the seed-rule discrepancy instead of "executed exactly as frozen"; "exhaustively audited" withdrawn. |
 | v0.11 | 2026-07-21 | Seventh-review completion: the wider "register-" family swept from the authorial voice (60 sites — "registered odds ratio" → precommitted, "frozen at registration" → at the protocol freeze, "self-registered" → self-sealed, "registration manifest" → sealed manifest, and kin), with references to the OSF event itself, ledger nouns (decision register, registry), linguistic "register," and Registered Reports untouched; the archive-DOI editorial placeholder replaced by "pending deposit." |
+| v0.12 | 2026-07-21 | Eighth-review completion (final two sentence-groups): §2 and §8 O1 no longer call the untested grain invariance a "published claim" — the design imposed precommitted grain-robustness requirements, R1 never ran, and no grain-robust empirical conclusion exists; §5's frozen pre-run preamble is labeled as retained verbatim, with a reader's note scoping its "written before data" claim to the shells and decision rules (the P4 resolution and §5.1.1 postdate the halt); §4's freeze sentence tense corrected. |
 
 The full change inventories follow below, newest first, and are retained in the preprint
 deliberately: they are the in-text counterpart of the paper's outcome-blindness evidence,
 whose machine form (commit-level diffs) ships with the audit package.
+
+### Draft revision note (v0.12, 2026-07-21)
+
+This revision completes the eighth external review's two conditions — the last it named
+before approval. **(1) Untested invariance no longer a "published claim."** §2 and §8 O1
+had kept, through every prior repair, the framing "the published claim is … the pair of
+invariants" for a grain-robustness property that R1 was built to test and never tested —
+asserting and disclaiming in one breath. Both sites are recast: the design *imposed a pair
+of precommitted requirements* (survival across the three sealed grain variants; the
+factor-count identity relative to any fixed partition); R1 never ran; no grain-robust
+empirical conclusion exists. **(2) The §5 preamble's present tense scoped.** The frozen
+pre-run sentence "This section is written, in its entirety, before the confirmatory data
+exist" is now labeled **Frozen pre-run preamble, retained verbatim**, followed by a reader's
+note stating what the sentence is true of (the result shells and decision rules) and what it
+is not (the dated P4 resolution markers and §5.1.1, which postdate the halt); the frozen
+sentence itself is unchanged. **(3) Optional polish accepted.** §4's opening freeze sentence
+becomes "were frozen during the protocol freeze, SHA256-hashed into the sealed manifest."
+This note, the version-history row, and the reading-guide range are the bookkeeping changes;
+nothing else in the document was altered.
 
 ### Draft revision note (v0.11, 2026-07-21)
 
