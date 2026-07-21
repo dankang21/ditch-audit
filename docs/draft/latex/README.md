@@ -9,7 +9,7 @@ Literature: design, validation battery, and halt report of the audit*
     tectonic main.tex        # or: xelatex main.tex (twice), or pdflatex main.tex (twice)
 
 Engine-agnostic preamble: pdfLaTeX uses newtx (Times); XeLaTeX/LuaLaTeX use fontspec
-(TeX Gyre Termes if available, else Liberation Serif). A compiled main.pdf (61 pp.) is included.
+(TeX Gyre Termes if available, else Liberation Serif). A compiled main.pdf (59 pp.) is included.
 
 ## Files
 
