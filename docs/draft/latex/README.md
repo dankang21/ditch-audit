@@ -1,7 +1,7 @@
-# LaTeX package — preprint (draft v0.9, 2026-07-21)
+# LaTeX package — preprint (draft v0.10, 2026-07-21)
 
-**A Preregistered Zero-Human LLM Measurement Design, and the Confirmatory Checkpoint That
-Rejected Its Instrument** — subtitle: *Lessing's Ditch as a Measurable Property of the
+**A Prospectively Frozen Zero-Human LLM Measurement Design, and the Confirmatory Checkpoint
+That Rejected Its Instrument** — subtitle: *Lessing's Ditch as a Measurable Property of the
 Literature: design, validation battery, and halt report of the audit*
 
 ## Build
@@ -9,13 +9,13 @@ Literature: design, validation battery, and halt report of the audit*
     tectonic main.tex        # or: xelatex main.tex (twice), or pdflatex main.tex (twice)
 
 Engine-agnostic preamble: pdfLaTeX uses newtx (Times); XeLaTeX/LuaLaTeX use fontspec
-(TeX Gyre Termes if available, else Liberation Serif). A compiled main.pdf (60 pp.) is included.
+(TeX Gyre Termes if available, else Liberation Serif). A compiled main.pdf (61 pp.) is included.
 
 ## Files
 
 - main.tex        — preamble, title block, abstract wrapper, inputs
-- abstract.tex    — abstract (generated from docs/draft/draft-v0.md, v0.9)
-- front.tex       — keywords + "How to read this document" (v0.9)
+- abstract.tex    — abstract (generated from docs/draft/draft-v0.md, v0.10)
+- front.tex       — keywords + "How to read this document" (v0.10)
 - body.tex        — full body (generated; source of truth is draft-v0.md — regenerate, don't hand-edit)
 - references.tex  — 85 entries; all in-text citations covered (completeness-swept at v0.3; 14 added at v0.4, 4 at v0.5, 4 at v0.7, 2 at v0.8 — East 2013 and Hendricks et al. 2020)
 - main.pdf        — compiled preview
@@ -55,6 +55,14 @@ Four entries added with the second-review repair cycle: Carnley 1987 and 2019 (t
 S7 stance-witness), Maimonides (Touger trans., 1987, uncensored 11:4), and Abdel Haleem 2004
 (Qur'an translation of record). All four web-verified; memos in analysis/audit-exports/.
 
+## v0.10 changes (2026-07-21)
+
+No bibliography changes (85 entries). Sixth-review vocabulary correction: title recast to
+"Prospectively Frozen"; authorial-voice "preregistered" -> precommitted / prospectively
+frozen / sealed (shells, quotations, artifact names, historical notes keep the original
+term); title-page footnote corrected to the post-halt deposit; seed constant no longer
+called "the freeze date"; §5.1.1 seed-rule discrepancy stated.
+
 ## v0.9 changes (2026-07-21)
 
 No bibliography changes (85 entries). Correction of record: the OSF registration reported
@@ -87,4 +95,4 @@ wording, n=150 projection attribution, T1/single-journal limitations). PDF now c
 Title/Author metadata (hypersetup in main.tex).
 
 Author line and the title-page footnote: confirm before upload (main.tex).
-Generated from draft-v0.md (v0.9); companion essay: docs/draft/essay-checkpoint.md.
+Generated from draft-v0.md (v0.10); companion essay: docs/draft/essay-checkpoint.md.

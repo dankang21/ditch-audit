@@ -1,24 +1,24 @@
 # ditch-audit
 
-**A preregistered zero-human LLM measurement design — and the confirmatory checkpoint that
-rejected its instrument.**
+**A prospectively frozen zero-human LLM measurement design — and the confirmatory checkpoint
+that rejected its instrument.**
 
 This repository is the public audit trail of a study that set out to measure twenty-one issue-years
 (2004–2024) of the peer-reviewed philosophy-of-religion literature — coding ~3,500 articles
 for which step of natural theology's inferential chain each addresses, in which direction, at
-what claim strength, on what kind of evidence — using a fixed, preregistered, multi-family LLM
+what claim strength, on what kind of evidence — using a fixed, prospectively frozen, multi-family LLM
 instrument with **zero human item-coding**.
 
-**The study halted at its own gate.** At the start of the confirmatory run, the preregistered
+**The study halted at its own gate.** At the start of the confirmatory run, the precommitted
 fresh-data reliability checkpoint (150 seed-drawn items, dual statistic frozen in advance)
 failed on all four coding dimensions. Under the frozen decision tree this stopped all coding;
-no hypothesis was ever tested. Per the preregistered kill criterion, the project downgraded to
+no hypothesis was ever tested. Per the precommitted kill criterion, the project downgraded to
 a methods-forward preprint plus a companion essay — no journal submission.
 
 - **Repository**: <https://github.com/dankang21/ditch-audit>
 - **OSF deposit** (post-halt archive of the sealed freeze; anchors no timestamps — see preprint §4.4.9): <https://osf.io/rt3zg/> · DOI 10.17605/OSF.IO/RT3ZG
-- **Preprint** (v0.9, 60 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
-  `docs/draft/preprint-v0.9.zip` · *(archive DOI: to be added at upload)*
+- **Preprint** (v0.10, 61 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
+  `docs/draft/preprint-v0.10.zip` · *(archive DOI: to be added at upload)*
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our
   Study — and Why We're Glad It Did"
 - **Checkpoint result of record**: `analysis/checkpoint_report.md` + `checkpoint_dual_raw.json`
@@ -32,7 +32,7 @@ inspectable:
 
 | tag | commit | what it seals |
 |---|---|---|
-| `prereg-content` | `83d0b49` | preregistration content of record |
+| `prereg-content` | `83d0b49` | protocol-freeze content of record (the historical tag name keeps the pre-correction label) |
 | `p3-freeze` | `bafc712` | freeze manifest sealed (guardian CLEAN) |
 | `draft-v0.1-outcome-blind` | `1493e46` | full draft with neutral result shells, before any confirmatory run |
 | `p4-checkpoint-fail` | `c894932` | checkpoint FAIL of record |
@@ -44,7 +44,7 @@ timestamps alone are not tamper-proof): the freeze manifest (`PREREG_MANIFEST.tx
 frozen artifact set by SHA256, so any copy can be checked against the seal. A correction of
 record (preprint §4.4.9, v0.9): the OSF registration previously reported as completed on
 2026-07-17 was never in fact completed; the OSF presence is a post-halt archival deposit and
-anchors no timestamps. The preregistration of record is the git-sealed freeze itself.
+anchors no timestamps. The precommitment of record is the git-sealed freeze itself — hence the preprint's vocabulary (v0.10): *prospectively frozen / precommitted*, not "preregistered."
 
 ## Repository map
 
@@ -70,7 +70,8 @@ package. API keys live only in an untracked `.env` and appear nowhere in this re
 
 The frozen instrument is re-executable: coder D is a pinned open-weights model
 (`qwen3.5:4b`, digest in the manifest) served locally via Ollama, and every analysis script
-is stdlib-only Python 3.10+ with fixed seeds (registration date 20260717). See
+is stdlib-only Python 3.10+ with fixed seeds (the pre-specified constant 20260717, reported
+at the time as the registration date — see preprint §4.4.9's correction of record). See
 `pipeline/05_analysis/checkpoint_stats.py selftest` and `scripts/alpha.py selftest` for the
 statistic implementations, and the preprint's §4 for the design.
 

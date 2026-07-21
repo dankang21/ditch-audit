@@ -1,14 +1,14 @@
 # The Checkpoint That Killed Our Study — and Why We're Glad It Did
 
-*Companion essay to the preprint "A Preregistered Zero-Human LLM Measurement Design, and the
+*Companion essay to the preprint "A Prospectively Frozen Zero-Human LLM Measurement Design, and the
 Confirmatory Checkpoint That Rejected Its Instrument" (current draft; see its version-history summary). Every empirical figure
 below is stated in, and citable from, the preprint; section references point there. This essay
-is the second half of the study's preregistered kill-criterion output ("descriptive-map
+is the second half of the study's precommitted kill-criterion output ("descriptive-map
 preprint plus essay") and makes no claim beyond the preprint's.*
 
 ---
 
-We built a measurement instrument through five calibration rounds, froze it under a preregistration manifest,
+We built a measurement instrument through five calibration rounds, froze it under a hash-sealed local manifest,
 and then a same-day reliability check on 150 fresh items rejected it — all four coding
 dimensions, no appeal. The study halted. No hypothesis was ever tested.
 
@@ -44,13 +44,13 @@ Our pilot reliability gate passed: minimum pairwise Krippendorff's α of .705–
 dimensions at n = 89 (preprint §4.4.7). If you have ever run a coding study, you know what
 that number conceals: it was the *fifth* round. Four earlier rounds had failed or
 under-performed; each triggered an instrument revision — codebook clarifications, a coder-model
-swap, a preregistered scale collapse, a run-consolidation protocol change — followed by a
+swap, a precommitted scale collapse, a run-consolidation protocol change — followed by a
 prompt rebuild and a re-code. Round five cleared the bar, and we stopped.
 
 Stopping when you clear the bar has a name — optional stopping — and its effect on the
 estimate has a name too: selection. The pilot α was not a measurement of the instrument's
 reliability; it was the first of five correlated attempts to clear the bar. The
-preregistration says this about itself, in those words ("a selected estimate," §4.4.7), which
+sealed plan says this about itself, in those words ("a selected estimate," §4.4.7), which
 is the only unusual part. A score born that way would ordinarily be reported at face value —
 ours would have been too, except for one design decision.
 
@@ -106,7 +106,7 @@ we felt the pull of that sentence while reading the output.
 
 **4. Publish the corpse.** The preprint reports the design, the battery with its own failed
 component (a discriminator gate that lost to a style fingerprint, §4.4.2), the selected pilot,
-the rejection, and pages of preregistered result shells resolved to *not run* — preserved
+the rejection, and pages of precommitted result shells resolved to *not run* — preserved
 because the commit history of those unfilled shells is part of the proof the study was
 outcome-blind.
 Negative instrument results appear to be rare in the LLM-annotation literature; we suspect
@@ -115,7 +115,7 @@ that is not because instruments rarely fail.
 ## What we are not saying
 
 Not "LLMs cannot code philosophy." One instrument failed one gate; a better codebook, or a
-harder collapse of the taxonomy, might pass — the preregistration's own kill criteria priced
+harder collapse of the taxonomy, might pass — the sealed protocol's own kill criteria priced
 that path (full redesign, gate cycle restarted from zero) and the project declined to spend
 it. Not "the agreement was low because the task is subjective" — if the construct is real,
 inter-family disagreement is a measurement problem; if it isn't, no amount of agreement would
