@@ -340,7 +340,7 @@ descriptive map. The chain is the exhaustive registry of blocking conditions —
 outside it.
 
 | # | Gate item (plan §2.4) | Status |
-|---|---|---|
+|-----|-----------------------------------------------|------------------------------------------------|
 | 1 | P4 reliability checkpoint (dual statistic, n = 150) | **FAIL — all four dimensions (§5.1.1)** |
 | 2 | B2 text-driven stratum retention | not reached — chain halted at item 1 |
 | 3 | B3 vaulted-half synthetic accuracy ≥ frozen floors | not reached — chain halted at item 1 |
