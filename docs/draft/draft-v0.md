@@ -848,7 +848,7 @@ states this distinction explicitly.
 ### Version history (summary)
 
 | v | date | one line |
-|---|---|---|
+|-------|-------------|--------------------------------------------------------------------------------|
 | v0.1 | 2026-07-16 | Outcome-blind assembly: all design sections plus neutral result shells, committed before any confirmatory data existed. |
 | v0.2 | 2026-07-17 | Negative-branch resolution: checkpoint FAIL reported (§5.1.1); 91 shell markers resolved to *not run*; claim-scope repairs. |
 | v0.3 | 2026-07-17 | Methods-forward repositioning: title swap (registered title retained as subtitle), reading guide, battery-at-a-glance table, bibliography web-verified. |
