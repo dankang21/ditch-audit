@@ -79,7 +79,7 @@ this README): **CC BY 4.0** — see `LICENSE-docs`.
 
 ## Authorship & AI disclosure
 
-Jaehoon Kang (design, gate approvals, synthetic-spec sign-off). Repository commits are
+Jaehoon Kang (ORCID [0009-0008-1020-9533](https://orcid.org/0009-0008-1020-9533); design, gate approvals, synthetic-spec sign-off). Repository commits are
 authored as `dk` and `Daniel Kang` under a single email (see `.mailmap`, which normalizes
 the display name); all three names refer to the same person. The history is published
 as-is — rewriting it to normalize names would change every commit hash and void the
