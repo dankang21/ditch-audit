@@ -16,6 +16,7 @@ no hypothesis was ever tested. Per the preregistered kill criterion, the project
 a methods-forward preprint plus a companion essay — no journal submission.
 
 - **Repository**: <https://github.com/dankang21/ditch-audit>
+- **OSF deposit** (post-halt archive of the sealed freeze; anchors no timestamps — see preprint §4.4.9): <https://osf.io/rt3zg/> · DOI 10.17605/OSF.IO/RT3ZG
 - **Preprint** (v0.9, 60 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
   `docs/draft/preprint-v0.9.zip` · *(archive DOI: to be added at upload)*
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our

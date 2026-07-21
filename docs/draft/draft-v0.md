@@ -274,7 +274,7 @@ checkpoint seed's pre-commitment survives in reduced form: the rule (seed = regi
 date, YYYYMMDD) sits inside the sealed plan, and the value used, 20260717 — the freeze date,
 reported at the time as the registration date — was fixed and recorded with the tranche lock
 before any tranche item was coded; what is lost is the external timestamp the rule was
-designed to borrow. (iii) The OSF deposit this paper cites is a post-halt archival deposit,
+designed to borrow. (iii) The OSF deposit this paper cites (osf.io/rt3zg, DOI 10.17605/OSF.IO/RT3ZG, registered 2026-07-21) is a post-halt archival deposit,
 carrying the sealed freeze package and this correction in its transparent-changes section;
 it timestamps nothing retroactively. The error — a registration reported complete that was
 not — is disclosed rather than repaired into the record, consistent with the paper's
@@ -836,7 +836,7 @@ data and all aggregate tables for every run that occurred (pilot, calibration, a
 checkpoint tranche — the full-corpus run was never performed); the full battery results
 including failed components and the two checkpoint components interrupted by the halt; the
 adjudication and cost logs. The synthetic criterion vault was never opened (vault opening was
-scheduled after the checkpoint) and remains sealed and hash-verifiable in the freeze manifest. The freeze manifest (`PREREG_MANIFEST.txt`, 64 artifacts plus aggregate hashes) is the verification root: any copy of a frozen artifact can be checked against its SHA256 independent of repository history. Concrete public identifiers: repository <https://github.com/dankang21/ditch-audit>; OSF **[OSF-DEPOSIT-URL: post-halt archival deposit — inserted when the deposit completes; see the §4.4.9 correction: it postdates the halt and anchors no timestamps]**; preprint archive **[ARCHIVE-DOI: inserted at first version update after deposit]**. The first public version must carry the repository URL and the OSF deposit URL, each labeled for what it is; the preprint DOI, issued on deposit, follows in a version update. Copyrighted abstracts are not republished: the raw and sanitized
+scheduled after the checkpoint) and remains sealed and hash-verifiable in the freeze manifest. The freeze manifest (`PREREG_MANIFEST.txt`, 64 artifacts plus aggregate hashes) is the verification root: any copy of a frozen artifact can be checked against its SHA256 independent of repository history. Concrete public identifiers: repository <https://github.com/dankang21/ditch-audit>; OSF <https://osf.io/rt3zg/> (DOI 10.17605/OSF.IO/RT3ZG — post-halt archival deposit, registered 2026-07-21; per the §4.4.9 correction it postdates the halt and anchors no timestamps); preprint archive **[ARCHIVE-DOI: inserted at first version update after deposit]**. The first public version must carry the repository URL and the OSF deposit URL, each labeled for what it is; the preprint DOI, issued on deposit, follows in a version update. Copyrighted abstracts are not republished: the raw and sanitized
 text corpora are excluded from the public package, and the paper reports codes and aggregates
 only, with item identifiers sufficient to relocate every source in the published record.
 Because API-served models retire, one coder (D) is open-weights with weights, prompts, and
