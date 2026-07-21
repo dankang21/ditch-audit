@@ -15,6 +15,7 @@ failed on all four coding dimensions. Under the frozen decision tree this stoppe
 no hypothesis was ever tested. Per the preregistered kill criterion, the project downgraded to
 a methods-forward preprint plus a companion essay — no journal submission.
 
+- **Repository**: <https://github.com/dankang21/ditch-audit>
 - **Preprint** (v0.8, 58 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
   `docs/draft/preprint-v0.8.zip` · *(archive DOI: to be added at upload)*
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our
