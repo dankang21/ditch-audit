@@ -81,3 +81,15 @@ shell; its Results section resolves to the descriptive/negative-instrument
 branch. H1/H2 were never tested — no corpus outcome data was collected or
 examined (the checkpoint measured reliability only; no yield/marginal look
 was run).
+
+## Correction addendum (2026-07-21)
+
+Two statements above are corrected of record; the original text is left as written because
+this report is the contemporaneous record. (1) The header's "Tranche seed: 20260717 (OSF
+registration date, §2.5)" and (2) the closing section's "The OSF registration ... remain[s]
+intact": during upload preparation (2026-07-21) the OSF account was checked and no completed
+web registration existed. The preregistration of record is the git-sealed SHA256 freeze
+(content commit 83d0b49, seal commit bafc712, guardian CLEAN, 2026-07-17); the seed 20260717
+is the freeze date, supplied under the frozen "registration date" rule and recorded with the
+tranche lock before coding; the OSF deposit is post-halt and archival. Full statement:
+preprint §4.4.9 (v0.9 correction of record).

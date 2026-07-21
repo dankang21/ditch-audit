@@ -16,8 +16,8 @@ no hypothesis was ever tested. Per the preregistered kill criterion, the project
 a methods-forward preprint plus a companion essay — no journal submission.
 
 - **Repository**: <https://github.com/dankang21/ditch-audit>
-- **Preprint** (v0.8, 58 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
-  `docs/draft/preprint-v0.8.zip` · *(archive DOI: to be added at upload)*
+- **Preprint** (v0.9, 60 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
+  `docs/draft/preprint-v0.9.zip` · *(archive DOI: to be added at upload)*
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our
   Study — and Why We're Glad It Did"
 - **Checkpoint result of record**: `analysis/checkpoint_report.md` + `checkpoint_dual_raw.json`
@@ -40,8 +40,10 @@ inspectable:
 `analysis/audit-exports/draft-v0.1-to-v0.2.diff` remains as a convenient extract of the
 v0.1 → v0.2 comparison. Two verification anchors are independent of git metadata (commit
 timestamps alone are not tamper-proof): the freeze manifest (`PREREG_MANIFEST.txt`) pins the
-frozen artifact set by SHA256, so any copy can be checked against the seal, and the OSF
-registration's own timestamp externally anchors the ordering of freeze and checkpoint.
+frozen artifact set by SHA256, so any copy can be checked against the seal. A correction of
+record (preprint §4.4.9, v0.9): the OSF registration previously reported as completed on
+2026-07-17 was never in fact completed; the OSF presence is a post-halt archival deposit and
+anchors no timestamps. The preregistration of record is the git-sealed freeze itself.
 
 ## Repository map
 

@@ -228,3 +228,19 @@ journal submission; descriptive-map preprint + essay; no salami-slicing, no
 post-hoc hypothesis swaps. The mirrored mini-audit of naturalism's burdens
 (objection O4) gets published whatever it shows, including a naturalist
 alpha-zone if present.
+
+### 4.9i. Correction of record (2026-07-21): OSF registration was never completed
+
+The §4.9f entry records dk's 2026-07-17 confirmation that the OSF registration was complete,
+with registration date 20260717 binding the checkpoint seed. During upload preparation
+(2026-07-21), the OSF account (osf.io user v5mn9, created 2026-07-21) was checked before
+inserting the registration identifier: it holds zero registrations, and dk confirmed the
+web registration had in fact never been completed (scenario "B"). Disposition, per the
+project's disclosure discipline: the claim is corrected, not repaired into the record —
+§4.9f stands as written as the record of what was reported. The preregistration of record
+is the git-sealed freeze (83d0b49 / bafc712, guardian CLEAN); the seed's pre-commitment
+rests on the frozen rule (analysis-plan: "seed = OSF registration date (YYYYMMDD),
+FROZEN-AT-P3") plus the freeze-date value recorded with the tranche lock before coding; the
+OSF deposit is re-scoped as a post-halt archive carrying this correction in its
+transparent-changes section. Paper: v0.9 correction paragraph in §4.4.9; addendum in
+analysis/checkpoint_report.md; repository README corrected.

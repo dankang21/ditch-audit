@@ -8,7 +8,7 @@
 
 *Keywords:* large language models; automated content analysis; inter-rater reliability; Krippendorff's alpha; preregistration; confirmatory checkpoint; zero-human annotation; validation battery; philosophy of religion; natural theology; Lessing's ditch.
 
-**How to read this document (added at v0.3, 2026-07-17).** The paper's sole confirmatory result is §5.1.1 — the confirmatory checkpoint that rejected the instrument — and its methods contribution lives in §4 (the zero-human instrument and its validation battery; §4.4.10 tabulates the battery at a glance). Sections 2–3 build the case-study apparatus: a witness-based criterion that motivates an eight-step working partition of natural theology's inferential chain (§7.2 states what is and is not claimed for it), with §7 proving a burden-invariance result that stands independently of the halted audit; §8 answers objections to the design. Sections 5.2–5.7 and 6 are preregistered result shells resolved to *not run*: they are preserved in place, unfilled with outcome data (their resolution markers are dated and inventoried), because the outcome-blind commit history of these shells is part of the paper's evidentiary claim — in the spirit of the Registered Reports program's commitment to outcome-independent publication (Chambers and Tzavella 2022) — though this is a self-registered study with a frozen decision tree, not a journal-reviewed Registered Report. Methods readers: §4, §5.1.1, §4.4.10. Philosophy readers: §§2–3, §7, §8. The change inventories of record are the back-matter resolution notes (v0.2 for the P4 resolution; v0.3 for this repositioning; v0.4–v0.8 for the post-review repairs), preceded by a version-history summary.
+**How to read this document (added at v0.3, 2026-07-17).** The paper's sole confirmatory result is §5.1.1 — the confirmatory checkpoint that rejected the instrument — and its methods contribution lives in §4 (the zero-human instrument and its validation battery; §4.4.10 tabulates the battery at a glance). Sections 2–3 build the case-study apparatus: a witness-based criterion that motivates an eight-step working partition of natural theology's inferential chain (§7.2 states what is and is not claimed for it), with §7 proving a burden-invariance result that stands independently of the halted audit; §8 answers objections to the design. Sections 5.2–5.7 and 6 are preregistered result shells resolved to *not run*: they are preserved in place, unfilled with outcome data (their resolution markers are dated and inventoried), because the outcome-blind commit history of these shells is part of the paper's evidentiary claim — in the spirit of the Registered Reports program's commitment to outcome-independent publication (Chambers and Tzavella 2022) — though this is a self-registered study with a frozen decision tree, not a journal-reviewed Registered Report. Methods readers: §4, §5.1.1, §4.4.10. Philosophy readers: §§2–3, §7, §8. The change inventories of record are the back-matter resolution notes (v0.2 for the P4 resolution; v0.3 for this repositioning; v0.4–v0.9 for the post-review repairs and the v0.9 correction of record), preceded by a version-history summary.
 
 ---
 
@@ -256,7 +256,29 @@ Power planning rests on a pre-freeze calibration sample rather than the design o
 
 ### 4.4.9 The freeze, the gate chain, and the principal limitation
 
-Preregistration is enforced mechanically. The freeze manifest enumerates twenty-five artifact classes — codebook of record, built coder prompt, the full battery and analysis-plan documents, model snapshot pins (one dated; two provider-stable under the registered fallback), the vault hash, denominator definitions, every analysis and search script with its seeds, the corpus lock, probe templates, the lexicons behind every mechanized band, and the recorded decision register — each SHA256-hashed and machine-verified at every subsequent session by a guardian agent. Post-freeze, no threshold, denominator, decision rule, seed, or consequence may change; deviations that follow a preregistered protocol are logged in the registration's transparent-changes section, and any deviation outside one voids the confirmatory run. A single-authority rule closes the architecture: the analysis plan's confirmatory gate chain is the exhaustive registry of blocking conditions, every battery block maps to exactly one chain item, and no block exists outside the list. Every threshold receives a frozen numeric value and consequence class — block, sensitivity note, or revision trigger — and the audit package publishes all component results, including failures. Statistical conventions are registered at the same specificity: odds-ratio confidence intervals by Woolf's logit method (Woolf 1955) with the Haldane–Anscombe zero-cell correction (Haldane 1956); exact tests after Fisher (1934); rank comparisons by the Mann–Whitney U (Mann and Whitney 1947); bootstrap intervals percentile-based (Efron and Tibshirani 1993).
+Preregistration is enforced mechanically. The freeze manifest enumerates twenty-five artifact classes — codebook of record, built coder prompt, the full battery and analysis-plan documents, model snapshot pins (one dated; two provider-stable under the registered fallback), the vault hash, denominator definitions, every analysis and search script with its seeds, the corpus lock, probe templates, the lexicons behind every mechanized band, and the recorded decision register — each SHA256-hashed and machine-verified at every subsequent session by a guardian agent. Post-freeze, no threshold, denominator, decision rule, seed, or consequence may change; deviations that follow a preregistered protocol are logged in the freeze documentation's transparent-changes register, carried into the OSF deposit, and any deviation outside one voids the confirmatory run. A single-authority rule closes the architecture: the analysis plan's confirmatory gate chain is the exhaustive registry of blocking conditions, every battery block maps to exactly one chain item, and no block exists outside the list. Every threshold receives a frozen numeric value and consequence class — block, sensitivity note, or revision trigger — and the audit package publishes all component results, including failures. Statistical conventions are registered at the same specificity: odds-ratio confidence intervals by Woolf's logit method (Woolf 1955) with the Haldane–Anscombe zero-cell correction (Haldane 1956); exact tests after Fisher (1934); rank comparisons by the Mann–Whitney U (Mann and Whitney 1947); bootstrap intervals percentile-based (Efron and Tibshirani 1993).
+
+**Correction of record (v0.9): the OSF registration was not completed when reported.**
+Through v0.8 this paper — following the project's contemporaneous records — described an OSF
+registration completed on 2026-07-17, and the seed rule ("the OSF registration date") was
+executed with 20260717 on that basis. During upload preparation (2026-07-21) the claim was
+checked against the OSF account and found false: no web registration existed. What did exist
+on 2026-07-17 was the locally sealed freeze — the SHA256 manifest (`PREREG_MANIFEST.txt`),
+machine-verified CLEAN by the guardian agent, sealed in the now-public git history (content
+commit `83d0b49`; seal commit `bafc712`). Three consequences, stated plainly. (i) The
+preregistration of record is the sealed git freeze, not an OSF-timestamped registration; the
+freeze-before-checkpoint ordering therefore rests on the git commit chain and the internal
+consistency of the sealed artifacts, not on an independent third-party timestamp — a weaker
+anchor than previously claimed, and the reader should weight it accordingly. (ii) The
+checkpoint seed's pre-commitment survives in reduced form: the rule (seed = registration
+date, YYYYMMDD) sits inside the sealed plan, and the value used, 20260717 — the freeze date,
+reported at the time as the registration date — was fixed and recorded with the tranche lock
+before any tranche item was coded; what is lost is the external timestamp the rule was
+designed to borrow. (iii) The OSF deposit this paper cites is a post-halt archival deposit,
+carrying the sealed freeze package and this correction in its transparent-changes section;
+it timestamps nothing retroactively. The error — a registration reported complete that was
+not — is disclosed rather than repaired into the record, consistent with the paper's
+treatment of its other failures.
 
 What the battery cannot do is stated as plainly as what it can. Each component bounds an identified artifact class: the recognition probe bounds verbatim recall; the cue-ablation stratum, topic-prior coding; the synthetic vault, construct failure on items whose true codes are known by construction; the perturbation arms, surface-cue dependence; the determinism audit, decoding noise; the estimator battery and adjudication audits, majority-vote laundering; the adversarial flip and stratum-persistence blocks, direction-correlated tie-breaking. But the union of these bounds is not identification. Accuracy on the real corpus distribution — obscure, hedged, contemporary professional prose, coded by models that have read an unknowable fraction of it — remains formally unidentified, because no item in that distribution comes with a criterion label a zero-human design is permitted to consult. This is the design's principal limitation, conceded in the battery's preamble, embedded in the registered verdict vocabulary, and repeated in the paper's limitation section: the direction-bias probes bound bias; they do not identify accuracy. The claim the architecture licenses is deliberately modest and, we argue, exactly calibrated to its evidence: a fixed, preregistered, exhaustively audited instrument was built to measure the literature and was evaluated on pilot and checkpoint samples drawn from it; every artifact class identified in the preregistered red-team battery was given a frozen test with teeth; and every one of those tests, with its outcome, pass or fail, is published.
 
@@ -336,7 +358,7 @@ component results, including failures, are published (battery §B10).
 
 The checkpoint's tranche draw, sanitization, raw-arm coding, and dual statistic executed
 exactly as frozen: n = 150 fresh items drawn by the seeded stratified
-rule (seed = the OSF registration date, 20260717; five venues, twenty-one years; zero pilot
+rule (seed 20260717 — the freeze date, supplied under the frozen "registration date" rule; the OSF record correction in §4.4.9 applies; five venues, twenty-one years; zero pilot
 overlap; pilot venue-years excluded wholesale), sanitized by the frozen pipeline, and coded in
 three independent runs by each API coder with per-dimension majority-of-three consolidation.
 Coverage was complete (150/150 items in all three coder files); the bootstrap ran at the full
@@ -787,7 +809,7 @@ specification and sign-off, and phase-gate approvals. The instrument is a fixed,
 multi-family ensemble — coder A (Anthropic), coder B (Google), coder C (OpenAI, adjudicator
 seat assigned by a preregistered rule), a mandatory open-weights archival coder D, and an
 open-weights generator/launderer E structurally barred from search — bound by a role-exclusivity
-matrix and pinned in the OSF manifest's pin section (one dated immutable snapshot, coder C; provider-stable undated identifiers under the registered version-metadata-plus-B1c fallback, coders A and B). Disagreements were resolved by
+matrix and pinned in the preregistration manifest's pin section (`PREREG_MANIFEST.txt`, Section E) (one dated immutable snapshot, coder C; provider-stable undated identifiers under the registered version-metadata-plus-B1c fallback, coders A and B). Disagreements were resolved by
 the mechanical majority-of-three rule across families; three-way splits were recorded as unresolved and handled by
 preregistered sensitivity bounds. The paper accordingly claims measurement by this instrument,
 not human-equivalent annotation, and the abstract discloses this in its own voice.
@@ -814,7 +836,7 @@ data and all aggregate tables for every run that occurred (pilot, calibration, a
 checkpoint tranche — the full-corpus run was never performed); the full battery results
 including failed components and the two checkpoint components interrupted by the halt; the
 adjudication and cost logs. The synthetic criterion vault was never opened (vault opening was
-scheduled after the checkpoint) and remains sealed and hash-verifiable in the freeze manifest. The freeze manifest (`PREREG_MANIFEST.txt`, 64 artifacts plus aggregate hashes) is the verification root: any copy of a frozen artifact can be checked against its SHA256 independent of repository history. Concrete public identifiers are inserted at upload and marked here as visible placeholders: OSF registration **[OSF-DOI: insert at upload]**; preprint archive **[ARCHIVE-DOI: insert at first version update after deposit]**; repository <https://github.com/dankang21/ditch-audit>. The first public version must carry at least the OSF registration identifier and the repository URL; the preprint DOI, issued on deposit, follows in a version update. Copyrighted abstracts are not republished: the raw and sanitized
+scheduled after the checkpoint) and remains sealed and hash-verifiable in the freeze manifest. The freeze manifest (`PREREG_MANIFEST.txt`, 64 artifacts plus aggregate hashes) is the verification root: any copy of a frozen artifact can be checked against its SHA256 independent of repository history. Concrete public identifiers: repository <https://github.com/dankang21/ditch-audit>; OSF **[OSF-DEPOSIT-URL: post-halt archival deposit — inserted when the deposit completes; see the §4.4.9 correction: it postdates the halt and anchors no timestamps]**; preprint archive **[ARCHIVE-DOI: inserted at first version update after deposit]**. The first public version must carry the repository URL and the OSF deposit URL, each labeled for what it is; the preprint DOI, issued on deposit, follows in a version update. Copyrighted abstracts are not republished: the raw and sanitized
 text corpora are excluded from the public package, and the paper reports codes and aggregates
 only, with item identifiers sufficient to relocate every source in the published record.
 Because API-served models retire, one coder (D) is open-weights with weights, prompts, and
@@ -833,10 +855,36 @@ states this distinction explicitly.
 | v0.6 | 2026-07-20 | Third external-review repairs: the eight-step partition demoted to a working partition (Definition 2 held as regulative ideal; maximality not claimed); Judaism's S6 witness role withdrawn (the cell entry retained only as a cross-reference to the finer-grain boundary), restoring Lapide's S8 coherence; Carnley scoped to the material-continuity construal; gold-anchor pilot contribution stated; n = 150 projection attributed to the registered heuristic; T1-selection and single-journal-H2 limitations added. |
 | v0.7 | 2026-07-20 | Fourth external-review repairs: grain claims scoped to the registered variants; "pre-2008" renamed 2004–2008 at editable sites; the 473 heuristic exclusions elevated to a named corpus-definition assumption, with a seeded 20-item source-check disclosing one false exclusion (5%); Table 1's column retitled "Boundary evidence / candidate witness"; S6's definite-article reading and S7's construal scoping stated; residual canonicity-mood sentences softened; coder D's actual execution record stated; four sources added (Adang; Lapide–Moltmann; Ostler; Tindal). |
 | v0.8 | 2026-07-20 | Fifth-review (conditional-approval) completions: East 2013 and the Crossref infrastructure paper (Hendricks et al. 2020) added to the references; single-draw statement for the exclusion sample; Corollary 1 made explicitly conditional on the burden principle, with the stronger-predicate case renamed target strengthening; the S6-Islam verification verdict restated as construal-dependent; a shell-adjacent resolution note added above the §6 shell; the version-metadata fallback's per-provider content and limits stated. Identifier placeholders await the registrant's values. |
+| v0.9 | 2026-07-21 | **Correction of record:** the OSF registration reported complete on 2026-07-17 was found never to have been completed (account check during upload preparation). The preregistration of record is restated as the git-sealed SHA256 freeze; the seed's pre-commitment is restated (frozen rule plus freeze-date value, recorded before the draw); the OSF deposit is re-scoped as a post-halt archive. Repository published with full history; author ORCID added. |
 
 The full change inventories follow below, newest first, and are retained in the preprint
 deliberately: they are the in-text counterpart of the paper's outcome-blindness evidence,
 whose machine form (commit-level diffs) ships with the audit package.
+
+### Draft revision note (v0.9, 2026-07-21)
+
+This revision carries one correction of record and the publication bookkeeping that
+surrounded it. **(1) The OSF correction.** During upload preparation, the OSF account was
+checked before inserting the registration identifier the fifth review requires, and the
+project's standing claim — an OSF registration completed 2026-07-17 — was found false: the
+account held no registration. The correction is stated in full in §4.4.9 (new paragraph),
+and its consequences are propagated: §5.1.1's seed parenthesis now derives 20260717 from the
+frozen rule plus the freeze date rather than from an OSF timestamp; §4.4.9's
+transparent-changes sentence now names the freeze documentation's register, carried into the
+deposit; the AI-use disclosure's "OSF manifest" is corrected to the preregistration manifest
+(`PREREG_MANIFEST.txt`); the availability section's identifier slot is re-scoped from
+"OSF registration DOI" to a post-halt archival deposit URL, labeled as anchoring no
+timestamps. The historical revision notes below, which repeat the original claim, are left
+as written: they are the record of what was believed when. Parallel corrections were applied
+outside the paper: a dated addendum to `analysis/checkpoint_report.md`, a dated entry in
+`CONTEXT.md`, and the repository README's anchor sentence. **(2) Publication bookkeeping
+since v0.8.** The repository was published with its full history at
+<https://github.com/dankang21/ditch-audit> and the paper's repository placeholder filled; the
+author ORCID (0009-0008-1020-9533) was added to the title page; a non-normative English
+translation of the Korean operational artifacts (`CLAUDE.md`, the agent definitions) was
+added to the repository as `docs/operating-rules-en.md`. This note, the version-history row,
+and the reading-guide range are the bookkeeping changes; nothing else in the document was
+altered.
 
 ### Draft revision note (v0.8, 2026-07-20)
 
