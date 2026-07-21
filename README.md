@@ -54,8 +54,9 @@ registration's own timestamp externally anchors the ordering of freeze and check
 | `pipeline/` | Harvest → sanitize → code → battery → analysis scripts (stdlib-only Python) |
 | `scripts/` | Reliability harness (`alpha.py`), adjudication, prompt builder (the hypothesis firewall) |
 | `CONTEXT.md` | Intellectual lineage and every binding design adjudication, dated |
-| `CLAUDE.md` | The operating rules the orchestration ran under (absolute rules incl. the zero-human rule) |
-| `.claude/agents/` | Orchestration agent definitions — published as firewall evidence: `coder-runner.md` names the documents coder-facing contexts were forbidden to receive, and `prereg-guardian.md` specifies the freeze verification run each session |
+| `CLAUDE.md` | The operating rules the orchestration ran under (absolute rules incl. the zero-human rule). In Korean, per the project's language convention; English translation: `docs/operating-rules-en.md` |
+| `.claude/agents/` | Orchestration agent definitions — published as firewall evidence: `coder-runner.md` names the documents coder-facing contexts were forbidden to receive, and `prereg-guardian.md` specifies the freeze verification run each session. In Korean; translated in `docs/operating-rules-en.md` |
+| `docs/operating-rules-en.md` | Non-normative English translation of `CLAUDE.md` and all six agent definitions (the Korean originals are the operative artifacts and are unchanged) |
 
 **Not in this repository** (excluded by design, absolute rule 3): the copyrighted abstract
 corpora (`data/raw|sanitized|coded`), coder outputs, and the sealed synthetic vault. Their
