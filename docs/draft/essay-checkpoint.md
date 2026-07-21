@@ -61,7 +61,7 @@ The pilot pass was declared *conditional* — by its own banner — on a confirm
 stratified script frozen in the manifest, coded by the frozen instrument in triplicate, judged
 by a dual statistic fixed in advance: point minimum-pairwise α ≥ .70 on every dimension, *and*
 a per-dimension bootstrap 95% lower bound ≥ .667. The sample size was chosen so the test would
-be load-bearing — the registration's stated projection (a bootstrap-interval shrinkage
+be load-bearing — the sealed plan's stated projection (a bootstrap-interval shrinkage
 heuristic applied to pilot-calibrated intervals) was that a true-α ≈ .78 instrument passes
 comfortably while a true-α ≈ .70 instrument fails the interval criterion. The consequence of failure was frozen before the draw: halt
 everything, no confirmatory claims from any already-coded material (preprint §5.1.1).

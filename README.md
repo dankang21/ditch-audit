@@ -17,8 +17,8 @@ a methods-forward preprint plus a companion essay — no journal submission.
 
 - **Repository**: <https://github.com/dankang21/ditch-audit>
 - **OSF deposit** (post-halt archive of the sealed freeze; anchors no timestamps — see preprint §4.4.9): <https://osf.io/rt3zg/> · DOI 10.17605/OSF.IO/RT3ZG
-- **Preprint** (v0.10, 58 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
-  `docs/draft/preprint-v0.10.zip` · *(archive DOI: to be added at upload)*
+- **Preprint** (v0.11, 59 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
+  `docs/draft/preprint-v0.11.zip` · *(archive DOI: to be added at upload)*
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our
   Study — and Why We're Glad It Did"
 - **Checkpoint result of record**: `analysis/checkpoint_report.md` + `checkpoint_dual_raw.json`
@@ -44,7 +44,7 @@ timestamps alone are not tamper-proof): the freeze manifest (`PREREG_MANIFEST.tx
 frozen artifact set by SHA256, so any copy can be checked against the seal. A correction of
 record (preprint §4.4.9, v0.9): the OSF registration previously reported as completed on
 2026-07-17 was never in fact completed; the OSF presence is a post-halt archival deposit and
-anchors no timestamps. The precommitment of record is the git-sealed freeze itself — hence the preprint's vocabulary (v0.10): *prospectively frozen / precommitted*, not "preregistered."
+anchors no timestamps. The precommitment of record is the git-sealed freeze itself — hence the preprint's vocabulary (v0.10–v0.11): *prospectively frozen / precommitted / sealed*, not "preregistered" — nor, for the project's own acts, "registered."
 
 ## Repository map
 
