@@ -136,4 +136,4 @@ number over the first.
 The full audit trail — frozen manifests, coder logs, the checkpoint's machine report, the
 unfilled shells, and the diff proving the shells predate the result — accompanies the preprint.
 
-*[Preprint DOI/link to be inserted at upload.]*
+*Preprint: doi.org/10.5281/zenodo.21481634 · Full audit trail: github.com/dankang21/ditch-audit*

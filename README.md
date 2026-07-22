@@ -17,8 +17,8 @@ a methods-forward preprint plus a companion essay — no journal submission.
 
 - **Repository**: <https://github.com/dankang21/ditch-audit>
 - **OSF deposit** (post-halt archive of the sealed freeze; anchors no timestamps — see preprint §4.4.9): <https://osf.io/rt3zg/> · DOI 10.17605/OSF.IO/RT3ZG
-- **Preprint** (v0.12, 59 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
-  `docs/draft/preprint-v0.12.zip` · *(archive DOI: to be added at upload)*
+- **Preprint** (v0.13, 60 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
+  `docs/draft/preprint-v0.13.zip` · DOI [10.5281/zenodo.21481634](https://doi.org/10.5281/zenodo.21481634)
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our
   Study — and Why We're Glad It Did"
 - **Checkpoint result of record**: `analysis/checkpoint_report.md` + `checkpoint_dual_raw.json`

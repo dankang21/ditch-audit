@@ -1,4 +1,4 @@
-# LaTeX package — preprint (draft v0.12, 2026-07-21)
+# LaTeX package — preprint (draft v0.13, 2026-07-22)
 
 **A Prospectively Frozen Zero-Human LLM Measurement Design, and the Confirmatory Checkpoint
 That Rejected Its Instrument** — subtitle: *Lessing's Ditch as a Measurable Property of the
@@ -14,8 +14,8 @@ Engine-agnostic preamble: pdfLaTeX uses newtx (Times); XeLaTeX/LuaLaTeX use font
 ## Files
 
 - main.tex        — preamble, title block, abstract wrapper, inputs
-- abstract.tex    — abstract (generated from docs/draft/draft-v0.md, v0.12)
-- front.tex       — keywords + "How to read this document" (v0.12)
+- abstract.tex    — abstract (generated from docs/draft/draft-v0.md, v0.13)
+- front.tex       — keywords + "How to read this document" (v0.13)
 - body.tex        — full body (generated; source of truth is draft-v0.md — regenerate, don't hand-edit)
 - references.tex  — 85 entries; all in-text citations covered (completeness-swept at v0.3; 14 added at v0.4, 4 at v0.5, 4 at v0.7, 2 at v0.8 — East 2013 and Hendricks et al. 2020)
 - main.pdf        — compiled preview
@@ -54,6 +54,12 @@ pages (51--56).
 Four entries added with the second-review repair cycle: Carnley 1987 and 2019 (the verified
 S7 stance-witness), Maimonides (Touger trans., 1987, uncensored 11:4), and Abdel Haleem 2004
 (Qur'an translation of record). All four web-verified; memos in analysis/audit-exports/.
+
+## v0.13 changes (2026-07-22)
+
+Identifier completion only: Zenodo deposit (concept DOI 10.5281/zenodo.21481634; initial
+version 10.5281/zenodo.21481635) inserted at the availability slot, the title-page footnote,
+the companion essay, and the repository README. No other change; 60 pp.
 
 ## v0.12 changes (2026-07-21)
 
@@ -109,4 +115,4 @@ wording, n=150 projection attribution, T1/single-journal limitations). PDF now c
 Title/Author metadata (hypersetup in main.tex).
 
 Author line and the title-page footnote: confirm before upload (main.tex).
-Generated from draft-v0.md (v0.12); companion essay: docs/draft/essay-checkpoint.md.
+Generated from draft-v0.md (v0.13); companion essay: docs/draft/essay-checkpoint.md.
