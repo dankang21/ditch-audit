@@ -19,6 +19,7 @@ a methods-forward preprint plus a companion essay — no journal submission.
 - **OSF deposit** (post-halt archive of the sealed freeze; anchors no timestamps — see preprint §4.4.9): <https://osf.io/rt3zg/> · DOI 10.17605/OSF.IO/RT3ZG
 - **Preprint** (v0.13, 60 pp.): `docs/draft/draft-v0.md` · LaTeX package + compiled PDF:
   `docs/draft/preprint-v0.13.zip` · DOI [10.5281/zenodo.21481634](https://doi.org/10.5281/zenodo.21481634)
+- **PhilPapers / PhilArchive**: <https://philpapers.org/rec/KANAPF-2>
 - **Companion essay**: `docs/draft/essay-checkpoint.md` — "The Checkpoint That Killed Our
   Study — and Why We're Glad It Did"
 - **Checkpoint result of record**: `analysis/checkpoint_report.md` + `checkpoint_dual_raw.json`
